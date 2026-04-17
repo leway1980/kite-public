@@ -28,4 +28,5 @@ coverage
 
 .vite
 .svelte-kit
+.netlify
 __pycache__/
