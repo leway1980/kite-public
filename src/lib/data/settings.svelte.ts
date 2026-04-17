@@ -669,46 +669,24 @@ export const categorySettings = $state({
 
 		const allCategoryIds = categoriesState.allCategories.map((cat) => cat.id);
 
-		// Default enabled categories for first-time setup
-		const defaultEnabledCategories = [
-			'world',
-			'usa',
-			'business',
-			'tech',
-			'science',
-			'sports',
-			'gaming',
-			'onthisday',
-		];
+		// Our site only has a small, curated set of categories. Everything from
+		// the current batch is enabled by default.
+		const defaultEnabledCategories = allCategoryIds;
 
-		// If no enabled categories, set defaults
-		if (this.enabled.length === 0) {
-			// Set enabled categories to defaults (that exist in current batch)
-			const enabledDefaults = defaultEnabledCategories.filter((categoryId) =>
-				allCategoryIds.includes(categoryId),
-			);
-			settings.enabledCategories.currentValue = enabledDefaults;
-			categoriesState.enabled = enabledDefaults; // Update the reactive state too!
-
-			// Set disabled categories to all others
-			const disabledDefaults = allCategoryIds.filter(
-				(categoryId) => !defaultEnabledCategories.includes(categoryId),
-			);
-			settings.disabledCategories.currentValue = disabledDefaults;
-			categoriesState.disabled = disabledDefaults; // Update the reactive state too!
+		// Purge stale entries (localStorage may hold categories from a previous
+		// deployment that no longer exist in our API).
+		const staleEnabled = this.enabled.filter((c) => !allCategoryIds.includes(c));
+		if (staleEnabled.length > 0 || this.enabled.length === 0) {
+			settings.enabledCategories.currentValue = [...defaultEnabledCategories];
+			categoriesState.enabled = [...defaultEnabledCategories];
+			settings.disabledCategories.currentValue = [];
+			categoriesState.disabled = [];
 		}
 
-		// If no order, set default order
-		if (this.order.length === 0) {
-			const orderedCategories = defaultEnabledCategories.filter((categoryId) =>
-				allCategoryIds.includes(categoryId),
-			);
-			const remainingCategories = allCategoryIds.filter(
-				(categoryId) => !defaultEnabledCategories.includes(categoryId),
-			);
-			const defaultOrder = [...orderedCategories, ...remainingCategories];
-			settings.categoryOrder.currentValue = defaultOrder;
-			categoriesState.order = defaultOrder; // Update the reactive state too!
+		const staleOrder = this.order.filter((c) => !allCategoryIds.includes(c));
+		if (staleOrder.length > 0 || this.order.length === 0) {
+			settings.categoryOrder.currentValue = [...allCategoryIds];
+			categoriesState.order = [...allCategoryIds];
 		} else {
 			// Add new categories to order
 			const newCategories = allCategoryIds.filter((cat) => !this.order.includes(cat));
