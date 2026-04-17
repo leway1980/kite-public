@@ -7,7 +7,7 @@
  */
 
 export const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000001';
-export const MOCK_BATCH_CREATED_AT = '2026-04-17T00:00:00.000Z';
+export const MOCK_BATCH_CREATED_AT = '2026-04-17T20:30:00.000Z';
 export const MOCK_BATCH_DATE_SLUG = '2026-04-17.1';
 // Unix timestamp (seconds) for the stories' timestamp field
 export const MOCK_BATCH_TIMESTAMP = Math.floor(
@@ -38,7 +38,7 @@ export function buildBatchMeta(): MockBatchMeta {
 		language: 'zh-Hant',
 		totalCategories: 3,
 		totalClusters: 6,
-		totalArticles: 15,
+		totalArticles: 173,
 		totalReadCount: 0,
 	};
 }
