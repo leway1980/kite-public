@@ -26,6 +26,10 @@ export function formatTimelineDate(
 		return originalDate;
 	}
 
+	// Our site defaults language to 'default' (server-rendered zh-Hant). 'default'
+	// is not a valid BCP-47 tag, so map it to zh-Hant for Intl.DateTimeFormat.
+	const normalizedLocale = !locale || locale === 'default' ? 'zh-Hant' : locale;
+
 	try {
 		if (precision === 'year') {
 			return dateIso;
@@ -35,25 +39,24 @@ export function formatTimelineDate(
 			const [year, month] = dateIso.split('-').map(Number);
 			const date = new Date(Date.UTC(year, month - 1, 1));
 			const showYear = year !== batchYear;
-			const monthName = new Intl.DateTimeFormat(locale, {
+			const monthName = new Intl.DateTimeFormat(normalizedLocale, {
 				month: 'long',
 				timeZone: 'UTC',
 			}).format(date);
 			return showYear ? `${monthName} ${year}` : monthName;
 		}
 
-		// Full date: YYYY-MM-DD — day-first ordering
+		// Full date: YYYY-MM-DD
 		const [year, month, day] = dateIso.split('-').map(Number);
 		const date = new Date(Date.UTC(year, month - 1, day));
 		const showYear = year !== batchYear;
-		const parts = new Intl.DateTimeFormat(locale, {
+		const formatted = new Intl.DateTimeFormat(normalizedLocale, {
 			month: 'long',
 			day: 'numeric',
+			year: showYear ? 'numeric' : undefined,
 			timeZone: 'UTC',
-		}).formatToParts(date);
-		const monthName = parts.find((p) => p.type === 'month')?.value ?? '';
-		const dayStr = parts.find((p) => p.type === 'day')?.value ?? String(day);
-		return showYear ? `${dayStr} ${monthName} ${year}` : `${dayStr} ${monthName}`;
+		}).format(date);
+		return formatted;
 	} catch {
 		return originalDate;
 	}
