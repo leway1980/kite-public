@@ -3,6 +3,7 @@ import type { Domain, Story } from '$lib/types';
 const AI_NEWS_UUID = 'c0000001-0000-4000-8000-000000000001';
 const AI_EDU_UUID = 'c0000002-0000-4000-8000-000000000002';
 const TW_EDU_UUID = 'c0000003-0000-4000-8000-000000000003';
+const AI_CLASSROOM_UUID = 'c0000004-0000-4000-8000-000000000004';
 
 // ─── Stories synthesized from 173 RSS articles fetched 2026-04-17 ────────────
 
@@ -461,6 +462,7 @@ const twEduStories: Story[] = [
 export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_NEWS_UUID]: aiNewsStories,
 	[AI_EDU_UUID]: aiEduStories,
+	[AI_CLASSROOM_UUID]: [],
 	[TW_EDU_UUID]: twEduStories,
 };
 

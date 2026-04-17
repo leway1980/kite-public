@@ -32,6 +32,13 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		readCount: 0,
 	},
 	{
+		uuid: 'c0000004-0000-4000-8000-000000000004',
+		categoryId: 'ai-classroom',
+		categoryName: 'AI 教學實戰',
+		clusterCount: 0,
+		readCount: 0,
+	},
+	{
 		uuid: 'c0000003-0000-4000-8000-000000000003',
 		categoryId: 'taiwan-edu-policy',
 		categoryName: '教育政策',
