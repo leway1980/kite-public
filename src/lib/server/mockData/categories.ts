@@ -21,7 +21,7 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000001-0000-4000-8000-000000000001',
 		categoryId: 'ai-news',
 		categoryName: 'AI 動態',
-		clusterCount: 3,
+		clusterCount: 8,
 		readCount: 0,
 	},
 	{
@@ -35,21 +35,21 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000002-0000-4000-8000-000000000002',
 		categoryId: 'ai-education',
 		categoryName: 'AI × 教育',
-		clusterCount: 2,
+		clusterCount: 3,
 		readCount: 0,
 	},
 	{
 		uuid: 'c0000004-0000-4000-8000-000000000004',
 		categoryId: 'ai-classroom',
 		categoryName: 'AI 教學實戰',
-		clusterCount: 2,
+		clusterCount: 0,
 		readCount: 0,
 	},
 	{
 		uuid: 'c0000003-0000-4000-8000-000000000003',
 		categoryId: 'taiwan-edu-policy',
 		categoryName: '教育政策',
-		clusterCount: 1,
+		clusterCount: 0,
 		readCount: 0,
 	},
 ];

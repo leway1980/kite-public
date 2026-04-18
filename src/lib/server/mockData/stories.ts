@@ -6,148 +6,309 @@ const TW_EDU_UUID = 'c0000003-0000-4000-8000-000000000003';
 const AI_CLASSROOM_UUID = 'c0000004-0000-4000-8000-000000000004';
 const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
 
-// ─── Stories synthesized from 308 RSS articles fetched 2026-04-17 (MVP-v6) ───
-// MVP-v6 key change: strict one-story = one-topic rule.
-// Stories merging unrelated events are dropped; single-source stories
-// allowed only for authority feeds (arXiv / JAMA / MIT / OECD / OpenAI).
+// ─── Stories synthesized 2026-04-18 by pipeline (auto-generated) ───
 
 const aiNewsStories: Story[] = [
 	{
-		id: 'sai-news-001',
+		id: 'aiNews-1',
 		cluster_number: 1,
-		unique_domains: 5,
-		number_of_titles: 6,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'Anthropic 發表 Claude Opus 4.7：逐步強化每一個維度，資安偵測同步升級',
-		short_summary:
-			'Anthropic 於 4 月 16 日正式推出 Claude Opus 4.7，在進階軟體工程、複雜編碼、高解析視覺理解三個維度均優於 Opus 4.6，並首度搭載新一代資安偵測機制（提示注入防護與異常行為監控）。Latent.Space 標題直言「literally one step better than 4.6 in every dimension」，The Verge 則指出此次發布恰在 Mythos Preview 引爆討論後，是 Anthropic 刻意採分層策略——先讓市場習慣有強監控的高能力模型，再推更強版本。',
-		emoji: '🔧',
-		did_you_know:
-			'Anthropic 官方說明 Opus 4.7 的資安能力刻意設計在 Mythos 之下，目的是在較低風險的商業環境中先測試新一代治理框架的實際效果——每一次商業發布同時也是 Anthropic 自己的壓力測試。',
+		title: 'Google 推出 7 項 AI 旅遊功能，整合 Search 與 Pixel 裝置',
+		short_summary: 'Google 在 2026 年夏季前推出 7 項旅遊輔助 AI 功能，涵蓋 Search、Google Maps 及 Pixel 手機。台灣教師應關注這波整合：AI 不再只是回答問題的工具，而是能主動規劃行程、辨識地標、即時翻譯功能的全場景助理。這種「AI 嵌入日常工作流」的趨勢，正是未來課堂數位工具設計的縮影，值得跨科教師共同討論 AI 輔助決策的倫理與便利的邊界。',
+		emoji: '✈️',
+		did_you_know: 'Google Search 的 AI Overview 功能每月已有超過 15 億使用者，旅遊規劃是使用率最高的情境之一。台灣每年出境旅客超過 1,300 萬次，AI 輔助旅遊工具的普及速度將遠快於課室想像。',
 		talking_points: [
-			'Opus 4.7 在進階軟體工程、複雜多步驟任務、高解析影像理解三個維度均比 Opus 4.6 提升，Latent.Space 評為「在每個維度精進一步」的穩健升級。',
-			'首度部署新一代資安偵測機制：提示注入（prompt injection）防護與異常行為模式監控同步上線，是 Anthropic 在商用模型上首次的大規模治理實驗。',
-			'The Verge 解讀：Anthropic 的分層發布策略——先推 Opus 4.7（有監控）讓市場熟悉，Mythos Preview（更強）僅對受信任研究夥伴開放——是為了讓社會治理跟上模型能力曲線。',
-			'iThome 強調資安能力刻意低於 Mythos，反映 Anthropic 謹慎的商業化路線：能力越強，監管框架必須越先到位。',
-			'對 Google for Education 生態的教師：Opus 4.7 改善的影像處理能力意味著 Claude 在理解教學圖表、實驗圖示、物理題目圖片上的準確性提升。',
+			'Google 一次推出 7 項 AI 旅遊功能，橫跨 Search、Maps、Pixel 手機三大平台',
+			'功能包含 AI 行程規劃、農夫市集即時資訊、地標辨識等日常旅遊場景',
+			'Pixel 手機整合 AI 功能可離線使用，反映 On-device AI 技術成熟',
+			'這類 AI 輔助旅遊工具正從「搜尋引擎」轉型為「決策代理人」，對資訊素養教育有重要啟示',
 		],
-		quote:
-			'這款模型雖然不如 Mythos Preview 那麼強大，卻是公司用來測試新一代資安防護機制與模型治理方式的第一個公開版本。',
-		quote_attribution: 'TechOrange 科技報橘，2026-04-17',
-		quote_source_url: 'https://techorange.com/2026/04/17/anthropic-claude-opus-4-7/',
-		quote_source_domain: 'techorange.com',
+		quote: '7 ways to travel smarter this summer, with help from Google',
+		quote_attribution: 'Google Blog, 2026-04-17',
+		quote_source_url: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
+		quote_source_domain: 'blog.google',
 		perspectives: [
 			{
-				text: '台灣媒體（TechOrange、iThome）一致聚焦 Opus 4.7 作為「可控 AI」戰略的意義，認為模型治理能力比純能力提升更值得關注。iThome 則強調資安能力刻意低於 Mythos，反映 Anthropic 謹慎的商業化路線。',
+				text: '從科技整合角度：Google 將 AI 深度嵌入旅遊全流程，代表 AI 助理從「工具」演進為「全程陪伴的規劃夥伴」。教師可藉此討論 AI 如何改變人類做決定的方式，以及學生如何培養「與 AI 協作」而非「依賴 AI」的能力。',
 				sources: [
 					{
-						name: 'TechOrange 科技報橘',
-						url: 'https://techorange.com/2026/04/17/anthropic-claude-opus-4-7/',
-					},
-					{
-						name: 'iThome 新聞',
-						url: 'https://www.ithome.com.tw/news/175136',
+						name: 'Google Blog',
+						url: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
 					},
 				],
-			},
-			{
-				text: 'The Verge 側重競爭格局：Anthropic 在 Mythos buzz 正盛時推 Opus 4.7，顯示刻意的分層發布策略。Latent.Space 分析師評為「在每個維度都比 4.6 精進一步」的穩健升級，而非跳躍式突破。',
-				sources: [
-					{
-						name: 'AI | The Verge',
-						url: 'https://www.theverge.com/ai-artificial-intelligence/914463/anthropic-opus-4-7',
-					},
-					{
-						name: 'Latent.Space',
-						url: 'https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-04-11',
-				date_iso: '2026-04-11',
-				content: 'Anthropic 發布 Mythos Preview，僅對受信任研究夥伴開放，強大能力引起多國監管機構警戒。',
-			},
-			{
-				date: '2026-04-16',
-				date_iso: '2026-04-16',
-				content: 'Anthropic 正式發表 Claude Opus 4.7，強調資安偵測機制為核心新特色，Latent.Space 評為「逐維度進步」。',
 			},
 		],
 		articles: [
 			{
-				title: 'Anthropic 發表新 AI 模型 Claude Opus 4.7，攻向「可控 AI」新戰場',
-				link: 'https://techorange.com/2026/04/17/anthropic-claude-opus-4-7/',
-				domain: 'techorange.com',
-				date: '2026-04-17',
-			},
-			{
-				title: 'Claude Opus 4.7強化開發與影像處理，資安能力刻意低於Mythos模型',
-				link: 'https://www.ithome.com.tw/news/175136',
-				domain: 'ithome.com.tw',
-				date: '2026-04-17',
-			},
-			{
-				title: 'Anthropic releases a new Opus model amid Mythos Preview buzz',
-				link: 'https://www.theverge.com/ai-artificial-intelligence/914463/anthropic-opus-4-7',
-				domain: 'theverge.com',
-				date: '2026-04-16',
-			},
-			{
-				title: '[AINews] Anthropic Claude Opus 4.7 - literally one step better than 4.6 in every dimension',
-				link: 'https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally',
-				domain: 'latent.space',
+				title: '7 ways to travel smarter this summer, with help from Google',
+				link: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
+				domain: 'blog.google',
 				date: '2026-04-17',
 			},
 		],
 		domains: [
-			{ name: 'techorange.com' },
-			{ name: 'ithome.com.tw' },
-			{ name: 'theverge.com' },
-			{ name: 'latent.space' },
+			{ name: 'blog.google' },
 		],
 	},
 	{
-		id: 'sai-news-002',
+		id: 'aiNews-2',
 		cluster_number: 2,
-		unique_domains: 4,
-		number_of_titles: 4,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'OpenAI Codex 全面升級：能操控電腦、整合記憶、直接挑戰 Claude Code',
-		short_summary:
-			'OpenAI 於 4 月 16 日宣布 Codex 重大更新：macOS App 加入 Computer Use（可操控電腦螢幕）、上網搜尋、生成圖片，並新增跨工作階段記憶與外掛整合（Jira、GitHub、Figma）。The Verge 明確稱這是「直接瞄準 Claude Code 的一擊」，iThome 確認台灣開發者已可使用。Agents SDK 同步新增原生沙箱執行，讓 AI 代理在安全隔離環境中長時間自主執行。兩家公司的 agentic coding 競賽正式進入正面交鋒。',
-		emoji: '💻',
-		did_you_know:
-			'Latent.Space 的分析標題《RIP Pull Requests (2005–2026)》引發熱議——Codex 已能完整接管從開 issue 到合併 PR 的整個流程，傳統的 Git Pull Request 工作流程可能正在走向歷史。',
+		title: 'Chrome 推出 AI Mode：瀏覽器內建 AI 對話取代傳統搜尋',
+		short_summary: 'Google 在 Chrome 瀏覽器中正式推出 AI Mode，使用者可直接在瀏覽器側邊欄與 AI 對話，無需跳轉至搜尋頁面。台灣高中教師應了解：學生的資訊查找行為正在發生根本性改變——從「關鍵字搜尋→點擊連結→閱讀網頁」的流程，變成「直接向 AI 問答→取得整合摘要」。這影響學生的資訊素養培養、引用來源習慣，以及批判性思考的訓練方式，需要在課堂中重新設計資訊查核的練習活動。',
+		emoji: '🌐',
+		did_you_know: 'Chrome 全球用戶超過 30 億，是目前市佔率最高的瀏覽器。AI Mode 若全面推出，將是瀏覽器史上最大的互動模式轉型，影響規模遠超過搜尋引擎從目錄分類轉向關鍵字搜尋的那次變革。',
 		talking_points: [
-			'Codex macOS 版新增 Computer Use：AI 可理解螢幕內容、輸入文字、上網瀏覽，從「寫程式助理」升級為「能替你操作電腦的代理」。',
-			'跨工作階段記憶功能讓 Codex 記住開發者偏好與專案脈絡；外掛整合讓 Codex 可讀寫 Jira、GitHub、Figma，成為整個開發生態的中心節點。',
-			'Agents SDK 加入原生沙箱執行：長時間自主執行的 AI 代理有更嚴格的權限隔離，企業部署的安全門檻降低。',
-			'The Verge 定性：這是 OpenAI 把 Anthropic 視為開發者生態主要競爭對手的公開聲明，不是泛泛的「AI 競賽」，而是明確的「coding 代理市場爭奪」。',
-			'iThome 報導 Codex macOS 版已向台灣開發者開放，並確認 Computer Use 功能需手動在設定中啟用。',
+			'Chrome AI Mode 讓使用者直接在瀏覽器側邊欄進行 AI 對話，不需要開新分頁',
+			'功能整合 Google 的 Gemini 模型，能讀取當前網頁內容並提供摘要與問答',
+			'這是瀏覽器互動模式的根本性轉變：從「搜尋導航」變為「對話式探索」',
+			'教師需思考：當 AI 成為預設的資訊中介，學生的閱讀理解與來源查核能力如何維持？',
 		],
+		quote: 'A new way to explore the web with AI Mode in Chrome',
+		quote_attribution: 'Google Blog, 2026-04-16',
+		quote_source_url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
+		quote_source_domain: 'blog.google',
 		perspectives: [
 			{
-				text: 'The Verge 明確定性此次更新是「直接瞄準 Claude Code」，OpenAI 把 Anthropic 視為開發者生態的主要競爭對手；Computer Use 是此次最重要突破，讓 Codex 的應用範疇大幅擴大。',
+				text: '從資訊素養角度：AI Mode 讓 Chrome 成為「AI 優先」的資訊入口，學生未來查資料時可能跳過原始網頁。教師需重新設計「查找資訊→評估來源→引用論證」的教學活動，確保 AI 輔助不會削弱學生獨立驗證資訊的能力。',
 				sources: [
 					{
-						name: 'AI | The Verge',
-						url: 'https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos',
+						name: 'Google Blog',
+						url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'A new way to explore the web with AI Mode in Chrome',
+				link: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
+				domain: 'blog.google',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'blog.google' },
+		],
+	},
+	{
+		id: 'aiNews-3',
+		cluster_number: 3,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 動態',
+		title: 'Gemini 推出「個人化智慧」功能，AI 圖像生成結合個人記憶',
+		short_summary: 'Google Gemini 應用程式新增「Personal Intelligence」功能，可根據使用者的個人照片、喜好與記憶，生成高度個人化的 AI 圖像。台灣教師值得關注的是：這類功能讓 AI 圖像生成從「輸入文字提示→生成圖片」，進化到「AI 了解你這個人→生成專屬內容」。在美術、國文、公民等課程中，這引發肖像權、個人資料使用授權以及 AI 創作著作權等重要議題，是跨科素養教育的好素材。',
+		emoji: '🎨',
+		did_you_know: 'Google 將這項功能命名為「Personal Intelligence」，強調 AI 將從「通用助理」演化為「認識你個人的私人助理」。這也讓人反思：當 AI 越來越「懂你」，我們對隱私的定義是否也需要隨之更新？',
+		talking_points: [
+			'Gemini Personal Intelligence 可讀取使用者個人照片與記憶，生成個人化圖像',
+			'功能在 Gemini App 中推出，目前限定部分地區使用者',
+			'個人化 AI 圖像生成引發肖像權與個人資料保護的法律問題',
+			'教師可運用此案例教導學生「AI 使用條款授權範圍」與「個資同意的意義」',
+		],
+		quote: 'New ways to create personalized images in the Gemini app',
+		quote_attribution: 'Google Blog, 2026-04-16',
+		quote_source_url: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
+		quote_source_domain: 'blog.google',
+		perspectives: [
+			{
+				text: '從 AI 倫理角度：Personal Intelligence 讓 AI 圖像生成與個人記憶深度綁定，強化了「AI 是個人延伸」的感知。這在教育現場引發值得討論的問題：學生把自己的照片上傳給 AI 服務，授權範圍是什麼？這些資料如何被使用？需要在課堂中做數位公民教育。',
+				sources: [
+					{
+						name: 'Google Blog',
+						url: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'New ways to create personalized images in the Gemini app',
+				link: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
+				domain: 'blog.google',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'blog.google' },
+		],
+	},
+	{
+		id: 'aiNews-4',
+		cluster_number: 4,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 動態',
+		title: 'OpenAI Codex 全面升級：加入電腦操作、圖像生成與記憶功能',
+		short_summary: 'OpenAI 發布 Codex 應用程式重大更新，新增「電腦使用（computer use）」、程式內瀏覽、圖像生成、記憶功能及外掛程式支援，目標是加速開發者工作流程。台灣教師可從此案例觀察 AI 工具演化的速度：Codex 從最初的程式碼補全工具，已演化成能「看螢幕、操控電腦、記住你的偏好、搜尋網路」的全能 AI 工作代理。資訊科技教師應思考如何在課程中教學生「與 AI 協作開發」而非「被 AI 取代」。',
+		emoji: '💻',
+		did_you_know: 'OpenAI Codex 最早在 2021 年推出，是 GitHub Copilot 的底層模型。短短五年內，它從「自動完成程式碼片段」進化到「能自主操控電腦完成複雜任務」，這樣的演化速度是軟體工具史上罕見的。',
+		talking_points: [
+			'Codex 更新版支援 computer use（AI 直接操控電腦執行任務），突破純文字交互限制',
+			'新增程式內瀏覽、圖像生成、跨任務記憶，讓 Codex 成為全功能 AI 開發代理',
+			'外掛程式支援讓第三方工具能與 Codex 整合，形成開放生態系',
+			'資訊科技教師應注意：AI 開發工具的能力邊界正在快速擴張，課程內容需持續更新',
+		],
+		quote: 'The updated Codex app adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.',
+		quote_attribution: 'OpenAI, 2026-04-16',
+		quote_source_url: 'https://openai.com/index/codex-for-almost-everything',
+		quote_source_domain: 'openai.com',
+		perspectives: [
+			{
+				text: '從職涯教育角度：Codex 的快速進化讓「AI 是開發者的工具」變成「AI 本身就是開發者」的問題愈來愈真實。資訊科教師需帶學生思考：未來軟體工程師的核心競爭力是什麼？如何透過學習讓自己不被 AI 代理取代？',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/codex-for-almost-everything',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Codex for (almost) everything',
+				link: 'https://openai.com/index/codex-for-almost-everything',
+				domain: 'openai.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'openai.com' },
+		],
+	},
+	{
+		id: 'aiNews-5',
+		cluster_number: 5,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 動態',
+		title: 'OpenAI 發布 GPT-Rosalind：專攻藥物開發與基因體學的 AI 推理模型',
+		short_summary: 'OpenAI 推出生命科學專用 AI 模型 GPT-Rosalind，聚焦藥物研發、基因體分析、蛋白質推理與科學研究流程加速。台灣高中生物與化學教師應特別關注：這是 AI 從通用語言模型轉向「領域專業推理模型」的重要里程碑。GPT-Rosalind 以諾貝爾化學獎得主 Rosalind Franklin 命名，象徵 AI 在基礎科學研究的定位提升。教師可藉此介紹 AI 如何改變科學研究的工作流程，並引導學生思考未來生命科學家需具備哪些 AI 協作能力。',
+		emoji: '🧬',
+		did_you_know: 'GPT-Rosalind 以 DNA 雙螺旋結構共同發現者 Rosalind Franklin 命名。Franklin 在世時的貢獻長期遭到忽視，直到 2023 年才因為 CRISPR 相關研究獲得追授肯定。以她命名 AI 模型，某種程度是對科學史性別不平等的一種補償象徵。',
+		talking_points: [
+			'GPT-Rosalind 是 OpenAI 首個專為生命科學設計的前沿推理模型',
+			'主要應用領域：藥物研發加速、基因體分析、蛋白質結構推理',
+			'反映 AI 趨勢：從通用大模型轉向「垂直領域專業模型」的分化',
+			'台灣生技製藥產業可望成為重要應用場景，帶動相關科系就業轉型',
+			'教師可引導討論：AI 加速藥物研發是否會影響臨床試驗倫理與藥物安全標準？',
+		],
+		quote: 'OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.',
+		quote_attribution: 'OpenAI, 2026-04-16',
+		quote_source_url: 'https://openai.com/index/introducing-gpt-rosalind',
+		quote_source_domain: 'openai.com',
+		perspectives: [
+			{
+				text: '從科學教育角度：GPT-Rosalind 的出現意味著未來的生命科學研究者必須具備 AI 工具應用能力。高中生物課若能介紹 AI 蛋白質折疊（AlphaFold）、AI 基因分析的概念，將大幅提升學生進入相關領域的競爭力。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/introducing-gpt-rosalind',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Introducing GPT-Rosalind for life sciences research',
+				link: 'https://openai.com/index/introducing-gpt-rosalind',
+				domain: 'openai.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'openai.com' },
+		],
+	},
+	{
+		id: 'aiNews-6',
+		cluster_number: 6,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 動態',
+		title: 'OpenAI 投入 1000 萬美元 API 補助，推動 AI 資安防禦生態系',
+		short_summary: 'OpenAI 宣布多家頂尖資安廠商加入「Trusted Access for Cyber」計畫，並提供 1000 萬美元 API 使用補助，讓這些公司使用 GPT-5.4-Cyber 模型強化全球網路防禦。台灣教師（尤其是資訊科技與公民教育教師）應關注：此舉代表 AI 正從「攻擊工具」轉型為「防禦基礎建設」的關鍵一環。台灣面臨頻繁的網路攻擊，AI 資安工具的普及對台灣的資安教育與人才培育有直接的政策意義。',
+		emoji: '🛡️',
+		did_you_know: 'OpenAI 這次提供的是 GPT-5.4-Cyber，一個針對資安情境微調的特製版本，並非市售的通用 GPT-5 模型。這反映 AI 公司對不同高風險領域（資安、醫療、法律）分別開發專用版本的趨勢，以降低濫用風險並提升專業可信度。',
+		talking_points: [
+			'OpenAI 提供 1000 萬美元 API 補助給加入 Trusted Access for Cyber 的資安廠商',
+			'使用的模型為 GPT-5.4-Cyber，資安場景微調版，非市售通用模型',
+			'多家業界領導資安公司與企業加入此計畫，形成 AI 資安聯盟',
+			'台灣每年面臨數百萬次政府與關鍵基礎設施的網路攻擊，AI 防禦工具的重要性不言而喻',
+			'資訊科教師可以此案例討論：AI 在網路攻防的雙重角色——既可被用來攻擊，也是防禦的利器',
+		],
+		quote: 'Leading security firms and enterprises join OpenAI\'s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense.',
+		quote_attribution: 'OpenAI, 2026-04-16',
+		quote_source_url: 'https://openai.com/index/accelerating-cyber-defense-ecosystem',
+		quote_source_domain: 'openai.com',
+		perspectives: [
+			{
+				text: '從資安教育角度：OpenAI 以補助方式推動 AI 資安工具普及，代表 AI 防禦已從學術研究走向商業化。台灣資訊教育應加入「AI 資安意識」模組，讓學生了解 AI 如何識別威脅、自動回應攻擊，以及未來資安人才需要哪些 AI 協作技能。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/accelerating-cyber-defense-ecosystem',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Accelerating the cyber defense ecosystem that protects us all',
+				link: 'https://openai.com/index/accelerating-cyber-defense-ecosystem',
+				domain: 'openai.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'openai.com' },
+		],
+	},
+	{
+		id: 'aiNews-7',
+		cluster_number: 7,
+		unique_domains: 2,
+		number_of_titles: 2,
+		category: 'AI 動態',
+		title: 'Google 發布 Gemini 3.1 Flash TTS：AI 語音合成支援精細情緒標記',
+		short_summary: 'Google DeepMind 推出 Gemini 3.1 Flash TTS（文字轉語音）模型，引入「細粒度音訊標記（granular audio tags）」技術，讓開發者能精確控制 AI 語音的語調、情緒、節奏與停頓。台灣教師應重視這項技術的教育應用潛力：高品質 AI 語音合成可用於製作課程有聲書、多國語言聽力教材、朗讀輔助工具，尤其對有閱讀障礙或視力障礙的學生有顯著幫助。同時，「deepfake 語音」的偽造風險也值得在媒體素養課程中討論。',
+		emoji: '🎙️',
+		did_you_know: 'TTS（Text-to-Speech）技術存在已超過 50 年，最早的電腦語音合成系統可追溯到 1960 年代的 IBM。然而 Gemini 3.1 Flash TTS 能做到的細緻情緒控制，是過去技術完全無法實現的——這背後是深度學習對人類語音韻律的深度模仿。',
+		talking_points: [
+			'Gemini 3.1 Flash TTS 引入細粒度音訊標記，可精確控制語調、情緒、停頓等語音特徵',
+			'同時由 Google DeepMind 與 Google Blog 雙管道發布，顯示 Google 高度重視此技術',
+			'教育應用：可製作情緒豐富的有聲教材、多語言朗讀工具，輔助聽障或閱讀障礙學生',
+			'DeepFake 語音風險：高品質 AI 語音合成技術普及後，語音身分驗證與真偽辨別將成新課題',
+		],
+		quote: 'Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.',
+		quote_attribution: 'Google DeepMind, 2026-04-15',
+		quote_source_url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+		quote_source_domain: 'deepmind.google',
+		perspectives: [
+			{
+				text: '從教學工具角度：Gemini 3.1 Flash TTS 的情緒語音控制讓 AI 朗讀不再單調，教師可用來製作更生動的聽力教材，或讓不同語言學習情境有對應的語音風格。對特殊教育場景（如閱讀障礙、視障學生）的輔助潛力尤為值得探索。',
+				sources: [
+					{
+						name: 'Google DeepMind',
+						url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+					},
+					{
+						name: 'Google Blog',
+						url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
 					},
 				],
 			},
 			{
-				text: 'TechNews 與 OpenAI 官方聚焦 Agents SDK 的沙箱執行：企業部署 AI 代理的信任門檻正在降低，但自主行為增加也意味著需要更嚴格的監控框架——這是「讓 AI 更能幹」與「讓 AI 更安全」同步進行的設計挑戰。',
+				text: '從媒體素養角度：高品質 AI 語音合成技術讓聲音偽造的門檻大幅降低。教師應在課堂中討論：如何辨別 AI 生成的語音？語音身分驗證在未來的可靠性問題，以及學生應具備哪些媒體識讀技能？',
 				sources: [
 					{
-						name: 'OpenAI News',
-						url: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
-					},
-					{
-						name: 'TechNews 科技新報',
-						url: 'https://technews.tw/2026/04/17/openai-releases-a-major-update-to-codex/',
+						name: 'Google Blog',
+						url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
 					},
 				],
 			},
@@ -156,269 +317,233 @@ const aiNewsStories: Story[] = [
 			{
 				date: '2026-04-15',
 				date_iso: '2026-04-15',
-				content: 'OpenAI 發布 Agents SDK 升級版，加入原生沙箱執行機制。',
-			},
-			{
-				date: '2026-04-16',
-				date_iso: '2026-04-16',
-				content: 'OpenAI 宣布 Codex 重大更新，The Verge 報導稱這是對 Claude Code 的直接挑戰。',
+				content: 'Google DeepMind 與 Google Blog 同步發布 Gemini 3.1 Flash TTS 模型，宣布細粒度音訊標記技術',
 			},
 		],
 		articles: [
 			{
-				title: "OpenAI's big Codex update is a direct shot at Claude Code",
-				link: 'https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos',
-				domain: 'theverge.com',
-				date: '2026-04-16',
+				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
+				link: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+				domain: 'deepmind.google',
+				date: '2026-04-15',
 			},
 			{
-				title: 'Codex for (almost) everything',
-				link: 'https://openai.com/index/codex-for-almost-everything',
-				domain: 'openai.com',
-				date: '2026-04-16',
-			},
-			{
-				title: 'OpenAI Codex 重大更新：Agent 背景運作、內建瀏覽器、整合外掛',
-				link: 'https://technews.tw/2026/04/17/openai-releases-a-major-update-to-codex/',
-				domain: 'technews.tw',
-				date: '2026-04-17',
-			},
-			{
-				title: 'OpenAI Codex macOS版App加入電腦工具使用功能，能上網、打字、生成圖片',
-				link: 'https://www.ithome.com.tw/news/175135',
-				domain: 'ithome.com.tw',
-				date: '2026-04-17',
+				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
+				link: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+				domain: 'blog.google',
+				date: '2026-04-15',
 			},
 		],
 		domains: [
-			{ name: 'theverge.com' },
-			{ name: 'openai.com' },
-			{ name: 'technews.tw' },
-			{ name: 'ithome.com.tw' },
+			{ name: 'deepmind.google' },
+			{ name: 'blog.google' },
 		],
 	},
 	{
-		id: 'sai-news-003',
-		cluster_number: 3,
-		unique_domains: 4,
-		number_of_titles: 5,
+		id: 'aiNews-8',
+		cluster_number: 8,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'Anthropic 資安模型 Mythos 引多國監管警戒，白宮擬開放聯邦機構使用',
-		short_summary:
-			'Anthropic 的資安旗艦模型 Mythos Preview 發布後，引起美、英、加三國金融監管機構高度警戒，擔憂強大的跨系統分析能力若被攻擊方利用將構成金融系統威脅。彭博（Bloomberg）報導白宮正積極協調允許美國聯邦機構合法使用 Mythos，TechNews 台灣版跟進。iThome 資安週報指出這標誌著 LLM 能力提升已成為國家級金融安全議題。',
-		emoji: '🔐',
-		did_you_know:
-			'Mythos Preview 名稱源自希臘語「神話」，暗示其能力被 Anthropic 內部視為跨越某種「傳說等級」的門檻。目前僅少數受信任的研究夥伴和政府機構獲得存取權限。',
+		title: 'OpenAI Agents SDK 重大進化：原生沙箱執行讓 AI 代理更安全',
+		short_summary: 'OpenAI 更新 Agents SDK，新增原生沙箱執行環境（native sandbox execution）與模型原生執行架構（model-native harness），讓開發者能建立更安全、能長時間執行的 AI 代理，支援跨檔案與跨工具操作。台灣教師（尤其是資訊科技與專題研究類教師）應關注：「AI 代理（AI Agent）」正成為 2026 年 AI 的核心形態——它不只是回答問題，而是能自主規劃並完成複雜任務的系統。理解 Agent 架構，有助於學生未來在職場中有效運用 AI 工具。',
+		emoji: '🤖',
+		did_you_know: '「沙箱（sandbox）」在電腦科學中是一種隔離執行環境，防止程式對外部系統造成意外影響。Agents SDK 加入原生沙箱，代表 OpenAI 正積極解決 AI 代理在執行真實任務時的安全性問題——這也是目前業界最關注的 AI 落地挑戰之一。',
 		talking_points: [
-			'Mythos Preview 已展現強大的跨系統分析能力——可跨多個平台分析資安弱點、識別攻擊路徑——這種能力在攻擊方手中等同於「自動化的進階持續性滲透（APT）工具」。',
-			'美、英、加三國金融監管機構進入警戒狀態：核心擔憂不是 Anthropic 本身，而是「強大 LLM 如果被竊取或濫用」對現有金融基礎設施的衝擊。',
-			'彭博報導白宮協調允許聯邦機構使用 Mythos，顯示 AI 模型的「誰可以用」已成為國家安全政策的核心議題，而非只是商業授權問題。',
-			'iThome 資安週報（0413–0417 期）分析：這代表監管機構第一次把特定 LLM 的能力提升視為「系統性金融風險」，而非個案資安事件。',
-			'對台灣的連結：台灣金融監理機構（金管會）尚未就 LLM 資安風險發出警示，但美英加的警戒代表這類法規討論可能在未來 1-2 年進入台灣政策議程。',
+			'Agents SDK 新增 native sandbox execution，AI 代理可在隔離環境中安全執行程式碼',
+			'model-native harness 架構讓不同模型能更無縫地在代理框架中協作',
+			'支援長時間執行任務（long-running agents），突破過去 AI 只能短暫互動的限制',
+			'跨檔案、跨工具操作能力大幅提升，AI 代理可處理更複雜的現實工作流程',
+			'資訊教師可引導學生討論：能自主執行任務的 AI 代理，帶來哪些新的倫理與控制問題？',
 		],
+		quote: 'OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools.',
+		quote_attribution: 'OpenAI, 2026-04-15',
+		quote_source_url: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
+		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: 'iThome 資安週報分析：美英加監管機構警戒 LLM 模型能力提升是重要的政策轉折點——從「AI 是新工具」到「強大 AI 是系統性金融風險」的認知升級，代表監管思維正在追趕技術能力的曲線。',
+				text: '從 AI 工具教育角度：AI Agent 已從概念進入實際開發工具生態，學生未來在職場中將大量接觸「代理式 AI」。資訊教育應加入 Agent 基礎概念課程，讓學生理解任務分解、工具呼叫、安全邊界等核心設計思維，而不只是學會用聊天介面。',
 				sources: [
 					{
-						name: 'iThome 新聞',
-						url: 'https://www.ithome.com.tw/news/175148',
+						name: 'OpenAI',
+						url: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
 					},
 				],
-			},
-			{
-				text: 'TechNews 聚焦白宮協調面向：允許聯邦機構使用 Mythos 是一把雙面刃——政府獲得強大防禦工具，但同時也意味著確認了「模型能力已達到需要政府級治理」的門檻。',
-				sources: [
-					{
-						name: 'TechNews 科技新報',
-						url: 'https://technews.tw/2026/04/17/white-house-works-to-give-us-agencies-anthropic-mythos-ai/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-04-11',
-				date_iso: '2026-04-11',
-				content: 'Anthropic 發布 Mythos Preview，僅對受信任研究夥伴開放。',
-			},
-			{
-				date: '2026-04-17',
-				date_iso: '2026-04-17',
-				content: '彭博報導白宮擬允許聯邦機構使用 Mythos；iThome 資安週報確認美英加監管機構進入警戒狀態。',
 			},
 		],
 		articles: [
 			{
-				title: "Anthropic's new cybersecurity model could get it back in the government's good graces",
-				link: 'https://www.theverge.com/ai-artificial-intelligence/914229/tides-turning-anthropic-mythos',
-				domain: 'theverge.com',
-				date: '2026-04-17',
-			},
-			{
-				title: '彭博：白宮擬允許聯邦機構使用 AI 模型 Mythos',
-				link: 'https://technews.tw/2026/04/17/white-house-works-to-give-us-agencies-anthropic-mythos-ai/',
-				domain: 'technews.tw',
-				date: '2026-04-17',
-			},
-			{
-				title: '【資安週報】0413~0417，美英加監管機構警戒LLM模型能力提升恐威脅金融舊系統',
-				link: 'https://www.ithome.com.tw/news/175148',
-				domain: 'ithome.com.tw',
-				date: '2026-04-17',
+				title: 'The next evolution of the Agents SDK',
+				link: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
+				domain: 'openai.com',
+				date: '2026-04-15',
 			},
 		],
 		domains: [
-			{ name: 'theverge.com' },
-			{ name: 'technews.tw' },
-			{ name: 'ithome.com.tw' },
+			{ name: 'openai.com' },
 		],
 	},
 ];
 
 const aiApplicationsStories: Story[] = [
 	{
-		id: 'sai-app-001',
+		id: 'aiApplications-1',
 		cluster_number: 1,
-		unique_domains: 2,
-		number_of_titles: 2,
+		unique_domains: 21,
+		number_of_titles: 21,
 		category: 'AI 熱門應用',
-		title: 'World 虹膜掃描從加密貨幣擴張到 Tinder 與 Zoom：生物辨識身份驗證進入日常',
-		short_summary:
-			'Sam Altman 旗下新創 World（前稱 Worldcoin）本週宣布多項擴張：推出 Concert Kit 讓用戶以虹膜掃描購買演唱會門票，並宣布與 Tinder 整合（可驗證「你是真人而非 AI 帳號」）及 Zoom 整合（視訊會議前驗證身份）。The Verge 分析這是 World 正式進軍「日常身份驗證」市場的信號，從加密貨幣的邊緣應用走向主流消費場景。生物辨識身份認證的普及速度和隱私代價正在同步加速。',
-		emoji: '👁️',
-		did_you_know:
-			'World 的虹膜掃描裝置（Orb）目前全球已佈建超過 3,000 個地點，台灣暫無官方站點，但新加坡和香港均有佈建。Concert Kit 讓演唱會主辦單位可選擇「僅接受 World 驗證購票者」，實質上成為「真人驗證」的新標準。',
+		title: '本週 AI 應用熱點：ChatGPT 整合 Excel、Claude 新設計語言、本地 LLM 生態崛起',
+		short_summary: '本週 AI 應用市場動態密集：ChatGPT 推出 Excel 整合版本讓試算表直接對話；Anthropic 發布 Claude Design 設計語言，引發社群熱議（943 點讚）；本地 LLM 生態系的討論再次興起，有開發者主張停用 Ollama 改用更輕量方案；Claude 4.7 新版 tokenizer 成本分析獲 573 人關注。台灣教師可關注 ChatGPT for Excel 的直接教學應用潛力，以及 Claude 身分驗證政策對教育機構帳號管理的影響。',
+		emoji: '🚀',
+		did_you_know: '這週 Hacker News 上最受 AI 討論者關注的不是新模型發布，而是「Claude 4.7 tokenizer 成本分析」（573 點）和「Claude Design」（943 點）。這反映出 AI 開發社群的成熟度：大家開始關注成本效益和產品體驗，而非只追逐性能數字。',
 		talking_points: [
-			'Concert Kit 的商業邏輯：演唱會黃牛和 AI 帳號搶票是主辦單位長期痛點，World 虹膜驗證「一人一票、不可轉移」的機制直接解決這個問題——但代價是用戶必須先掃描虹膜。',
-			'Tinder 整合的核心訴求：在 AI 生成假帳號盛行的交友 App 生態中，World 驗證提供「這個帳號對應真實生物」的保證，對厭倦假帳號的用戶是吸引力，對隱私敏感者則是警示。',
-			'Zoom 整合展示了「工作場景的身份驗證市場」：企業視訊會議中確認「真人」出席的需求正在因 AI 深偽技術而急速上升。',
-			'The Verge 分析 World 的策略轉向：從「加密貨幣空投換取虹膜」到「日常服務的身份認證基礎設施」——這是生物辨識資料貨幣化的下一個階段。',
-			'隱私爭議：世界各地已有多個國家（德國、英國）調查 World 的資料收集合法性；台灣尚無相關監管動作，但使用者在決定是否參與前應了解其資料政策。',
+			'ChatGPT for Excel 正式推出，使用者可直接在試算表中使用 ChatGPT 分析數據與公式',
+			'Anthropic 發布 Claude Design 設計語言系統，獲 Hacker News 社群 943 點關注',
+			'Claude 4.7 新版 tokenizer 成本分析顯示計費方式改變，開發者需重新估算 API 費用',
+			'Claude.ai 與 API 發生服務中斷事件，引發 243 名用戶回報反映服務穩定性問題',
+			'Anthropic 宣布部分情況下 Claude 需要進行身分驗證，教育機構需了解帳號管理政策',
 		],
+		quote: 'Claude Design',
+		quote_attribution: 'Anthropic, 2026-04-17',
+		quote_source_url: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
+		quote_source_domain: 'anthropic.com',
 		perspectives: [
 			{
-				text: 'INSIDE 從商業擴張角度報導：World 從加密貨幣邊緣走向日常服務，Concert Kit 是最具說服力的落地案例——演唱會門票對真人驗證有強烈需求，World 的時機選擇精準。',
+				text: '從教學工具角度：ChatGPT for Excel 讓 AI 資料分析進入試算表，這對高中統計、經濟、社會學科有直接應用潛力。教師可設計讓學生用 AI 分析真實數據集的學習任務，培養數據思維與 AI 協作能力。',
 				sources: [
 					{
-						name: 'INSIDE',
-						url: 'https://www.inside.com.tw/article/41105-buy-concert-tickets-by-scanning-your-iris',
+						name: 'ChatGPT (OpenAI)',
+						url: 'https://chatgpt.com/apps/spreadsheets/',
+					},
+					{
+						name: 'Anthropic',
+						url: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
 					},
 				],
 			},
 			{
-				text: 'The Verge 側重隱私批評角度：虹膜掃描是不可更換的生物特徵，一旦資料庫被攻擊或企業政策改變，用戶無法「重設」自己的生物辨識資料——這與密碼外洩「換密碼就好」的情境本質不同。',
+				text: '從 AI 生態角度：simonwillison.net 的文章分析指出，本地執行的 Qwen3.6 模型在部分創意任務上表現優於 Claude Opus 4.7，顯示開源模型與商業模型的差距正在縮小。教師關注開源 LLM 的發展，有助於理解未來 AI 工具的多元化選擇。',
 				sources: [
 					{
-						name: 'AI | The Verge',
-						url: 'https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity',
+						name: 'simonwillison.net',
+						url: 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/',
+					},
+					{
+						name: 'sleepingrobots.com',
+						url: 'https://sleepingrobots.com/dreams/stop-using-ollama/',
 					},
 				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-04-15',
+				date_iso: '2026-04-15',
+				content: 'ChatGPT for Excel 正式上線；Claude 發生服務中斷事件；Anthropic 宣布身分驗證政策',
+			},
+			{
+				date: '2026-04-16',
+				date_iso: '2026-04-16',
+				content: '開發者發布本地 LLM 生態與 Ollama 替代方案討論；simonwillison 分析 Qwen 模型表現',
+			},
+			{
+				date: '2026-04-17',
+				date_iso: '2026-04-17',
+				content: 'Anthropic 發布 Claude Design 設計語言；Claude 4.7 tokenizer 成本分析獲社群高度關注',
 			},
 		],
 		articles: [
 			{
-				title: '掃描虹膜買演唱會門票？Sam Altman 旗下新創 World 推出 Concert Kit、擴大進軍 Tinder 與 Zoom',
-				link: 'https://www.inside.com.tw/article/41105-buy-concert-tickets-by-scanning-your-iris',
-				domain: 'inside.com.tw',
-				date: '2026-04-18',
+				title: 'Claude Design',
+				link: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
+				domain: 'anthropic.com',
+				date: '2026-04-17',
 			},
 			{
-				title: 'Should you stare into Sam Altman\'s orb before your next date?',
-				link: 'https://www.theverge.com/ai-artificial-intelligence/914385/world-id-tinder-identity',
-				domain: 'theverge.com',
+				title: 'Measuring Claude 4.7\'s tokenizer costs',
+				link: 'https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you',
+				domain: 'claudecodecamp.com',
 				date: '2026-04-17',
+			},
+			{
+				title: 'ChatGPT for Excel',
+				link: 'https://chatgpt.com/apps/spreadsheets/',
+				domain: 'chatgpt.com',
+				date: '2026-04-15',
+			},
+			{
+				title: 'Elevated errors on Claude.ai, API, Claude Code',
+				link: 'https://claudestatus.com/',
+				domain: 'claudestatus.com',
+				date: '2026-04-15',
+			},
+			{
+				title: 'Claude may require identity verification in some cases',
+				link: 'https://support.claude.com/en/articles/14328960-identity-verification-on-claude',
+				domain: 'support.claude.com',
+				date: '2026-04-15',
+			},
+			{
+				title: 'Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7',
+				link: 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/',
+				domain: 'simonwillison.net',
+				date: '2026-04-16',
+			},
+			{
+				title: 'The local LLM ecosystem doesn\'t need Ollama',
+				link: 'https://sleepingrobots.com/dreams/stop-using-ollama/',
+				domain: 'sleepingrobots.com',
+				date: '2026-04-16',
 			},
 		],
 		domains: [
-			{ name: 'inside.com.tw' },
-			{ name: 'theverge.com' },
+			{ name: 'anthropic.com' },
+			{ name: 'claudecodecamp.com' },
+			{ name: 'chatgpt.com' },
+			{ name: 'claudestatus.com' },
+			{ name: 'support.claude.com' },
+			{ name: 'simonwillison.net' },
+			{ name: 'sleepingrobots.com' },
 		],
 	},
 ];
 
 const aiEduStories: Story[] = [
 	{
-		id: 'sai-edu-001',
+		id: 'aiEducation-1',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI × 教育',
-		title: 'JAMA 研究：AI 早期診斷錯誤率逾 80%，對 AI 輔助醫療的期待需要重新校準',
-		short_summary:
-			'【本研究目前為單一來源（iThome 引述 JAMA），待其他媒體跟進確認】美國醫學期刊（JAMA）發表研究，檢測多個主流 AI 模型在早期疾病診斷任務的錯誤率，結果顯示整體錯誤率超過 80%。這不是說 AI 在醫療上毫無用處，而是揭示了「AI 輔助診斷」與「AI 替代診斷」之間存在巨大的能力落差——在需要整合病史、症狀模式、實驗室數值的複雜臨床推理中，現有 LLM 仍遠不可靠。這個發現對正在評估 AI 輔助學習工具的教育工作者同樣有啟示：高錯誤率場景需要人工驗證環節，不能直接依賴輸出。',
-		emoji: '🏥',
-		did_you_know:
-			'JAMA 是「美國醫學會雜誌（Journal of the American Medical Association）」的縮寫，是全球引用率最高的醫學期刊之一。發表在 JAMA 的研究通常需要通過同儕審查，研究方法論的可信度較高，但這也意味著其結論往往比業界宣傳更為保守謹慎。',
+		title: 'MIT 頒發 Edgerton 教學獎：EECS 副教授以 AI 語言研究獲肯定',
+		short_summary: 'MIT 宣布 2026 年 Edgerton Award 得主，其中電機工程與電腦科學（EECS）系副教授因在 AI 語言理解研究與教學上的傑出貢獻獲獎。Edgerton Award 是 MIT 頒給傑出年輕教師的重要獎項，強調研究、教學與服務的三重卓越。台灣高中教師可從這則新聞中獲得啟發：頂尖大學如何評估「AI 時代優秀教師」的標準？整合前沿研究與教學的能力，正成為全球教育體系中不可忽視的競爭力指標。',
+		emoji: '🏆',
+		did_you_know: 'MIT Edgerton Award 以 Harold \'Doc\' Edgerton 命名，他是高速攝影技術的發明者，也是 MIT 歷史上最受愛戴的教師之一。Edgerton 不只是傑出研究者，更以「讓複雜科學變得有趣易懂」聞名，這個精神與今日 AI 教育推廣的核心理念不謀而合。',
 		talking_points: [
-			'【JAMA 研究，iThome 2026-04-17 報導】多個主流 AI 模型在早期診斷任務中錯誤率超過 80%——這是同儕審查研究的數字，不是評論者的主觀感受。',
-			'錯誤率高的核心原因：早期診斷需要整合多維度資訊（症狀時序、藥物史、家族病史、實驗室數值、影像），現有 LLM 在「整合不確定性資訊並給出保守判斷」的能力上仍有根本限制。',
-			'重要區分：「AI 輔助」（AI 提供建議，醫生決策）vs「AI 替代」（AI 直接給出診斷）——這個錯誤率說明的是後者的不可靠，而不是前者的無用。',
-			'教育類比：AI 在學習評量中的應用同樣存在這個區分。AI 批改作文可以輔助教師，但若直接依賴 AI 評分決定學生成績，需要先了解其在特定科目的錯誤率。',
-			'對高中物理教師的具體啟示：AI 在需要圖形理解 + 數學推理的題目（電路分析、力學計算）上的錯誤率尤為值得關注，這類「多模態推理」任務與醫療診斷面臨類似挑戰。',
+			'2026 年 MIT Edgerton Award 頒給 EECS 系副教授（AI 語言研究領域）與化學系副教授',
+			'Edgerton Award 評量標準：研究卓越、教學創新、服務貢獻三項並重',
+			'獲獎教師的 AI 語言研究直接應用於自然語言處理與教學技術開發',
+			'此案例展示：AI 研究者同時具備優秀教學能力，是全球頂尖大學培養的複合型人才典範',
 		],
-		quote:
-			'AI 診斷錯誤率超過 80%，顯示現有語言模型在複雜臨床推理任務中仍有根本的可靠性問題。',
-		quote_attribution: 'iThome 引述 JAMA 研究，2026-04-17',
-		quote_source_url: 'https://www.ithome.com.tw/news/175146',
-		quote_source_domain: 'ithome.com.tw',
+		quote: 'The associate professors of EECS and chemistry, respectively, are honored for exceptional contributions to teaching, research, and service at MIT.',
+		quote_attribution: 'MIT News, 2026-04-17',
+		quote_source_url: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
+		quote_source_domain: 'news.mit.edu',
 		perspectives: [
 			{
-				text: '（單一來源觀點）iThome 報導此結果時強調「AI 診斷的高錯誤率」，但同時指出這是針對「早期」診斷的評測——早期診斷的資訊本來就更模糊，人類醫師在同樣條件下的錯誤率也不低，兩者的公平比較需要更多方法論細節。',
+				text: '從教師專業發展角度：MIT 對優秀教師的定義整合了研究、教學與服務，而非單獨強調其中一項。這對台灣高中教師有借鑑意義：AI 時代的優秀教師，應能持續追蹤領域前沿（研究素養）、設計有效學習經驗（教學能力）、並積極貢獻社群（服務精神）。',
 				sources: [
 					{
-						name: 'iThome 新聞',
-						url: 'https://www.ithome.com.tw/news/175146',
+						name: 'MIT News',
+						url: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
 					},
 				],
 			},
 		],
 		articles: [
 			{
-				title: '美國醫學期刊研究顯示AI早期診斷錯誤率逾80%',
-				link: 'https://www.ithome.com.tw/news/175146',
-				domain: 'ithome.com.tw',
-				date: '2026-04-17',
-			},
-		],
-		domains: [
-			{ name: 'ithome.com.tw' },
-		],
-	},
-	{
-		id: 'sai-edu-002',
-		cluster_number: 2,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI × 教育',
-		title: 'MIT 開源 AI 蛋白質設計工具：讓實驗室生物學家不需要程式背景也能使用',
-		short_summary:
-			'【本研究目前為單一來源（MIT News）】MIT 研究人員開發出一套 AI 驅動的蛋白質設計工具，並以開源方式發布，目標是讓沒有程式設計背景的實驗室生物學家也能直接使用。這是「AI 降低科學研究工具的技術門檻」的典型案例：過去需要計算生物學家才能操作的分子設計流程，現在透過 AI 介面讓實驗科學家也能執行。對物理教師而言，這個模式（AI 把複雜工具的操作門檻降低，讓領域專家聚焦在領域判斷上）也是 AI 融入學科教學的核心價值所在。',
-		emoji: '🧬',
-		did_you_know:
-			'蛋白質設計是現代藥物開發的核心步驟，傳統上需要計算生物學家花費數週運算才能提出候選蛋白質結構。MIT 這套工具的意義不只是「更快」，而是「讓更多領域的人可以提出假設」——把科學探索的入口點向下移動，可能大幅增加有效假設的數量。',
-		talking_points: [
-			'【MIT News，2026-04-17】MIT 開源 AI 蛋白質設計工具，設計時刻意針對「不會寫程式的實驗室生物學家」——這意味著工具的輸入介面是生物學語言，而非程式碼或命令列。',
-			'工具的教育意義：大學生命科學實驗課可以讓學生操作 AI 設計蛋白質，而不是只讀教科書上的案例——這種「AI 讓學生真正動手做研究」的應用值得台灣高中/大學科學教師關注。',
-			'能力邊界的重要性：MIT 研究者強調工具的適用範圍（哪類蛋白質設計任務可以信任 AI 結果），這種「說清楚工具的限制」的做法，是負責任的 AI 工具設計的標準。',
-			'開源決策的影響：與商業 AI 工具不同，開源讓學術社群可以審視、修改、改進工具本身——這對研究工具的可信度和長期進化速度都有重要影響。',
-			'跨域啟示：「AI 作為領域工具的民主化介面」這個模式，正在科學研究的各個子領域複製——今天是蛋白質設計，明天可能是物理模擬、材料科學、教學素材生成。',
-		],
-		perspectives: [
-			{
-				text: '（單一來源觀點）MIT News 報導側重工具的可及性設計（accessibility design）——為非程式背景的科學家設計介面是刻意的工程選擇，代表 MIT 研究者把「能被更多人用到」列為工具成功的核心指標，而非只追求技術指標。',
-				sources: [
-					{
-						name: 'MIT News - Artificial intelligence',
-						url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-to-biologists-everywhere',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Bringing AI-driven protein-design tools to biologists everywhere',
-				link: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-to-biologists-everywhere',
+				title: 'Jacob Andreas and Brett McGuire named Edgerton Award winners',
+				link: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
 				domain: 'news.mit.edu',
 				date: '2026-04-17',
 			},
@@ -427,172 +552,98 @@ const aiEduStories: Story[] = [
 			{ name: 'news.mit.edu' },
 		],
 	},
-];
-
-const aiClassroomStories: Story[] = [
 	{
-		id: 'sai-cls-001',
-		cluster_number: 1,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: 'AI 整理 Google Drive 教學資源：從混亂資料夾到可搜尋的備課系統',
-		short_summary:
-			'Class Tech Tips 本週提供完整的 AI 輔助整理教學資源指南：用 AI 設計命名規則、依課程標準自動分類、清理 Google Drive 雜亂結構。核心方法是把現有資料夾結構貼給 AI，請它依「學年 × 單元 × 資料類型」建立命名架構，再批次執行。對長期累積了大量教學素材但「找不到想要的那份」的教師，這是一個可在一個下午內完成的系統整理方案。',
-		emoji: '🗂️',
-		did_you_know:
-			'Class Tech Tips 建議的一個反直覺技巧：在請 AI 整理資料夾前，先讓 AI 列出「你目前有哪些冗餘或過時的材料」——大多數老師的 Google Drive 裡有 20-30% 是從來不用的舊版本，清理前先盤點，比直接重新命名更有效率。',
-		talking_points: [
-			'具體步驟：①列出現有資料夾結構（可截圖或文字列表）→ ②貼給 Gemini/ChatGPT，提示「我是高中物理老師，請設計一套依課程標準的命名系統」→ ③按建議批次重新命名 → 整個流程約 1–2 小時。',
-			'Class Tech Tips 建議的分類維度：學科 × 學年 × 教學單元 × 資料類型（簡報、習題、評量、影片連結）——這個四維架構適合大多數台灣高中科目教師。',
-			'Google Drive 搜尋的隱藏功能：命名規則一致後，可以用「type:presentation 力學」這類進階搜尋語法，比靠資料夾瀏覽快 10 倍以上。',
-			'AI 協助的核心價值不是自動化本身，而是「強迫你說清楚自己的整理邏輯」——你需要向 AI 解釋你的課程結構，這個思考過程本身就有助於整理教學知識體系。',
-			'長期維護建議：每學期末花 30 分鐘，讓 AI 掃描新增材料並建議歸類位置，避免累積成新的混亂。',
-		],
-		perspectives: [
-			{
-				text: 'Class Tech Tips 強調：AI 整理資源的最大價值在於「逼使你明確表達自己的整理邏輯」——哪些依課標、哪些依班級、哪些依格式，這個思考過程本身就是有價值的。工具整理了 Drive，但真正的產出是一套你自己清楚的知識組織系統。',
-				sources: [
-					{
-						name: 'Class Tech Tips',
-						url: 'https://classtechtips.com/2026/04/15/organize-teaching-resources/',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'How to Use AI to Organize Teaching Resources',
-				link: 'https://classtechtips.com/2026/04/15/organize-teaching-resources/',
-				domain: 'classtechtips.com',
-				date: '2026-04-15',
-			},
-		],
-		domains: [
-			{ name: 'classtechtips.com' },
-		],
-	},
-	{
-		id: 'sai-cls-002',
+		id: 'aiEducation-2',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: 'Claim Auditor：輸入「據研究顯示…」，AI 幫你搜尋同儕審查論文驗證真偽',
-		short_summary:
-			'Larry Ferlazzo 介紹新工具「The Claim Auditor」：輸入任何宣稱有研究支持的論點，AI 自動搜尋同儕審查資料庫，回傳「是否找到支持研究」與「研究的限制條件」。測試案例包括「小班教學有助學習成效」——AI 找到了支持研究，但也標注了適用條件。這個工具解決教師日常的一個具體痛點：引用教學策略研究時，快速初步核實是否有學術依據，而不是只靠一篇部落格的說法。',
-		emoji: '🔍',
-		did_you_know:
-			'Claim Auditor 的回應方式是「有但有但書」，而非簡單的「是/否」——這種「提供支持研究並同時標注限制條件」的回答方式，比直接 Google 或問 ChatGPT 更接近真正學術核查的標準，因為它強迫用戶面對研究本身的適用邊界。',
+		category: 'AI × 教育',
+		title: 'MIT 校友創辦 OpenProtein.AI：將 AI 蛋白質設計工具開源給全球研究者',
+		short_summary: '兩位 MIT 畢業的創業者共同創辦 OpenProtein.AI，將 AI 蛋白質工程設計工具以開源方式提供給全球生物學研究者，降低進入門檻。台灣生物教師與自然科教師應特別關注：這類平台讓高中生與大學生也能接觸到原本只有頂尖實驗室才有的 AI 生物工具，為台灣下一代的生命科學人才打開了新的學習路徑。教師可引導有興趣的學生進一步探索 AI 在蛋白質工程（如 AlphaFold）的應用，連結課綱中的生物科技與基因工程單元。',
+		emoji: '🔬',
+		did_you_know: '蛋白質折疊問題被認為是生命科學領域五十年來最難解的問題之一。2020 年 DeepMind 的 AlphaFold2 一舉解決這個問題，震驚科學界，並在 2024 年讓相關研究者獲得諾貝爾化學獎。OpenProtein.AI 正是站在這個科學突破的肩膀上，將工具平民化。',
 		talking_points: [
-			'Claim Auditor（theclaim auditor.com）免費使用，支援英文論點查核，操作方式：直接輸入論點句子，不需要搜尋關鍵字——工具會自動拆解論點並比對文獻。',
-			'教師的典型使用場景：備課時想確認「主動學習比講授更有效」、「間隔複習比集中學習好」等常被引用的教育研究是否真的有同儕審查依據。',
-			'工具的限制（重要）：Claim Auditor 核查的是「有無相關論文存在」，而非「論文品質高低」或「是否已被後續研究推翻」——做完初步核查後仍需配合學科判斷。',
-			'對物理教師的應用：在設計 STEM 課程時引用「動手做比聽課更能記住物理概念」等論點，先用 Claim Auditor 確認是否有研究支持，可以讓你對家長和學校的說明更有說服力。',
-			'Ferlazzo 同期也測試了「翻轉課堂提升學習成效」這個論點，結果是「有研究支持，但效果大小因科目和實施品質差異很大」——這種帶有細緻條件的回應，比單純的「有/沒有」更有使用價值。',
+			'OpenProtein.AI 由 MIT 校友創辦（Tristan Bepler 博士 \'20 與前 MIT 教授 Tim Lu 博士 \'07）',
+			'提供開源 AI 蛋白質工程模型，讓無法負擔昂貴計算資源的研究者也能使用',
+			'工具民主化的意義：頂尖實驗室的 AI 能力正在以開源方式向全球擴散',
+			'台灣生技產業可直接受益，高中生物課可用此案例介紹 AI 驅動的生命科學研究趨勢',
 		],
+		quote: 'Founded by MIT alumni, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.',
+		quote_attribution: 'MIT News, 2026-04-17',
+		quote_source_url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
+		quote_source_domain: 'news.mit.edu',
 		perspectives: [
 			{
-				text: 'Larry Ferlazzo 的觀點：Claim Auditor 代表「AI 作為查核工具」而非「AI 作為權威」的使用方式——它的價值是快速初篩，給你一個「值得進一步查」的信號，而不是取代你的學科判斷。這是教師應該建立的 AI 使用心態模型。',
+				text: '從科學教育角度：OpenProtein.AI 的開源模式讓 AI 生命科學工具不再是大型研究機構的專利。高中生物教師可以介紹此平台作為「AI 民主化」的教育案例，並引導學生思考：開源科學工具如何加速全球知識擴散？台灣學生能如何參與這波浪潮？',
 				sources: [
 					{
-						name: "Larry Ferlazzo's Websites of the Day…",
-						url: 'https://larryferlazzo.edublogs.org/2026/04/15/the-claim-auditor-uses-ai-to-verify-claims-that-people-say-are-research-based/',
+						name: 'MIT News',
+						url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
 					},
 				],
 			},
 		],
 		articles: [
 			{
-				title: '"The Claim Auditor" Uses AI To Verify…Claims That People Say Are Research-Based',
-				link: 'https://larryferlazzo.edublogs.org/2026/04/15/the-claim-auditor-uses-ai-to-verify-claims-that-people-say-are-research-based/',
-				domain: 'larryferlazzo.edublogs.org',
-				date: '2026-04-15',
+				title: 'Bringing AI-driven protein-design tools to biologists everywhere',
+				link: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
+				domain: 'news.mit.edu',
+				date: '2026-04-17',
 			},
 		],
 		domains: [
-			{ name: 'larryferlazzo.edublogs.org' },
+			{ name: 'news.mit.edu' },
+		],
+	},
+	{
+		id: 'aiEducation-3',
+		cluster_number: 3,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI × 教育',
+		title: '《自然》期刊：AI 擴散模型挑戰「內隱聯結測驗」的測量機制',
+		short_summary: '發表於《Nature Human Behaviour》的大規模研究，使用「競速擴散模型（racing diffusion models）」分析超過 115,601 份內隱聯結測驗（IAT）資料，橫跨 39 個主題，對這一廣泛使用的心理測量工具的背後機制提出挑戰。台灣教師（尤其是社會、公民、心理學相關課程教師）應了解：IAT 是許多「無意識偏見」教育訓練的基礎工具；若其測量機制受到質疑，相關教育課程與人才評估方法都需要重新檢視，體現了 AI 分析工具對社會科學研究帶來的深遠影響。',
+		emoji: '🧠',
+		did_you_know: '內隱聯結測驗（IAT）自 1998 年發明以來，已有超過 2000 萬次線上測試紀錄，被廣泛用於測量對種族、性別、年齡的無意識偏見。許多企業的「多元共融（D&I）」培訓課程都以 IAT 為基礎，但其科學有效性長期存在爭議。這篇分析 11 萬份資料的大規模研究，是迄今最有力的機制質疑。',
+		talking_points: [
+			'研究分析 115,601 份 IAT（內隱聯結測驗）資料，樣本橫跨 39 個不同主題',
+			'使用 racing diffusion models 這一 AI 分析方法，對 IAT 的測量機制提出系統性質疑',
+			'發表在《Nature Human Behaviour》，屬於高影響力同儕審查期刊',
+			'對教育意義：許多多元包容訓練課程以 IAT 為基礎，若機制有問題，需重新評估課程效度',
+			'這個研究本身也展示了 AI 大規模數據分析如何推動社會科學研究方法論的進步',
+		],
+		quote: 'Using racing diffusion models to analyse 115,601 implicit association tests across 39 topics',
+		quote_attribution: 'Nature Human Behaviour, 2026-04-16',
+		quote_source_url: 'https://www.nature.com/articles/s41562-026-02439-y',
+		quote_source_domain: 'nature.com',
+		perspectives: [
+			{
+				text: '從研究方法論角度：這篇論文展示了 AI 分析技術（racing diffusion models）如何讓以前無法處理的超大規模心理學資料成為可能。教師可藉此告訴學生：AI 不只是應用工具，更是推進科學研究的方法論創新——這是 AI 時代研究者必須具備的新視野。',
+				sources: [
+					{
+						name: 'Nature Human Behaviour',
+						url: 'https://www.nature.com/articles/s41562-026-02439-y',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Challenging the mechanism for the implicit association test',
+				link: 'https://www.nature.com/articles/s41562-026-02439-y',
+				domain: 'nature.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'nature.com' },
 		],
 	},
 ];
 
-const twEduStories: Story[] = [
-	{
-		id: 'stw-edu-001',
-		cluster_number: 1,
-		unique_domains: 2,
-		number_of_titles: 2,
-		category: '教育政策',
-		title: 'arXiv 審計 TikTok 演算法：30 帳號 8,727 影片，心理健康內容佔 45% 無法逃脫',
-		short_summary:
-			'arXiv 發表研究（arXiv:2604.14832），以 30 個全新帳號、7 天審計、8,727 部推薦影片，測試不同互動策略對 TikTok 推送心理健康內容的影響。結果顯示：主動互動的帳號每日推薦中有 45% 是心理健康相關內容；即便採迴避或被動策略，也有 11–20% 無法逃脫。同期台灣 join.gov.tw 出現提案要求取消高中全面收取手機，改以規範使用為原則。arXiv 這項研究提供了「問題不在設備本身，而在演算法結構」的具體量化依據，直接切入台灣手機政策辯論的核心。',
-		emoji: '📱',
-		did_you_know:
-			'這篇 arXiv 研究的創新方法論是用「LLM 代理人」模擬不同類型青少年用戶（主動互動型、迴避型、被動型），是首次以 AI 代理人大規模審計社群媒體演算法的學術研究。這個方法讓研究者在不需要真實青少年參與實驗的情況下，系統性地測試演算法行為。',
-		talking_points: [
-			'【arXiv:2604.14832，單一來源，權威來源 arXiv】主動互動策略使每日推薦中約 45% 為心理健康相關；迴避或被動策略降至 11–20%，但無法完全歸零。',
-			'關鍵發現：演算法對用戶行為模式（停留、按讚、搜尋）的反應比初始搜尋意圖更決定性——即使開始時無意接觸敏感內容，行為累積後仍會觸發演算法鎖定。',
-			'對台灣手機政策的直接意義：join.gov.tw 上的手機禁令提案從「公平性與自主性」角度主張規範而非禁止，這篇研究從「演算法的系統性傷害」角度提供了支持管制的實證——兩者構成完整的政策辯論框架。',
-			'研究建議：平台應能「區分求助行為與痛苦表達」，但目前演算法無此能力，把兩類行為統一導向更多心理健康內容推送，反而可能加重接觸敏感內容的頻率。',
-			'對教師的具體啟示：管制的切入點應是「演算法設計規範」（要求平台提供時間限制工具、危害內容分類白名單），而非只規定設備沒收時間。',
-		],
-		quote:
-			'Engagement rapidly saturates feeds with mental health content (~45% of daily recommendations), while avoidance and passive viewing reduce but do not eliminate exposure (~11-20%).',
-		quote_attribution: 'arXiv:2604.14832，2026-04-17',
-		quote_source_url: 'https://arxiv.org/abs/2604.14832',
-		quote_source_domain: 'arxiv.org',
-		perspectives: [
-			{
-				text: '學術研究角度（arXiv）：這是首個以 LLM 代理人系統性審計 TikTok 演算法的實證研究，方法論創新度高。「行為模式比搜尋意圖更重要」的發現，對校園使用規範的設計有直接影響——學生是否「想」找心理健康內容不重要，只要他們的使用行為符合特定模式就會被演算法鎖定。',
-				sources: [
-					{
-						name: 'cs.CY updates on arXiv.org',
-						url: 'https://arxiv.org/abs/2604.14832',
-					},
-				],
-			},
-			{
-				text: '台灣政策角度（join.gov.tw）：手機禁令提案主張「規範使用取代全面禁止」，核心論點是「教學生管理科技比替學生管理科技更重要」。arXiv 研究提供的實證補強了這個論點的一個面向：問題不是手機設備，而是特定 App 的演算法設計需要監管。',
-				sources: [
-					{
-						name: '公共政策網路參與平臺',
-						url: 'https://join.gov.tw/idea/detail/446389f7-80c1-444f-b2ff-fc40712f31be',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-04-17',
-				date_iso: '2026-04-17',
-				content: 'arXiv 發表 TikTok 演算法審計研究（30 帳號、7 天、8,727 影片）。',
-			},
-			{
-				date: '2026-04-17',
-				date_iso: '2026-04-17',
-				content: 'join.gov.tw 出現「建議取消高中全面收取手機之作法，改以規範使用為原則」提案。',
-			},
-		],
-		articles: [
-			{
-				title: "Seeking Help, Facing Harm: Auditing TikTok's Mental Health Recommendations",
-				link: 'https://arxiv.org/abs/2604.14832',
-				domain: 'arxiv.org',
-				date: '2026-04-17',
-			},
-			{
-				title: '建議取消高中全面收取手機之作法，改以規範使用為原則',
-				link: 'https://join.gov.tw/idea/detail/446389f7-80c1-444f-b2ff-fc40712f31be',
-				domain: 'join.gov.tw',
-				date: '2026-04-17',
-			},
-		],
-		domains: [
-			{ name: 'arxiv.org' },
-			{ name: 'join.gov.tw' },
-		],
-	},
-];
+const aiClassroomStories: Story[] = [];
+
+const twEduStories: Story[] = [];
 
 export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_NEWS_UUID]: aiNewsStories,
