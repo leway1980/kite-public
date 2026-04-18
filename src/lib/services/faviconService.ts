@@ -27,12 +27,17 @@ const pendingRequests = new Map<string, Promise<void>>();
 // Callbacks waiting for favicon updates
 const callbacks = new Map<string, Set<FaviconCallback>>();
 
+// Public favicon services (no auth, no self-hosted proxy needed).
+// Google S2 is fast and broadly supported; DuckDuckGo's ip3 is a good backup
+// that often has icons Google misses. We use Google for the "fast" tier and
+// DuckDuckGo for the "best" tier so the two sources act as independent
+// fallbacks.
 function getGoogleFaviconUrl(domain: string): string {
-	return `/api/favicon-proxy?domain=${encodeURIComponent(domain)}&quality=fast`;
+	return `https://www.google.com/s2/favicons?sz=64&domain=${encodeURIComponent(domain)}`;
 }
 
 function getBestFaviconUrl(domain: string): string {
-	return `/api/favicon-proxy?domain=${encodeURIComponent(domain)}&quality=best`;
+	return `https://icons.duckduckgo.com/ip3/${encodeURIComponent(domain)}.ico`;
 }
 
 /**
