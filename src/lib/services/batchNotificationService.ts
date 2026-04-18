@@ -21,9 +21,15 @@ class BatchNotificationService {
 	private isConnecting = false;
 
 	/**
-	 * Connect to SSE endpoint and start listening for batch notifications
+	 * Connect to SSE endpoint. Disabled under adapter-static — we don't ship
+	 * a /api/sse/batches endpoint (would require a running function), and
+	 * batches only change at build time, so client notifications aren't useful.
 	 */
 	connect(): void {
+		return;
+	}
+
+	private _connectDisabled(): void {
 		if (!browser) return;
 
 		// Don't reconnect if already connected or connecting

@@ -26,26 +26,18 @@ class CategoryMetadataService {
 	private cache: CategoryMetadata[] | null = null;
 
 	/**
-	 * Fetch category metadata from the API
+	 * Fetch category metadata from the API.
+	 * Under adapter-static we don't ship /api/categories/metadata — this
+	 * endpoint was part of upstream Kagi's contribute/curation flow which
+	 * we don't expose. Return empty array so the contribute UI renders a
+	 * no-op state instead of spamming the console with fetch errors.
 	 */
 	async loadMetadata(): Promise<CategoryMetadata[]> {
 		if (this.cache) {
 			return this.cache;
 		}
-
-		try {
-			const response = await fetch('/api/categories/metadata');
-			if (!response.ok) {
-				throw new Error(`Failed to load category metadata: ${response.statusText}`);
-			}
-
-			const data: CategoriesMetadataResponse = await response.json();
-			this.cache = data.categories;
-			return this.cache;
-		} catch (error) {
-			console.error('Error loading category metadata:', error);
-			return [];
-		}
+		this.cache = [];
+		return this.cache;
 	}
 
 	/**
