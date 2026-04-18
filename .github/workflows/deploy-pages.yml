@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
+# 2026-04-18 站已遷 Cloudflare Pages（ai-edu-weekly.pages.dev，根路徑）
+# GH Pages deploy 停用但保留檔案，未來若要還原移除 workflow_dispatch 下的註解即可
 on:
-  push:
-    branches: [main]
+  # push:
+  #   branches: [main]
   workflow_dispatch:
 
 permissions:
