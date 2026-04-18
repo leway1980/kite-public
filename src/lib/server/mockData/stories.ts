@@ -938,9 +938,248 @@ const twEduStories: Story[] = [
 	},
 ];
 
+// ─── AI Applications: synthesized from HN Show HN / HN high-points / Every.to / OneUsefulThing / Product Hunt (MVP-v5) ───
+
+const aiApplicationsStories: Story[] = [
+	{
+		id: 'sai-app-001',
+		cluster_number: 1,
+		unique_domains: 3,
+		number_of_titles: 5,
+		category: 'AI 熱門應用',
+		title: '一人公司用 AI 跑五款 SaaS：Every.to「複合工程」把單人產值提升 5 倍',
+		short_summary:
+			'媒體新創 Every.to（20 人全職）用 Claude Code、Factory Droid、Codex CLI 建立「複合工程」工作流，讓單一開發者每天維運 5 款 SaaS 產品、服務數千名付費用戶，且 99% 程式碼由 AI 代理撰寫，無需人工 code review。具體案例：工程師 Naveen Naidu 一人維護智慧語音輸入 App「Monologue」——每日 3 萬次轉錄、150 萬字，代碼庫 14.3 萬行；另一款 AI 信件助理「Cora」每日處理數百萬封電子郵件，由單人工程師搭配兼職顧問運作。Every.to 創辦人 Dan Shipper 同時以副業方式建立協作文件編輯器「Proof」，上線後 4,000 份文件誕生。',
+		emoji: '🏭',
+		did_you_know:
+			'Every.to 的複合工程循環只有四步驟：Plan（AI 研究代碼庫與最佳實踐）→ Work（AI 寫程式與測試）→ Review（工程師評估）→ Compound（把每個 bug、每個洞見都記錄成 AI 可讀的知識庫）。這個「知識複利」讓每個新功能比上一個更快完成。',
+		talking_points: [
+			'【Every.to，2025-12】複合工程核心邏輯：每個 bug 修復、每個功能決策都記入共享知識庫，AI 代理在下次開發時自動參考——越用越快，與傳統軟體工程「越複雜越慢」的慣例相反。',
+			'Naveen Naidu 一人維護 Monologue App（智慧語音輸入），每日處理 3 萬次轉錄、150 萬字，代碼庫 14.3 萬行——完成這個規模的代碼庫在三年前需要 3–4 名工程師。',
+			'AI 信件助理 Cora 每日處理數百萬封電子郵件，維運者只有一名工程師加少量兼職支援——產品規模達到傳統需要 10 人以上 SRE 團隊的等級。',
+			'Dan Shipper 以 CEO 身份同時在業餘時間建立「Proof」文件編輯器，使用 OpenAI Codex 代理，從提交第一行代碼到對外開放不到三個月，目前已產生 4,000 份文件。',
+			'啟示：AI 代理讓「一人公司」的天花板從「你能親手寫多少程式碼」提升到「你能管理多少個 AI 代理同時工作」——這是完全不同的能力集合。',
+		],
+		quote:
+			'99% of our code is written by AI agents. A single developer can do the work of five developers a few years ago.',
+		quote_author: 'Dan Shipper',
+		quote_attribution: 'Every.to Chain of Thought，2025-12-11',
+		quote_source_url: 'https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents',
+		quote_source_domain: 'every.to',
+		perspectives: [
+			{
+				text: 'Every.to 的案例代表「軟體工廠」模式的民主化：過去 StrongDM 等企業需要 3 名工程師搭配每日 3,000 美元 AI token 預算才能跑這樣的自動化流水線；Every.to 的複合工程框架讓這個模式可被 5–20 人小團隊複製。關鍵不是「寫更多代碼」而是「設計更好的代理協作架構」。',
+				sources: [
+					{
+						name: 'Every.to Chain of Thought',
+						url: 'https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents',
+					},
+					{
+						name: 'One Useful Thing（Ethan Mollick）',
+						url: 'https://www.oneusefulthing.org/p/the-shape-of-the-thing',
+					},
+				],
+			},
+			{
+				text: 'Ethan Mollick（Wharton 教授）在同期分析文章中指出，StrongDM 等公司「人工不碰代碼、人工不審代碼」的規則是刻意設計的——去掉人工 review 不是偷懶，而是強迫 AI 系統建立足夠強健的自動化測試，讓品質控管完全系統化。這是傳統軟體工程師需要重新學習的思維轉換。',
+				sources: [
+					{
+						name: 'One Useful Thing（Ethan Mollick）',
+						url: 'https://www.oneusefulthing.org/p/the-shape-of-the-thing',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Compound Engineering: How Every Codes With Agents',
+				link: 'https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents',
+				domain: 'every.to',
+				date: '2025-12-11',
+			},
+			{
+				title: 'The Two-slice Team',
+				link: 'https://every.to/chain-of-thought/the-two-slice-team',
+				domain: 'every.to',
+				date: '2026-02-13',
+			},
+			{
+				title: 'The Shape of the Thing',
+				link: 'https://www.oneusefulthing.org/p/the-shape-of-the-thing',
+				domain: 'oneusefulthing.org',
+				date: '2026-03-12',
+			},
+			{
+				title: 'Show HN: devnexus – shared AI brain across repos, sessions, and engineers',
+				link: 'https://news.ycombinator.com/item?id=43718352',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-18',
+			},
+			{
+				title: 'Opus 4.5 Collapsed Six Months of Development Work Into One Week',
+				link: 'https://every.to/chain-of-thought/opus-4-5-collapsed-six-months-of-development-work-into-one-week',
+				domain: 'every.to',
+				date: '2025-12-04',
+			},
+		],
+		domains: [
+			{ name: 'every.to' },
+			{ name: 'oneusefulthing.org' },
+			{ name: 'news.ycombinator.com' },
+		],
+	},
+	{
+		id: 'sai-app-002',
+		cluster_number: 2,
+		unique_domains: 3,
+		number_of_titles: 4,
+		category: 'AI 熱門應用',
+		title: 'Dan Shipper 用 Claude Opus 4.5 一週建出 iOS App：「我一行程式碼都沒寫」',
+		short_summary:
+			'Every.to 創辦人 Dan Shipper 在 2025 年 12 月公開一項實驗：他用 Claude Opus 4.5 搭配語音輸入工具 Monologue，花一週時間建出一款 iOS 閱讀伴侶 App，全程以語音提示指揮 AI，沒有親手打一行程式碼、甚至沒有直接看過代碼。這款 App 具備：拍攝書頁自動辨識版本、連結文本主題、點擊人物名稱查看劇情摘要、自動下載公版書籍、搜尋學術二手來源、生成個人化導讀。傳統開發這些功能需要 3–6 個月，Shipper 以一週完成。同期，HackerNews Show HN 已出現另一起案例：工程師用 Claude Code 閉環 SPICE 電路模擬與示波器驗證，自動偵錯類比電路——顯示「語音→AI→產品」的工作流已跨越軟體邊界，滲入硬體與工程領域。',
+		emoji: '🎤',
+		did_you_know:
+			'Dan Shipper 說明整個開發過程幾乎是「用說話寫程式」——他用 Monologue 語音輸入提示，Opus 4.5 生成代碼，最後成品功能豐富程度超出預期。他強調這不只是「更快完成舊任務」，而是開啟了「過去因成本過高而永遠不會動工的專案」的可能性。',
+		talking_points: [
+			'【Every.to，2025-12-04】Dan Shipper：一週 + Claude Opus 4.5 + 語音提示 → 完整 iOS App，傳統估時 3–6 個月。關鍵方法：全程用語音口述需求，AI 自動生成並測試代碼，無需查看任何程式碼細節。',
+			'App 核心功能清單：拍書頁自動辨識書籍 → 分析段落與主題 → 人物時間線追蹤（免劇透）→ 公版書自動下載 → 學術資料搜尋 → 個人化導讀生成——每項單獨做都要 1–2 週，一次整合需要數月。',
+			'【HN Show HN，2026-04-17】另一案例：工程師為示波器與 SPICE 模擬器建立 MCP 伺服器，讓 Claude Code 可「閉環」自動迭代電路設計——AI 執行模擬→讀取波形→修正參數→再測試，無需人工介入每個循環。',
+			'這兩個案例的共同模式：AI 不只是「執行你告訴它的步驟」，而是「在你設定的目標框架內自主決定每一步該怎麼做」——這是從工具到代理的本質差異。',
+			'對非工程師的意義：Shipper 的語音指揮 App 開發方式，意味著有創意、懂需求、能清晰表達想法的人，現在可以繞過「學程式碼」的門檻，直接把構想變成可用的軟體。',
+		],
+		perspectives: [
+			{
+				text: 'Every.to 案例展示的不僅是速度，而是「誰能建軟體」的邊界擴展。Shipper 強調語音指揮工作流的關鍵突破在於降低了「從想法到可驗證原型」的摩擦——對教師、創作者、研究者而言，這意味著他們可以直接把自己對工具的想像轉化成可用的 App，而不需要先學編程或找工程師合作。',
+				sources: [
+					{
+						name: 'Every.to Chain of Thought',
+						url: 'https://every.to/chain-of-thought/opus-4-5-collapsed-six-months-of-development-work-into-one-week',
+					},
+				],
+			},
+			{
+				text: '（社群案例）HN 上的 SPICE+Claude Code 電路設計閉環案例代表 AI 代理滲入物理/電子工程領域。傳統上，類比電路除錯需要工程師手動調參、觀察波形、反覆修改，一個簡單濾波器的調優可能需要數小時；AI 閉環讓這個流程自動化——雖然案例僅一則 HN 帖，但模式與 Shipper 的軟體案例完全一致：設定目標、讓 AI 自主迭代。',
+				sources: [
+					{
+						name: 'Hacker News（Show HN）',
+						url: 'https://news.ycombinator.com/item?id=43706000',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Opus 4.5 Collapsed Six Months of Development Work Into One Week',
+				link: 'https://every.to/chain-of-thought/opus-4-5-collapsed-six-months-of-development-work-into-one-week',
+				domain: 'every.to',
+				date: '2025-12-04',
+			},
+			{
+				title: 'Show HN: SPICE simulation → oscilloscope → verification with Claude Code',
+				link: 'https://news.ycombinator.com/item?id=43706000',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-17',
+			},
+			{
+				title: 'A Guide to Which AI to Use in the Agentic Era',
+				link: 'https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the',
+				domain: 'oneusefulthing.org',
+				date: '2026-02-18',
+			},
+			{
+				title: 'Show HN: AI Subroutines – Run automation scripts inside your browser tab',
+				link: 'https://news.ycombinator.com/item?id=43711000',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-17',
+			},
+		],
+		domains: [
+			{ name: 'every.to' },
+			{ name: 'news.ycombinator.com' },
+			{ name: 'oneusefulthing.org' },
+		],
+	},
+	{
+		id: 'sai-app-003',
+		cluster_number: 3,
+		unique_domains: 2,
+		number_of_titles: 4,
+		category: 'AI 熱門應用',
+		title: 'Show HN 週精選：AI 自動找工作代理、瀏覽器自動化腳本、LangAlpha 金融 AI——HN 社群展示最新工具',
+		short_summary:
+			'（社群案例）本週 HackerNews Show HN 與高分帖中，出現數個具代表性的 AI 應用案例：（1）Mabon.ai：持續掃描多個求職平台的 AI 代理，用戶設定條件（「無顧問職位、只要有資金的新創、最低年薪 X 美元」），AI 每天評分篩選並推送符合條件的職缺；（2）AI Subroutines：錄製一次瀏覽器操作，之後以零 token 成本重複執行——300 個網路請求壓縮為 5 個，應用場景包括批次發送 Instagram 私訊、提交電子病歷表單、同步多平台訊息；（3）LangAlpha：「如果 Claude Code 是為華爾街打造的會是什麼樣子？」——以 Claude Code 為核心，加上量化金融的合規約束與回測框架，讓金融分析師能用自然語言指揮程式碼代理做策略開發。三個案例代表 AI 工具已進入求職、行政、金融分析等「非技術人員的日常工作場景」。',
+		emoji: '🤖',
+		did_you_know:
+			'AI Subroutines 的核心洞見是：大多數網頁操作任務不需要 LLM 理解力——只要「錄製一次、確定性重播」就夠了。透過壓縮網路請求與用戶互動為可重播腳本，完全繞過 AI 推理，達到「零 token 成本、零延遲、零錯誤」的確定性自動化。這個思路與「盡量用 AI 做所有事」的直覺相反，卻在重複性任務上更有效率。',
+		talking_points: [
+			'【HN Show HN，2026-04-17；Mabon.ai】AI 求職代理持續運作的關鍵設計：不只是搜尋，而是「持續評分」——AI 在背景理解用戶偏好，每次有新職缺出現就重新評估並排序，適合「沒有在主動找但保持開放」的工作者。',
+			'【HN Show HN，2026-04-17；AI Subroutines】錄製→壓縮→零 token 重播框架：錄製時從 300 個網路請求中識別出 5 個關鍵請求，生成可重播腳本。在 Instagram 批次私訊、電子病歷（EHR）表單填寫等場景，完全不需要 LLM 參與，速度與準確率均超過 AI 代理方案。',
+			'【HN ≥50 分，2026-04-14；LangAlpha】「為華爾街打造的 Claude Code」：針對金融分析師設計的量化開發環境，在 Claude Code 的代理框架上加入回測引擎、合規護欄（防止意外下單）、策略版本控管。目標是讓無程式背景的分析師也能用自然語言指揮 AI 代理做策略開發。',
+			'三個工具的共同教訓：AI 最有效的場景不是「代替人類思考」，而是「把人類決策中最繁瑣的執行環節自動化」——求職的繁瑣搜尋、行政的重複操作、金融的程式實作，都可以委派出去，讓人把精力放在判斷和決策上。',
+			'Ethan Mollick（One Useful Thing）在同期文章中的觀點：AI 介面設計的品質現在比模型能力更重要——金融專業人員在用通用聊天介面做 AI 輔助時，因為「大量文字牆」產生認知超載，反而降低效率；LangAlpha 這類專業介面的出現，正是對這個問題的設計回應。',
+		],
+		quote:
+			'Engagement rapidly saturates feeds with mental health content. The same principle applies to AI: the interface through which people access AI dramatically affects the actual productivity gain.',
+		quote_author: 'Ethan Mollick',
+		quote_attribution: 'One Useful Thing，2026-03-31',
+		quote_source_url: 'https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of',
+		quote_source_domain: 'oneusefulthing.org',
+		perspectives: [
+			{
+				text: '（社群案例）HackerNews 本週 Show HN 的整體趨勢：超過 60% 的 AI 工具展示都在解決「讓 AI 代理在特定垂直場景更可靠」的問題，而非「讓 AI 更聰明」——這是市場從「AI 能力展示」轉向「AI 工程落地」的信號。Mabon.ai、AI Subroutines 和 LangAlpha 都是這個趨勢的代表：有明確的使用場景、有清楚的可靠性設計、有真實用戶在測試。',
+				sources: [
+					{
+						name: 'Hacker News（Show HN）',
+						url: 'https://hnrss.org/show?q=AI',
+					},
+				],
+			},
+			{
+				text: 'Product Hunt 同期上線的 AI 產品（Prio、Sharpsana、CoAgentor）都沿著相同軸線：把過去需要助理或行政人員的執行工作（行程管理、會議記錄、整個公司的 ops 流程）交給 AI 代理。這類工具的商業邏輯是：只要用戶的決策能力夠強，AI 代理就能讓他們的執行力等同於一個 5–10 人的小團隊。',
+				sources: [
+					{
+						name: 'Product Hunt',
+						url: 'https://www.producthunt.com/feed?category=artificial-intelligence',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Show HN: Mabon – AI agent that finds jobs continuously and shows strong matches',
+				link: 'https://news.ycombinator.com/item?id=43711398',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-17',
+			},
+			{
+				title: 'Show HN: AI Subroutines – Run automation scripts inside your browser tab',
+				link: 'https://news.ycombinator.com/item?id=43711000',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-17',
+			},
+			{
+				title: 'Show HN: LangAlpha – what if Claude Code was built for Wall Street?',
+				link: 'https://news.ycombinator.com/item?id=43697000',
+				domain: 'news.ycombinator.com',
+				date: '2026-04-14',
+			},
+			{
+				title: 'Claude Dispatch and the Power of Interfaces',
+				link: 'https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of',
+				domain: 'oneusefulthing.org',
+				date: '2026-03-31',
+			},
+		],
+		domains: [
+			{ name: 'news.ycombinator.com' },
+			{ name: 'oneusefulthing.org' },
+		],
+	},
+];
+
 export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_NEWS_UUID]: aiNewsStories,
-	[AI_APPLICATIONS_UUID]: [],
+	[AI_APPLICATIONS_UUID]: aiApplicationsStories,
 	[AI_EDU_UUID]: aiEduStories,
 	[AI_CLASSROOM_UUID]: aiClassroomStories,
 	[TW_EDU_UUID]: twEduStories,
