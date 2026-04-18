@@ -669,22 +669,28 @@ export const categorySettings = $state({
 
 		const allCategoryIds = categoriesState.allCategories.map((cat) => cat.id);
 
-		// Our site only has a small, curated set of categories. Everything from
-		// the current batch is enabled by default.
-		const defaultEnabledCategories = allCategoryIds;
+		// Our site shows every category returned by the API. Compute enabled as
+		// allCategoryIds minus the user's explicit disabled set, which also handles:
+		// - stale entries from previous deployments (auto-purged)
+		// - new categories added server-side (auto-enabled for existing visitors)
+		const freshDisabled = this.disabled.filter((c) => allCategoryIds.includes(c));
+		const freshEnabled = allCategoryIds.filter((c) => !freshDisabled.includes(c));
 
-		// Purge stale entries (localStorage may hold categories from a previous
-		// deployment that no longer exist in our API).
-		const staleEnabled = this.enabled.filter((c) => !allCategoryIds.includes(c));
-		if (staleEnabled.length > 0 || this.enabled.length === 0) {
-			settings.enabledCategories.currentValue = [...defaultEnabledCategories];
-			categoriesState.enabled = [...defaultEnabledCategories];
-			settings.disabledCategories.currentValue = [];
-			categoriesState.disabled = [];
+		const enabledChanged =
+			freshEnabled.length !== this.enabled.length ||
+			freshEnabled.some((c) => !this.enabled.includes(c));
+		if (enabledChanged) {
+			settings.enabledCategories.currentValue = freshEnabled;
+			categoriesState.enabled = freshEnabled;
+		}
+		if (freshDisabled.length !== this.disabled.length) {
+			settings.disabledCategories.currentValue = freshDisabled;
+			categoriesState.disabled = freshDisabled;
 		}
 
 		const staleOrder = this.order.filter((c) => !allCategoryIds.includes(c));
-		if (staleOrder.length > 0 || this.order.length === 0) {
+		const missingFromOrder = allCategoryIds.filter((c) => !this.order.includes(c));
+		if (staleOrder.length > 0 || missingFromOrder.length > 0 || this.order.length === 0) {
 			settings.categoryOrder.currentValue = [...allCategoryIds];
 			categoriesState.order = [...allCategoryIds];
 		} else {
