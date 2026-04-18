@@ -54,15 +54,9 @@ async function downloadImageAsDataURL(src: string): Promise<string> {
 	const promise = new Promise<string>((resolve, reject) => {
 		(async () => {
 			try {
-				let fetchUrl = src;
-
-				// Use our proxy for kagiproxy.com URLs to avoid CORS issues
-				if (src.startsWith('https://kagiproxy.com/')) {
-					fetchUrl = `/api/image-proxy?url=${encodeURIComponent(src)}`;
-				}
-
-				// Fetch the image with abort signal
-				const response = await fetch(fetchUrl, { signal: controller.signal });
+				// Static build has no server-side proxy; fetch the image directly.
+				// Our self-synthesized data doesn't reference kagiproxy.com URLs.
+				const response = await fetch(src, { signal: controller.signal });
 				if (!response.ok) {
 					throw new Error(`Failed to fetch image: ${response.status}`);
 				}
@@ -103,16 +97,11 @@ async function downloadImageAsDataURL(src: string): Promise<string> {
 }
 
 /**
- * Get the proper URL for an image, using proxy for kagiproxy URLs
+ * Get the proper URL for an image. Static build has no proxy, so we return
+ * the URL unchanged.
  */
 export function getProxiedImageUrl(originalUrl: string | null | undefined): string | null {
 	if (!originalUrl) return originalUrl ?? null;
-
-	// Always use proxy for kagiproxy URLs
-	if (originalUrl.startsWith('https://kagiproxy.com/')) {
-		return `/api/image-proxy?url=${encodeURIComponent(originalUrl)}`;
-	}
-
 	return originalUrl;
 }
 

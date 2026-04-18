@@ -134,12 +134,10 @@ export function extractDomainsFromCitations(citations: Citation[]): string[] {
 
 /**
  * Get favicon URL for a domain
- * Uses our unified favicon proxy service
  */
 export function getFaviconUrl(domain: string): string {
-	// Use our favicon proxy for high quality favicons (256x256)
-	// This provides much sharper icons when displayed at smaller sizes
-	return `/api/favicon-proxy?domain=${encodeURIComponent(domain)}&quality=high`;
+	// Static build has no server-side proxy — use Google's public favicon service
+	return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64`;
 }
 
 /**

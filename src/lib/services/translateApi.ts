@@ -125,68 +125,17 @@ function mergeSimplified(original: JsonValue, simplified: JsonValue): JsonValue 
  * Browser automatically sends session cookies with the request
  */
 export async function simplifyStory(
-	story: Record<string, unknown>,
-	languageCode: string,
-	readingLevel: ReadingLevel,
+	_story: Record<string, unknown>,
+	_languageCode: string,
+	_readingLevel: ReadingLevel,
 ): Promise<SimplifyStoryResponse> {
-	try {
-		// Map user-friendly reading level to CEFR complexity
-		const complexity = mapReadingLevel(readingLevel);
-
-		// Filter out blacklisted fields (URLs, metadata, etc.)
-		const filtered = filterForSimplification(story as unknown as JsonValue);
-		const textJson = JSON.stringify(filtered);
-
-		// Use our proxy endpoint to avoid CORS issues
-		const response = await fetch('/api/simplify', {
-			method: 'POST',
-			credentials: 'include', // Include cookies in the request
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				text: textJson,
-				from: languageCode,
-				to: languageCode, // Same language for simplification
-				language_complexity: complexity,
-				stream: false,
-				translation_style: 'natural',
-				formality: 'default',
-				context:
-					'Simplify the text for this story, keeping citations as is, they will be displayed separately. Return everything in a JSON format without ```json or markdown formatting, preserving all fields. Sacrificing information can be OK to reach the requested reading level.',
-			}),
-		});
-
-		if (!response.ok) {
-			return {
-				success: false,
-				error: `API returned ${response.status}: ${response.statusText}`,
-			};
-		}
-
-		const data = await response.json();
-
-		// Parse the translated JSON back into an object
-		const translatedText = data.translation || data.text;
-		const simplified = JSON.parse(translatedText);
-
-		// Merge simplified text back into original story structure
-		const simplifiedStory = mergeSimplified(
-			story as unknown as JsonValue,
-			simplified as JsonValue,
-		) as SimplifiedStory;
-
-		return {
-			success: true,
-			simplifiedStory,
-		};
-	} catch (error) {
-		console.error('[TranslateAPI] Error simplifying story:', error);
-		return {
-			success: false,
-			error: error instanceof Error ? error.message : 'Unknown error',
-		};
-	}
+	// Static build has no /api/simplify server. The feature is gated behind
+	// `isSubscriber` in the UI so this is unreachable in practice — fail fast
+	// instead of firing a 404 fetch if it's ever triggered.
+	return {
+		success: false,
+		error: 'Simplification is not available in this static build.',
+	};
 }
 
 /**
