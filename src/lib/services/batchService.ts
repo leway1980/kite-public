@@ -82,16 +82,44 @@ class BatchService {
 				dateSlug = providedBatchInfo.dateSlug;
 				totalReadCount = providedBatchInfo.totalReadCount || 0;
 			} else if (currentBatchId) {
-				// Time travel mode - use specific batch
-				const batchResponse = await fetch(`${this.baseUrl}/batches/${currentBatchId}`);
-				if (!batchResponse.ok) {
-					throw new Error(`Failed to get batch ${currentBatchId}: ${batchResponse.statusText}`);
+				// Time travel mode - use specific batch. Under adapter-static we
+				// only prerender the latest mock batch, so any other batchId
+				// (stale URL, category slug accidentally parsed as batchId,
+				// etc.) will 404 and we silently fall through to `/latest`.
+				let gotHistorical = false;
+				try {
+					const batchResponse = await fetch(
+						`${this.baseUrl}/batches/${currentBatchId}`,
+					);
+					if (batchResponse.ok) {
+						const ct = batchResponse.headers.get('content-type') ?? '';
+						if (ct.includes('application/json')) {
+							const batch = await batchResponse.json();
+							batchId = batch.id;
+							dateSlug = batch.dateSlug;
+							batchCreatedAt = batch.createdAt;
+							totalReadCount = batch.totalReadCount || 0;
+							gotHistorical = true;
+						}
+					}
+				} catch {
+					// fall through to latest
 				}
-				const batch = await batchResponse.json();
-				batchId = batch.id;
-				dateSlug = batch.dateSlug;
-				batchCreatedAt = batch.createdAt;
-				totalReadCount = batch.totalReadCount || 0;
+				if (!gotHistorical) {
+					const batchResponse = await fetch(
+						`${this.baseUrl}/batches/latest?lang=${lang}`,
+					);
+					if (!batchResponse.ok) {
+						throw new Error(
+							`Failed to get latest batch: ${batchResponse.statusText}`,
+						);
+					}
+					const batch = await batchResponse.json();
+					batchId = batch.id;
+					dateSlug = batch.dateSlug;
+					batchCreatedAt = batch.createdAt;
+					totalReadCount = batch.totalReadCount || 0;
+				}
 			} else {
 				// Live mode - get latest batch
 				const batchResponse = await fetch(`${this.baseUrl}/batches/latest?lang=${lang}`);
