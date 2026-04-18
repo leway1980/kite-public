@@ -48,6 +48,11 @@ const config = {
 			precompress: false,
 			strict: false,
 		}),
+		paths: {
+			// GitHub Pages serves from /kite-public subpath.
+			// Workflow sets BASE_PATH=/kite-public; local build leaves it empty.
+			base: process.env.BASE_PATH ?? '',
+		},
 		prerender: {
 			entries: [
 				'*',
