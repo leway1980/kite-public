@@ -4,6 +4,7 @@ const AI_NEWS_UUID = 'c0000001-0000-4000-8000-000000000001';
 const AI_EDU_UUID = 'c0000002-0000-4000-8000-000000000002';
 const TW_EDU_UUID = 'c0000003-0000-4000-8000-000000000003';
 const AI_CLASSROOM_UUID = 'c0000004-0000-4000-8000-000000000004';
+const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
 
 // ─── Stories synthesized from 248 RSS articles fetched 2026-04-18 (MVP-v4) ───
 
@@ -939,6 +940,7 @@ const twEduStories: Story[] = [
 
 export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_NEWS_UUID]: aiNewsStories,
+	[AI_APPLICATIONS_UUID]: [],
 	[AI_EDU_UUID]: aiEduStories,
 	[AI_CLASSROOM_UUID]: aiClassroomStories,
 	[TW_EDU_UUID]: twEduStories,
