@@ -1,6 +1,7 @@
 <script lang="ts">
 import { IconInfoCircle, IconX } from '@tabler/icons-svelte';
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import Select from '$lib/components/Select.svelte';
 import Tooltip from '$lib/components/Tooltip.svelte';
@@ -329,7 +330,7 @@ let selectedLanguageToAdd = $state<string>('');
             "Translated with Kagi Translate"}</span
         >
         <img
-          src="/svg/translate.svg"
+          src="{base}/svg/translate.svg"
           alt="Kagi Translate"
           class="ms-1 h-3 w-3"
         />

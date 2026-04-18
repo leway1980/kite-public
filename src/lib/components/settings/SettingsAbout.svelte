@@ -1,5 +1,6 @@
 <script lang="ts">
 import { IconKeyboard } from '@tabler/icons-svelte';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import { settingsModalState, themeSettings } from '$lib/data/settings.svelte.js';
 import { keyboardNavigation } from '$lib/stores/keyboardNavigation.svelte';
@@ -96,7 +97,7 @@ const googlePlayNeedsScaling = $derived(badgesWithExtraPadding.includes(googlePl
 		<div class="flex flex-col sm:flex-row items-start gap-6">
 			<!-- Doggo on the left -->
 			<div class="flex-shrink-0">
-				<img src="/doggo_default.svg" alt="Mascot" class="size-24 object-contain" />
+				<img src="{base}/doggo_default.svg" alt="Mascot" class="size-24 object-contain" />
 			</div>
 
 			<!-- Content on the right -->

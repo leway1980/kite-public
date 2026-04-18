@@ -1,4 +1,5 @@
 <script lang="ts">
+import { base } from '$app/paths';
 import { fetchFavicon, getImmediateFaviconUrl } from '$lib/services/faviconService';
 
 interface Props {
@@ -121,7 +122,7 @@ function analyzeBrightness(img: HTMLImageElement) {
   onerror={(e) => {
     // Fallback to placeholder on error
     const target = e.currentTarget as HTMLImageElement;
-    target.src = "/svg/placeholder.svg";
+    target.src = `${base}/svg/placeholder.svg`;
   }}
 />
 

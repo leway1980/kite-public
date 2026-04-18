@@ -6,6 +6,7 @@ import {
 	IconInfoCircle,
 } from '@tabler/icons-svelte';
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import ContributeCategoryStep from '$lib/components/contribute/ContributeCategoryStep.svelte';
 import ContributeFeedStep from '$lib/components/contribute/ContributeFeedStep.svelte';
@@ -385,7 +386,7 @@ function resetForm() {
 						aria-label={s('common.back')}
 					>
 						<IconArrowLeft size={20} />
-						<img src="/favicon.svg" alt="Kagi News" class="w-8 h-8" />
+						<img src="{base}/favicon.svg" alt="Kagi News" class="w-8 h-8" />
 					</a>
 					<div class="flex-1">
 						<h1 class="text-2xl font-bold text-primary">

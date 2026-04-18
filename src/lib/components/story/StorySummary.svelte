@@ -1,4 +1,5 @@
 <script lang="ts">
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import Tooltip from '$lib/components/Tooltip.svelte';
 import GlobePreview from '$lib/components/common/GlobePreview.svelte';
@@ -195,7 +196,7 @@ onDestroy(() => {
       onmouseleave={handleLocationMouseLeave}
       aria-label="View {story.location} on {mapServiceName}"
     >
-      <img src="/svg/map.svg" alt="Map icon" class="mr-2 h-5 w-5" />
+      <img src="{base}/svg/map.svg" alt="Map icon" class="mr-2 h-5 w-5" />
       <Tooltip
         text={storyLocalizer("article.location") || `View on ${mapServiceName}`}
         position="top"

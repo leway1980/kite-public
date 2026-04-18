@@ -1,4 +1,5 @@
 <script lang="ts">
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import { displaySettings, languageSettings, themeSettings } from '$lib/data/settings.svelte.js';
 import type { Category, Story } from '$lib/types';
@@ -78,7 +79,7 @@ function getRSSFeedUrl(): string {
       title={s("footer.about") || "About AI Education Weekly"}
     >
       <img
-        src={"/favicon.svg"}
+        src={`${base}/favicon.svg`}
         alt={s("app.logo.iconAlt") || "AI Education Weekly"}
         class="h-5 w-5"
       />
@@ -96,7 +97,7 @@ function getRSSFeedUrl(): string {
       class="flex items-center space-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
       title={s("footer.rssFeed") || "RSS feed"}
     >
-      <img src="/svg/rss.svg" alt="" class="h-5 w-5 dark:invert" />
+      <img src="{base}/svg/rss.svg" alt="" class="h-5 w-5 dark:invert" />
       <span class="text-xs sm:text-sm">
         <span class="sm:hidden">{s("footer.rssFeedMobile") || "RSS"}</span>
         <span class="hidden sm:inline">{s("footer.rssFeed") || "RSS Feed"}</span

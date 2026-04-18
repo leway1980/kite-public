@@ -9,6 +9,7 @@ import {
 	IconUser,
 } from '@tabler/icons-svelte';
 import { useOverlayScrollbars } from 'overlayscrollbars-svelte';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import FaviconImage from '$lib/components/common/FaviconImage.svelte';
 import Tooltip from '$lib/components/Tooltip.svelte';
@@ -309,7 +310,7 @@ function handleBackdropClick(event: MouseEvent) {
                     onerror={(e) => {
                       const target = e.currentTarget as HTMLImageElement;
                       target.style.opacity = '1';
-                      target.src = "/svg/placeholder.svg";
+                      target.src = `${base}/svg/placeholder.svg`;
                       failedImages = new Set([...failedImages, article.link]);
                     }}
                   />

@@ -8,6 +8,8 @@
  * Both requests fire in parallel. Google shows first, then upgrades to best when available.
  */
 
+import { base } from '$app/paths';
+
 interface FaviconResult {
 	url: string;
 	quality: 'low' | 'best';
@@ -229,7 +231,7 @@ function notifyCallbacks(domain: string, result: FaviconResult): void {
  */
 function getPlaceholderResult(): FaviconResult {
 	return {
-		url: '/svg/placeholder.svg',
+		url: `${base}/svg/placeholder.svg`,
 		quality: 'low',
 		source: 'placeholder',
 	};

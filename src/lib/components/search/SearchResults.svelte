@@ -10,6 +10,7 @@ import {
 } from '@tabler/icons-svelte';
 import { useOverlayScrollbars } from 'overlayscrollbars-svelte';
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import { features } from '$lib/config/features';
 import type { SearchResult } from '$lib/services/search';
@@ -360,7 +361,7 @@ function getSnippetWithHighlight(text: string, query: string, maxLength: number 
         <div class="w-full max-w-md">
           <div class="text-center mb-6">
             <img
-              src="/doggo_default.svg"
+              src="{base}/doggo_default.svg"
               alt="Search mascot"
               class="size-40 mx-auto mb-4 transition-all duration-200"
             />

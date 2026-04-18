@@ -2,6 +2,7 @@
 import { IconClock, IconSearch, IconSettings, IconTextSize } from '@tabler/icons-svelte';
 import { getContext, untrack } from 'svelte';
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import { features } from '$lib/config/features';
 import {
@@ -482,8 +483,8 @@ $effect(() => {
             >
               <img
                 src={themeSettings.isDark
-                  ? "/svg/kagi_news_compact_dark.svg"
-                  : "/svg/kagi_news_compact.svg"}
+                  ? `${base}/svg/kagi_news_compact_dark.svg`
+                  : `${base}/svg/kagi_news_compact.svg`}
                 alt={s("app.logo.newsAlt") || "Kite News"}
                 class="w-[90px] h-auto logo z-modal-backdrop"
                 style="isolation: isolate;"
@@ -549,8 +550,8 @@ $effect(() => {
       >
         <img
           src={themeSettings.isDark
-            ? "/svg/kagi_news_compact_dark.svg"
-            : "/svg/kagi_news_compact.svg"}
+            ? `${base}/svg/kagi_news_compact_dark.svg`
+            : `${base}/svg/kagi_news_compact.svg`}
           alt={s("app.logo.newsAlt") || "Kite News"}
           class="w-[90px] h-auto logo relative z-modal-backdrop"
           style="isolation: isolate;"
@@ -694,7 +695,7 @@ $effect(() => {
     style="left: {kiteStartPosition.x}px; top: {kiteStartPosition.y}px;"
   >
     <img
-      src={themeSettings.isDark ? "/svg/kite_dark.svg" : "/svg/kite.svg"}
+      src={themeSettings.isDark ? `${base}/svg/kite_dark.svg` : `${base}/svg/kite.svg`}
       alt=""
       class="flying-kite"
       aria-hidden="true"

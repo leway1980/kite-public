@@ -2,6 +2,7 @@
 import { getContext } from 'svelte';
 import { browser } from '$app/environment';
 import { page } from '$app/state';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import BackToTop from '$lib/components/BackToTop.svelte';
 import CategoryNavigation from '$lib/components/CategoryNavigation.svelte';
@@ -577,7 +578,7 @@ if (browser && typeof window !== 'undefined') {
 </script>
 
 <svelte:head>
-  <link rel="preload" as="image" href="/doggo_default.svg" />
+  <link rel="preload" as="image" href="{base}/doggo_default.svg" />
 </svelte:head>
 
 {#if !state.dataLoaded}

@@ -1,5 +1,6 @@
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { preloadAllLocales } from '$lib/client/storyLocalization.svelte';
 import { displaySettings, languageSettings, settingsModalState } from '$lib/data/settings.svelte';
 import { kiteDB } from '$lib/db/dexie';
@@ -35,7 +36,7 @@ export function usePageSetup(options: PageSetupOptions) {
 
 		// Preload search doggo icon
 		const doggoImg = new Image();
-		doggoImg.src = '/doggo_default.svg';
+		doggoImg.src = `${base}/doggo_default.svg`;
 
 		// Clean URL by removing data_lang parameter if present
 		if (browser && window.location.search.includes('data_lang')) {

@@ -9,6 +9,7 @@ import {
 	IconUsers,
 	IconX,
 } from '@tabler/icons-svelte';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 
 interface Props {
@@ -169,7 +170,7 @@ const networkCSS = buildNetworkCSS();
 
 	<!-- Header -->
 	<header class="pt-16 pb-10 px-5 text-center hero-fade">
-		<img src="/favicon.svg" alt="" class="w-14 h-14 mx-auto mb-5" />
+		<img src="{base}/favicon.svg" alt="" class="w-14 h-14 mx-auto mb-5" />
 		<h1
 			class="text-3xl md:text-4xl font-bold text-primary"
 		>

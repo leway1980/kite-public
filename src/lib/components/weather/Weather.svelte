@@ -1,6 +1,7 @@
 <script lang="ts">
 import { IconWind } from '@tabler/icons-svelte';
 import { onMount } from 'svelte';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 
 interface Props {
@@ -73,7 +74,7 @@ onMount(() => {
 			<div class="flex items-start justify-between h-full">
 				<div class="flex items-center gap-3">
 					<img
-						src="/weather-icons/cloudy.svg"
+						src="{base}/weather-icons/cloudy.svg"
 						alt="Loading"
 						class="h-16 w-16"
 					/>
@@ -86,7 +87,7 @@ onMount(() => {
 			<div class="flex items-start justify-between h-full">
 				<div class="flex items-center gap-3">
 					<img
-						src="/weather-icons/cloudy.svg"
+						src="{base}/weather-icons/cloudy.svg"
 						alt="Error"
 						class="h-16 w-16"
 					/>
@@ -102,7 +103,7 @@ onMount(() => {
 				<!-- Location & Current Temp -->
 				<div class="flex items-center gap-3">
 					<img
-						src="/weather-icons/{weatherInfo.icon}"
+						src="{base}/weather-icons/{weatherInfo.icon}"
 						alt={weatherInfo.description}
 						class="h-16 w-16"
 					/>

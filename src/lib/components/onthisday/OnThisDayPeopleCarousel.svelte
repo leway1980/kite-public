@@ -1,5 +1,6 @@
 <script lang="ts">
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { s } from '$lib/client/localization.svelte';
 import { isRtlLocale } from '$lib/client/rtl-detection';
 import { languageSettings } from '$lib/data/settings.svelte';
@@ -81,7 +82,7 @@ function getPersonImage(person: OnThisDayEvent): string {
 	const cacheKey = person.year + person.content;
 	const cached = peopleImagesCache.get(cacheKey);
 	console.log(`Getting image for ${person.year}:`, cached ? 'FOUND' : 'NOT FOUND', cached);
-	return cached || '/svg/placeholder.svg';
+	return cached || `${base}/svg/placeholder.svg`;
 }
 
 // Carousel functions
