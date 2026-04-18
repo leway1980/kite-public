@@ -44,7 +44,11 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: '200.html',
+			// GitHub Pages looks for 404.html on missing paths (and serves it
+			// with 404 status). SvelteKit client-side router still hydrates
+			// and navigates to the correct route from there, so deep-link
+			// refreshes work for every route under /kite-public/.
+			fallback: '404.html',
 			precompress: false,
 			strict: false,
 		}),
