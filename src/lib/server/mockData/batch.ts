@@ -6,9 +6,9 @@
  * something to render.
  */
 
-export const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000001';
-export const MOCK_BATCH_CREATED_AT = '2026-04-17T22:15:00.000Z';
-export const MOCK_BATCH_DATE_SLUG = '2026-04-17.1';
+export const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000002';
+export const MOCK_BATCH_CREATED_AT = '2026-04-18T09:30:00.000Z';
+export const MOCK_BATCH_DATE_SLUG = '2026-04-18.1';
 // Unix timestamp (seconds) for the stories' timestamp field
 export const MOCK_BATCH_TIMESTAMP = Math.floor(
 	new Date(MOCK_BATCH_CREATED_AT).getTime() / 1000,
@@ -38,7 +38,7 @@ export function buildBatchMeta(): MockBatchMeta {
 		language: 'zh-Hant',
 		totalCategories: 4,
 		totalClusters: 12,
-		totalArticles: 255,
+		totalArticles: 248,
 		totalReadCount: 0,
 	};
 }
