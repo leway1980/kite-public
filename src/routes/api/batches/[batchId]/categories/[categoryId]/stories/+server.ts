@@ -1,19 +1,30 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import { error, json } from '@sveltejs/kit';
 import { MOCK_BATCH_ID, MOCK_BATCH_TIMESTAMP } from '$lib/server/mockData/batch';
-import { findCategoryByUuid } from '$lib/server/mockData/categories';
+import { MOCK_CATEGORIES, findCategoryByUuid } from '$lib/server/mockData/categories';
 import { MOCK_STORIES_BY_CATEGORY, collectDomains } from '$lib/server/mockData/stories';
 import type { BatchStoriesResponse } from '$lib/types';
+
+export const prerender = true;
+export const entries = () =>
+	MOCK_CATEGORIES.map((cat) => ({
+		batchId: MOCK_BATCH_ID,
+		categoryId: cat.uuid,
+	}));
 
 /**
  * MVP-v1: return stories for a mock category.
  *
  * The `[categoryId]` param in the route is actually a category UUID
  * (see storiesService.ts which passes `categoryUuid` into this slot).
- * `limit` and `lang` query params are accepted; `limit` is honoured,
- * `lang` is ignored since we only ship zh-Hant content.
+ *
+ * Under adapter-static this endpoint is pre-rendered to JSON at build
+ * time, so we can't read `url.searchParams` here — static hosts ignore
+ * the query string and serve the same file regardless of `?limit=N`.
+ * We always return the full story list; client-side UI caps the count
+ * if it needs to.
  */
-export const GET: RequestHandler = async ({ params, url }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	const { batchId, categoryId } = params;
 
 	if (batchId !== MOCK_BATCH_ID) {
@@ -25,12 +36,7 @@ export const GET: RequestHandler = async ({ params, url }) => {
 		throw error(404, `Category not found: ${categoryId}`);
 	}
 
-	const allStories = MOCK_STORIES_BY_CATEGORY[category.uuid] ?? [];
-	const limitParam = url.searchParams.get('limit');
-	const limit = limitParam
-		? Math.max(0, Number.parseInt(limitParam, 10) || allStories.length)
-		: allStories.length;
-	const stories = allStories.slice(0, limit);
+	const stories = MOCK_STORIES_BY_CATEGORY[category.uuid] ?? [];
 
 	const body: BatchStoriesResponse = {
 		batchId: MOCK_BATCH_ID,
@@ -38,8 +44,8 @@ export const GET: RequestHandler = async ({ params, url }) => {
 		categoryName: category.categoryName,
 		timestamp: MOCK_BATCH_TIMESTAMP,
 		stories,
-		totalStories: allStories.length,
-		domains: collectDomains(allStories),
+		totalStories: stories.length,
+		domains: collectDomains(stories),
 		readCount: category.readCount,
 	};
 

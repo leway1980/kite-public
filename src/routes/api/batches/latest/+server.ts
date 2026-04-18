@@ -2,6 +2,8 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { json } from '@sveltejs/kit';
 import { buildBatchMeta } from '$lib/server/mockData/batch';
 
+export const prerender = true;
+
 /**
  * MVP-v1: return hard-coded latest batch metadata from mockData instead
  * of proxying to kite.kagi.com. The `lang` query param is accepted but

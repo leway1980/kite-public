@@ -105,8 +105,14 @@ class BatchService {
 				totalReadCount = batch.totalReadCount || 0;
 			}
 
-			// Step 2: Get categories for that batch with language parameter
-			const response = await fetch(`${this.baseUrl}/batches/${batchId}/categories?lang=${lang}`);
+			// Step 2: Get categories for that batch with language parameter.
+			// NOTE: the route is `/category-list` (not `/categories`) because
+			// under adapter-static `/categories` would conflict with the
+			// `/categories/[uuid]/stories` sibling — you can't have both a
+			// file and a directory at the same path in static output.
+			const response = await fetch(
+				`${this.baseUrl}/batches/${batchId}/category-list?lang=${lang}`,
+			);
 			if (!response.ok) {
 				throw new Error(`Failed to load categories: ${response.statusText}`);
 			}

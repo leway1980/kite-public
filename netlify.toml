@@ -1,5 +1,24 @@
 [build]
   command = "bun run build"
+  publish = "build"
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Pre-rendered API responses are written as extension-less files
+# (e.g. build/api/batches/latest), so Netlify defaults their
+# Content-Type to application/octet-stream. Force JSON so browsers
+# and `fetch().json()` work cleanly.
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Content-Type = "application/json; charset=utf-8"
+
+# SPA fallback: any path that doesn't match a pre-rendered file falls
+# back to the client-side router in 200.html. Netlify applies this
+# *only* when the requested file doesn't exist, so pre-rendered pages
+# (index.html, api JSON files, etc.) still win.
+[[redirects]]
+  from = "/*"
+  to = "/200.html"
+  status = 200

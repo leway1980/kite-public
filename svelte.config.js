@@ -1,5 +1,33 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+
+// Supported locales — must match filenames in src/lib/locales/*.json.
+const LOCALES = [
+	'ar',
+	'de',
+	'en',
+	'es',
+	'et',
+	'fr',
+	'he',
+	'hi',
+	'it',
+	'ja',
+	'nl',
+	'pt',
+	'ru',
+	'uk',
+	'zh-Hans',
+	'zh-Hant',
+];
+
+const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000001';
+const MOCK_CATEGORY_UUIDS = [
+	'c0000001-0000-4000-8000-000000000001',
+	'c0000002-0000-4000-8000-000000000002',
+	'c0000003-0000-4000-8000-000000000003',
+	'c0000004-0000-4000-8000-000000000004',
+];
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +36,27 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: '200.html',
+			precompress: false,
+			strict: false,
+		}),
+		prerender: {
+			entries: [
+				'*',
+				'/api/batches/latest',
+				`/api/batches/${MOCK_BATCH_ID}/category-list`,
+				...MOCK_CATEGORY_UUIDS.map(
+					(uuid) => `/api/batches/${MOCK_BATCH_ID}/categories/${uuid}/stories`,
+				),
+				...LOCALES.map((lang) => `/api/locale/${lang}`),
+			],
+			handleHttpError: 'warn',
+			handleMissingId: 'warn',
+			handleUnseenRoutes: 'warn',
+		},
 		csrf: {
 			trustedOrigins: ['*'],
 		},

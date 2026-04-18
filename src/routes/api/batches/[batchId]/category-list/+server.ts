@@ -8,6 +8,9 @@ import {
 import { MOCK_CATEGORIES } from '$lib/server/mockData/categories';
 import type { BatchCategoriesResponse } from '$lib/types';
 
+export const prerender = true;
+export const entries = () => [{ batchId: MOCK_BATCH_ID }];
+
 /**
  * MVP-v1: return hard-coded category list for our single mock batch.
  * Non-mock batchIds get 404 (we only have one batch in mock mode).

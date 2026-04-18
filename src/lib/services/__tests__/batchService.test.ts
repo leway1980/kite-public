@@ -63,7 +63,7 @@ describe('BatchService', () => {
 			const result = await batchService.loadInitialData('en');
 
 			expect(fetch).toHaveBeenNthCalledWith(1, '/api/batches/latest?lang=en');
-			expect(fetch).toHaveBeenNthCalledWith(2, '/api/batches/latest-batch/categories?lang=en');
+			expect(fetch).toHaveBeenNthCalledWith(2, '/api/batches/latest-batch/category-list?lang=en');
 			expect(fetch).toHaveBeenNthCalledWith(3, '/api/batches/latest-batch/chaos?lang=en');
 
 			expect(result).toEqual({
