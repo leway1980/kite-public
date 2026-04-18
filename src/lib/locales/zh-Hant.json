@@ -1,6 +1,6 @@
 {
   "settings.about.aboutKite": {
-    "text": "關於 Kagi News",
+    "text": "關於 AI 教育週報",
     "translationContext": "Title for about Kagi News section"
   },
   "settings.about.apiAccess": {
@@ -8,11 +8,11 @@
     "translationContext": "Title for API access section in about settings"
   },
   "settings.about.apiDescription": {
-    "text": "使用我們的 REST API 以程式化方式存取 Kagi News",
+    "text": "使用我們的 REST API 以程式化方式存取 AI 教育週報",
     "translationContext": "Description for API access"
   },
   "settings.about.description": {
-    "text": "Kagi News 將全球數千個新聞來源濃縮成一份完美的每日簡報。只需 5 分鐘，即可掌握每個關鍵觀點。無需無盡地滾動，也不會劫持您的注意力。",
+    "text": "AI 教育週報 將全球數千個新聞來源濃縮成一份完美的每日簡報。只需 5 分鐘，即可掌握每個關鍵觀點。無需無盡地滾動，也不會劫持您的注意力。",
     "translationContext": "Short description of Kagi News in about settings"
   },
   "settings.about.downloadAndroid": {
@@ -48,7 +48,7 @@
     "translationContext": "Title for mobile apps section in about settings"
   },
   "settings.about.mobileDescription": {
-    "text": "在您的行動裝置上取得 Kagi News",
+    "text": "在您的行動裝置上取得 AI 教育週報",
     "translationContext": "Description for mobile apps"
   },
   "settings.about.viewApiDocs": {
@@ -60,7 +60,7 @@
     "translationContext": "Button text to open keyboard shortcuts help overlay"
   },
   "settings.aboutKite.button": {
-    "text": "關於 Kagi News",
+    "text": "關於 AI 教育週報",
     "translationContext": "Text for the About Kagi News button"
   },
   "settings.categories.allCategories": {
@@ -856,7 +856,7 @@
     "translationContext": "Button text to toggle all sections on/off at once"
   },
   "settings.shareLanguage.message": {
-    "text": "快來看看 {language} 版的 Kagi News－它會跳過介紹，直接以您的語言載入！",
+    "text": "快來看看 {language} 版的 AI 教育週報－它會跳過介紹，直接以您的語言載入！",
     "translationContext": "Message to share with others, {language} will be replaced with the language name"
   },
   "settings.shareLanguage.success": {
@@ -1008,7 +1008,7 @@
     "translationContext": "Loading text shown while importing settings from a backup file"
   },
   "settings.sync.info.description": {
-    "text": "Kagi News 可以在您所有裝置間同步設定和閱讀紀錄。這些資料會安全地儲存在 Kagi 的伺服器上，並與您的 Kagi Search 帳戶關聯。\n\n您同步的資料不會用於任何其他目的，不會與任何人分享，且僅為提供同步服務給您而儲存。您對同步的內容擁有完全的控制權，並可以隨時刪除您的資料。",
+    "text": "AI 教育週報 可以在您所有裝置間同步設定和閱讀紀錄。這些資料會安全地儲存在 Kagi 的伺服器上，並與您的 Kagi Search 帳戶關聯。\n\n您同步的資料不會用於任何其他目的，不會與任何人分享，且僅為提供同步服務給您而儲存。您對同步的內容擁有完全的控制權，並可以隨時刪除您的資料。",
     "translationContext": "Description of sync and privacy features"
   },
   "settings.sync.mobileApp.description": {
@@ -1188,7 +1188,7 @@
     "translationContext": "Second paragraph of the approach section with GitHub link"
   },
   "about.approach.description3": {
-    "text": "Kagi News 讀取來自全球數千個（由社群策劃）新聞來源的公開 RSS feed，並利用 AI 將其精煉成一份完美的每日簡報。您只需 5 分鐘，即可掌握每個關鍵視角和時間脈絡。就是這麼簡單。沒有無盡的捲動。不會劫持您的注意力。因為我們值得更好的。",
+    "text": "AI 教育週報 讀取來自全球數千個（由社群策劃）新聞來源的公開 RSS feed，並利用 AI 將其精煉成一份完美的每日簡報。您只需 5 分鐘，即可掌握每個關鍵視角和時間脈絡。就是這麼簡單。沒有無盡的捲動。不會劫持您的注意力。因為我們值得更好的。",
     "translationContext": "Third paragraph of the approach section"
   },
   "about.approach.title": {
@@ -1204,7 +1204,7 @@
     "translationContext": "Title of the contact section"
   },
   "about.customization.description": {
-    "text": "透過在設定中重新排序和切換分類，個人化您的新聞來源。想要貢獻嗎？Kagi News 的大部分內容都是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">開放原始碼</a>的，包括我們的網頁應用程式和由社群維護的資訊來源。",
+    "text": "透過在設定中重新排序和切換分類，個人化您的新聞來源。想要貢獻嗎？AI 教育週報 的大部分內容都是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">開放原始碼</a>的，包括我們的網頁應用程式和由社群維護的資訊來源。",
     "translationContext": "Description of customization options with GitHub link"
   },
   "about.customization.title": {
@@ -1252,7 +1252,7 @@
     "translationContext": "Description of why Kagi News exists, including HTML link"
   },
   "about.why.title": {
-    "text": "為何選擇 Kagi News？因為現今的新聞媒體生態早已崩壞。",
+    "text": "為何選擇 AI 教育週報？因為現今的新聞媒體生態早已崩壞。",
     "translationContext": "Title of the Why Kagi News section"
   },
   "app_navigation.assistant": {
@@ -1304,7 +1304,7 @@
     "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
   },
   "app.logo.alt": {
-    "text": "Kagi News 商標",
+    "text": "AI 教育週報 商標",
     "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.clickToReset": {
@@ -1312,11 +1312,11 @@
     "translationContext": "Aria label for the logo button that resets the view to the home page"
   },
   "app.logo.iconAlt": {
-    "text": "Kagi News 圖示",
+    "text": "AI 教育週報 圖示",
     "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.newsAlt": {
-    "text": "Kagi News 新聞商標",
+    "text": "AI 教育週報 新聞商標",
     "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
   },
   "app.motto": {
@@ -1328,7 +1328,7 @@
     "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
   },
   "app.title": {
-    "text": "Kagi News",
+    "text": "AI 教育週報",
     "translationContext": "Title of the app, should not be translated"
   },
   "article.closeStory": {
@@ -2660,7 +2660,7 @@
     "translationContext": "Table header for number of race wins"
   },
   "footer.about": {
-    "text": "關於 Kagi News",
+    "text": "關於 AI 教育週報",
     "translationContext": "Link text for about page"
   },
   "footer.aboutMobile": {
@@ -2812,11 +2812,11 @@
     "translationContext": "Loading message shown when fetching news stories"
   },
   "meta.categoryDescription": {
-    "text": "Kagi News 上的最新 {category} 新聞",
+    "text": "AI 教育週報 上的最新 {category} 新聞",
     "translationContext": "Meta description for category pages. {category} will be replaced with the actual category name."
   },
   "meta.description": {
-    "text": "Kagi News 將全球數千個新聞來源，濃縮成一份完美的每日簡報。只需要 5 分鐘，即可掌握所有關鍵視角。無須無盡地向下捲動，也無須被注意力綁架。",
+    "text": "AI 教育週報 將全球數千個新聞來源，濃縮成一份完美的每日簡報。只需要 5 分鐘，即可掌握所有關鍵視角。無須無盡地向下捲動，也無須被注意力綁架。",
     "translationContext": "Default meta description for SEO"
   },
   "meta.news": {
@@ -3240,7 +3240,7 @@
     "translationContext": "Skip button text"
   },
   "onboarding.categories.subtitle": {
-    "text": "Kagi News 追蹤世界各地的新聞，涵蓋國家、區域和地方事件。請選取您感興趣的分類：",
+    "text": "AI 教育週報 追蹤世界各地的新聞，涵蓋國家、區域和地方事件。請選取您感興趣的分類：",
     "translationContext": "Subtitle for onboarding step 2"
   },
   "onboarding.categories.title": {
@@ -3248,7 +3248,7 @@
     "translationContext": "Title for onboarding step 2"
   },
   "onboarding.sections.subtitle": {
-    "text": "Kagi News 的文章包含摘要、要點、時間軸和不同觀點等多個區段。您可以根據自己的閱讀偏好，透過拖曳來重新排序這些區段，或將其完全停用。",
+    "text": "AI 教育週報 的文章包含摘要、要點、時間軸和不同觀點等多個區段。您可以根據自己的閱讀偏好，透過拖曳來重新排序這些區段，或將其完全停用。",
     "translationContext": "Subtitle for onboarding step 3"
   },
   "onboarding.sections.title": {
@@ -3260,7 +3260,7 @@
     "translationContext": "Subtitle for onboarding step 1"
   },
   "onboarding.welcome.title": {
-    "text": "歡迎來到 Kagi News！",
+    "text": "歡迎來到 AI 教育週報！",
     "translationContext": "Title for onboarding step 1"
   },
   "onthisday.events": {

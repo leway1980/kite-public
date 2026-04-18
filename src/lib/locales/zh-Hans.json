@@ -76,7 +76,7 @@
     "translationContext": "Link text for contributing categories"
   },
   "settings.categories.contribute.intro": {
-    "text": "通过推荐新类别来帮助扩展 Kagi News 的覆盖范围。社区的贡献使 Kagi News 的内容更加多样和全面。",
+    "text": "通过推荐新类别来帮助扩展 AI 教育周报 的覆盖范围。社区的贡献使 AI 教育周报 的内容更加多样和全面。",
     "translationContext": "Introduction text in the contribute category modal"
   },
   "settings.categories.contribute.learnMore": {
@@ -1188,7 +1188,7 @@
     "translationContext": "Second paragraph of the approach section with GitHub link"
   },
   "about.approach.description3": {
-    "text": "Kagi News 读取全球数千个（由社区精选的）新闻来源的公开 RSS 订阅源，并利用人工智能将其提炼成一份完美的每日简报。只需 5 分钟，您就能掌握所有关键视角和时间线。仅此而已。无需无休止地滚动。拒绝注意力被劫持。因为我们值得拥有更好的。",
+    "text": "AI 教育周报 读取全球数千个（由社区精选的）新闻来源的公开 RSS 订阅源，并利用人工智能将其提炼成一份完美的每日简报。只需 5 分钟，您就能掌握所有关键视角和时间线。仅此而已。无需无休止地滚动。拒绝注意力被劫持。因为我们值得拥有更好的。",
     "translationContext": "Third paragraph of the approach section"
   },
   "about.approach.title": {
@@ -1204,7 +1204,7 @@
     "translationContext": "Title of the contact section"
   },
   "about.customization.description": {
-    "text": "在设置中重新排序和切换类别，以个性化你的订阅源。想要贡献？Kagi News 的大部分内容都是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">开源的</a>，包括我们的网络应用和社区精选的订阅源。",
+    "text": "在设置中重新排序和切换类别，以个性化你的订阅源。想要贡献？AI 教育周报 的大部分内容都是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">开源的</a>，包括我们的网络应用和社区精选的订阅源。",
     "translationContext": "Description of customization options with GitHub link"
   },
   "about.customization.title": {
@@ -1252,7 +1252,7 @@
     "translationContext": "Description of why Kagi News exists, including HTML link"
   },
   "about.why.title": {
-    "text": "为什么选择Kagi News？因为新闻已崩坏。",
+    "text": "为什么选择AI 教育周报？因为新闻已崩坏。",
     "translationContext": "Title of the Why Kagi News section"
   },
   "app_navigation.assistant": {
@@ -1304,7 +1304,7 @@
     "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
   },
   "app.logo.alt": {
-    "text": "Kagi News标志",
+    "text": "AI 教育周报标志",
     "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.clickToReset": {
@@ -1316,7 +1316,7 @@
     "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.newsAlt": {
-    "text": "Kagi News 新闻标志",
+    "text": "AI 教育周报 新闻标志",
     "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
   },
   "app.migrationNotice": {
@@ -1332,7 +1332,7 @@
     "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
   },
   "app.title": {
-    "text": "Kagi News",
+    "text": "AI 教育周报",
     "translationContext": "Title of the app, should not be translated"
   },
   "article.closeStory": {
@@ -2192,7 +2192,7 @@
     "translationContext": "Pipeline step label: feeds are active on Kagi News"
   },
   "contribute.history.status.live.tooltip": {
-    "text": "您的订阅源已在 Kagi News 上激活。如果某个分类没有显示新闻故事，这意味着文章没有聚类——这是正常现象。",
+    "text": "您的订阅源已在 AI 教育周报 上激活。如果某个分类没有显示新闻故事，这意味着文章没有聚类——这是正常现象。",
     "translationContext": "Tooltip for the Live pipeline step"
   },
   "contribute.history.status.merged": {
@@ -2200,7 +2200,7 @@
     "translationContext": "Pipeline step label: PR has been merged"
   },
   "contribute.history.status.merged.tooltip": {
-    "text": "您的拉取请求已合并。更改将在下一批 Kagi News 更新中生效。",
+    "text": "您的拉取请求已合并。更改将在下一批 AI 教育周报 更新中生效。",
     "translationContext": "Tooltip for the Merged pipeline step"
   },
   "contribute.history.status.submitted": {
@@ -2360,15 +2360,15 @@
     "translationContext": "Title for the core feeds card"
   },
   "contribute.onboarding.feedTypes.title": {
-    "text": "两种订阅源为 Kagi News 提供动力",
+    "text": "两种订阅源为 AI 教育周报 提供动力",
     "translationContext": "Section title for core vs community feeds comparison"
   },
   "contribute.onboarding.guidelines.anyLanguage": {
-    "text": "欢迎任何语言。Kagi News 会自动翻译所有内容，因此一个分类可以也应该混合多种语言。",
+    "text": "欢迎任何语言。AI 教育周报 会自动翻译所有内容，因此一个分类可以也应该混合多种语言。",
     "translationContext": "Guideline: feeds in any language are accepted"
   },
   "contribute.onboarding.guidelines.minimum": {
-    "text": "新分类需要至少 25 个订阅源才能在 Kagi News 中显示。这确保了足够的重叠以使聚类正常工作。",
+    "text": "新分类需要至少 25 个订阅源才能在 AI 教育周报 中显示。这确保了足够的重叠以使聚类正常工作。",
     "translationContext": "Guideline: minimum feed count for new categories"
   },
   "contribute.onboarding.guidelines.noLanguageSplit": {
@@ -2380,7 +2380,7 @@
     "translationContext": "Guideline: source quality preference"
   },
   "contribute.onboarding.guidelines.rssOnly": {
-    "text": "仅限 RSS 或 Atom 订阅源。Kagi News 不会抓取网站，它只使用公开可用的订阅源数据。",
+    "text": "仅限 RSS 或 Atom 订阅源。AI 教育周报 不会抓取网站，它只使用公开可用的订阅源数据。",
     "translationContext": "Guideline: only RSS/Atom feeds are accepted"
   },
   "contribute.onboarding.guidelines.title": {
@@ -2436,7 +2436,7 @@
     "translationContext": "Subtitle on the contribute onboarding info page"
   },
   "contribute.onboarding.title": {
-    "text": "为 Kagi News 做出贡献",
+    "text": "为 AI 教育周报 做出贡献",
     "translationContext": "Title on the contribute onboarding info page"
   },
   "contribute.onboarding.whatToDo.existing.description": {
@@ -2448,7 +2448,7 @@
     "translationContext": "Title for existing category contribution option"
   },
   "contribute.onboarding.whatToDo.new.description": {
-    "text": "本地新闻、地区报道、小众话题。新分类需要至少 25 个订阅源才能在 Kagi News 上线。这确保了足够的重叠，以便聚类产生真实的新闻故事。",
+    "text": "本地新闻、地区报道、小众话题。新分类需要至少 25 个订阅源才能在 AI 教育周报 上线。这确保了足够的重叠，以便聚类产生真实的新闻故事。",
     "translationContext": "Description of proposing new categories"
   },
   "contribute.onboarding.whatToDo.new.title": {
@@ -2460,7 +2460,7 @@
     "translationContext": "Section title for contribution options"
   },
   "contribute.pageTitle": {
-    "text": "贡献订阅源 - Kagi News",
+    "text": "贡献订阅源 - AI 教育周报",
     "translationContext": "Browser tab title for the contribute page"
   },
   "contribute.pendingFeedCount": {
@@ -2664,7 +2664,7 @@
     "translationContext": "Table header for number of race wins"
   },
   "footer.about": {
-    "text": "关于Kagi News",
+    "text": "关于AI 教育周报",
     "translationContext": "Link text for about page"
   },
   "footer.aboutMobile": {
@@ -2816,11 +2816,11 @@
     "translationContext": "Loading message shown when fetching news stories"
   },
   "meta.categoryDescription": {
-    "text": "Kagi News 上的最新{category}新闻",
+    "text": "AI 教育周报 上的最新{category}新闻",
     "translationContext": "Meta description for category pages. {category} will be replaced with the actual category name."
   },
   "meta.description": {
-    "text": "Kagi News 将全球数千家新闻来源提炼成一份完美的每日简报。只需 5 分钟，即可获得所有重要观点。无需无休止地滚动。没有注意力劫持。",
+    "text": "AI 教育周报 将全球数千家新闻来源提炼成一份完美的每日简报。只需 5 分钟，即可获得所有重要观点。无需无休止地滚动。没有注意力劫持。",
     "translationContext": "Default meta description for SEO"
   },
   "meta.news": {
@@ -3252,7 +3252,7 @@
     "translationContext": "Title for onboarding step 2"
   },
   "onboarding.sections.subtitle": {
-    "text": "Kagi News 文章包含摘要、要点、时间线和不同观点等多个部分。您可以根据自己的阅读偏好拖动重新排序这些部分，或完全禁用它们。",
+    "text": "AI 教育周报 文章包含摘要、要点、时间线和不同观点等多个部分。您可以根据自己的阅读偏好拖动重新排序这些部分，或完全禁用它们。",
     "translationContext": "Subtitle for onboarding step 3"
   },
   "onboarding.sections.title": {
@@ -3264,7 +3264,7 @@
     "translationContext": "Subtitle for onboarding step 1"
   },
   "onboarding.welcome.title": {
-    "text": "欢迎使用 Kagi News！",
+    "text": "欢迎使用 AI 教育周报！",
     "translationContext": "Title for onboarding step 1"
   },
   "onthisday.events": {

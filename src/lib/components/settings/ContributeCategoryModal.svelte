@@ -143,7 +143,7 @@ const FEEDS_FILE_URL = 'https://github.com/kagisearch/kite-public/blob/main/kite
 				<div class="p-5 space-y-5">
 					<!-- Introduction -->
 					<p class="text-sm text-gray-600 dark:text-gray-400">
-						{s("settings.categories.contribute.intro") || "Help expand Kagi News coverage by suggesting new categories. Community contributions are what make Kagi News diverse and comprehensive."}
+						{s("settings.categories.contribute.intro") || "Help expand AI Education Weekly coverage by suggesting new categories. Community contributions are what make AI Education Weekly diverse and comprehensive."}
 					</p>
 
 					<!-- Requirements -->

@@ -174,7 +174,7 @@ async function exportData() {
   <!-- Tab Description -->
   <div class="text-sm text-gray-600 dark:text-gray-400 whitespace-pre-line">
     {s("settings.sync.info.description") || 
-    "Kagi News can sync your settings and read history across all your devices. This data is stored securely on Kagi servers and associated with your account.\n\nYour synced data is not used for any other purpose, not shared with anyone, and is solely stored to provide the sync service to you. You have full control over what gets synced and can delete your data at any time."}
+    "AI Education Weekly can sync your settings and read history across all your devices. This data is stored securely on Kagi servers and associated with your account.\n\nYour synced data is not used for any other purpose, not shared with anyone, and is solely stored to provide the sync service to you. You have full control over what gets synced and can delete your data at any time."}
   </div>
 
   {#if session?.loggedIn && session?.id}

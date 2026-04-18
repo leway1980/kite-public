@@ -96,7 +96,7 @@ const googlePlayNeedsScaling = $derived(badgesWithExtraPadding.includes(googlePl
 		<div class="flex flex-col sm:flex-row items-start gap-6">
 			<!-- Doggo on the left -->
 			<div class="flex-shrink-0">
-				<img src="/doggo_default.svg" alt="Kagi Doggo" class="size-24 object-contain" />
+				<img src="/doggo_default.svg" alt="Mascot" class="size-24 object-contain" />
 			</div>
 
 			<!-- Content on the right -->
@@ -234,7 +234,7 @@ const googlePlayNeedsScaling = $derived(badgesWithExtraPadding.includes(googlePl
 	<!-- Copyright -->
 	<div class="ps-2 pt-4 border-t border-gray-200 dark:border-gray-700">
 		<p class="text-xs text-gray-500 dark:text-gray-400">
-			© {new Date().getFullYear()} Kagi Inc.
+			Based on Kagi News · © {new Date().getFullYear()} Kagi Inc.
 		</p>
 	</div>
 </div>

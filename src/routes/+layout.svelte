@@ -1,4 +1,20 @@
 <script lang="ts">
+// 強制清理 localStorage（只針對舊訪客；版本相符則跳過）
+// 舊部署留下 Kagi 原版的 enabledCategories 等資料會讓 UI 顯示 Temporarily unavailable
+if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
+	const APP_DATA_VERSION = 'ai-edu-weekly-v1-2026-04-18';
+	if (localStorage.getItem('appDataVersion') !== APP_DATA_VERSION) {
+		try {
+			const lang = localStorage.getItem('kiteLanguage'); // 保留語系偏好
+			localStorage.clear();
+			if (lang) localStorage.setItem('kiteLanguage', lang);
+			localStorage.setItem('appDataVersion', APP_DATA_VERSION);
+		} catch (e) {
+			/* storage might be disabled, fine */
+		}
+	}
+}
+
 import { browser } from '$app/environment';
 import { page } from '$app/state';
 import { isRtlLocale } from '$lib/client/rtl-detection';

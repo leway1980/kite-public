@@ -54,7 +54,7 @@ function getRSSFeedUrl(): string {
     <a
       href="https://github.com/kagisearch/kite-public"
       target="_blank"
-      title={s("footer.contribute") || "Contribute to Kagi News"}
+      title={s("footer.contribute") || "Contribute to AI Education Weekly"}
       class="flex items-center space-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
     >
       <svg
@@ -75,17 +75,17 @@ function getRSSFeedUrl(): string {
     <button
       onclick={handleAboutClick}
       class="flex items-center space-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-      title={s("footer.about") || "About Kagi News"}
+      title={s("footer.about") || "About AI Education Weekly"}
     >
       <img
         src={"/favicon.svg"}
-        alt={s("app.logo.iconAlt") || "Kagi News"}
+        alt={s("app.logo.iconAlt") || "AI Education Weekly"}
         class="h-5 w-5"
       />
       <span class="text-xs sm:text-sm">
         <span class="sm:hidden">{s("footer.aboutMobile") || "About"}</span>
         <span class="hidden sm:inline"
-          >{s("footer.about") || "About Kagi News"}</span
+          >{s("footer.about") || "About AI Education Weekly"}</span
         >
       </span>
     </button>

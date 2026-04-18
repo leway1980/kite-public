@@ -60,7 +60,7 @@
     "translationContext": "Button text to open keyboard shortcuts help overlay"
   },
   "settings.aboutKite.button": {
-    "text": "Kagi Newsについて",
+    "text": "AI Education Weeklyについて",
     "translationContext": "Text for the About Kagi News button"
   },
   "settings.categories.allCategories": {
@@ -856,7 +856,7 @@
     "translationContext": "Button text to toggle all sections on/off at once"
   },
   "settings.shareLanguage.message": {
-    "text": "{{language}}でKagi News Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
+    "text": "{{language}}でAI Education Weekly Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
     "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
   },
   "settings.shareLanguage.success": {
@@ -1204,7 +1204,7 @@
     "translationContext": "Title of the contact section"
   },
   "about.customization.description": {
-    "text": "設定でカテゴリを並べ替えたり、表示・非表示を切り替えたりして、フィードをパーソナライズできます。貢献したい方へ：Kagi Newsの多くは<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">オープンソース</a>で公開されており、ウェブアプリやコミュニティがキュレーションしたフィードも含まれています。",
+    "text": "設定でカテゴリを並べ替えたり、表示・非表示を切り替えたりして、フィードをパーソナライズできます。貢献したい方へ：AI Education Weeklyの多くは<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">オープンソース</a>で公開されており、ウェブアプリやコミュニティがキュレーションしたフィードも含まれています。",
     "translationContext": "Description of customization options with GitHub link"
   },
   "about.customization.title": {
@@ -1304,7 +1304,7 @@
     "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
   },
   "app.logo.alt": {
-    "text": "Kagi Newsロゴ",
+    "text": "AI Education Weeklyロゴ",
     "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.clickToReset": {
@@ -1312,11 +1312,11 @@
     "translationContext": "Aria label for the logo button that resets the view to the home page"
   },
   "app.logo.iconAlt": {
-    "text": "Kagi Newsアイコン",
+    "text": "AI Education Weeklyアイコン",
     "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.newsAlt": {
-    "text": "Kagi News News ロゴ",
+    "text": "AI Education Weekly News ロゴ",
     "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
   },
   "app.migrationNotice": {
@@ -1332,7 +1332,7 @@
     "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
   },
   "app.title": {
-    "text": "Kagi News",
+    "text": "AI Education Weekly",
     "translationContext": "Title of the app, should not be translated"
   },
   "article.closeStory": {
@@ -2192,7 +2192,7 @@
     "translationContext": "Pipeline step label: feeds are active on Kagi News"
   },
   "contribute.history.status.live.tooltip": {
-    "text": "あなたのフィードはKagi Newsで有効です。カテゴリにストーリーが表示されない場合、記事がクラスタリングされなかったことを意味します — これは正常です。",
+    "text": "あなたのフィードはAI Education Weeklyで有効です。カテゴリにストーリーが表示されない場合、記事がクラスタリングされなかったことを意味します — これは正常です。",
     "translationContext": "Tooltip for the Live pipeline step"
   },
   "contribute.history.status.merged": {
@@ -2200,7 +2200,7 @@
     "translationContext": "Pipeline step label: PR has been merged"
   },
   "contribute.history.status.merged.tooltip": {
-    "text": "プルリクエストはマージされました。変更は次のKagi Newsのバッチで公開されます。",
+    "text": "プルリクエストはマージされました。変更は次のAI Education Weeklyのバッチで公開されます。",
     "translationContext": "Tooltip for the Merged pipeline step"
   },
   "contribute.history.status.submitted": {
@@ -2360,15 +2360,15 @@
     "translationContext": "Title for the core feeds card"
   },
   "contribute.onboarding.feedTypes.title": {
-    "text": "Kagi Newsを支える2種類のフィード",
+    "text": "AI Education Weeklyを支える2種類のフィード",
     "translationContext": "Section title for core vs community feeds comparison"
   },
   "contribute.onboarding.guidelines.anyLanguage": {
-    "text": "どの言語でも歓迎します。Kagi Newsはすべてを自動的に翻訳するため、1つのカテゴリで複数の言語を混在させることができますし、そうすべきです。",
+    "text": "どの言語でも歓迎します。AI Education Weeklyはすべてを自動的に翻訳するため、1つのカテゴリで複数の言語を混在させることができますし、そうすべきです。",
     "translationContext": "Guideline: feeds in any language are accepted"
   },
   "contribute.onboarding.guidelines.minimum": {
-    "text": "新しいカテゴリがKagi Newsに表示されるには、少なくとも25のフィードが必要です。これにより、クラスタリングが機能するのに十分な重複が確保されます。",
+    "text": "新しいカテゴリがAI Education Weeklyに表示されるには、少なくとも25のフィードが必要です。これにより、クラスタリングが機能するのに十分な重複が確保されます。",
     "translationContext": "Guideline: minimum feed count for new categories"
   },
   "contribute.onboarding.guidelines.noLanguageSplit": {
@@ -2380,7 +2380,7 @@
     "translationContext": "Guideline: source quality preference"
   },
   "contribute.onboarding.guidelines.rssOnly": {
-    "text": "RSSまたはAtomフィードのみ。Kagi Newsはウェブサイトをスクレイピングせず、公開されているフィードデータのみを使用します。",
+    "text": "RSSまたはAtomフィードのみ。AI Education Weeklyはウェブサイトをスクレイピングせず、公開されているフィードデータのみを使用します。",
     "translationContext": "Guideline: only RSS/Atom feeds are accepted"
   },
   "contribute.onboarding.guidelines.title": {
@@ -2436,7 +2436,7 @@
     "translationContext": "Subtitle on the contribute onboarding info page"
   },
   "contribute.onboarding.title": {
-    "text": "Kagi Newsに貢献する",
+    "text": "AI Education Weeklyに貢献する",
     "translationContext": "Title on the contribute onboarding info page"
   },
   "contribute.onboarding.whatToDo.existing.description": {
@@ -2448,7 +2448,7 @@
     "translationContext": "Title for existing category contribution option"
   },
   "contribute.onboarding.whatToDo.new.description": {
-    "text": "ローカルニュース、地域報道、ニッチなトピック。新しいカテゴリがKagi Newsで公開されるには、少なくとも25のフィードが必要です。これにより、クラスタリングが実際のストーリーを生成するのに十分な重複が確保されます。",
+    "text": "ローカルニュース、地域報道、ニッチなトピック。新しいカテゴリがAI Education Weeklyで公開されるには、少なくとも25のフィードが必要です。これにより、クラスタリングが実際のストーリーを生成するのに十分な重複が確保されます。",
     "translationContext": "Description of proposing new categories"
   },
   "contribute.onboarding.whatToDo.new.title": {
@@ -2460,7 +2460,7 @@
     "translationContext": "Section title for contribution options"
   },
   "contribute.pageTitle": {
-    "text": "フィードの提供 - Kagi News",
+    "text": "フィードの提供 - AI Education Weekly",
     "translationContext": "Browser tab title for the contribute page"
   },
   "contribute.pendingFeedCount": {
@@ -2816,11 +2816,11 @@
     "translationContext": "Loading message shown when fetching news stories"
   },
   "meta.categoryDescription": {
-    "text": "Kagi Newsの最新{category}ニュース",
+    "text": "AI Education Weeklyの最新{category}ニュース",
     "translationContext": "Meta description for category pages. {category} will be replaced with the actual category name."
   },
   "meta.description": {
-    "text": "Kagi Newsは世界中の数千ものニュースソースを1つの完璧なデイリーブリーフィングに凝縮します。あらゆる重要な視点をわずか5分で把握できます。無限のスクロールは不要。注意力を奪われることもありません。",
+    "text": "AI Education Weeklyは世界中の数千ものニュースソースを1つの完璧なデイリーブリーフィングに凝縮します。あらゆる重要な視点をわずか5分で把握できます。無限のスクロールは不要。注意力を奪われることもありません。",
     "translationContext": "Default meta description for SEO"
   },
   "meta.news": {
@@ -3264,7 +3264,7 @@
     "translationContext": "Subtitle for onboarding step 1"
   },
   "onboarding.welcome.title": {
-    "text": "Kagi Newsへようこそ！",
+    "text": "AI Education Weeklyへようこそ！",
     "translationContext": "Title for onboarding step 1"
   },
   "onthisday.events": {

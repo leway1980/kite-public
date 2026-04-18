@@ -1,6 +1,6 @@
 {
   "settings.about.aboutKite": {
-    "text": "About Kagi News",
+    "text": "About AI Education Weekly",
     "translationContext": "Title for about Kagi News section"
   },
   "settings.about.apiAccess": {
@@ -8,11 +8,11 @@
     "translationContext": "Title for API access section in about settings"
   },
   "settings.about.apiDescription": {
-    "text": "Access Kagi News programmatically with our REST API",
+    "text": "Access AI Education Weekly programmatically with our REST API",
     "translationContext": "Description for API access"
   },
   "settings.about.description": {
-    "text": "Kagi News distills thousands of world-wide news sources into one perfect daily briefing. Get every critical perspective in just 5 minutes. No endless scrolling. No attention hijacking.",
+    "text": "AI Education Weekly distills thousands of world-wide news sources into one perfect daily briefing. Get every critical perspective in just 5 minutes. No endless scrolling. No attention hijacking.",
     "translationContext": "Short description of Kagi News in about settings"
   },
   "settings.about.downloadAndroid": {
@@ -48,7 +48,7 @@
     "translationContext": "Title for mobile apps section in about settings"
   },
   "settings.about.mobileDescription": {
-    "text": "Get Kagi News on your mobile device",
+    "text": "Get AI Education Weekly on your mobile device",
     "translationContext": "Description for mobile apps"
   },
   "settings.about.viewApiDocs": {
@@ -60,7 +60,7 @@
     "translationContext": "Button text to open keyboard shortcuts help overlay"
   },
   "settings.aboutKite.button": {
-    "text": "About Kagi News",
+    "text": "About AI Education Weekly",
     "translationContext": "Text for the About Kagi News button"
   },
   "settings.categories.allCategories": {
@@ -76,7 +76,7 @@
     "translationContext": "Button text for contributing categories"
   },
   "settings.categories.contribute.intro": {
-    "text": "Help expand Kagi News coverage by suggesting new categories. Community contributions are what make Kagi News diverse and comprehensive.",
+    "text": "Help expand AI Education Weekly coverage by suggesting new categories. Community contributions are what make AI Education Weekly diverse and comprehensive.",
     "translationContext": "Introduction text in the contribute category modal"
   },
   "settings.categories.contribute.learnMore": {
@@ -856,7 +856,7 @@
     "translationContext": "Button text to toggle all sections on/off at once"
   },
   "settings.shareLanguage.message": {
-    "text": "Check out Kagi News News in {{language}} - it will skip the intro and load directly in your language!",
+    "text": "Check out AI Education Weekly News in {{language}} - it will skip the intro and load directly in your language!",
     "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
   },
   "settings.shareLanguage.success": {
@@ -1008,7 +1008,7 @@
     "translationContext": "Loading text shown while importing settings from a backup file"
   },
   "settings.sync.info.description": {
-    "text": "Kagi News can sync your settings and read history across all your devices. This data is stored securely on Kagi servers and associated with your Kagi Search account.\n\nYour synced data is not used for any other purpose, not shared with anyone, and is solely stored to provide the sync service to you. You have full control over what gets synced and can delete your data at any time.",
+    "text": "AI Education Weekly can sync your settings and read history across all your devices. This data is stored securely on Kagi servers and associated with your Kagi Search account.\n\nYour synced data is not used for any other purpose, not shared with anyone, and is solely stored to provide the sync service to you. You have full control over what gets synced and can delete your data at any time.",
     "translationContext": "Description of sync and privacy features"
   },
   "settings.sync.mobileApp.description": {
@@ -1188,7 +1188,7 @@
     "translationContext": "Second paragraph of the approach section with GitHub link"
   },
   "about.approach.description3": {
-    "text": "Kagi News reads public RSS feeds of thousands of (community-curated) world-wide news sources and utilizes AI to distill them into one perfect daily briefing. You get every critical perspective and timeline in just 5 minutes. That's it. No endless scrolling. No attention hijacking. Because we deserve better.",
+    "text": "AI Education Weekly reads public RSS feeds of thousands of (community-curated) world-wide news sources and utilizes AI to distill them into one perfect daily briefing. You get every critical perspective and timeline in just 5 minutes. That's it. No endless scrolling. No attention hijacking. Because we deserve better.",
     "translationContext": "Third paragraph of the approach section"
   },
   "about.approach.title": {
@@ -1204,7 +1204,7 @@
     "translationContext": "Title of the contact section"
   },
   "about.customization.description": {
-    "text": "Personalize your feed by reordering and toggling categories in settings. Want to contribute? Most of Kagi News is <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">open source</a>, including our web app and community-curated feeds.",
+    "text": "Personalize your feed by reordering and toggling categories in settings. Want to contribute? Most of AI Education Weekly is <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">open source</a>, including our web app and community-curated feeds.",
     "translationContext": "Description of customization options with GitHub link"
   },
   "about.customization.title": {
@@ -1252,7 +1252,7 @@
     "translationContext": "Description of why Kagi News exists, including HTML link"
   },
   "about.why.title": {
-    "text": "Why Kagi News? Because news is broken.",
+    "text": "Why AI Education Weekly? Because news is broken.",
     "translationContext": "Title of the Why Kagi News section"
   },
   "app_navigation.assistant": {
@@ -1304,7 +1304,7 @@
     "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
   },
   "app.logo.alt": {
-    "text": "Kagi News Logo",
+    "text": "AI Education Weekly Logo",
     "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.clickToReset": {
@@ -1312,11 +1312,11 @@
     "translationContext": "Aria label for the logo button that resets the view to the home page"
   },
   "app.logo.iconAlt": {
-    "text": "Kagi News icon",
+    "text": "AI Education Weekly icon",
     "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
   },
   "app.logo.newsAlt": {
-    "text": "Kagi News News Logo",
+    "text": "AI Education Weekly News Logo",
     "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
   },
   "app.motto": {
@@ -1328,7 +1328,7 @@
     "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
   },
   "app.title": {
-    "text": "Kagi News",
+    "text": "AI Education Weekly",
     "translationContext": "Title of the app, should not be translated"
   },
   "article.closeStory": {
@@ -2184,7 +2184,7 @@
     "translationContext": "Pipeline step label: feeds are active on Kagi News"
   },
   "contribute.history.status.live.tooltip": {
-    "text": "Your feeds are active on Kagi News. If a category shows no stories, it means articles didn't cluster — this is normal.",
+    "text": "Your feeds are active on AI Education Weekly. If a category shows no stories, it means articles didn't cluster — this is normal.",
     "translationContext": "Tooltip for the Live pipeline step"
   },
   "contribute.history.status.merged": {
@@ -2192,7 +2192,7 @@
     "translationContext": "Pipeline step label: PR has been merged"
   },
   "contribute.history.status.merged.tooltip": {
-    "text": "Your pull request has been merged. Changes will go live with the next Kagi News batch.",
+    "text": "Your pull request has been merged. Changes will go live with the next AI Education Weekly batch.",
     "translationContext": "Tooltip for the Merged pipeline step"
   },
   "contribute.history.status.submitted": {
@@ -2352,15 +2352,15 @@
     "translationContext": "Title for the core feeds card"
   },
   "contribute.onboarding.feedTypes.title": {
-    "text": "Two kinds of feeds power Kagi News",
+    "text": "Two kinds of feeds power AI Education Weekly",
     "translationContext": "Section title for core vs community feeds comparison"
   },
   "contribute.onboarding.guidelines.anyLanguage": {
-    "text": "Any language is welcome. Kagi News translates everything automatically, so one category can and should mix languages.",
+    "text": "Any language is welcome. AI Education Weekly translates everything automatically, so one category can and should mix languages.",
     "translationContext": "Guideline: feeds in any language are accepted"
   },
   "contribute.onboarding.guidelines.minimum": {
-    "text": "New categories need at least 25 feeds to be surfaced in Kagi News. This ensures enough overlap for clustering to work.",
+    "text": "New categories need at least 25 feeds to be surfaced in AI Education Weekly. This ensures enough overlap for clustering to work.",
     "translationContext": "Guideline: minimum feed count for new categories"
   },
   "contribute.onboarding.guidelines.noLanguageSplit": {
@@ -2372,7 +2372,7 @@
     "translationContext": "Guideline: source quality preference"
   },
   "contribute.onboarding.guidelines.rssOnly": {
-    "text": "RSS or Atom feeds only. Kagi News doesn't scrape websites, it only uses publicly available feed data.",
+    "text": "RSS or Atom feeds only. AI Education Weekly doesn't scrape websites, it only uses publicly available feed data.",
     "translationContext": "Guideline: only RSS/Atom feeds are accepted"
   },
   "contribute.onboarding.guidelines.title": {
@@ -2428,7 +2428,7 @@
     "translationContext": "Subtitle on the contribute onboarding info page"
   },
   "contribute.onboarding.title": {
-    "text": "Contribute to Kagi News",
+    "text": "Contribute to AI Education Weekly",
     "translationContext": "Title on the contribute onboarding info page"
   },
   "contribute.onboarding.whatToDo.existing.description": {
@@ -2440,7 +2440,7 @@
     "translationContext": "Title for existing category contribution option"
   },
   "contribute.onboarding.whatToDo.new.description": {
-    "text": "Local news, regional coverage, niche topics. New categories need at least 25 feeds to go live in Kagi News. This ensures enough overlap for the clustering to produce real stories.",
+    "text": "Local news, regional coverage, niche topics. New categories need at least 25 feeds to go live in AI Education Weekly. This ensures enough overlap for the clustering to produce real stories.",
     "translationContext": "Description of proposing new categories"
   },
   "contribute.onboarding.whatToDo.new.title": {
@@ -2452,7 +2452,7 @@
     "translationContext": "Section title for contribution options"
   },
   "contribute.pageTitle": {
-    "text": "Contribute Feeds - Kagi News",
+    "text": "Contribute Feeds - AI Education Weekly",
     "translationContext": "Browser tab title for the contribute page"
   },
   "contribute.pendingFeedCount": {
@@ -2656,7 +2656,7 @@
     "translationContext": "Table header for number of race wins"
   },
   "footer.about": {
-    "text": "About Kagi News",
+    "text": "About AI Education Weekly",
     "translationContext": "Link text for about page"
   },
   "footer.aboutMobile": {
@@ -2808,11 +2808,11 @@
     "translationContext": "Loading message shown when fetching news stories"
   },
   "meta.categoryDescription": {
-    "text": "Latest {category} news on Kagi News",
+    "text": "Latest {category} news on AI Education Weekly",
     "translationContext": "Meta description for category pages. {category} will be replaced with the actual category name."
   },
   "meta.description": {
-    "text": "Kagi News distills thousands of world-wide news sources into one perfect daily briefing. Get every critical perspective in just 5 minutes. No endless scrolling. No attention hijacking.",
+    "text": "AI Education Weekly distills thousands of world-wide news sources into one perfect daily briefing. Get every critical perspective in just 5 minutes. No endless scrolling. No attention hijacking.",
     "translationContext": "Default meta description for SEO"
   },
   "meta.news": {
@@ -3236,7 +3236,7 @@
     "translationContext": "Skip button text"
   },
   "onboarding.categories.subtitle": {
-    "text": "Kagi News follows news from around the world, covering national, regional, and local events. Select the categories you're interested in:",
+    "text": "AI Education Weekly follows news from around the world, covering national, regional, and local events. Select the categories you're interested in:",
     "translationContext": "Subtitle for onboarding step 2"
   },
   "onboarding.categories.title": {
@@ -3244,7 +3244,7 @@
     "translationContext": "Title for onboarding step 2"
   },
   "onboarding.sections.subtitle": {
-    "text": "Kagi News articles include various sections like summaries, key points, timelines, and different perspectives. You can reorder these sections by dragging or disable them entirely based on your reading preferences.",
+    "text": "AI Education Weekly articles include various sections like summaries, key points, timelines, and different perspectives. You can reorder these sections by dragging or disable them entirely based on your reading preferences.",
     "translationContext": "Subtitle for onboarding step 3"
   },
   "onboarding.sections.title": {
@@ -3256,7 +3256,7 @@
     "translationContext": "Subtitle for onboarding step 1"
   },
   "onboarding.welcome.title": {
-    "text": "Welcome to Kagi News!",
+    "text": "Welcome to AI Education Weekly!",
     "translationContext": "Title for onboarding step 1"
   },
   "onthisday.events": {

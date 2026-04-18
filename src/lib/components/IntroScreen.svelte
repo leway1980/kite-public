@@ -70,7 +70,7 @@ $effect(() => {
               {s("app.title") || "Kite"}
             </h1>
             <p class="text-primary-600">
-              {s("about.subtitle") || "News app by Kagi"}
+              {s("about.subtitle") || "AI Education Weekly"}
             </p>
           </div>
         </div>
