@@ -10,123 +10,62 @@ const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
 
 const aiNewsStories: Story[] = [
 	{
-		id: 'aiNews-1',
-		cluster_number: 1,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 動態',
-		title: 'Google 推出 7 項 AI 旅遊功能，整合 Search 與 Pixel 裝置',
-		short_summary: 'Google 在 2026 年夏季前推出 7 項旅遊輔助 AI 功能，涵蓋 Search、Google Maps 及 Pixel 手機。台灣教師應關注這波整合：AI 不再只是回答問題的工具，而是能主動規劃行程、辨識地標、即時翻譯功能的全場景助理。這種「AI 嵌入日常工作流」的趨勢，正是未來課堂數位工具設計的縮影，值得跨科教師共同討論 AI 輔助決策的倫理與便利的邊界。',
-		emoji: '✈️',
-		did_you_know: 'Google Search 的 AI Overview 功能每月已有超過 15 億使用者，旅遊規劃是使用率最高的情境之一。台灣每年出境旅客超過 1,300 萬次，AI 輔助旅遊工具的普及速度將遠快於課室想像。',
-		talking_points: [
-			'Google 一次推出 7 項 AI 旅遊功能，橫跨 Search、Maps、Pixel 手機三大平台',
-			'功能包含 AI 行程規劃、農夫市集即時資訊、地標辨識等日常旅遊場景',
-			'Pixel 手機整合 AI 功能可離線使用，反映 On-device AI 技術成熟',
-			'這類 AI 輔助旅遊工具正從「搜尋引擎」轉型為「決策代理人」，對資訊素養教育有重要啟示',
-		],
-		quote: '7 ways to travel smarter this summer, with help from Google',
-		quote_attribution: 'Google Blog, 2026-04-17',
-		quote_source_url: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
-		quote_source_domain: 'blog.google',
-		perspectives: [
-			{
-				text: '從科技整合角度：Google 將 AI 深度嵌入旅遊全流程，代表 AI 助理從「工具」演進為「全程陪伴的規劃夥伴」。教師可藉此討論 AI 如何改變人類做決定的方式，以及學生如何培養「與 AI 協作」而非「依賴 AI」的能力。',
-				sources: [
-					{
-						name: 'Google Blog',
-						url: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: '7 ways to travel smarter this summer, with help from Google',
-				link: 'https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/',
-				domain: 'blog.google',
-				date: '2026-04-17',
-			},
-		],
-		domains: [
-			{ name: 'blog.google' },
-		],
-	},
-	{
-		id: 'aiNews-2',
-		cluster_number: 2,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 動態',
-		title: 'Chrome 推出 AI Mode：瀏覽器內建 AI 對話取代傳統搜尋',
-		short_summary: 'Google 在 Chrome 瀏覽器中正式推出 AI Mode，使用者可直接在瀏覽器側邊欄與 AI 對話，無需跳轉至搜尋頁面。台灣高中教師應了解：學生的資訊查找行為正在發生根本性改變——從「關鍵字搜尋→點擊連結→閱讀網頁」的流程，變成「直接向 AI 問答→取得整合摘要」。這影響學生的資訊素養培養、引用來源習慣，以及批判性思考的訓練方式，需要在課堂中重新設計資訊查核的練習活動。',
-		emoji: '🌐',
-		did_you_know: 'Chrome 全球用戶超過 30 億，是目前市佔率最高的瀏覽器。AI Mode 若全面推出，將是瀏覽器史上最大的互動模式轉型，影響規模遠超過搜尋引擎從目錄分類轉向關鍵字搜尋的那次變革。',
-		talking_points: [
-			'Chrome AI Mode 讓使用者直接在瀏覽器側邊欄進行 AI 對話，不需要開新分頁',
-			'功能整合 Google 的 Gemini 模型，能讀取當前網頁內容並提供摘要與問答',
-			'這是瀏覽器互動模式的根本性轉變：從「搜尋導航」變為「對話式探索」',
-			'教師需思考：當 AI 成為預設的資訊中介，學生的閱讀理解與來源查核能力如何維持？',
-		],
-		quote: 'A new way to explore the web with AI Mode in Chrome',
-		quote_attribution: 'Google Blog, 2026-04-16',
-		quote_source_url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
-		quote_source_domain: 'blog.google',
-		perspectives: [
-			{
-				text: '從資訊素養角度：AI Mode 讓 Chrome 成為「AI 優先」的資訊入口，學生未來查資料時可能跳過原始網頁。教師需重新設計「查找資訊→評估來源→引用論證」的教學活動，確保 AI 輔助不會削弱學生獨立驗證資訊的能力。',
-				sources: [
-					{
-						name: 'Google Blog',
-						url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'A new way to explore the web with AI Mode in Chrome',
-				link: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
-				domain: 'blog.google',
-				date: '2026-04-16',
-			},
-		],
-		domains: [
-			{ name: 'blog.google' },
-		],
-	},
-	{
 		id: 'aiNews-3',
 		cluster_number: 3,
-		unique_domains: 1,
-		number_of_titles: 1,
+		unique_domains: 2,
+		number_of_titles: 2,
 		category: 'AI 動態',
-		title: 'Gemini 推出「個人化智慧」功能，AI 圖像生成結合個人記憶',
-		short_summary: 'Google Gemini 應用程式新增「Personal Intelligence」功能，可根據使用者的個人照片、喜好與記憶，生成高度個人化的 AI 圖像。台灣教師值得關注的是：這類功能讓 AI 圖像生成從「輸入文字提示→生成圖片」，進化到「AI 了解你這個人→生成專屬內容」。在美術、國文、公民等課程中，這引發肖像權、個人資料使用授權以及 AI 創作著作權等重要議題，是跨科素養教育的好素材。',
-		emoji: '🎨',
-		did_you_know: 'Google 將這項功能命名為「Personal Intelligence」，強調 AI 將從「通用助理」演化為「認識你個人的私人助理」。這也讓人反思：當 AI 越來越「懂你」，我們對隱私的定義是否也需要隨之更新？',
+		title: 'Gemini 整合 Google Photos 個人化生圖，Nano Banana 2 模型登場',
+		short_summary: 'Google 的 Gemini app 推出「個人智慧」（Personal Intelligence）功能，可從使用者的 Google Photos 抓取個人照片，結合全新 Nano Banana 2 影像生成模型，產出客製化的 AI 生圖結果。這代表 AI 助理正從「通用工具」轉向「個人化代理」的新階段。對台灣高中教師而言，當 AI 能讀取個人資料來生成內容，隱私邊界與教室使用政策的討論就更加迫切，學生個資保護的數位素養課程需要同步更新。',
+		emoji: '🖼️',
+		did_you_know: 'Nano Banana 是 Google 為 Gemini 開發的輕量化影像生成模型系列，版本 2 在個人化影像任務上有顯著提升。此功能涉及個人資料授權，使用者需明確同意後 Gemini 才能存取相片庫，代表 Google 在個人化與隱私之間採取的明確「同意優先」設計哲學。',
 		talking_points: [
-			'Gemini Personal Intelligence 可讀取使用者個人照片與記憶，生成個人化圖像',
-			'功能在 Gemini App 中推出，目前限定部分地區使用者',
-			'個人化 AI 圖像生成引發肖像權與個人資料保護的法律問題',
-			'教師可運用此案例教導學生「AI 使用條款授權範圍」與「個資同意的意義」',
+			'Google 推出「Personal Intelligence」功能，允許 Gemini 存取 Google Photos 個人照片庫生成客製圖像',
+			'搭配全新 Nano Banana 2 模型，可依個人照片風格生成高品質客製化圖像',
+			'功能需使用者明確同意才可啟用，採「同意優先」設計避免隱私爭議',
+			'The Verge 與 blog.google 雙平台同步報導，顯示 Google 積極向主流媒體推廣',
+			'教師需思考：AI 助理結合個人資料的「個人化生圖」是否應在校園使用，值得訂定明確規範',
 		],
-		quote: 'New ways to create personalized images in the Gemini app',
-		quote_attribution: 'Google Blog, 2026-04-16',
-		quote_source_url: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
-		quote_source_domain: 'blog.google',
+		quote: 'Google\'s Personal Intelligence feature, which lets Gemini pull data from apps like Google Photos to offer responses tailored to you, can now use that data and its Nano Banana 2 image model to create images.',
+		quote_attribution: 'The Verge, 2026-04-16',
+		quote_source_url: 'https://www.theverge.com/tech/913202/gemini-personal-intelligence-images-nano-banana',
+		quote_source_domain: 'theverge.com',
 		perspectives: [
 			{
-				text: '從 AI 倫理角度：Personal Intelligence 讓 AI 圖像生成與個人記憶深度綁定，強化了「AI 是個人延伸」的感知。這在教育現場引發值得討論的問題：學生把自己的照片上傳給 AI 服務，授權範圍是什麼？這些資料如何被使用？需要在課堂中做數位公民教育。',
+				text: '從科技媒體角度（The Verge）：強調 Personal Intelligence 功能讓 Gemini 能讀取個人 Photos，創造「因人而異」的生圖體驗，視為 AI 個人化的重要里程碑——用戶不再需要手動上傳參考圖，AI 直接記住你的視覺風格。',
 				sources: [
 					{
-						name: 'Google Blog',
+						name: 'The Verge',
+						url: 'https://www.theverge.com/tech/913202/gemini-personal-intelligence-images-nano-banana',
+					},
+				],
+			},
+			{
+				text: '從 Google 官方角度（blog.google）：著重展示功能範例圖，強調 Nano Banana 2 的影像品質與個人化應用情境，定位為 Gemini app 的日常創作工具，吸引消費者日常使用。',
+				sources: [
+					{
+						name: 'blog.google',
+						url: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
+					},
+				],
+			},
+			{
+				text: '從教育隱私政策角度：AI 存取個人相片庫進行生成，代表個資使用範疇擴大。台灣校園若使用 Gemini，需評估學生個資被模型讀取的風險，並在課程中討論「個人化」與「隱私」之間的取捨。',
+				sources: [
+					{
+						name: 'blog.google',
 						url: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
 					},
 				],
 			},
 		],
 		articles: [
+			{
+				title: 'Gemini can now pull from Google Photos to generate personalized images',
+				link: 'https://www.theverge.com/tech/913202/gemini-personal-intelligence-images-nano-banana',
+				domain: 'theverge.com',
+				date: '2026-04-16',
+			},
 			{
 				title: 'New ways to create personalized images in the Gemini app',
 				link: 'https://blog.google/innovation-and-ai/products/gemini-app/personal-intelligence-nano-banana/',
@@ -135,50 +74,77 @@ const aiNewsStories: Story[] = [
 			},
 		],
 		domains: [
+			{ name: 'theverge.com' },
 			{ name: 'blog.google' },
 		],
 	},
 	{
-		id: 'aiNews-4',
-		cluster_number: 4,
-		unique_domains: 1,
-		number_of_titles: 1,
+		id: 'aiNews-7',
+		cluster_number: 7,
+		unique_domains: 2,
+		number_of_titles: 2,
 		category: 'AI 動態',
-		title: 'OpenAI Codex 全面升級：加入電腦操作、圖像生成與記憶功能',
-		short_summary: 'OpenAI 發布 Codex 應用程式重大更新，新增「電腦使用（computer use）」、程式內瀏覽、圖像生成、記憶功能及外掛程式支援，目標是加速開發者工作流程。台灣教師可從此案例觀察 AI 工具演化的速度：Codex 從最初的程式碼補全工具，已演化成能「看螢幕、操控電腦、記住你的偏好、搜尋網路」的全能 AI 工作代理。資訊科技教師應思考如何在課程中教學生「與 AI 協作開發」而非「被 AI 取代」。',
-		emoji: '💻',
-		did_you_know: 'OpenAI Codex 最早在 2021 年推出，是 GitHub Copilot 的底層模型。短短五年內，它從「自動完成程式碼片段」進化到「能自主操控電腦完成複雜任務」，這樣的演化速度是軟體工具史上罕見的。',
+		title: 'Google 發布 Gemini 3.1 Flash TTS：細粒度音訊標籤精確控制 AI 語音表達',
+		short_summary: 'Google DeepMind 與 Google 同步發布 Gemini 3.1 Flash TTS，這是新一代語音生成模型，引入「細粒度音訊標籤」（granular audio tags），讓開發者可精確控制語氣、停頓、語速等表達細節，使 AI 語音達到「導演級」的可控表達性。對台灣高中教師而言，高度擬真的 AI 語音將衝擊語言學習工具與有聲教材製作，更重要的是：辨別真人錄音與 AI 合成語音的能力，應成為媒體素養課程的新核心內容。',
+		emoji: '🎙️',
+		did_you_know: 'TTS（Text-to-Speech）技術近年突破最大瓶頸是「韻律自然度」。Gemini 3.1 Flash TTS 的 granular audio tags 讓使用者可以在文字中插入標籤，指示「這裡要用驚訝的語氣停頓 0.5 秒」，類似導演給演員的舞台指示——這在過去需要人工後製才能實現。',
 		talking_points: [
-			'Codex 更新版支援 computer use（AI 直接操控電腦執行任務），突破純文字交互限制',
-			'新增程式內瀏覽、圖像生成、跨任務記憶，讓 Codex 成為全功能 AI 開發代理',
-			'外掛程式支援讓第三方工具能與 Codex 整合，形成開放生態系',
-			'資訊科技教師應注意：AI 開發工具的能力邊界正在快速擴張，課程內容需持續更新',
+			'Google DeepMind 發布 Gemini 3.1 Flash TTS，支援細粒度音訊標籤精確指定語音表達風格',
+			'DeepMind 研究部門與 blog.google 同步發布，顯示此為 Google 跨部門重點推廣的模型',
+			'「表達性語音生成」（expressive audio generation）讓 AI 配音技術門檻大幅降低',
+			'教師可用於製作個人化有聲教材，但也需提防深偽語音（deepfake audio）在學生間的濫用',
+			'語音辨別（真人 vs AI 合成）應成為台灣媒體素養課程的新必要內容',
 		],
-		quote: 'The updated Codex app adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.',
-		quote_attribution: 'OpenAI, 2026-04-16',
-		quote_source_url: 'https://openai.com/index/codex-for-almost-everything',
-		quote_source_domain: 'openai.com',
+		quote: 'Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.',
+		quote_attribution: 'Google DeepMind, 2026-04-15',
+		quote_source_url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+		quote_source_domain: 'deepmind.google',
 		perspectives: [
 			{
-				text: '從職涯教育角度：Codex 的快速進化讓「AI 是開發者的工具」變成「AI 本身就是開發者」的問題愈來愈真實。資訊科教師需帶學生思考：未來軟體工程師的核心競爭力是什麼？如何透過學習讓自己不被 AI 代理取代？',
+				text: '從技術研究角度（DeepMind）：強調 granular audio tags 是核心創新，讓語音生成從「輸入文字得到語音」進化為「可腳本化的表達性語音導演系統」，賦予開發者前所未有的細粒度控制權。',
 				sources: [
 					{
-						name: 'OpenAI',
-						url: 'https://openai.com/index/codex-for-almost-everything',
+						name: 'Google DeepMind',
+						url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+					},
+				],
+			},
+			{
+				text: '從產品推廣角度（blog.google）：著重展示 Gemini 3.1 Flash TTS 的品牌定位，與 Gemini 模型家族整合，吸引企業開發者將表達性 AI 語音嵌入語言學習、客服、教育等產品。',
+				sources: [
+					{
+						name: 'blog.google',
+						url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+					},
+				],
+			},
+			{
+				text: '從教育與媒體素養角度：表達性 AI 語音可大幅降低語言教材錄製成本，但也提高深偽語音辨別難度。台灣教師應思考如何在課程中加入「這段語音是否真人發音」的辨識訓練，將其納入數位素養架構。',
+				sources: [
+					{
+						name: 'Google DeepMind',
+						url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
 					},
 				],
 			},
 		],
 		articles: [
 			{
-				title: 'Codex for (almost) everything',
-				link: 'https://openai.com/index/codex-for-almost-everything',
-				domain: 'openai.com',
-				date: '2026-04-16',
+				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
+				link: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
+				domain: 'deepmind.google',
+				date: '2026-04-15',
+			},
+			{
+				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
+				link: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+				domain: 'blog.google',
+				date: '2026-04-15',
 			},
 		],
 		domains: [
-			{ name: 'openai.com' },
+			{ name: 'deepmind.google' },
+			{ name: 'blog.google' },
 		],
 	},
 	{
@@ -187,16 +153,16 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'OpenAI 發布 GPT-Rosalind：專攻藥物開發與基因體學的 AI 推理模型',
-		short_summary: 'OpenAI 推出生命科學專用 AI 模型 GPT-Rosalind，聚焦藥物研發、基因體分析、蛋白質推理與科學研究流程加速。台灣高中生物與化學教師應特別關注：這是 AI 從通用語言模型轉向「領域專業推理模型」的重要里程碑。GPT-Rosalind 以諾貝爾化學獎得主 Rosalind Franklin 命名，象徵 AI 在基礎科學研究的定位提升。教師可藉此介紹 AI 如何改變科學研究的工作流程，並引導學生思考未來生命科學家需具備哪些 AI 協作能力。',
+		title: 'OpenAI 發布 GPT-Rosalind：專為生命科學加速藥物開發與基因組學推理',
+		short_summary: 'OpenAI 推出 GPT-Rosalind，這是專為生命科學研究設計的前沿推理模型，主打加速藥物開發、基因組學分析、蛋白質推理與科學研究工作流程。模型以現代生物學先驅 Rosalind Franklin 命名，彰顯 AI 在生命科學的戰略方向。台灣高中生物科教師應了解：AI 與生科研究的深度整合已不是未來式，學生未來進入相關領域時，AI 協作將是基本能力，課程應提早進行概念鋪陳。（單源權威）',
 		emoji: '🧬',
-		did_you_know: 'GPT-Rosalind 以 DNA 雙螺旋結構共同發現者 Rosalind Franklin 命名。Franklin 在世時的貢獻長期遭到忽視，直到 2023 年才因為 CRISPR 相關研究獲得追授肯定。以她命名 AI 模型，某種程度是對科學史性別不平等的一種補償象徵。',
+		did_you_know: 'GPT-Rosalind 以 Rosalind Franklin（1920-1958）命名，她拍攝的 X 射線晶體學照片直接促成 DNA 雙螺旋結構的發現，但在當時未獲應有認可。OpenAI 以此命名，既是致敬，也隱含「讓被低估的科學智慧再次發揮作用」的寓意。',
 		talking_points: [
-			'GPT-Rosalind 是 OpenAI 首個專為生命科學設計的前沿推理模型',
-			'主要應用領域：藥物研發加速、基因體分析、蛋白質結構推理',
-			'反映 AI 趨勢：從通用大模型轉向「垂直領域專業模型」的分化',
-			'台灣生技製藥產業可望成為重要應用場景，帶動相關科系就業轉型',
-			'教師可引導討論：AI 加速藥物研發是否會影響臨床試驗倫理與藥物安全標準？',
+			'OpenAI 推出 GPT-Rosalind，定位為生命科學領域的「前沿推理模型」（frontier reasoning model）',
+			'主要應用場景：藥物開發、基因組學分析、蛋白質結構推理、科學研究工作流程自動化',
+			'此模型代表 AI 公司從「通用模型」向「垂直領域專用模型」發展的加速趨勢',
+			'台灣生技產業若採用此類工具，高中生物科課程與大學先修的準備方向將需調整',
+			'模型以 Rosalind Franklin 命名，提供教師引導學生討論科學史與性別平權的切入點',
 		],
 		quote: 'OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.',
 		quote_attribution: 'OpenAI, 2026-04-16',
@@ -204,7 +170,25 @@ const aiNewsStories: Story[] = [
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: '從科學教育角度：GPT-Rosalind 的出現意味著未來的生命科學研究者必須具備 AI 工具應用能力。高中生物課若能介紹 AI 蛋白質折疊（AlphaFold）、AI 基因分析的概念，將大幅提升學生進入相關領域的競爭力。',
+				text: '從 OpenAI 策略角度：GPT-Rosalind 代表從通用 AI 到生命科學垂直應用的策略轉向，將推理能力針對性地優化於蛋白質、基因組等科學推理任務，與 DeepMind AlphaFold 等工具形成競合關係。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/introducing-gpt-rosalind',
+					},
+				],
+			},
+			{
+				text: '從教育政策角度：生命科學 AI 工具的普及，要求台灣高中生物課程思考如何讓學生理解「AI 輔助科學研究」的方式，而非僅學習傳統實驗方法——AI 協助解讀基因序列與蛋白質結構將成為未來生科人才的基本技能。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/introducing-gpt-rosalind',
+					},
+				],
+			},
+			{
+				text: '從科學民主化角度：以科學先驅命名的 AI 模型固然有正面意義，但也引發討論：AI 生科工具是否真能讓更多研究者受益，或只是讓擁有高額 API 預算的大型機構更具競爭優勢？',
 				sources: [
 					{
 						name: 'OpenAI',
@@ -231,16 +215,16 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'OpenAI 投入 1000 萬美元 API 補助，推動 AI 資安防禦生態系',
-		short_summary: 'OpenAI 宣布多家頂尖資安廠商加入「Trusted Access for Cyber」計畫，並提供 1000 萬美元 API 使用補助，讓這些公司使用 GPT-5.4-Cyber 模型強化全球網路防禦。台灣教師（尤其是資訊科技與公民教育教師）應關注：此舉代表 AI 正從「攻擊工具」轉型為「防禦基礎建設」的關鍵一環。台灣面臨頻繁的網路攻擊，AI 資安工具的普及對台灣的資安教育與人才培育有直接的政策意義。',
+		title: 'OpenAI 啟動 1000 萬美元 API 補助，主要資安企業加入網路防禦生態系',
+		short_summary: 'OpenAI 宣布「Trusted Access for Cyber」計畫，提供 1000 萬美元的 API 使用金給主要資安企業，讓其使用 GPT-5.4-Cyber 強化全球網路防禦能力。此舉代表 AI 公司開始將「AI 主動防禦」視為企業社會責任。對台灣高中資訊科技教師而言，AI 在網路安全領域的角色正從「威脅放大器」轉向「防禦工具」，AI 的雙用途本質（攻防兩端皆可用）值得納入資安倫理課程的討論框架。（單源權威）',
 		emoji: '🛡️',
-		did_you_know: 'OpenAI 這次提供的是 GPT-5.4-Cyber，一個針對資安情境微調的特製版本，並非市售的通用 GPT-5 模型。這反映 AI 公司對不同高風險領域（資安、醫療、法律）分別開發專用版本的趨勢，以降低濫用風險並提升專業可信度。',
+		did_you_know: 'GPT-5.4-Cyber 是 OpenAI 為資安任務特別調校的版本，針對漏洞偵測、惡意程式分析、威脅情報整合等資安工作流程優化。這是 AI 公司建立「AI for Security」垂直能力的明確訊號，也意味著資安人員未來需要同時具備傳統資安與 AI 提示工程的複合技能。',
 		talking_points: [
-			'OpenAI 提供 1000 萬美元 API 補助給加入 Trusted Access for Cyber 的資安廠商',
-			'使用的模型為 GPT-5.4-Cyber，資安場景微調版，非市售通用模型',
-			'多家業界領導資安公司與企業加入此計畫，形成 AI 資安聯盟',
-			'台灣每年面臨數百萬次政府與關鍵基礎設施的網路攻擊，AI 防禦工具的重要性不言而喻',
-			'資訊科教師可以此案例討論：AI 在網路攻防的雙重角色——既可被用來攻擊，也是防禦的利器',
+			'OpenAI 提供 1000 萬美元 API 補助給資安企業，透過「Trusted Access for Cyber」計畫',
+			'主要資安廠商和企業加入，使用專用的 GPT-5.4-Cyber 強化網路防禦',
+			'此計畫定位 OpenAI 為「防禦性 AI 生態系的推動者」，不只是 AI 工具供應商',
+			'台灣資訊科技課程可借此討論 AI 在防禦與攻擊兩端的雙重角色（dual-use AI）',
+			'補助計畫模式也可啟發台灣教育部思考如何補助學校取得 AI 授權',
 		],
 		quote: 'Leading security firms and enterprises join OpenAI\'s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense.',
 		quote_attribution: 'OpenAI, 2026-04-16',
@@ -248,7 +232,25 @@ const aiNewsStories: Story[] = [
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: '從資安教育角度：OpenAI 以補助方式推動 AI 資安工具普及，代表 AI 防禦已從學術研究走向商業化。台灣資訊教育應加入「AI 資安意識」模組，讓學生了解 AI 如何識別威脅、自動回應攻擊，以及未來資安人才需要哪些 AI 協作技能。',
+				text: '從 OpenAI 策略角度：資安是 AI 少數能明確展示「AI 是解決方案而非問題」的領域。此計畫讓 OpenAI 在政府與企業客戶面前建立「負責任 AI」形象，同時擴大 GPT-5.4-Cyber 的市場滲透率。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/accelerating-cyber-defense-ecosystem',
+					},
+				],
+			},
+			{
+				text: '從資安教育角度：AI 資安工具的普及意味著未來資安人才需要同時理解 AI 模型運作與傳統網路安全知識。台灣高中資訊科技課程需要提早規劃這種跨域能力的培養路徑，而非等到大學才接觸。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/accelerating-cyber-defense-ecosystem',
+					},
+				],
+			},
+			{
+				text: '從批判角度：AI 同樣可以用來發動更精密的網路攻擊（自動化 spear phishing、漏洞探索）。OpenAI 補助防禦端固然是好事，但 AI 雙用途困境未解——這正是資安倫理課的核心討論題材，教師可將此事件作為案例引導學生辯論。',
 				sources: [
 					{
 						name: 'OpenAI',
@@ -270,73 +272,127 @@ const aiNewsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiNews-7',
-		cluster_number: 7,
-		unique_domains: 2,
-		number_of_titles: 2,
+		id: 'aiNews-2',
+		cluster_number: 2,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'Google 發布 Gemini 3.1 Flash TTS：AI 語音合成支援精細情緒標記',
-		short_summary: 'Google DeepMind 推出 Gemini 3.1 Flash TTS（文字轉語音）模型，引入「細粒度音訊標記（granular audio tags）」技術，讓開發者能精確控制 AI 語音的語調、情緒、節奏與停頓。台灣教師應重視這項技術的教育應用潛力：高品質 AI 語音合成可用於製作課程有聲書、多國語言聽力教材、朗讀輔助工具，尤其對有閱讀障礙或視力障礙的學生有顯著幫助。同時，「deepfake 語音」的偽造風險也值得在媒體素養課程中討論。',
-		emoji: '🎙️',
-		did_you_know: 'TTS（Text-to-Speech）技術存在已超過 50 年，最早的電腦語音合成系統可追溯到 1960 年代的 IBM。然而 Gemini 3.1 Flash TTS 能做到的細緻情緒控制，是過去技術完全無法實現的——這背後是深度學習對人類語音韻律的深度模仿。',
+		title: 'Google 在 Chrome 推出 AI Mode：瀏覽器內直接啟動 AI 問答式網頁探索',
+		short_summary: 'Google 在 Chrome 瀏覽器內推出 AI Mode，讓使用者不需跳離網頁就能透過 AI 問答方式探索網路內容。這代表 AI 助理正從獨立 app 融合進瀏覽器的每一個角落，改變傳統「搜尋-點擊-閱讀」的網頁瀏覽模式。台灣高中教師應思考，當 AI 成為學生閱讀網頁的「中介層」，如何確保學生仍然具備直接閱讀原始資料、判斷資訊來源的批判閱讀能力。（單源權威）',
+		emoji: '🌐',
+		did_you_know: 'Chrome 的 AI Mode 是 Google「AI Overviews」策略的延伸。AI Overviews 在搜尋結果頁面顯示 AI 摘要；AI Mode 更進一步，可在任何網頁上直接啟動對話式 AI 探索，代表 Google 將整個瀏覽行為都納入 AI 輔助的範疇。',
 		talking_points: [
-			'Gemini 3.1 Flash TTS 引入細粒度音訊標記，可精確控制語調、情緒、停頓等語音特徵',
-			'同時由 Google DeepMind 與 Google Blog 雙管道發布，顯示 Google 高度重視此技術',
-			'教育應用：可製作情緒豐富的有聲教材、多語言朗讀工具，輔助聽障或閱讀障礙學生',
-			'DeepFake 語音風險：高品質 AI 語音合成技術普及後，語音身分驗證與真偽辨別將成新課題',
+			'Google 在 Chrome 瀏覽器推出 AI Mode，支援在任何網頁直接啟動 AI 問答式探索',
+			'使用者可在瀏覽任何網頁時直接詢問 AI，無需跳轉至搜尋頁面',
+			'此功能代表 AI 從「搜尋引擎」滲透到整個瀏覽行為，改變資訊取用模式',
+			'教師需思考：學生使用 AI Mode 查資料時，如何維持閱讀原文、評估來源的批判能力？',
+			'Chrome AI Mode 與 Edge Copilot 直接競爭，加速 AI 瀏覽器功能普及化',
 		],
-		quote: 'Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.',
-		quote_attribution: 'Google DeepMind, 2026-04-15',
-		quote_source_url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
-		quote_source_domain: 'deepmind.google',
+		quote: 'A new way to explore the web with AI Mode in Chrome',
+		quote_attribution: 'blog.google, 2026-04-16',
+		quote_source_url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
+		quote_source_domain: 'blog.google',
 		perspectives: [
 			{
-				text: '從教學工具角度：Gemini 3.1 Flash TTS 的情緒語音控制讓 AI 朗讀不再單調，教師可用來製作更生動的聽力教材，或讓不同語言學習情境有對應的語音風格。對特殊教育場景（如閱讀障礙、視障學生）的輔助潛力尤為值得探索。',
+				text: '從 Google 官方角度：AI Mode 是 Google 將 AI 融入所有產品的系統性策略之一，目標是讓使用者「在任何地方都能得到 AI 協助」，強化 Chrome 在瀏覽器 AI 功能競賽中的市場地位。',
 				sources: [
 					{
-						name: 'Google DeepMind',
-						url: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
-					},
-					{
-						name: 'Google Blog',
-						url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+						name: 'blog.google',
+						url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
 					},
 				],
 			},
 			{
-				text: '從媒體素養角度：高品質 AI 語音合成技術讓聲音偽造的門檻大幅降低。教師應在課堂中討論：如何辨別 AI 生成的語音？語音身分驗證在未來的可靠性問題，以及學生應具備哪些媒體識讀技能？',
+				text: '從教育使用角度：當學生在 Chrome 查資料時，AI Mode 會進一步過濾和重新表述資訊，學生可能從未接觸原始文章。這種「AI 中介」閱讀模式對批判思考和資訊素養教育提出新挑戰，需要在課程中明確因應。',
 				sources: [
 					{
-						name: 'Google Blog',
-						url: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+						name: 'blog.google',
+						url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
 					},
 				],
 			},
-		],
-		timeline: [
 			{
-				date: '2026-04-15',
-				date_iso: '2026-04-15',
-				content: 'Google DeepMind 與 Google Blog 同步發布 Gemini 3.1 Flash TTS 模型，宣布細粒度音訊標記技術',
+				text: '從資訊生態角度：AI Mode 進一步壓縮網頁流量——使用者若透過 AI 直接得到答案，原始來源網站的點擊率將繼續下降，對新聞媒體、教育內容平台的商業模式形成長期壓力。',
+				sources: [
+					{
+						name: 'blog.google',
+						url: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
+					},
+				],
 			},
 		],
 		articles: [
 			{
-				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
-				link: 'https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/',
-				domain: 'deepmind.google',
-				date: '2026-04-15',
-			},
-			{
-				title: 'Gemini 3.1 Flash TTS: the next generation of expressive AI speech',
-				link: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/',
+				title: 'A new way to explore the web with AI Mode in Chrome',
+				link: 'https://blog.google/products-and-platforms/products/search/ai-mode-chrome/',
 				domain: 'blog.google',
-				date: '2026-04-15',
+				date: '2026-04-16',
 			},
 		],
 		domains: [
-			{ name: 'deepmind.google' },
 			{ name: 'blog.google' },
+		],
+	},
+	{
+		id: 'aiNews-4',
+		cluster_number: 4,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 動態',
+		title: 'OpenAI Codex app 升級：加入電腦操控、瀏覽器、圖像生成與記憶功能',
+		short_summary: 'OpenAI 更新 macOS 與 Windows 版 Codex app，新增電腦操控（computer use）、應用內瀏覽、圖像生成、記憶功能與插件支援，讓開發者工作流程大幅整合。這標誌著「AI 編程助理」正演進為「全功能 AI 開發代理」。對台灣資訊科技教師而言，學生未來接觸的 AI 輔助程式開發工具將全面升級，課程設計需要提早思考「人機協作開發」的教學架構，以及哪些程式設計基礎知識在代理時代仍不可替代。（單源權威）',
+		emoji: '💻',
+		did_you_know: 'Codex 是 OpenAI 最早的程式碼生成模型（2021年），是 GitHub Copilot 的技術基礎。這次 app 升級是 Codex 從「程式碼補全工具」進化為「全功能開發代理平台」的重要里程碑，也是 OpenAI 與 GitHub Copilot、Cursor、Claude Code 等競品直接對決的關鍵動作。',
+		talking_points: [
+			'Codex app 新增 computer use（電腦操控）能力，可直接操作桌面環境執行開發任務',
+			'新增應用內瀏覽（in-app browsing）、圖像生成、記憶（memory）與插件（plugins）',
+			'同時支援 macOS 和 Windows，降低開發者使用門檻並擴大市場覆蓋',
+			'AI 開發工具從「程式碼補全」升級為「全流程代理」，影響資訊課程的教學目標設定',
+			'教師需重新思考：哪些程式設計基礎能力在 AI 代理普及後仍不可替代？',
+		],
+		quote: 'The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.',
+		quote_attribution: 'OpenAI, 2026-04-16',
+		quote_source_url: 'https://openai.com/index/codex-for-almost-everything',
+		quote_source_domain: 'openai.com',
+		perspectives: [
+			{
+				text: '從 OpenAI 官方角度：Codex app 的功能擴充代表 OpenAI 將開發者工具定位為「全能 AI 代理平台」，讓 Codex 從單一程式碼補全工具，轉型為可執行複雜多步驟開發任務的完整代理夥伴。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/codex-for-almost-everything',
+					},
+				],
+			},
+			{
+				text: '從教育應用角度：當 AI 工具可以操控電腦、瀏覽網頁、生成圖像並記住使用偏好，「教學生如何寫程式」的定義需要更新——重點應轉向「如何有效描述需求、審查 AI 輸出、維護系統可靠性」等高階能力。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/codex-for-almost-everything',
+					},
+				],
+			},
+			{
+				text: '從競爭格局角度：Codex app 的升級直接挑戰 GitHub Copilot、Cursor、Claude Code 等 AI 開發工具，加速市場整合。對教師選用哪套工具帶入課堂，也形成新的選擇壓力——功能越來越趨同，差異化越來越難以評估。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/codex-for-almost-everything',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Codex for (almost) everything',
+				link: 'https://openai.com/index/codex-for-almost-everything',
+				domain: 'openai.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'openai.com' },
 		],
 	},
 	{
@@ -345,16 +401,16 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
-		title: 'OpenAI Agents SDK 重大進化：原生沙箱執行讓 AI 代理更安全',
-		short_summary: 'OpenAI 更新 Agents SDK，新增原生沙箱執行環境（native sandbox execution）與模型原生執行架構（model-native harness），讓開發者能建立更安全、能長時間執行的 AI 代理，支援跨檔案與跨工具操作。台灣教師（尤其是資訊科技與專題研究類教師）應關注：「AI 代理（AI Agent）」正成為 2026 年 AI 的核心形態——它不只是回答問題，而是能自主規劃並完成複雜任務的系統。理解 Agent 架構，有助於學生未來在職場中有效運用 AI 工具。',
+		title: 'OpenAI Agents SDK 進化：原生沙盒執行與模型原生掛載，支援安全長時任務',
+		short_summary: 'OpenAI 更新 Agents SDK，引入原生沙盒執行（native sandbox execution）與模型原生掛載（model-native harness），讓開發者可以構建跨檔案、跨工具的安全長時間運行代理。這是 AI 代理技術基礎設施的重要升級。台灣高中資訊科技教師應了解，AI 代理的安全執行框架正在成熟，「沙盒安全性」與「長時任務監控」是未來課程討論 AI 代理時不可迴避的核心概念。（單源權威）',
 		emoji: '🤖',
-		did_you_know: '「沙箱（sandbox）」在電腦科學中是一種隔離執行環境，防止程式對外部系統造成意外影響。Agents SDK 加入原生沙箱，代表 OpenAI 正積極解決 AI 代理在執行真實任務時的安全性問題——這也是目前業界最關注的 AI 落地挑戰之一。',
+		did_you_know: '「沙盒執行」（sandbox execution）在電腦科學中是指在隔離環境中執行程式碼，確保其無法影響宿主系統。OpenAI 將此技術引入 AI 代理，讓代理可以執行複雜程式碼但不會意外破壞生產環境——這是「AI 代理從概念走向可靠部署」的關鍵安全機制。',
 		talking_points: [
-			'Agents SDK 新增 native sandbox execution，AI 代理可在隔離環境中安全執行程式碼',
-			'model-native harness 架構讓不同模型能更無縫地在代理框架中協作',
-			'支援長時間執行任務（long-running agents），突破過去 AI 只能短暫互動的限制',
-			'跨檔案、跨工具操作能力大幅提升，AI 代理可處理更複雜的現實工作流程',
-			'資訊教師可引導學生討論：能自主執行任務的 AI 代理，帶來哪些新的倫理與控制問題？',
+			'Agents SDK 新增原生沙盒執行，讓 AI 代理可安全執行程式碼而不影響宿主環境',
+			'模型原生掛載（model-native harness）讓不同模型可以更無縫協作完成複雜任務',
+			'支援「長時間運行代理」（long-running agents），突破單次對話的任務長度限制',
+			'跨檔案、跨工具的代理能力，讓 AI 能處理更複雜的多步驟工作流程',
+			'AI 代理安全性框架的討論（沙盒、邊界、監控）應納入高中資訊科技 AI 倫理課程',
 		],
 		quote: 'OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools.',
 		quote_attribution: 'OpenAI, 2026-04-15',
@@ -362,7 +418,25 @@ const aiNewsStories: Story[] = [
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: '從 AI 工具教育角度：AI Agent 已從概念進入實際開發工具生態，學生未來在職場中將大量接觸「代理式 AI」。資訊教育應加入 Agent 基礎概念課程，讓學生理解任務分解、工具呼叫、安全邊界等核心設計思維，而不只是學會用聊天介面。',
+				text: '從技術角度：Agents SDK 的沙盒與模型掛載升級，代表 OpenAI 正在標準化 AI 代理的部署基礎設施，讓 AI 代理從「實驗室概念」走向「生產環境可靠工具」的關鍵一步。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
+					},
+				],
+			},
+			{
+				text: '從教育科技角度：隨著 AI 代理工具成熟，學校資訊系統可能開始評估引入 AI 代理協助行政工作。了解沙盒安全性與代理運行邊界，將成為學校 IT 管理人員的新必備知識。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/the-next-evolution-of-the-agents-sdk',
+					},
+				],
+			},
+			{
+				text: '從 AI 安全角度：「長時間運行代理」雖功能強大，但帶來監控挑戰——AI 代理在無人監督下長時間執行任務時，如何確保其行為符合預期？這是 AI 對齊研究（AI alignment）的核心問題，也是高中課程可以討論的入門案例。',
 				sources: [
 					{
 						name: 'OpenAI',
@@ -387,34 +461,92 @@ const aiNewsStories: Story[] = [
 
 const aiApplicationsStories: Story[] = [
 	{
-		id: 'aiApplications-1',
-		cluster_number: 1,
-		unique_domains: 21,
-		number_of_titles: 21,
+		id: 'aiApplications-5',
+		cluster_number: 5,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 熱門應用',
-		title: '本週 AI 應用熱點：ChatGPT 整合 Excel、Claude 新設計語言、本地 LLM 生態崛起',
-		short_summary: '本週 AI 應用市場動態密集：ChatGPT 推出 Excel 整合版本讓試算表直接對話；Anthropic 發布 Claude Design 設計語言，引發社群熱議（943 點讚）；本地 LLM 生態系的討論再次興起，有開發者主張停用 Ollama 改用更輕量方案；Claude 4.7 新版 tokenizer 成本分析獲 573 人關注。台灣教師可關注 ChatGPT for Excel 的直接教學應用潛力，以及 Claude 身分驗證政策對教育機構帳號管理的影響。',
-		emoji: '🚀',
-		did_you_know: '這週 Hacker News 上最受 AI 討論者關注的不是新模型發布，而是「Claude 4.7 tokenizer 成本分析」（573 點）和「Claude Design」（943 點）。這反映出 AI 開發社群的成熟度：大家開始關注成本效益和產品體驗，而非只追逐性能數字。',
+		title: 'Anthropic 發布 Claude Opus 4.7：最強推理與代理編程旗艦，HN 1937 點熱議',
+		short_summary: 'Anthropic 正式發布 Claude Opus 4.7，在 Hacker News 獲得 1937 點與 1423 則討論，是近期 AI 模型發布中最受開發者社群關注的一次。Opus 4.7 定位為 Anthropic 最強推理與代理編程模型。台灣高中教師在思考引入 AI 輔助教學時，了解主流模型的實際能力與開發者社群評價，有助於做出更有根據的工具選擇，而非只依賴廠商的官方規格數據。（單源權威）',
+		emoji: '🧠',
+		did_you_know: 'Hacker News 上 1937 點的討論熱度使 Claude Opus 4.7 發布文進入「HN 史上最熱門 AI 模型發布」前列。1423 則留言的討論量，相當於一個小型研討會的知識密度——社群實測反饋往往比官方 benchmark 更能反映真實使用場景。',
 		talking_points: [
-			'ChatGPT for Excel 正式推出，使用者可直接在試算表中使用 ChatGPT 分析數據與公式',
-			'Anthropic 發布 Claude Design 設計語言系統，獲 Hacker News 社群 943 點關注',
-			'Claude 4.7 新版 tokenizer 成本分析顯示計費方式改變，開發者需重新估算 API 費用',
-			'Claude.ai 與 API 發生服務中斷事件，引發 243 名用戶回報反映服務穩定性問題',
-			'Anthropic 宣布部分情況下 Claude 需要進行身分驗證，教育機構需了解帳號管理政策',
+			'Claude Opus 4.7 在 Hacker News 獲得 1937 點與 1423 則留言，顯示極高的開發者關注度',
+			'定位為 Anthropic「最具能力的推理與代理編程模型」（most capable model for reasoning and agentic coding）',
+			'代理編程能力強調多步驟複雜任務的自主完成能力，是 AI 編程工具的重要進展',
+			'開發者社群討論重點：實際測試表現、定價合理性、與 GPT-5 / Gemini Ultra 的比較',
+			'教師選擇 AI 工具時，開發者社群的實測討論比官方規格更具實際參考價值',
 		],
-		quote: 'Claude Design',
-		quote_attribution: 'Anthropic, 2026-04-17',
-		quote_source_url: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
+		quote: 'Claude Opus 4.7 — Claude\'s most capable model for reasoning and agentic coding.',
+		quote_attribution: 'Anthropic, 2026-04-16',
+		quote_source_url: 'https://www.anthropic.com/news/claude-opus-4-7',
 		quote_source_domain: 'anthropic.com',
 		perspectives: [
 			{
-				text: '從教學工具角度：ChatGPT for Excel 讓 AI 資料分析進入試算表，這對高中統計、經濟、社會學科有直接應用潛力。教師可設計讓學生用 AI 分析真實數據集的學習任務，培養數據思維與 AI 協作能力。',
+				text: '從 Anthropic 官方角度：Opus 4.7 是 Anthropic 推理能力的旗艦展示，重點強調代理編程場景的超越性能，代表 Anthropic 在「AI 代理」賽道的重要戰略佈局，直接挑戰 OpenAI 的代理能力主導地位。',
 				sources: [
 					{
-						name: 'ChatGPT (OpenAI)',
-						url: 'https://chatgpt.com/apps/spreadsheets/',
+						name: 'Anthropic',
+						url: 'https://www.anthropic.com/news/claude-opus-4-7',
 					},
+				],
+			},
+			{
+				text: '從開發者社群角度：1423 則 HN 留言顯示開發者對 Opus 4.7 的真實期待與疑問——社群討論涵蓋定價合理性、上下文視窗長度、與競品的實際差距，提供比官方 benchmark 更貼近實際使用的評估資訊。',
+				sources: [
+					{
+						name: 'Anthropic',
+						url: 'https://www.anthropic.com/news/claude-opus-4-7',
+					},
+				],
+			},
+			{
+				text: '從教育工具選擇角度：Opus 4.7 的高社群熱度代表它將快速被整合進開源工具和教育平台，進入教室的可能性很高。教師在選用 AI 工具時，追蹤這類社群討論有助於提早了解工具的真實優缺點。',
+				sources: [
+					{
+						name: 'Anthropic',
+						url: 'https://www.anthropic.com/news/claude-opus-4-7',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Claude Opus 4.7',
+				link: 'https://www.anthropic.com/news/claude-opus-4-7',
+				domain: 'anthropic.com',
+				date: '2026-04-16',
+			},
+		],
+		domains: [
+			{ name: 'anthropic.com' },
+		],
+	},
+	{
+		id: 'aiApplications-1',
+		cluster_number: 1,
+		unique_domains: 4,
+		number_of_titles: 4,
+		category: 'AI 熱門應用',
+		title: 'Claude Design 發布：Anthropic Labs 推出設計代理，同日 Qwen3 筆電端擊敗 Opus 4.7',
+		short_summary: 'Anthropic Labs 發布 Claude Design 設計代理，在 Hacker News 獲得 952 點關注。同日，技術部落客 simonwillison.net 的測試顯示，開源的 Qwen3.6-35B-A3B 在個人筆電上執行的繪圖任務表現優於 Claude Opus 4.7，引發廣泛討論。這兩個訊號共同指向：AI 工具正快速多元化，且本地端小模型的能力已開始挑戰雲端旗艦模型，降低取得頂尖 AI 能力的成本門檻。',
+		emoji: '🎨',
+		did_you_know: 'Qwen3.6-35B-A3B 中的「A3B」意指 3B 的「活躍參數」（active parameters），透過混合專家架構（MoE）在低資源設備上實現接近大模型的推理能力。整個 35B 模型只有約 3B 參數在任意一次推理時被啟動，使其能在一般消費級筆記型電腦上流暢運行。',
+		talking_points: [
+			'Anthropic Labs 發布 Claude Design AI 設計代理，HN 獲 952 點討論，顯示設計工作者對 AI 代理的高度期待',
+			'開源 Qwen3.6-35B-A3B（阿里巴巴）在筆電本地端的繪圖任務表現超越 Claude Opus 4.7',
+			'MoE 架構讓本地端小模型（3B 活躍參數）在特定任務挑戰雲端旗艦模型，降低使用成本',
+			'Agentic Dev Blog 推出由 Claude 每日策展的 AI 開發工具新聞平台',
+			'教師觀點：本地端高性能模型的崛起，讓偏鄉學校不需雲端訂閱也有機會使用強力 AI——但仍需評估硬體門檻',
+		],
+		quote: 'Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7',
+		quote_attribution: 'simonwillison.net, 2026-04-16',
+		quote_source_url: 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/',
+		quote_source_domain: 'simonwillison.net',
+		perspectives: [
+			{
+				text: '從 Anthropic Labs 官方角度：Claude Design 代表 Anthropic 將 Claude 擴展至設計應用場景，Lab 版本意味著功能前衛且持續迭代，社群的高熱度（952 點）印證設計工作者對 AI 代理工具的迫切需求。',
+				sources: [
 					{
 						name: 'Anthropic',
 						url: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
@@ -422,66 +554,36 @@ const aiApplicationsStories: Story[] = [
 				],
 			},
 			{
-				text: '從 AI 生態角度：simonwillison.net 的文章分析指出，本地執行的 Qwen3.6 模型在部分創意任務上表現優於 Claude Opus 4.7，顯示開源模型與商業模型的差距正在縮小。教師關注開源 LLM 的發展，有助於理解未來 AI 工具的多元化選擇。',
+				text: '從開源競爭角度（simonwillison.net）：Qwen3.6-35B 在個人筆電上擊敗 Opus 4.7 的繪圖任務，顯示開源模型已具備挑戰商用旗艦模型的能力。這對台灣學校而言是好消息：頂尖 AI 繪圖能力不再需要高額訂閱。',
 				sources: [
 					{
 						name: 'simonwillison.net',
 						url: 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/',
 					},
+				],
+			},
+			{
+				text: '從教育普及角度：本地端高性能模型的崛起，為台灣偏鄉或預算有限的學校提供新的 AI 工具取得路徑，但需要具備足夠 GPU 記憶體的設備支援（通常需要 16GB VRAM 以上），仍存在硬體門檻。',
+				sources: [
 					{
-						name: 'sleepingrobots.com',
-						url: 'https://sleepingrobots.com/dreams/stop-using-ollama/',
+						name: 'simonwillison.net',
+						url: 'https://simonwillison.net/2026/Apr/16/qwen-beats-opus/',
 					},
 				],
 			},
 		],
-		timeline: [
-			{
-				date: '2026-04-15',
-				date_iso: '2026-04-15',
-				content: 'ChatGPT for Excel 正式上線；Claude 發生服務中斷事件；Anthropic 宣布身分驗證政策',
-			},
-			{
-				date: '2026-04-16',
-				date_iso: '2026-04-16',
-				content: '開發者發布本地 LLM 生態與 Ollama 替代方案討論；simonwillison 分析 Qwen 模型表現',
-			},
-			{
-				date: '2026-04-17',
-				date_iso: '2026-04-17',
-				content: 'Anthropic 發布 Claude Design 設計語言；Claude 4.7 tokenizer 成本分析獲社群高度關注',
-			},
-		],
 		articles: [
+			{
+				title: 'Show HN: Agentic Dev – AI dev-tools news, curated daily by Claude',
+				link: 'https://agenticdev.blog/',
+				domain: 'agenticdev.blog',
+				date: '2026-04-18',
+			},
 			{
 				title: 'Claude Design',
 				link: 'https://www.anthropic.com/news/claude-design-anthropic-labs',
 				domain: 'anthropic.com',
 				date: '2026-04-17',
-			},
-			{
-				title: 'Measuring Claude 4.7\'s tokenizer costs',
-				link: 'https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you',
-				domain: 'claudecodecamp.com',
-				date: '2026-04-17',
-			},
-			{
-				title: 'ChatGPT for Excel',
-				link: 'https://chatgpt.com/apps/spreadsheets/',
-				domain: 'chatgpt.com',
-				date: '2026-04-15',
-			},
-			{
-				title: 'Elevated errors on Claude.ai, API, Claude Code',
-				link: 'https://claudestatus.com/',
-				domain: 'claudestatus.com',
-				date: '2026-04-15',
-			},
-			{
-				title: 'Claude may require identity verification in some cases',
-				link: 'https://support.claude.com/en/articles/14328960-identity-verification-on-claude',
-				domain: 'support.claude.com',
-				date: '2026-04-15',
 			},
 			{
 				title: 'Qwen3.6-35B-A3B on my laptop drew me a better pelican than Claude Opus 4.7',
@@ -490,91 +592,64 @@ const aiApplicationsStories: Story[] = [
 				date: '2026-04-16',
 			},
 			{
-				title: 'The local LLM ecosystem doesn\'t need Ollama',
-				link: 'https://sleepingrobots.com/dreams/stop-using-ollama/',
-				domain: 'sleepingrobots.com',
+				title: 'Claude Opus 4.7',
+				link: 'https://www.producthunt.com/products/claude-opus-4-7',
+				domain: 'producthunt.com',
 				date: '2026-04-16',
 			},
 		],
 		domains: [
+			{ name: 'agenticdev.blog' },
 			{ name: 'anthropic.com' },
-			{ name: 'claudecodecamp.com' },
-			{ name: 'chatgpt.com' },
-			{ name: 'claudestatus.com' },
-			{ name: 'support.claude.com' },
 			{ name: 'simonwillison.net' },
-			{ name: 'sleepingrobots.com' },
+			{ name: 'producthunt.com' },
 		],
 	},
 ];
 
 const aiEduStories: Story[] = [
 	{
-		id: 'aiEducation-1',
-		cluster_number: 1,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI × 教育',
-		title: 'MIT 頒發 Edgerton 教學獎：EECS 副教授以 AI 語言研究獲肯定',
-		short_summary: 'MIT 宣布 2026 年 Edgerton Award 得主，其中電機工程與電腦科學（EECS）系副教授因在 AI 語言理解研究與教學上的傑出貢獻獲獎。Edgerton Award 是 MIT 頒給傑出年輕教師的重要獎項，強調研究、教學與服務的三重卓越。台灣高中教師可從這則新聞中獲得啟發：頂尖大學如何評估「AI 時代優秀教師」的標準？整合前沿研究與教學的能力，正成為全球教育體系中不可忽視的競爭力指標。',
-		emoji: '🏆',
-		did_you_know: 'MIT Edgerton Award 以 Harold \'Doc\' Edgerton 命名，他是高速攝影技術的發明者，也是 MIT 歷史上最受愛戴的教師之一。Edgerton 不只是傑出研究者，更以「讓複雜科學變得有趣易懂」聞名，這個精神與今日 AI 教育推廣的核心理念不謀而合。',
-		talking_points: [
-			'2026 年 MIT Edgerton Award 頒給 EECS 系副教授（AI 語言研究領域）與化學系副教授',
-			'Edgerton Award 評量標準：研究卓越、教學創新、服務貢獻三項並重',
-			'獲獎教師的 AI 語言研究直接應用於自然語言處理與教學技術開發',
-			'此案例展示：AI 研究者同時具備優秀教學能力，是全球頂尖大學培養的複合型人才典範',
-		],
-		quote: 'The associate professors of EECS and chemistry, respectively, are honored for exceptional contributions to teaching, research, and service at MIT.',
-		quote_attribution: 'MIT News, 2026-04-17',
-		quote_source_url: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
-		quote_source_domain: 'news.mit.edu',
-		perspectives: [
-			{
-				text: '從教師專業發展角度：MIT 對優秀教師的定義整合了研究、教學與服務，而非單獨強調其中一項。這對台灣高中教師有借鑑意義：AI 時代的優秀教師，應能持續追蹤領域前沿（研究素養）、設計有效學習經驗（教學能力）、並積極貢獻社群（服務精神）。',
-				sources: [
-					{
-						name: 'MIT News',
-						url: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Jacob Andreas and Brett McGuire named Edgerton Award winners',
-				link: 'https://news.mit.edu/2026/jacob-andreas-brett-mcguire-edgerton-award-winners-0417',
-				domain: 'news.mit.edu',
-				date: '2026-04-17',
-			},
-		],
-		domains: [
-			{ name: 'news.mit.edu' },
-		],
-	},
-	{
 		id: 'aiEducation-2',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI × 教育',
-		title: 'MIT 校友創辦 OpenProtein.AI：將 AI 蛋白質設計工具開源給全球研究者',
-		short_summary: '兩位 MIT 畢業的創業者共同創辦 OpenProtein.AI，將 AI 蛋白質工程設計工具以開源方式提供給全球生物學研究者，降低進入門檻。台灣生物教師與自然科教師應特別關注：這類平台讓高中生與大學生也能接觸到原本只有頂尖實驗室才有的 AI 生物工具，為台灣下一代的生命科學人才打開了新的學習路徑。教師可引導有興趣的學生進一步探索 AI 在蛋白質工程（如 AlphaFold）的應用，連結課綱中的生物科技與基因工程單元。',
+		title: 'MIT 校友創辦 OpenProtein.AI：開源 AI 蛋白質設計工具，讓全球生物研究者都能用',
+		short_summary: 'MIT 博士校友創辦的 OpenProtein.AI 推出開源蛋白質設計工具，讓全球生物研究者不需頂尖實驗室資源也能運用 AI 進行蛋白質工程。這是 AI 工具「民主化」在生命科學領域的具體實例。台灣高中生物科教師可從此案例引導學生討論：開源 AI 工具如何改變科學研究的門檻，以及台灣生科人才需要培養哪些 AI 素養才能接軌國際趨勢。（單源權威）',
 		emoji: '🔬',
-		did_you_know: '蛋白質折疊問題被認為是生命科學領域五十年來最難解的問題之一。2020 年 DeepMind 的 AlphaFold2 一舉解決這個問題，震驚科學界，並在 2024 年讓相關研究者獲得諾貝爾化學獎。OpenProtein.AI 正是站在這個科學突破的肩膀上，將工具平民化。',
+		did_you_know: '蛋白質工程（protein engineering）是指透過修改蛋白質序列設計具有特定功能的新蛋白質，廣泛應用於新藥開發、生質材料、酵素設計等。傳統方法需要大量實驗迭代；OpenProtein.AI 的 AI 模型可大幅縮短「設計-預測-測試」的循環時間，是典型的 AI 加速科學研究案例。',
 		talking_points: [
-			'OpenProtein.AI 由 MIT 校友創辦（Tristan Bepler 博士 \'20 與前 MIT 教授 Tim Lu 博士 \'07）',
-			'提供開源 AI 蛋白質工程模型，讓無法負擔昂貴計算資源的研究者也能使用',
-			'工具民主化的意義：頂尖實驗室的 AI 能力正在以開源方式向全球擴散',
-			'台灣生技產業可直接受益，高中生物課可用此案例介紹 AI 驅動的生命科學研究趨勢',
+			'OpenProtein.AI 由 MIT 博士 Tristan Bepler（2020年畢業）與前 MIT 教授 Tim Lu（2007年）共同創辦',
+			'提供開源模型與工具，讓全球生物研究者免費使用 AI 蛋白質設計能力',
+			'「開源」策略讓頂尖學術工具不只限於資金雄厚的機構，體現科學民主化精神',
+			'台灣高中生物科可引入此案例討論：AI 如何改變生命科學研究的方法論',
+			'大學入學後，生科、化工、醫學系學生將在研究中直接使用此類 AI 工具，高中提早了解有助銜接',
 		],
-		quote: 'Founded by MIT alumni, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.',
+		quote: 'Founded by Tristan Bepler PhD \'20 and former MIT professor Tim Lu PhD \'07, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.',
 		quote_attribution: 'MIT News, 2026-04-17',
 		quote_source_url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
 		quote_source_domain: 'news.mit.edu',
 		perspectives: [
 			{
-				text: '從科學教育角度：OpenProtein.AI 的開源模式讓 AI 生命科學工具不再是大型研究機構的專利。高中生物教師可以介紹此平台作為「AI 民主化」的教育案例，並引導學生思考：開源科學工具如何加速全球知識擴散？台灣學生能如何參與這波浪潮？',
+				text: '從開源科學角度：OpenProtein.AI 的開源策略讓頂尖蛋白質設計 AI 工具脫離少數精英機構的壟斷，實現科學能力的民主化——這是「開源 AI + 科學研究」讓知識真正流動的典型正面案例。',
+				sources: [
+					{
+						name: 'MIT News',
+						url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
+					},
+				],
+			},
+			{
+				text: '從教育觀點：MIT 校友創業將學術研究成果直接轉化為開源工具的路徑，為台灣高中學生提供「學術研究如何影響產業與社會」的具體案例，適合融入生涯探索課程，啟發對研究型職涯的興趣。',
+				sources: [
+					{
+						name: 'MIT News',
+						url: 'https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417',
+					},
+				],
+			},
+			{
+				text: '從科學公平性角度：即使工具開源，使用它仍需具備生物資訊學與 AI 基礎知識。真正的科學民主化不只是工具免費，還需要教育系統培養能使用這些工具的人才——這正是高中教育在 AI 時代的新責任。',
 				sources: [
 					{
 						name: 'MIT News',
@@ -601,24 +676,42 @@ const aiEduStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI × 教育',
-		title: '《自然》期刊：AI 擴散模型挑戰「內隱聯結測驗」的測量機制',
-		short_summary: '發表於《Nature Human Behaviour》的大規模研究，使用「競速擴散模型（racing diffusion models）」分析超過 115,601 份內隱聯結測驗（IAT）資料，橫跨 39 個主題，對這一廣泛使用的心理測量工具的背後機制提出挑戰。台灣教師（尤其是社會、公民、心理學相關課程教師）應了解：IAT 是許多「無意識偏見」教育訓練的基礎工具；若其測量機制受到質疑，相關教育課程與人才評估方法都需要重新檢視，體現了 AI 分析工具對社會科學研究帶來的深遠影響。',
-		emoji: '🧠',
-		did_you_know: '內隱聯結測驗（IAT）自 1998 年發明以來，已有超過 2000 萬次線上測試紀錄，被廣泛用於測量對種族、性別、年齡的無意識偏見。許多企業的「多元共融（D&I）」培訓課程都以 IAT 為基礎，但其科學有效性長期存在爭議。這篇分析 11 萬份資料的大規模研究，是迄今最有力的機制質疑。',
+		title: 'Nature 大型研究：11.5 萬份 IAT 測試揭示隱性偏見機制遠比想像中複雜',
+		short_summary: '《Nature Human Behaviour》發布大型研究，運用競速擴散模型（racing diffusion models）分析超過 115,601 份內隱聯結測驗（IAT），橫跨 39 個主題，挑戰了 IAT 測試背後的傳統假設，顯示隱性偏見的形成機制比過去理論更為複雜。台灣高中心理健康教育與社會科課程可引用此研究，讓學生理解「大數據分析並非萬能，仍需要更精細的方法論才能得出可靠結論」。（單源權威）',
+		emoji: '🧪',
+		did_you_know: '內隱聯結測驗（IAT）是1998年哈佛大學開發的心理測量工具，透過測量對不同概念的反應速度差異，推測潛意識中的聯結強度，廣泛用於研究種族偏見、性別刻板印象等。台灣 Project Implicit 繁中版讓任何人都可以免費測試自己的隱性偏見，是課堂體驗式學習的好素材。',
 		talking_points: [
-			'研究分析 115,601 份 IAT（內隱聯結測驗）資料，樣本橫跨 39 個不同主題',
-			'使用 racing diffusion models 這一 AI 分析方法，對 IAT 的測量機制提出系統性質疑',
-			'發表在《Nature Human Behaviour》，屬於高影響力同儕審查期刊',
-			'對教育意義：許多多元包容訓練課程以 IAT 為基礎，若機制有問題，需重新評估課程效度',
-			'這個研究本身也展示了 AI 大規模數據分析如何推動社會科學研究方法論的進步',
+			'研究分析 115,601 份 IAT 測試，橫跨 39 個主題，是迄今規模最大的 IAT 機制分析研究之一',
+			'運用「競速擴散模型」（racing diffusion models）提供比傳統 IAT 分析更細緻的機制解釋',
+			'研究挑戰現有 IAT 測試的理論假設，顯示隱性偏見形成路徑比原先理解更多元複雜',
+			'發表於 Nature Human Behaviour（DOI: 10.1038/s41562-026-02439-y），屬頂級同儕審查期刊',
+			'教育意義：引導學生討論「更多數據需要更精細方法才能轉化為可靠知識」的科學認識論',
 		],
-		quote: 'Using racing diffusion models to analyse 115,601 implicit association tests across 39 topics',
+		quote: 'Using racing diffusion models to analyse 115,601 implicit association tests across 39 topics, LaFollette et al. challenge the mechanism for the implicit association test.',
 		quote_attribution: 'Nature Human Behaviour, 2026-04-16',
 		quote_source_url: 'https://www.nature.com/articles/s41562-026-02439-y',
 		quote_source_domain: 'nature.com',
 		perspectives: [
 			{
-				text: '從研究方法論角度：這篇論文展示了 AI 分析技術（racing diffusion models）如何讓以前無法處理的超大規模心理學資料成為可能。教師可藉此告訴學生：AI 不只是應用工具，更是推進科學研究的方法論創新——這是 AI 時代研究者必須具備的新視野。',
+				text: '從認知科學研究角度：競速擴散模型是認知神經科學的計算工具，此研究將其大規模應用於 IAT 分析是方法論創新，有助於更精確區分「反應速度」與「聯結強度」在偏見形成中的不同角色。',
+				sources: [
+					{
+						name: 'Nature Human Behaviour',
+						url: 'https://www.nature.com/articles/s41562-026-02439-y',
+					},
+				],
+			},
+			{
+				text: '從教育批判思考角度：此研究適合高中社會科或心理健康課程——讓學生理解：大數據分析並非萬能，對既有理論的挑戰需要更精細的統計模型，而非只是堆疊更多數據量，培養對科學知識的批判閱讀能力。',
+				sources: [
+					{
+						name: 'Nature Human Behaviour',
+						url: 'https://www.nature.com/articles/s41562-026-02439-y',
+					},
+				],
+			},
+			{
+				text: '從社會公平角度：若 IAT 的機制比過去認為的更複雜，則過去基於 IAT 結果制定的反偏見訓練課程可能需要重新評估其有效性。這對各國推動多元共融教育的政策設計具有直接的方法論含義。',
 				sources: [
 					{
 						name: 'Nature Human Behaviour',
