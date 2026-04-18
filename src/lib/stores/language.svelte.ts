@@ -1,4 +1,5 @@
 import { browser } from '$app/environment';
+import { base } from '$app/paths';
 import { syncManager } from '$lib/client/sync-manager';
 
 export type SupportedLanguage =
@@ -77,7 +78,7 @@ async function loadLocaleData(lang: string) {
 	if (!browser) return;
 
 	try {
-		const response = await fetch(`/api/locale/${lang}`);
+		const response = await fetch(`${base}/api/locale/${lang}`);
 		if (response.ok) {
 			const data = await response.json();
 			languageState.currentStrings = data.strings;

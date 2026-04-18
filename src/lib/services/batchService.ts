@@ -1,3 +1,4 @@
+import { base } from '$app/paths';
 import { timeTravelBatch } from '$lib/stores/timeTravelBatch.svelte';
 import type { BatchCategoriesResponse, Category } from '$lib/types';
 
@@ -5,7 +6,7 @@ import type { BatchCategoriesResponse, Category } from '$lib/types';
  * Service for managing batch data and time travel functionality
  */
 class BatchService {
-	private baseUrl = '/api';
+	private baseUrl = `${base}/api`;
 
 	/**
 	 * Set a specific batch ID for time travel

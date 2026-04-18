@@ -1,4 +1,5 @@
 import { dev } from '$app/environment';
+import { base } from '$app/paths';
 import { prefetchFavicons } from '$lib/services/faviconService';
 import type { Story } from '$lib/types';
 import { extractDomainFromUrl } from '$lib/utils/domainUtils';
@@ -7,7 +8,7 @@ import { extractDomainFromUrl } from '$lib/utils/domainUtils';
  * Service for loading story data
  */
 class StoriesService {
-	private baseUrl = '/api';
+	private baseUrl = `${base}/api`;
 
 	/**
 	 * Load stories for a specific category from a batch
