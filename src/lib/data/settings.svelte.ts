@@ -673,8 +673,17 @@ export const categorySettings = $state({
 		// allCategoryIds minus the user's explicit disabled set, which also handles:
 		// - stale entries from previous deployments (auto-purged)
 		// - new categories added server-side (auto-enabled for existing visitors)
-		const freshDisabled = this.disabled.filter((c) => allCategoryIds.includes(c));
-		const freshEnabled = allCategoryIds.filter((c) => !freshDisabled.includes(c));
+		let freshDisabled = this.disabled.filter((c) => allCategoryIds.includes(c));
+		let freshEnabled = allCategoryIds.filter((c) => !freshDisabled.includes(c));
+
+		// If we end up with nothing enabled (e.g. upstream Kagi defaults dumped
+		// all of our categories into `disabled` because none matched their
+		// hard-coded world/usa/business list), that is a broken state — no
+		// visitor should land on a site with zero visible tabs. Force-reset.
+		if (freshEnabled.length === 0 && allCategoryIds.length > 0) {
+			freshDisabled = [];
+			freshEnabled = allCategoryIds;
+		}
 
 		const enabledChanged =
 			freshEnabled.length !== this.enabled.length ||
