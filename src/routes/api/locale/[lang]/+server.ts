@@ -13,5 +13,5 @@ export const GET: RequestHandler = async ({ params }) => {
 	if (!dict) {
 		throw error(404, `Locale not found: ${lang}`);
 	}
-	return json(dict);
+	return json({ strings: dict, locale: lang });
 };
