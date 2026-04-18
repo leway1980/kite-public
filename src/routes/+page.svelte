@@ -696,6 +696,18 @@ if (browser && typeof window !== 'undefined') {
         </div>
       {/if}
 
+      {#if !state.isSharedArticleView && state.currentBatchCreatedAt}
+        {@const _dataUpdatedDate = new Date(state.currentBatchCreatedAt)}
+        {#if !isNaN(_dataUpdatedDate.getTime())}
+          {@const _y = _dataUpdatedDate.getFullYear()}
+          {@const _m = String(_dataUpdatedDate.getMonth() + 1).padStart(2, '0')}
+          {@const _d = String(_dataUpdatedDate.getDate()).padStart(2, '0')}
+          <div class="mt-2 mb-3 text-xs text-gray-500 dark:text-gray-400 text-right" aria-label="資料更新日期">
+            資料更新於 {_y}-{_m}-{_d}
+          </div>
+        {/if}
+      {/if}
+
       <div id="main-content">
         {#if state.isSharedArticleView}
           {@const batchDate = state.currentBatchCreatedAt ? new Date(state.currentBatchCreatedAt) : null}

@@ -1,15 +1,8 @@
 name: Code Quality Checks
 
+# Disabled in fork (ai-edu-weekly): Kagi upstream CI not applicable to our Netlify/Pages setup.
+# File kept intact to ease future upstream merges. Re-enable by restoring push/pull_request triggers.
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - '**/*.json'
-      - 'src/**/*.{html,js,ts,svelte,css}'
-  pull_request:
-    paths:
-      - '**/*.json'
-      - 'src/**/*.{html,js,ts,svelte,css}'
   workflow_dispatch:
 
 permissions:

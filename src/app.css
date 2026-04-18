@@ -304,19 +304,25 @@ span.highlight {
 	transition: background-color var(--transition-speed) var(--transition-easing);
 }
 
+/*
+ * Lufga fonts live in src/lib/fonts/lufga/ (moved from static/fonts/lufga/)
+ * so Vite processes these URLs and emits them as hashed assets under the
+ * correct base prefix (e.g. /kite-public/_app/immutable/assets/...) on
+ * GH Pages subpath deploys. Absolute /fonts/... paths 404'd under /kite-public/.
+ */
 @font-face {
 	font-family: 'lufga';
 	src:
-		url('/fonts/lufga/lufga-regular-webfont.woff2') format('woff2'),
-		url('/fonts/lufga/lufga-regular-webfont.woff') format('woff'),
-		url('/fonts/lufga/lufga-regular-webfont.ttf') format('truetype');
+		url('./lib/fonts/lufga/lufga-regular-webfont.woff2') format('woff2'),
+		url('./lib/fonts/lufga/lufga-regular-webfont.woff') format('woff'),
+		url('./lib/fonts/lufga/lufga-regular-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'lufga';
-	src: url('/fonts/lufga/lufga-medium-webfont.ttf') format('truetype');
+	src: url('./lib/fonts/lufga/lufga-medium-webfont.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 	font-display: fallback;
@@ -325,9 +331,9 @@ span.highlight {
 @font-face {
 	font-family: 'lufga';
 	src:
-		url('/fonts/lufga/lufga-semibold-webfont.woff2') format('woff2'),
-		url('/fonts/lufga/lufga-semibold-webfont.woff') format('woff'),
-		url('/fonts/lufga/lufga-semibold-webfont.ttf') format('truetype');
+		url('./lib/fonts/lufga/lufga-semibold-webfont.woff2') format('woff2'),
+		url('./lib/fonts/lufga/lufga-semibold-webfont.woff') format('woff'),
+		url('./lib/fonts/lufga/lufga-semibold-webfont.ttf') format('truetype');
 	font-weight: 600 700;
 	font-style: normal;
 	font-display: fallback;
@@ -335,7 +341,7 @@ span.highlight {
 
 @font-face {
 	font-family: 'lufga';
-	src: url('/fonts/lufga/lufga-light-webfont.ttf') format('truetype');
+	src: url('./lib/fonts/lufga/lufga-light-webfont.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 	font-display: fallback;

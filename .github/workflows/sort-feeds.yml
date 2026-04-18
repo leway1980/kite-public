@@ -1,21 +1,8 @@
 name: Auto-sort data files
 
+# Disabled in fork (ai-edu-weekly): Kagi upstream data-file sorter, not applicable to our setup.
+# File kept intact to ease future upstream merges. Re-enable by restoring push/pull_request triggers.
 on:
-  push:
-    paths:
-      - 'kite_feeds.json'
-      - 'core_feeds.py'
-      - 'media_data.json'
-      - 'src/lib/locales/*.json'
-    branches:
-      - main
-      - 'feature/**'
-  pull_request:
-    paths:
-      - 'kite_feeds.json'
-      - 'core_feeds.py'
-      - 'media_data.json'
-      - 'src/lib/locales/*.json'
   workflow_dispatch:
 
 permissions:

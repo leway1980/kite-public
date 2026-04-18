@@ -1,9 +1,8 @@
 name: Build & Test
 
+# Disabled in fork (ai-edu-weekly): Kagi upstream CI not applicable to our Netlify/Pages setup.
+# File kept intact to ease future upstream merges. Re-enable by restoring push/pull_request triggers.
 on:
-  push:
-    branches: [ main ]
-  pull_request:
   workflow_dispatch:
 
 permissions:
