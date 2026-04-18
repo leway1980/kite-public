@@ -15,6 +15,26 @@
       href="%sveltekit.assets%/apple-touch-icon.png"
     />
 
+    <!-- One-shot localStorage wipe for returning visitors whose saved state
+         is from the Kagi-branded fork (and before the 4-category migration).
+         Runs before any SvelteKit bundle loads so stores see a clean slate. -->
+    <script>
+      (() => {
+        try {
+          if (typeof localStorage === "undefined") return;
+          var APP_DATA_VERSION = "ai-edu-weekly-v1-2026-04-18";
+          if (localStorage.getItem("appDataVersion") !== APP_DATA_VERSION) {
+            var keepLang = localStorage.getItem("kiteLanguage");
+            var keepTheme = localStorage.getItem("theme");
+            localStorage.clear();
+            if (keepLang) localStorage.setItem("kiteLanguage", keepLang);
+            if (keepTheme) localStorage.setItem("theme", keepTheme);
+            localStorage.setItem("appDataVersion", APP_DATA_VERSION);
+          }
+        } catch (e) { /* ignore */ }
+      })();
+    </script>
+
     <!-- Prevent flash of wrong theme - minimal script that only handles dark mode detection -->
     <script>
       (() => {
