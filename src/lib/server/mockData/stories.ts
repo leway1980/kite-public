@@ -667,10 +667,6 @@ const twEduStories: Story[] = [
 				text: '實踐推進派（台灣、香港）：台灣教育現場以研習、實作課為主要推動形式，中崙高中辦線上研習開放全國報名，東華大學直接將生成式AI嵌入專業課程產出；香港個案也顯示學校主動在常規科目中納入AI概念，整體傾向「先跑先學、邊做邊修正」。',
 				sources: [
 					{
-						name: '台南女中附設高中（tngs.tn.edu.tw）',
-						url: 'https://www.tngs.tn.edu.tw/2026/04/28/%E6%95%99%E5%B8%AB%E8%B3%87%E8%A8%8A-%E4%B8%AD%E5%B4%99%E9%AB%98%E4%B8%AD-%E8%BE%A6%E7%90%86%E3%80%8Cai%E8%9E%8D%E5%85%A5%E8%87%AA%E4%B8%BB%E5%AD%B8%E6%95%99%E5%AD%B8%E3%80%8D%E7%B7%9A/',
-					},
-					{
 						name: '中央社',
 						url: 'https://www.cna.com.tw/postwrite/chi/432240',
 					},
@@ -735,12 +731,6 @@ const twEduStories: Story[] = [
 				link: 'https://www.bbc.com/zhongwen/articles/clypne023mgo/trad.amp',
 				domain: 'bbc.com',
 				date: '2026-04-30',
-			},
-			{
-				title: '中崙高中辦理「AI融入自主學習教學」線上研習',
-				link: 'https://www.tngs.tn.edu.tw/2026/04/28/%E6%95%99%E5%B8%AB%E8%B3%87%E8%A8%8A-%E4%B8%AD%E5%B4%99%E9%AB%98%E4%B8%AD-%E8%BE%A6%E7%90%86%E3%80%8Cai%E8%9E%8D%E5%85%A5%E8%87%AA%E4%B8%BB%E5%AD%B8%E6%95%99%E5%AD%B8%E3%80%8D%E7%B7%9A/',
-				domain: 'tngs.tn.edu.tw',
-				date: '2026-04-29',
 			},
 			{
 				title: '曼哈頓AI高中計劃叫停',
