@@ -49,7 +49,7 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000003-0000-4000-8000-000000000003',
 		categoryId: 'taiwan-edu-policy',
 		categoryName: '教育政策',
-		clusterCount: 5,
+		clusterCount: 3,
 		readCount: 0,
 	},
 ];
