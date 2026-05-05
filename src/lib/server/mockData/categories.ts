@@ -28,7 +28,7 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000005-0000-4000-8000-000000000005',
 		categoryId: 'ai-applications',
 		categoryName: 'AI 熱門應用',
-		clusterCount: 0,
+		clusterCount: 4,
 		readCount: 0,
 	},
 	{
@@ -42,7 +42,7 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000004-0000-4000-8000-000000000004',
 		categoryId: 'ai-classroom',
 		categoryName: 'AI 教學實戰',
-		clusterCount: 0,
+		clusterCount: 5,
 		readCount: 0,
 	},
 	{
