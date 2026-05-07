@@ -70,6 +70,11 @@ function handleTouchEnd() {
 
 const scrollFadeDuration = 150;
 
+function sectionTitle(): string {
+	const localized = storyLocalizer("section.perspectives");
+	return localized && localized !== "section.perspectives" ? localized : "不同觀點";
+}
+
 // Scroll indicator state
 let scrollContainer = $state<HTMLDivElement | null>(null);
 let canScrollLeft = $state(false);
@@ -108,8 +113,8 @@ $effect(() => {
 </script>
 
 <section class="mt-6">
-  <h3 class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
-    {storyLocalizer("section.perspectives") || "Perspectives"}
+  <h3 class="mb-4 text-xl font-semibold text-gray-900 dark:text-gray-100">
+    {sectionTitle()}
   </h3>
   <div class="relative overflow-x-hidden">
     <div
@@ -124,7 +129,7 @@ $effect(() => {
     {#each displayPerspectives as perspective}
       {@const parsed = parseStructuredText(perspective.text)}
       <div
-        class="w-52 shrink-0 rounded-lg bg-gray-100 p-4 dark:bg-gray-700"
+        class="w-[min(86vw,24rem)] shrink-0 rounded-lg border border-gray-200 border-l-4 border-l-[#4B6BFB] bg-white p-5 shadow-sm dark:border-gray-700 dark:border-l-[#7EA2FF] dark:bg-gray-800/95"
       >
         {#if parsed.hasTitle}
           {@const titleCitations = getCitedArticlesForText(
@@ -137,7 +142,7 @@ $effect(() => {
             citationMapping,
             articles,
           )}
-          <p class="mb-2 text-base font-bold text-gray-800 dark:text-gray-200 break-words" dir="auto">
+          <p class="mb-3 border-b border-gray-200 pb-2 text-base font-bold leading-relaxed text-gray-950 dark:border-gray-700 dark:text-white break-words" dir="auto">
             {#if flashcardMode}
               <SelectableText
                 text={parsed.title!}
@@ -159,7 +164,7 @@ $effect(() => {
               />
             {/if}
           </p>
-          <p class="mb-2 text-base text-gray-700 dark:text-gray-300" dir="auto">
+          <p class="mb-3 text-base leading-8 text-gray-700 dark:text-gray-200" dir="auto">
             {#if flashcardMode}
               <SelectableText
                 text={parsed.content}
@@ -187,7 +192,7 @@ $effect(() => {
             citationMapping,
             articles,
           )}
-          <p class="mb-2 text-base text-gray-700 dark:text-gray-300" dir="auto">
+          <p class="mb-3 text-base leading-8 text-gray-700 dark:text-gray-200" dir="auto">
             {#if flashcardMode}
               <SelectableText
                 text={parsed.content}
@@ -212,19 +217,19 @@ $effect(() => {
         {/if}
 
         {#if perspective.sources && perspective.sources.length > 0 && !hasCitations(perspective.text)}
-          <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          <div class="mt-4 flex flex-wrap gap-2 text-sm text-gray-600 dark:text-gray-300">
             {#each perspective.sources as source, idx}
               <a
                 href={source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-[#183FDC] hover:underline dark:text-[#5B89FF]"
+                class="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 font-semibold text-[#183FDC] hover:border-blue-300 hover:bg-blue-100 dark:border-blue-900/70 dark:bg-blue-950/40 dark:text-[#8DB0FF] dark:hover:border-blue-700"
                 dir="auto"
               >
                 {source.name}
               </a>
               {#if idx < perspective.sources.length - 1}
-                <span> • </span>
+                <span class="sr-only">, </span>
               {/if}
             {/each}
           </div>
