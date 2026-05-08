@@ -6,6 +6,7 @@ import type { Article, LocalizerFunction } from '$lib/types';
 import { getCitedArticlesForText } from '$lib/utils/citationAggregator';
 import { type CitationMapping, replaceWithNumberedCitations } from '$lib/utils/citationContext';
 import { formatTimelineDate } from '$lib/utils/formatTimelineDate';
+import { localizeOr } from '$lib/utils/localizeOr';
 import { parseTimelineEvent } from '$lib/utils/textParsing';
 import CitationText from './CitationText.svelte';
 import SelectableText from './SelectableText.svelte';
@@ -69,7 +70,7 @@ const displayEvents = $derived.by(() => {
 
 <section class="mt-6">
   <h3 class="mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200">
-    {storyLocalizer("section.timeline") || "Timeline"}
+    {localizeOr(storyLocalizer, "section.timeline", "事件時間軸")}
   </h3>
   <ol
     class="timeline"

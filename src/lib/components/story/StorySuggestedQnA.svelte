@@ -3,6 +3,7 @@ import { s } from '$lib/client/localization.svelte';
 import type { Article, LocalizerFunction } from '$lib/types';
 import { getCitedArticlesForText } from '$lib/utils/citationAggregator';
 import { type CitationMapping, replaceWithNumberedCitations } from '$lib/utils/citationContext';
+import { localizeOr } from '$lib/utils/localizeOr';
 import CitationText from './CitationText.svelte';
 import SelectableText from './SelectableText.svelte';
 
@@ -46,7 +47,7 @@ const displayQna = $derived.by(() => {
 
 <section class="mt-6">
   <h3 class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
-    {storyLocalizer("section.suggestedQnA") || "Q&A"}
+    {localizeOr(storyLocalizer, "section.suggestedQnA", "快速問答")}
   </h3>
 
   <div class="space-y-4">

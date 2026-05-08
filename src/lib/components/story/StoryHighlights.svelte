@@ -3,6 +3,7 @@ import { s } from '$lib/client/localization.svelte';
 import type { Article, LocalizerFunction } from '$lib/types';
 import { getCitedArticlesForText } from '$lib/utils/citationAggregator';
 import { type CitationMapping, replaceWithNumberedCitations } from '$lib/utils/citationContext';
+import { localizeOr } from '$lib/utils/localizeOr';
 import { parseStructuredText } from '$lib/utils/textParsing';
 import CitationText from './CitationText.svelte';
 import SelectableText from './SelectableText.svelte';
@@ -42,7 +43,7 @@ const displayPoints = $derived.by(() => {
 
 <section class="mt-6">
   <h3 class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
-    {storyLocalizer("section.highlights") || "Key Points"}
+    {localizeOr(storyLocalizer, "section.highlights", "亮點")}
   </h3>
   <ol class="border-t border-dashed border-gray-300 dark:border-gray-600" role="list" aria-label="Key highlights">
     {#each displayPoints as point, index}

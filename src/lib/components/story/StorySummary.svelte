@@ -60,10 +60,21 @@ function handleLocationKeydown(event: KeyboardEvent) {
 // Get the map service name for accessibility
 const mapServiceName = $derived(getMapsProviderDisplayName(displaySettings.mapsProvider, session));
 
+function firstSummaryParagraph(summary: string): string {
+	return (
+		summary
+			.split(/\n+/)
+			.map((paragraph) => paragraph.trim())
+			.find((paragraph) => paragraph.length > 0) || ''
+	);
+}
+
+const leadSummary = $derived(firstSummaryParagraph(story.short_summary || ''));
+
 // Convert citations to numbered format if mapping is available
-const displaySummary = $derived.by(() => {
-	if (!citationMapping) return story.short_summary || '';
-	return replaceWithNumberedCitations(story.short_summary || '', citationMapping);
+const displayLeadSummary = $derived.by(() => {
+	if (!citationMapping) return leadSummary;
+	return replaceWithNumberedCitations(leadSummary, citationMapping);
 });
 
 const displayLocation = $derived.by(() => {
@@ -73,7 +84,7 @@ const displayLocation = $derived.by(() => {
 
 // Get cited articles for summary
 const summaryCitedArticles = $derived.by(() => {
-	return getCitedArticlesForText(displaySummary, citationMapping, story.articles || []);
+	return getCitedArticlesForText(displayLeadSummary, citationMapping, story.articles || []);
 });
 
 // Get cited articles for location
@@ -160,13 +171,14 @@ onDestroy(() => {
 		hideTimeout = null;
 	}
 });
+
 </script>
 
 <section class="mt-6">
   <div class="mb-6" dir="auto">
     {#if flashcardMode}
       <SelectableText
-        text={displaySummary}
+        text={displayLeadSummary}
         {flashcardMode}
         {selectedWords}
         {selectedPhrases}
@@ -176,7 +188,7 @@ onDestroy(() => {
       />
     {:else}
       <CitationText
-        text={displaySummary}
+        text={displayLeadSummary}
         showFavicons={false}
         showNumbers={false}
         inline={false}

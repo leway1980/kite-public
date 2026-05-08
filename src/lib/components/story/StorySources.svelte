@@ -8,6 +8,7 @@ import { dataService } from '$lib/services/dataService';
 import { preferredSources } from '$lib/stores/preferredSources.svelte.js';
 import type { LocalizerFunction, MediaInfo } from '$lib/types';
 import { getMostRecentArticleDate, getTimeAgo } from '$lib/utils/getTimeAgo';
+import { localizeOr } from '$lib/utils/localizeOr';
 
 // Props
 interface Props {
@@ -50,7 +51,7 @@ let sortedDomains = $derived.by(() => {
 });
 
 // State
-let showAllSources = $state(true);
+let showAllSources = $state(false);
 let visibleSources = $state(typeof window !== 'undefined' && window.innerWidth <= 768 ? 4 : 8);
 
 // Handle window resize
@@ -111,13 +112,18 @@ async function handleSourceClick(event: MouseEvent, domain: any) {
   <div class="mb-4 flex items-center justify-between">
     <div>
       <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
-        {storyLocalizer("section.sources") || "Sources"}
+        {localizeOr(storyLocalizer, "section.sources", "來源")}
       </h3>
       <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-        {storyLocalizer("sources.summary", {
-          publishers: publisherCount.toString(),
-          articles: totalArticleCount.toString(),
-        })}
+        {localizeOr(
+          storyLocalizer,
+          "sources.summary",
+          `${publisherCount} 家媒體，${totalArticleCount} 篇文章`,
+          {
+            publishers: publisherCount.toString(),
+            articles: totalArticleCount.toString(),
+          },
+        )}
       </p>
     </div>
     {#if sortedDomains.length > visibleSources}
@@ -178,12 +184,12 @@ async function handleSourceClick(event: MouseEvent, domain: any) {
             </span>
             {#if domain?.isPaywalled}
               <Tooltip
-                text={storyLocalizer("sources.paywallTooltip") || "This source may require a subscription to access full articles"}
+                text={localizeOr(storyLocalizer, "sources.paywallTooltip", "此來源可能需要訂閱才能閱讀完整文章")}
                 position="top"
               >
                 <span
                   class="flex-shrink-0"
-                  aria-label={storyLocalizer("sources.paywall") || "Paywall"}
+                  aria-label={localizeOr(storyLocalizer, "sources.paywall", "付費牆")}
                 >
                   <IconLock class="h-3.5 w-3.5 text-gray-400 dark:text-gray-500" />
                 </span>
@@ -201,15 +207,15 @@ async function handleSourceClick(event: MouseEvent, domain: any) {
               )}
               {#if mostRecentDate && articleCount > 0}
                 {getTimeAgo(mostRecentDate)} · {articleCount === 1
-                  ? storyLocalizer("sources.article", { count: articleCount.toString() })
-                  : storyLocalizer("sources.articles", { count: articleCount.toString() })}
+                  ? localizeOr(storyLocalizer, "sources.article", `${articleCount} 篇文章`, { count: articleCount.toString() })
+                  : localizeOr(storyLocalizer, "sources.articles", `${articleCount} 篇文章`, { count: articleCount.toString() })}
               {:else}
                 {articleCount === 1
-                  ? storyLocalizer("sources.article", { count: articleCount.toString() })
-                  : storyLocalizer("sources.articles", { count: articleCount.toString() })}
+                  ? localizeOr(storyLocalizer, "sources.article", `${articleCount} 篇文章`, { count: articleCount.toString() })
+                  : localizeOr(storyLocalizer, "sources.articles", `${articleCount} 篇文章`, { count: articleCount.toString() })}
               {/if}
             {:else}
-              {storyLocalizer("sources.articles", { count: "0" })}
+              {localizeOr(storyLocalizer, "sources.articles", "0 篇文章", { count: "0" })}
             {/if}
           </span>
         </a>
