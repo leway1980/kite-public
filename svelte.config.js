@@ -25,13 +25,14 @@ const LOCALES = [
 // Any synthesis agent that bumps MOCK_BATCH_ID (e.g. to signal a new batch)
 // MUST update this value too, otherwise the prerender entries will produce
 // 404s on the static site.
-const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000004';
+const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000005';
 const MOCK_CATEGORY_UUIDS = [
 	'c0000001-0000-4000-8000-000000000001',
 	'c0000002-0000-4000-8000-000000000002',
 	'c0000003-0000-4000-8000-000000000003',
 	'c0000004-0000-4000-8000-000000000004',
 	'c0000005-0000-4000-8000-000000000005',
+	'c0000006-0000-4000-8000-000000000006',
 ];
 
 /** @type {import('@sveltejs/kit').Config} */

@@ -5,6 +5,7 @@ const AI_EDU_UUID = 'c0000002-0000-4000-8000-000000000002';
 const TW_EDU_UUID = 'c0000003-0000-4000-8000-000000000003';
 const AI_CLASSROOM_UUID = 'c0000004-0000-4000-8000-000000000004';
 const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
+const EDU_RESEARCH_UUID = 'c0000006-0000-4000-8000-000000000006';
 
 // ─── Stories synthesized 2026-05-08 by pipeline (auto-generated) ───
 
@@ -805,12 +806,15 @@ const aiEduStories: Story[] = [
 			{ name: 'koc.com.tw' },
 		],
 	},
+];
+
+const educationResearchStories: Story[] = [
 	{
-		id: 'aiEducation-1',
+		id: 'educationResearch-1',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: 'AI × 教育',
+		category: '教育研究',
 		title: '手機鎖袋上鎖後，第一年紀律先擾動再穩定',
 		short_summary: 'NBER 工作論文以美國全國中學樣本研究「可上鎖手機袋」政策，方法為準實驗設計：以 staggered difference-in-differences 比較政策導入前後，並整併全國學生問卷、GPS pings、標準化考試、學校行政紀錄與主要供應商銷售資料。摘要未揭露完整樣本數與效果量資訊，但研究提供跨校、跨時段的因果近似結構。\n\n這份研究在政策層面重要，因為它指出手機限用不是單點成效，而是有時間動態：導入初期可能出現紀律衝擊與學生幸福感下滑，後續才可能回穩；同時學業平均效應接近零。也就是說，校方若只以分數做績效判斷，會漏掉秩序與心理適應過程。\n\n對台灣高中教師而言，可借鏡先行小範圍分段導入的策略：先試行1學期，再比較紀律事件、學生幸福感、教學專注度與月度考試趨勢；不是直接全校一刀切。第一年保留實作課程行動裝置例外，減少教學中斷。由於高一高二的過渡可能較敏感，應設立申訴與調適機制；高三則可同步檢視是否能以更嚴格規範改善準備考試環境。',
 		emoji: '📵',
@@ -868,11 +872,11 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-2',
+		id: 'educationResearch-2',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: 'AI × 教育',
+		category: '教育研究',
 		title: '早期遠距教育是否增加技術工作機會？',
 		short_summary: 'NBER 工作論文研究 20 世紀初美國的早期遠距教育：學生透過郵件收教材、寄回作業，再由學校批改。研究以 International Correspondence Schools（ICS）學員紀錄串聯人口普查資料，發現參與者在 3 到 10 年後進入技術性工作的機率高出 6 到 10 個百分點。',
 		emoji: '📬',
@@ -928,11 +932,11 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-3',
+		id: 'educationResearch-3',
 		cluster_number: 3,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: 'AI × 教育',
+		category: '教育研究',
 		title: '家長自我合理化如何壓縮早教投入',
 		short_summary: 'NBER 工作論文 W35150（10.3386/w35150）建立一個早期教養投入模型：當家長注意力與時間不足時，會把「親職回應能否改善兒童發展」的回報估得偏低，進而合理化低投入。研究以理論模型配合隨機對照試驗（RCT）驗證這條機制，並觀察到信念校正可同步改變互動與參與行為。其核心不是只問資源多少，而是問家長是否收到可使信念校準的回饋訊號。\n本研究的意涵在於：只補素材、補金錢，若未同時改變家長對「回應式互動」的預期，改善容易停在表面。論文指出在容量不足時，扭曲信念會讓家庭陷入自我封閉循環，讓介入難以落地。摘要未揭露樣本數、追蹤期間與效應量，但其模型＋RCT組合仍顯示學校可從「家庭行為設計」下手，重新切開介入失靈。\n對台灣高中教師的具體啟示是：別只靠單次親職講座，而要把可觀測行為變成固定流程。例如每週由家長回填 3 分鐘回應任務、語句回饋次數、陪伴時段；每2～4週由導師回饋一次。以低負擔清單替代抽象喊話，並優先先導高風險與忙碌家庭，才較能避免把「投入不足」誤判成不合作，而不是家庭能力不足。',
 		emoji: '🧠',
@@ -982,11 +986,11 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-4',
+		id: 'educationResearch-4',
 		cluster_number: 4,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: 'AI × 教育',
+		category: '教育研究',
 		title: '功績主義：別只看過去成績',
 		short_summary: '這篇 NBER 工作論文（W35151）於 2026-05-08 發表，將功績主義拆成「回溯式」與「前瞻式」兩種：前者依個人特質與過去成就判斷，後者依對既定社會目標的未來比較性貢獻判斷。研究採用形式化模型，並以學生分配到學校、勞工匹配職位為案例，比對不同制度下的分配結果與政策訊號。研究摘要未揭露樣本數、抽樣國家、追蹤期間與量化效應值，方法上偏向理論推演而非實證。\n\n此區分之所以關鍵，是因為同一制度中的「公平」可有截然不同實作邏輯：若以回溯式為主，既有成績與背景更易決定機會；若採前瞻式，政策必須先設定欲達成的教育目標，再以可度量結果替代純過往排名。對學校選才、資源分配與人才培育而言，這代表原本看起來對等的程序，實際可能反映不同的價值取向與權力分配。\n\n對台灣高中教師而言，可直接套用為「前瞻式評量」的教學設計原則：第一，日常記錄不僅保存試卷分數，還要保留三個月一次的學習成長率、跨域合作表現與任務完成度；第二，分組與分流前，先用單元任務明確定義目標（例如探究深度、社會關懷、同儕回饋）並據此給予權重；第三，轉學校與升學建議時，改用「未來可發展指標」取代單次考試作為主要敘事，避免把歷史績效視為唯一天花板。此方式符合本土雙軌課程與高雄、台中等不同校型的人力差異，也較容易與 113 課綱能力本位與在校生成長追蹤銜接。',
 		emoji: '⚖️',
@@ -1744,6 +1748,7 @@ export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_APPLICATIONS_UUID]: aiApplicationsStories,
 	[AI_EDU_UUID]: aiEduStories,
 	[AI_CLASSROOM_UUID]: aiClassroomStories,
+	[EDU_RESEARCH_UUID]: educationResearchStories,
 	[TW_EDU_UUID]: twEduStories,
 };
 
