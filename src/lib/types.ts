@@ -54,6 +54,7 @@ export interface Story {
 	sourceLanguage?: string;
 	selectedLanguage?: string; // The language actually used for this story's content
 	category: string;
+	editorial_lens?: string | null;
 	title: string;
 	short_summary: string;
 	did_you_know?: string | null;

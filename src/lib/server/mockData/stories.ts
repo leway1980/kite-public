@@ -11,11 +11,89 @@ const EDU_RESEARCH_UUID = 'c0000006-0000-4000-8000-000000000006';
 
 const aiNewsStories: Story[] = [
 	{
+		id: 'aiNews-garry-tan-gstack-workflow-2026-05-11',
+		cluster_number: 6,
+		unique_domains: 3,
+		number_of_titles: 3,
+		category: 'AI 動態',
+		editorial_lens: '新工作模式',
+		title: 'Garry Tan 的 gstack：把 AI 從提示詞改造成工作流',
+		short_summary: 'Garry Tan 的 gstack 訊號價值不在名人或產業聲量，而在工作方法：它把 Claude Code / Codex 從單次 prompt 改成 Think、Plan、Build、Review、Test、Ship、Reflect 的交付循環，並用 CEO、工程、設計、QA、資安等角色分工降低盲目信任。對個人代理使用者來說，重點是把任務變成可複利流程，而不是每天重寫提示詞。',
+		emoji: '🧭',
+		did_you_know: 'gstack 官方文件把自己定位成「delivery system」，不是 prompt 集合。它的核心做法是讓後續步驟繼承前一步的 brief、review 與 QA 結果，讓代理工作從一次性輸出變成有節奏的交付流程。',
+		talking_points: [
+			'新工作模式：價值不在多寫幾行程式，而是把 AI 使用從臨時問答改成可重複的交付循環。',
+			'角色分工：CEO review、工程 review、設計 review、QA、release 等命令讓同一代理在不同階段扮演不同職責。',
+			'可複利關鍵：每一步不是孤立 prompt，而是把問題重構、計畫、測試與回顧留給下一步使用。',
+			'風險控制：browser QA、review、ship 與安全檢查把「代理很快」轉成「代理能被驗證」。',
+			'教育啟發：教師或行政也可照這個概念設計自己的代理流程，先分清楚規劃、產出、審核、測試與發布責任。',
+		],
+		quote: 'A delivery system for AI coding, not a pile of prompts.',
+		quote_attribution: 'gstack 官方網站',
+		quote_source_url: 'https://gstack.lol/',
+		quote_source_domain: 'gstack.lol',
+		perspectives: [
+			{
+				text: '從個人工作流看，gstack 的重點是把「我該怎麼問 AI」改成「我怎麼設計一條工作管線」；這讓非大型團隊也能把代理當成有角色邊界的小型組織來用。',
+				sources: [
+					{
+						name: 'gstack',
+						url: 'https://gstack.lol/',
+					},
+				],
+			},
+			{
+				text: '從工程治理看，GitHub README 顯示這套工具也納入瀏覽器、部署、資安與長期記憶等周邊命令，代表代理生產力的競爭焦點正在從模型能力移到流程紀律。',
+				sources: [
+					{
+						name: 'GitHub',
+						url: 'https://github.com/garrytan/gstack',
+					},
+				],
+			},
+			{
+				text: '從使用者需求看，這正符合「演算法偶爾滑到一篇高價值文章」的問題：系統應主動保留這類 mental model，而不是只追逐公司新聞或模型版本更新。',
+				sources: [
+					{
+						name: 'AI Builder Club',
+						url: 'https://www.aibuilderclub.com/blog/garry-tan-ai-coding-workflow',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: "gstack | Garry Tan's Workflow for Claude Code and Codex",
+				link: 'https://gstack.lol/',
+				domain: 'gstack.lol',
+				date: '2026-05-11',
+			},
+			{
+				title: "GitHub - garrytan/gstack",
+				link: 'https://github.com/garrytan/gstack',
+				domain: 'github.com',
+				date: '2026-05-11',
+			},
+			{
+				title: "Garry Tan Shipped 600,000 Lines of Code in 60 Days While Running YC. Here's Exactly How.",
+				link: 'https://www.aibuilderclub.com/blog/garry-tan-ai-coding-workflow',
+				domain: 'aibuilderclub.com',
+				date: '2026-04-08',
+			},
+		],
+		domains: [
+			{ name: 'gstack.lol' },
+			{ name: 'github.com' },
+			{ name: 'aibuilderclub.com' },
+		],
+	},
+	{
 		id: 'aiNews-1',
 		cluster_number: 1,
 		unique_domains: 2,
 		number_of_titles: 2,
 		category: 'AI 動態',
+		editorial_lens: '流程改造',
 		title: '5G智慧消防落地高雄　鎖定日本輸出',
 		short_summary: '台灣大與高雄市政府消防局宣布，5G智慧消防輔助救援系統已於今年初導入高雄火場救援，主軸是5G專網、室內定位、即時建模。過去需人工回報、逐一確認現場的流程，改以系統在約2分鐘內完成火場掌握與部署，平均救災效率提升約50%。\n這代表台灣電信端從「通訊供應者」轉向「公共安全與產業服務整合者」：系統整合LiDAR、點雲、IMU與AI，定位誤差約120公分，並掛接生命徵象與氧氣瓶監測警示；今年還以「台灣電信業者唯一入圍」身份上榜MWC GLOMO Awards緊急服務類，意味其已具備可複製與跨域擴散條件。\n對台灣高中教師啟示：可將「2分鐘即時建模」與「過往人工回報」做成對照課堂，讓學生用高雄案例分析訊息延遲對決策的影響；以120公分定位誤差與5G專網穩定度作為資料品質判讀題，設計消防、智慧製造或能源巡檢情境，讓學生練習把感測資料轉成行動指令。也能討論日本/東南亞輸出為何受在地系統商、採購流程牽制，讓學生理解AI導入不是只看模型，而是制度與流程的整合。',
 		emoji: '🚒',
@@ -90,6 +168,7 @@ const aiNewsStories: Story[] = [
 		unique_domains: 2,
 		number_of_titles: 2,
 		category: 'AI 動態',
+		editorial_lens: '資安信任',
 		title: 'ChatGPT Trusted Contact 上線：成人可設安心聯絡人',
 		short_summary: 'OpenAI 於 2026 年 5 月 7 日推出 ChatGPT「Trusted Contact」，18 歲以上使用者（韓國為 19 歲）可指定一位成年人為信任聯絡人。若偵測到對話可能涉及自傷或自殺高風險，系統先提醒使用者，再由小組人工複核是否通知聯絡人。\n這是將原本僅提供青少年家長通知的做法，延伸到成年用戶的版本。聯絡人必須在七天內接受邀請、未通過時可改選，通報也限制為 email、簡訊或應用內提醒，且不外流完整聊天內容。對業界來說，這是一個將危機治理從關鍵字阻擋，轉向「社會連結＋人工核證」的新設計。\n對台灣高中教師，這可直接轉為危機素養教材：課前先定義危險訊號、預先擬定求助開場句與轉介路徑，模擬 AI 警示後由班導、輔導室、家長接力處理的流程。導入時須先處理學生隱私同意、未成年授權與家校保密規範，避免把美式 18 歲門檻直接搬到台灣使用。',
 		emoji: '🛡️',
@@ -164,6 +243,7 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
+		editorial_lens: '資安信任',
 		title: 'GPT-5.5 推出 Trusted Access for Cyber 強化關鍵防線',
 		short_summary: 'OpenAI 在 2026-05-07 發布 GPT-5.5-Cyber 限量預覽，將對象鎖定在保護關鍵基礎設施的防禦者。它說明 GPT-5.5 與 GPT-5.5-Cyber 會依任務情境分流，前者給大多數防禦團隊、後者給高風險專責流程；前一版 GPT-5.5 兩週前已上線，這次補上了更受控的 cyber 版本，並透過 Trusted Access for Cyber（TAC）調整可接受請求邊界。\n\n為何重要？OpenAI 不是只把模型能力放大，而是先調整治理：先驗證與授權再放行，讓合法防禦者可降低拒絕率做漏洞盤點、惡意碼分析、逆向工程、偵測工程與補丁驗證，同時持續封鎖 credential theft、stealth、persistence 等高風險行為。它提到已與美國聯邦、州政府及主要商業單位討論，反映業界已從「模型效能」進入「可控能力分層」的基礎設施時代。\n\n對台灣高中教師的啟示是可落地的：第一步可在資訊或網路安全課做「分權實作」情境，把學生分成普通帳號與高權限帳號，對同一安全事件輸入做差異化對照；第二步結合 2026-06-01 起的更高帳號保護節奏，建立學校帳號的防釣魚、雙因素與最小權限清單；第三步引導學生設計校內資安事件清單（漏洞辨識、通報、補丁驗證）並記錄哪些查詢應該被系統封鎖，讓資安倫理與流程意識在高中階段先被訓練，而不是只教會工具本身。',
 		emoji: '🛡️',
@@ -240,6 +320,7 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
+		editorial_lens: '代理應用',
 		title: 'Parloa 推出可直接上線的語音 AI 客服代理',
 		short_summary: 'OpenAI 於 2026-05-07 公告，柏林公司 Parloa 將客服自動化改為可對話 AI 服務代理。其 AMP 平台以 GPT-5.4 為核心，企業可用自然語言定義代理角色、指令、工具與邊界，不必寫程式，並透過「模擬→評估→上線」流程持續驗證。\n其原因在於生產可用性：Parloa 指出密碼重設、保單詢問等重複通話可先由代理處理，並在部署前大量回放真實情境，測試延遲、邊界案例與失敗分支，重點是讓模型在實際對話可穩定執行，而非只看模型新穎。\n台灣高中老師可直接借鏡：先聚焦 1 個高頻校務情境（請假、分班、課程衝堂、成績申訴），把每段對話拆成可控工具清單與回覆邊界，讓行政人員與任課老師先做模擬腳本。可採每週兩次測試，先由兩組模型式樣腳本模擬師生問答，再以規則檢核＋LLM 評分比對是否遺漏資訊；最終再開放人工接軌，避免少數案例誤答影響學生權益。',
 		emoji: '☎️',
@@ -295,6 +376,7 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
+		editorial_lens: '新工作模式',
 		title: 'OpenAI 三大實時語音模型：可邊聽邊做事',
 		short_summary: 'OpenAI 在 2026-05-07 發表 API 三款新語音模型：GPT-Realtime-2、GPT-Realtime-Translate、GPT-Realtime-Whisper。GPT-Realtime-2 被定位有 GPT-5 類推理能力，GPT-Realtime-Translate 可把 70+ 輸入語言翻成 13 種輸出語言，GPT-Realtime-Whisper 則做即時串流轉錄，三者直接放在 API 供開發者接工具與任務流，目標是讓語音對話可同時理解、回應並執行。\n\n文中主張語音體驗不只改善口感，而是把語音轉向「可動的工作流程」。透過 voice-to-action、systems-to-voice、voice-to-voice 三種模式，並舉 Zillow 找屋、機場航班延誤、訂單號回覆等場景，顯示語音正在從單純問答走向可調度任務、導覽流程、維持情境感的服務層。這使競爭格局中，供應商將不只賣 ASR 或 TTS，而是賣可持續對話的行動能力。\n\n對台灣高中教師可直接落地三件事：第一，用 GPT-Realtime-2 設 30 分鐘情境練習，例如請學生下 2 位素食、1 位不吃菇、廚房空間有限的條件，檢驗其能否產出可執行步驟；第二，在英語/多語課將學生口語輸入轉譯成中文回饋，縮短聽懂與反應差距；第三，課堂討論用 GPT-Realtime-Whisper 即時轉錄，保留時間戳做後續批改與自我修正。導入前先規劃學生授權、資料留存天數與校內網路頻寬，避免錄音內容外流及未成年人隱私問題。',
 		emoji: '🎙️',
@@ -804,6 +886,76 @@ const aiEduStories: Story[] = [
 			{ name: 'koc.com.tw' },
 		],
 	},
+	{
+		id: 'aiEducation-facebook-groups-2026-05-10',
+		cluster_number: 6,
+		unique_domains: 1,
+		number_of_titles: 9,
+		category: 'AI × 教育',
+		editorial_lens: '社群採用',
+		title: '教師社群熱點：AI 代理從功能試用走向工作流',
+		short_summary: '本週台灣與華語 AI/教育社群的高價值訊號，不是單點 Gemini、NotebookLM 或 Gem 功能，而是教師開始把 AI 串成代理化工作流：n8n、Claude Code skills、GAS + Gemini、NotebookLM 與 Google Workspace 被拿來處理表單回饋、資料整理、寄信與通知。這代表 AI 融入教育正從「會用工具」走向「設計可覆核、可交接的流程」。',
+		emoji: '🧰',
+		did_you_know: '這次社群觀察最有實務感的不是「哪個 AI 最強」，而是帳號與流程細節：Gmail / Apps Script 寄信額度會影響班級或研習規模；n8n 自架雖可降低成本與提高資料控制，但也把維護責任帶回學校或教師團隊。',
+		talking_points: [
+			'趨勢轉向：教師社群討論已從 Gemini、NotebookLM、Gem 的單點功能，轉向可重複執行的 AI 代理與工作流。',
+			'n8n 進入教育場景，重點是行政減量、自動化部署、雲端或自架取捨，以及校內資料控制。',
+			'GAS + Gemini + NotebookLM 已出現具體組合：問卷回饋分析、自動寄信、研習資料整理與 Classroom / Drive 串接。',
+			'可靠性成為素養問題：Gemini URL context 的討論提醒教師，貼網址不等於模型真的讀懂來源。',
+			'Google Educator / GEG 訊號仍穩定，但考證答案販售、貼圖與低品質備考內容要過濾，不應當成採用趨勢。',
+		],
+		quote: null,
+		quote_attribution: null,
+		quote_source_url: null,
+		quote_source_domain: null,
+		perspectives: [
+			{
+				text: '從 AI 融入教育角度看，這波訊號的核心是「代理化」：教師不只問模型答案，而是讓工具在受控範圍內讀資料、整理、觸發通知與產生下一步行動。這比單點功能介紹更接近校務流程改造。',
+				sources: [
+					{
+						name: 'Facebook AI/教育社團匿名趨勢觀察',
+						url: 'https://www.facebook.com/groups/',
+					},
+				],
+			},
+			{
+				text: '從治理角度看，n8n 自架、GAS 配額、Workspace 權限與資料來源查核，是教師社群正在碰到的真問題；這些問題決定代理流程能否從個人嘗試變成校內可維護做法。',
+				sources: [
+					{
+						name: 'Facebook AI/教育社團匿名趨勢觀察',
+						url: 'https://www.facebook.com/groups/',
+					},
+				],
+			},
+			{
+				text: '從 AI 素養角度看，Gemini URL-only 幻覺提醒很重要：學生與教師不能只看模型答得順不順，而要確認資料是否真的被讀取、是否有上傳來源文件或 grounding 機制。',
+				sources: [
+					{
+						name: 'Facebook AI/教育社團匿名趨勢觀察',
+						url: 'https://www.facebook.com/groups/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-03 至 2026-05-10',
+				date_iso: '2026-05-10',
+				content: '以白名單 Facebook AI/教育社團的可見近期貼文做 read-only 短摘，先用標題與首屏文字去重，再合併相似主題為趨勢觀察。',
+			},
+		],
+		articles: [
+			{
+				title: 'Facebook AI/教育社團匿名趨勢觀察（短摘去重彙整）',
+				link: 'https://www.facebook.com/groups/',
+				domain: 'facebook.com',
+				date: '2026-05-10',
+			},
+		],
+		domains: [
+			{ name: 'facebook.com' },
+		],
+	},
 ];
 
 const educationResearchStories: Story[] = [
@@ -1300,76 +1452,6 @@ const aiClassroomStories: Story[] = [
 		],
 		domains: [
 			{ name: 'larryferlazzo.edublogs.org' },
-		],
-	},
-	{
-		id: 'aiClassroom-facebook-groups-2026-05-10',
-		cluster_number: 6,
-		unique_domains: 1,
-		number_of_titles: 9,
-		category: 'AI 教學實戰',
-		title: '教師社群本週熱點：n8n、Google 工具與 Gemini 可靠性成為實戰焦點',
-		short_summary: '本週台灣與華語 AI/教育社群的可見討論，最強訊號不是單一新工具，而是教師開始把 AI 從「問答與產圖」推向「工作流」。n8n 是最明顯的主題：社群同時討論它和 Zapier、Make 的成本差異、雲端與自架部署、學校資料隱私，以及如何用 Claude Code skills 讓 workflow 透過一句話產生。這代表教師與行政端的需求已從「試試 AI」轉向「把重複任務接起來」。\n\nGoogle 生態仍是另一條主線。GEG 與 Google Educators 類社群持續出現 Classroom、Drive、Forms、Sheets、Gmail、Calendar、Google Educator 認證與 Champions 訊號；更具體的是 GAS + Gemini + NotebookLM 的組合開始落到問卷回饋分析、研習回饋整理、自動寄信與額度限制。對學校來說，真正的瓶頸不是能不能生成內容，而是帳號權限、寄信配額、學生資料是否外流，以及流程能否被同事接手。\n\n值得注意的是，社群也出現了模型可靠性的實務提醒：Gemini 只丟網址當上下文時，可能沒有真正讀取網頁內容，導致摘要或回答出現幻覺。比較可靠的做法是上傳來源文件，或在需要即時資料時使用具 grounding 能力的 API。這類提醒很適合進入教師 AI 素養：學生與老師不只要會下 prompt，也要知道「資料是怎麼進模型的」。',
-		emoji: '🧰',
-		did_you_know: '這次社群觀察最有實務感的不是「哪個 AI 最強」，而是帳號與流程細節：Gmail / Apps Script 寄信額度會影響班級或研習規模；n8n 自架雖可降低成本與提高資料控制，但也把維護責任帶回學校或教師團隊。',
-		talking_points: [
-			'n8n 從技術社群進入教師工作流討論，重點是行政減量、自動化部署與校內資料控制。',
-			'GAS + Gemini + NotebookLM 已出現具體場景：問卷回饋分析、自動寄信、研習資料整理。',
-			'Gemini URL context 是本週最值得提醒的可靠性問題：貼網址不等於模型已讀懂來源。',
-			'Google Educator / GEG 訊號穩定，但考證答案販售與低品質備考內容要過濾。',
-			'Claude Code、Vibe Coding、Antigravity 等 agentic workflow 可列為待觀察，暫時不應誇大成教學主流。',
-			'社團內容整理應先用標題與首屏文字去重；貼圖、節慶卡片、純視覺笑話若沒有可複製方法，直接降權。',
-		],
-		quote: null,
-		quote_attribution: null,
-		quote_source_url: null,
-		quote_source_domain: null,
-		perspectives: [
-			{
-				text: '從教師工作流角度看，本週 n8n 的價值在於它不是單純生成內容，而是把表單、通知、OCR、聯絡人整理與 AI 模型串成可重複流程；這對行政減量比單次 prompt 更有長期價值。',
-				sources: [
-					{
-						name: 'Facebook AI/教育社團匿名趨勢觀察',
-						url: 'https://www.facebook.com/groups/',
-					},
-				],
-			},
-			{
-				text: '從 Google 教育生態看，教師仍圍繞 Classroom、Workspace、GAS、Gemini 與 NotebookLM 建立日常做法；但真正需要管理的是帳號權限、寄信額度、資料來源與同事能否接手維護。',
-				sources: [
-					{
-						name: 'Facebook AI/教育社團匿名趨勢觀察',
-						url: 'https://www.facebook.com/groups/',
-					},
-				],
-			},
-			{
-				text: '從 AI 素養角度看，Gemini URL-only 幻覺提醒很重要：學生與教師不能只看模型答得順不順，而要確認資料是否真的被讀取、是否有上傳來源文件或 grounding 機制。',
-				sources: [
-					{
-						name: 'Facebook AI/教育社團匿名趨勢觀察',
-						url: 'https://www.facebook.com/groups/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-03 至 2026-05-10',
-				date_iso: '2026-05-10',
-				content: '以白名單 Facebook AI/教育社團的可見近期貼文做 read-only 短摘，先用標題與首屏文字去重，再合併相似主題為趨勢觀察。',
-			},
-		],
-		articles: [
-			{
-				title: 'Facebook AI/教育社團匿名趨勢觀察（短摘去重彙整）',
-				link: 'https://www.facebook.com/groups/',
-				domain: 'facebook.com',
-				date: '2026-05-10',
-			},
-		],
-		domains: [
-			{ name: 'facebook.com' },
 		],
 	},
 ];

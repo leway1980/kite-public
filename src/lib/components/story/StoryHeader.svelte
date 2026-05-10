@@ -194,6 +194,15 @@ const isCJKStory = $derived(containsCJK(story.title));
           {story.category}
         </span>
       </div>
+      {#if story.editorial_lens}
+        <span
+          class="inline-flex items-center rounded py-1 text-xs text-gray-500 dark:text-gray-400"
+          aria-label="Editorial lens: {story.editorial_lens}"
+          dir="auto"
+        >
+          {story.editorial_lens}
+        </span>
+      {/if}
 
       <!-- AI Tools - Only show when expanded and user is subscriber -->
       {#if isExpanded && isSubscriber}
