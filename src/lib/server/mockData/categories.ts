@@ -4,7 +4,7 @@
  * `uuid` is the per-batch category instance id used in the stories URL
  * (`/api/batches/{batchId}/categories/{uuid}/stories`).
  * `categoryId` is the stable category slug used in the category list UI
- * (e.g. "ai-news", "ai-education", "taiwan-edu-policy").
+ * (e.g. "ai-news", "work-methods", "taiwan-edu-policy").
  * `categoryName` is the human-facing label shown in the tab bar.
  */
 
@@ -29,6 +29,13 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		categoryId: 'ai-applications',
 		categoryName: 'AI 熱門應用',
 		clusterCount: 5,
+		readCount: 0,
+	},
+	{
+		uuid: 'c0000007-0000-4000-8000-000000000007',
+		categoryId: 'work-methods',
+		categoryName: '工作方法',
+		clusterCount: 0,
 		readCount: 0,
 	},
 	{

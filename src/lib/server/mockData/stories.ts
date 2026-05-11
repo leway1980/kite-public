@@ -6,6 +6,7 @@ const TW_EDU_UUID = 'c0000003-0000-4000-8000-000000000003';
 const AI_CLASSROOM_UUID = 'c0000004-0000-4000-8000-000000000004';
 const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
 const EDU_RESEARCH_UUID = 'c0000006-0000-4000-8000-000000000006';
+const WORK_METHODS_UUID = 'c0000007-0000-4000-8000-000000000007';
 
 // ─── Stories synthesized 2026-05-08 by pipeline (auto-generated) ───
 
@@ -773,6 +774,8 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 ];
+
+const workMethodsStories: Story[] = [];
 
 const aiEduStories: Story[] = [
 	{
@@ -1826,6 +1829,7 @@ const twEduStories: Story[] = [
 export const MOCK_STORIES_BY_CATEGORY: Record<string, Story[]> = {
 	[AI_NEWS_UUID]: aiNewsStories,
 	[AI_APPLICATIONS_UUID]: aiApplicationsStories,
+	[WORK_METHODS_UUID]: workMethodsStories,
 	[AI_EDU_UUID]: aiEduStories,
 	[AI_CLASSROOM_UUID]: aiClassroomStories,
 	[EDU_RESEARCH_UUID]: educationResearchStories,
