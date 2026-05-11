@@ -902,7 +902,7 @@ const aiEduStories: Story[] = [
 			'n8n 進入教育場景，重點是行政減量、自動化部署、雲端或自架取捨，以及校內資料控制。',
 			'GAS + Gemini + NotebookLM 已出現具體組合：問卷回饋分析、自動寄信、研習資料整理與 Classroom / Drive 串接。',
 			'可靠性成為素養問題：Gemini URL context 的討論提醒教師，貼網址不等於模型真的讀懂來源。',
-			'Google Educator / GEG 訊號仍穩定，但考證答案販售、貼圖與低品質備考內容要過濾，不應當成採用趨勢。',
+			'社群支援穩定：Google Educator / GEG 討論持續出現，顯示教師仍需要認證準備、工具入門與同儕互助管道。',
 		],
 		quote: null,
 		quote_attribution: null,
