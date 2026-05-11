@@ -36,9 +36,9 @@ export function buildBatchMeta(): MockBatchMeta {
 		createdAt: MOCK_BATCH_CREATED_AT,
 		dateSlug: MOCK_BATCH_DATE_SLUG,
 		language: 'zh-Hant',
-		totalCategories: 7,
-		totalClusters: 24,
-		totalArticles: 267,
+		totalCategories: 6,
+		totalClusters: 21,
+		totalArticles: 62,
 		totalReadCount: 0,
 	};
 }

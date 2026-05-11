@@ -26,7 +26,7 @@ export const GET: RequestHandler = async ({ params }) => {
 		batchId: MOCK_BATCH_ID,
 		createdAt: MOCK_BATCH_CREATED_AT,
 		hasOnThisDay: false,
-		categories: MOCK_CATEGORIES.map((cat) => ({
+		categories: MOCK_CATEGORIES.filter((cat) => cat.clusterCount > 0).map((cat) => ({
 			id: cat.uuid,
 			categoryId: cat.categoryId,
 			categoryName: cat.categoryName,

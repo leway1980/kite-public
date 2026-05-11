@@ -89,81 +89,6 @@ const aiNewsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiNews-1',
-		cluster_number: 1,
-		unique_domains: 2,
-		number_of_titles: 2,
-		category: 'AI 動態',
-		editorial_lens: '流程改造',
-		title: '5G智慧消防落地高雄　鎖定日本輸出',
-		short_summary: '台灣大與高雄市政府消防局宣布，5G智慧消防輔助救援系統已於今年初導入高雄火場救援，主軸是5G專網、室內定位、即時建模。過去需人工回報、逐一確認現場的流程，改以系統在約2分鐘內完成火場掌握與部署，平均救災效率提升約50%。\n這代表台灣電信端從「通訊供應者」轉向「公共安全與產業服務整合者」：系統整合LiDAR、點雲、IMU與AI，定位誤差約120公分，並掛接生命徵象與氧氣瓶監測警示；今年還以「台灣電信業者唯一入圍」身份上榜MWC GLOMO Awards緊急服務類，意味其已具備可複製與跨域擴散條件。\n對台灣高中教師啟示：可將「2分鐘即時建模」與「過往人工回報」做成對照課堂，讓學生用高雄案例分析訊息延遲對決策的影響；以120公分定位誤差與5G專網穩定度作為資料品質判讀題，設計消防、智慧製造或能源巡檢情境，讓學生練習把感測資料轉成行動指令。也能討論日本/東南亞輸出為何受在地系統商、採購流程牽制，讓學生理解AI導入不是只看模型，而是制度與流程的整合。',
-		emoji: '🚒',
-		did_you_know: '系統不只做定位與地圖，而是將生命警示納入作戰規範：當消防人員長時間未移動、生命徵象異常或訊號中斷，會直接提醒安全官啟動RIT。系統已在高雄百貨、醫院、科技廠房與住宅場域測試，且導入了120公分量級的室內定位精度。',
-		talking_points: [
-			'2026年5月8日宣布「今年初」起正式投入高雄實戰，將5G智慧消防輔助救援系統從測試轉為火場任務。',
-			'全流程指揮縮短到約2分鐘內完成火場資訊掌握與救援部署，較過去人工回報與逐一確認流程節省大量前段時間。',
-			'平均救災效率提升約50%，為成效量化提供可直接比較的關鍵指標。',
-			'核心技術鏈接LiDAR、點雲計算、IMU、AI定位，室內定位誤差控制在約120公分。',
-			'安全機制包含心跳、氧氣瓶殘量監控，若偵測長時間未移動、生命徵象異常或訊號中斷會自動通知安全官並啟動RIT。',
-			'導入場域除火場外含高雄大型百貨、醫院、科技廠房、住宅區，用於驗證通訊與定位在不同建築環境下的穩定性。',
-			'同日與日本Nirik簽署MOU，對外目標是今年內日本第一個消防案並結合在地系統整合商推進輸出。',
-		],
-		quote: '該系統已於今年初正式投入高雄消防局火場救援任務，透過 5G 專網、室內定位與即時建模技術，協助指揮中心快速掌握火場內部狀況。',
-		quote_attribution: '科技新報, 2026-05-08',
-		quote_source_url: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
-		quote_source_domain: 'technews.tw',
-		perspectives: [
-			{
-				text: '科技新報版面偏重可量測效益，將重點放在2分鐘掌握火場、50%救災效率提升與120公分定位精度，對教師可直接轉化為可教學、可量化的案例。',
-				sources: [
-					{
-						name: 'technews.tw',
-						url: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
-					},
-				],
-			},
-			{
-				text: 'finance.technews.tw則將同一事件放在輸出敘事中解讀，著重Nirik合作、跨國橋接與N台系統國際商務路徑，強調台日市場與未來東南亞拓展，而非僅是地方救援成效。',
-				sources: [
-					{
-						name: 'finance.technews.tw',
-						url: 'https://finance.technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection-japan/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '台灣大與高雄市政府消防局共同公布5G智慧消防輔助救援系統導入成果與實戰效益，顯示系統已於高雄投入實際救災。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '台灣大宣布與日本Nirik簽署MOU，啟動5G智慧消防系統輸出日本的合作與商務推進。',
-			},
-		],
-		articles: [
-			{
-				title: '5G 智慧消防應用出海，台灣大與日本 Nirik 簽署 MOU',
-				link: 'https://finance.technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection-japan/',
-				domain: 'finance.technews.tw',
-				date: '2026-05-08',
-			},
-			{
-				title: '台灣大智慧消防系統落地高雄，火場定位、救援效率提升 50%',
-				link: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
-				domain: 'technews.tw',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'finance.technews.tw' },
-			{ name: 'technews.tw' },
-		],
-	},
-	{
 		id: 'aiNews-2',
 		cluster_number: 2,
 		unique_domains: 2,
@@ -573,82 +498,6 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiApplications-3',
-		cluster_number: 3,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 熱門應用',
-		title: 'Monid 2.0 聚合 200+ Agent 工具生態',
-		short_summary: 'Monid 2.0 將原先要多次接線的代理工具集中到單一技能入口。Product Hunt 內容指出，這次升級後可支援 200+ 工具，涵蓋社群 scraping、搜尋 API、電商資料、lead gen、競品追蹤與情緒分析；且產品在 15 天前才從「wallet for agents」轉向 2.0，累積已有 3,000+ 次 agents 購買紀錄。\n\n其意義在於工具基礎設施從「API 金鑰分散管理」轉向「平台式即用、可比較、可控預算」模式，並透過 MCP 開放在 Claude.ai、Claude Desktop、Claude Code、Cursor、Windsurf、OpenClaw、Hermes Agent 等 7+ 環境使用。這代表 agent 開發不再只拼接技術，而是考驗資源治理與工作流設計。\n\n對台灣高中教師來說，可借鏡「一次上線、逐步擴充」的流程設計：先用 1～2 個工具做固定任務序列（如題材蒐證→競品對照→情緒摘要），再在教學活動前先定義預算上限、可用工具名單與輸出格式，讓學生練習評估工具差異而非直接堆 API。導入時務必比對授權條款與隱私邊界，尤其避免以學生身分抓取未公開或可識別個資，否則便利性可能快速轉為管理風險。',
-		emoji: '🧩',
-		did_you_know: '原文披露 Monid 自從 15 天前以「wallet for agents」起步後，短時間內即累積 3,000+ 次 agents 購買。升級到 2.0 不只加工具數量（200+）與即時付費能力，還同步強調 MCP 整合與預算控管，顯示這類平台正在把「工具多樣性」與「財務治理」綁在同一入口，減少開發端重複整合成本。',
-		talking_points: [
-			'Monid 2.0 被定位為 OpenRouter for agent tools，核心是把多種 agent 工具整併到單一入口，避免團隊重複接線。',
-			'產品公告稱可接入 200+ 工具，含社群 scraping、搜尋 API、電商資料、lead gen、競品追蹤與情緒分析，屬於工具類型全域化清單。',
-			'公司在 15 天前仍稱作「wallet for agents」，如今改口 2.0，顯示版本迭代節奏與回應速度極快。',
-			'公告同時出現「3,000+」這個量化指標，表示上線後已有超過三千筆 agent 交易行為。',
-			'Monid 2.0 明確加入 budget controls，讓團隊可針對不同代理任務設預算上限，降低失控消耗。',
-			'MCP 支援包含 Claude.ai、Claude Desktop、Claude Code、Cursor、Windsurf、OpenClaw、Hermes Agent，至少 7 個入口可直接接軌。',
-			'Monid 主打「No subscriptions, No API keys」，在導入第一步上降低門檻，但支付與使用行為會集中在平台治理邏輯。',
-		],
-		quote: 'Monid is OpenRouter for agent tools.',
-		quote_attribution: 'Product Hunt, 2026-05-08',
-		quote_source_url: 'https://www.producthunt.com/products/monid',
-		quote_source_domain: 'producthunt.com',
-		perspectives: [
-			{
-				text: '平台方角度視為工具整合基礎設施升級：由錢包導向轉為可比對、可付費、可跨平台調用的市場，核心是縮短 agent 落地時間與降低整合摩擦。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/monid',
-					},
-				],
-			},
-			{
-				text: '成本治理角度可讀到反向訊號：宣稱免 API key、免訂閱有助於啟用，但 3,000+ 交易與預算控管並行，表示真正風險可能轉成平台治理失序與權限濫用，需要組織內制定明確配額規則。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/monid',
-					},
-				],
-			},
-			{
-				text: '教育現場可見示範價值高於直接複製：它證明工具整併與工作流標準化可做教學原型，但台灣學校仍要加本地資安、隱私與授權檢核，避免先進工具先一步，但規範未同步。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/monid',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-04-23',
-				date_iso: '2026-04-23',
-				content: 'Monid 以「wallet for agents」形式上線，作為 agent 工具與資源管理入口起步。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '產品公告 Monid 2.0，主打整合 200+ 工具、即時比較與支付、預算控管，並加入 MCP 多平台接入。',
-			},
-		],
-		articles: [
-			{
-				title: 'Monid 2.0',
-				link: 'https://www.producthunt.com/products/monid',
-				domain: 'producthunt.com',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'producthunt.com' },
-		],
-	},
-	{
 		id: 'aiApplications-4',
 		cluster_number: 4,
 		unique_domains: 1,
@@ -712,70 +561,223 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiApplications-5',
-		cluster_number: 5,
-		unique_domains: 1,
-		number_of_titles: 1,
+		id: 'aiNews-1',
+		cluster_number: 1,
+		unique_domains: 2,
+		number_of_titles: 2,
 		category: 'AI 熱門應用',
-		title: 'Illospace：AI 與團隊共作空間',
-		short_summary: 'Product Hunt 於 2026-05-07 在討論頁公開 Illospace，標語是「Living space where teams and agents work together」。它將團隊與 AI 代理人放進同一個空間，聲稱可共享同一段記憶與 team brain，並內建資料庫、cron jobs、workspace applications 等工具，朝流程化工作區設計。\n\n這代表 AI 的應用型態正從「一次性問答」轉為持續協作架構。Illospace 用 canvas of ideas and threads 串起工作脈絡，配合 hands-off work 與動態介面，讓任務可以在背景持續推進而非只靠人工逐步催辦；也就是說，AI 不只補充文字產出，而是直接進入日常作業節點。\n\n對台灣高中教師而言，可參考先從小單位試辦：以一班級導入共備 thread，分別讓教師與助教負責教材、評量、行政提醒，再透過 cron jobs 以每週固定節奏自動彙整更新。原文目前僅 12 followers、仍屬早期訊號，導入前要先把匿名化、學生資料不外流、權限分層、校內網路存取規則定義清楚，再決定是否擴展到多科共用。',
-		emoji: '🤝',
-		did_you_know: '原文揭露 Illospace 的關鍵做法不是只有對話功能，而是「同記憶共享」加上可建立 databases 與 cron jobs 的流程工具。再加上 canvas of ideas and threads 的設計，它同時嘗試解決三件事：合作同步、任務排程、介面生成；目前 page 上有 12 followers，顯示仍在成長前段，但已呈現明確的產品骨架。',
+		editorial_lens: '公共安全應用',
+		title: '5G智慧消防落地高雄　鎖定日本輸出',
+		short_summary: '台灣大與高雄市政府消防局宣布，5G智慧消防輔助救援系統已於今年初導入高雄火場救援，主軸是5G專網、室內定位、即時建模。過去需人工回報、逐一確認現場的流程，改以系統在約2分鐘內完成火場掌握與部署，平均救災效率提升約50%。\n這代表台灣電信端從「通訊供應者」轉向「公共安全與產業服務整合者」：系統整合LiDAR、點雲、IMU與AI，定位誤差約120公分，並掛接生命徵象與氧氣瓶監測警示；今年還以「台灣電信業者唯一入圍」身份上榜MWC GLOMO Awards緊急服務類，意味其已具備可複製與跨域擴散條件。\n對台灣高中教師啟示：可將「2分鐘即時建模」與「過往人工回報」做成對照課堂，讓學生用高雄案例分析訊息延遲對決策的影響；以120公分定位誤差與5G專網穩定度作為資料品質判讀題，設計消防、智慧製造或能源巡檢情境，讓學生練習把感測資料轉成行動指令。也能討論日本/東南亞輸出為何受在地系統商、採購流程牽制，讓學生理解AI導入不是只看模型，而是制度與流程的整合。',
+		emoji: '🚒',
+		did_you_know: '系統不只做定位與地圖，而是將生命警示納入作戰規範：當消防人員長時間未移動、生命徵象異常或訊號中斷，會直接提醒安全官啟動RIT。系統已在高雄百貨、醫院、科技廠房與住宅場域測試，且導入了120公分量級的室內定位精度。',
 		talking_points: [
-			'2026-05-07 於 Product Hunt 討論頁上線 Illospace，產品副標為「Living space where teams and agents work together」。',
-			'原文明示產品目前有 12 followers，反映目前仍處於早期社群回饋階段。',
-			'核心敘述是「sharing the same memory」與「team brain」，即多角色共用同一工作記憶體。',
-			'內建系統工具包含建立 databases 的能力，可把專案知識沉澱成可查找資料層。',
-			'支援 cron jobs，明示可安排例行背景任務，例如每週摘要、每日盤點。',
-			'同時提供 workspace applications 與 dynamic interfaces，結合 canvas and threads 讓多人可平行觀察進度。',
-			'產品文案提到 hands-off work，表示可將可重複任務交由代理人離線執行，減少人為輪替延遲。',
+			'2026年5月8日宣布「今年初」起正式投入高雄實戰，將5G智慧消防輔助救援系統從測試轉為火場任務。',
+			'全流程指揮縮短到約2分鐘內完成火場資訊掌握與救援部署，較過去人工回報與逐一確認流程節省大量前段時間。',
+			'平均救災效率提升約50%，為成效量化提供可直接比較的關鍵指標。',
+			'核心技術鏈接LiDAR、點雲計算、IMU、AI定位，室內定位誤差控制在約120公分。',
+			'安全機制包含心跳、氧氣瓶殘量監控，若偵測長時間未移動、生命徵象異常或訊號中斷會自動通知安全官並啟動RIT。',
+			'導入場域除火場外含高雄大型百貨、醫院、科技廠房、住宅區，用於驗證通訊與定位在不同建築環境下的穩定性。',
+			'同日與日本Nirik簽署MOU，對外目標是今年內日本第一個消防案並結合在地系統整合商推進輸出。',
 		],
-		quote: 'Illospace is a workspace where teams work together alongside agents, sharing the same memory and the same "team brain".',
-		quote_attribution: 'Product Hunt, 2026-05-07',
-		quote_source_url: 'https://www.producthunt.com/products/illospace',
-		quote_source_domain: 'producthunt.com',
+		quote: '該系統已於今年初正式投入高雄消防局火場救援任務，透過 5G 專網、室內定位與即時建模技術，協助指揮中心快速掌握火場內部狀況。',
+		quote_attribution: '科技新報, 2026-05-08',
+		quote_source_url: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
+		quote_source_domain: 'technews.tw',
 		perspectives: [
 			{
-				text: '產品導向上，它是把「協作平台」與「代理人平台」合一，偏向工程與生產力社群的組織效率工具；訊號上更像是新功能驗證，而非完整成熟產品宣告。',
+				text: '科技新報版面偏重可量測效益，將重點放在2分鐘掌握火場、50%救災效率提升與120公分定位精度，對教師可直接轉化為可教學、可量化的案例。',
 				sources: [
 					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/illospace',
+						name: 'technews.tw',
+						url: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
 					},
 				],
 			},
 			{
-				text: '教學場域角度則會關心可控性：同一 workspace 同步資料雖能加速共備，但在校園環境可能引發隱私、責任歸屬與權限邊界問題，尤其缺少已驗證的教育規範與在地資安文件。',
+				text: 'finance.technews.tw則將同一事件放在輸出敘事中解讀，著重Nirik合作、跨國橋接與N台系統國際商務路徑，強調台日市場與未來東南亞拓展，而非僅是地方救援成效。',
 				sources: [
 					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/illospace',
+						name: 'finance.technews.tw',
+						url: 'https://finance.technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection-japan/',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-07',
-				date_iso: '2026-05-07',
-				content: 'Product Hunt 公開 Illospace 產品頁與討論訊息，主打團隊與 AI agents 同步作業的工作空間設計。',
+				date: '2026-05-08',
+				date_iso: '2026-05-08',
+				content: '台灣大與高雄市政府消防局共同公布5G智慧消防輔助救援系統導入成果與實戰效益，顯示系統已於高雄投入實際救災。',
+			},
+			{
+				date: '2026-05-08',
+				date_iso: '2026-05-08',
+				content: '台灣大宣布與日本Nirik簽署MOU，啟動5G智慧消防系統輸出日本的合作與商務推進。',
 			},
 		],
 		articles: [
 			{
-				title: 'Illospace',
-				link: 'https://www.producthunt.com/products/illospace',
-				domain: 'producthunt.com',
-				date: '2026-05-07',
+				title: '5G 智慧消防應用出海，台灣大與日本 Nirik 簽署 MOU',
+				link: 'https://finance.technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection-japan/',
+				domain: 'finance.technews.tw',
+				date: '2026-05-08',
+			},
+			{
+				title: '台灣大智慧消防系統落地高雄，火場定位、救援效率提升 50%',
+				link: 'https://technews.tw/2026/05/08/taiwan-mobile-smart-fire-protection/',
+				domain: 'technews.tw',
+				date: '2026-05-08',
 			},
 		],
 		domains: [
-			{ name: 'producthunt.com' },
+			{ name: 'finance.technews.tw' },
+			{ name: 'technews.tw' },
+		],
+	},
+
+];
+
+const workMethodsStories: Story[] = [
+	{
+		id: 'aiClassroom-2',
+		cluster_number: 2,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '工作方法',
+		editorial_lens: '教學方法',
+		title: '時差合作課程設計：四步驟與真實任務接軌',
+		short_summary: 'ClassTechTips 於 2026-05-08 發表訪談，與 OneSchool Global 北美區教學與學習總監 Charlie Huynh 討論其「Learning to Learn」架構。文章指出，跨時區合作要先在基礎學段做合作、溝通、規劃、反思四項技能 scaffold，並以 Perfect Pitch Competition 等延伸學習串起學生作品與真實情境。\n\n這不是單向介紹國際合作，而是建構可複製的教學流程：學生在每個任務都有真實受眾（家庭、祖父母、畢業生與社區成員），並以 OneSchool Global 的規模證明其模式可運作——8,000 名學生、120 個校區、分布 20 國。對台灣而言，重點在於校方如何在維持一致性時保留在地彈性。\n\n對台灣高中教師可直接遷移：先用 1-2 週做「課前規劃—任務共作—回饋修正」流程，安排跨班合作任務時設定 45 分鐘教學微模組加 1 次 2 週線上共備，發表前保留 1 次同儕與家長回饋。實作時要調整課程時段與行政行政流程，避免把國際合作變成臨時加班，而是納入週次時程與成績觀測指標。',
+		emoji: '🌍',
+		did_you_know: '該文給出的關鍵數據是 OneSchool Global 的組織規模：8,000 名學生、120 所校區、分布 20 個國家。更有意思的是其強調的不是單一活動，而是用四技能 scaffold 加上 Perfect Pitch 這類實作專案，將學習承接成可量化、可外部展示的流程。',
+		talking_points: [
+			'核心做法明確鎖定四技能 scaffold：合作、溝通、規劃、反思，先在基礎學段建立學習責任。',
+			'文章明示 Perfect Pitch Competition 可作為延伸學習工具，讓學生作品放進跨校際實作情境。',
+			'OneSchool Global 的敘事數據為 8,000 名學生、120 校區、20 國，代表其教學框架可在大規模跨國網絡中維持一致。',
+			'受眾設計納入家庭、祖父母、校友、社區，將作品從交作業改為面向外部真實角色回饋。',
+			'內容把「learning to learn」寫成主體責任機制，重點在學生自己訂目標、執行與追蹤反思，而非只做課堂任務。',
+			'此模型的操作重點是把任務時間切成前置規劃、共作、回饋三段，對偏學測導向課表可做成固定例行，以降低跨時區協作摩擦。',
+		],
+		quote: 'Hands-on projects and tasks help students apply learning and retain it longer than traditional textbooks and worksheets.',
+		quote_attribution: 'ClassTechTips，2026-05-08',
+		quote_source_url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
+		quote_source_domain: 'classtechtips.com',
+		perspectives: [
+			{
+				text: '這篇專文偏向教師落地指南：用清楚可教、可複製的流程切割跨時區協作，重點放在第一線教學如何把抽象合作變成可複盤行為。',
+				sources: [
+					{
+						name: 'ClassTechTips',
+						url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
+					},
+				],
+			},
+			{
+				text: '另一種張力來自機構敘事的擴展邏輯：OneSchool Global 以 20 國規模做背書，展示的是一套可以同時兼顧品牌一致性與在地彈性的組織化教學模型，超越單一學校案例。',
+				sources: [
+					{
+						name: 'ClassTechTips（轉述 OneSchool Global）',
+						url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-08',
+				date_iso: '2026-05-08',
+				content: 'ClassTechTips 發佈專訪，聚焦 OneSchool Global 的跨時區合作課程設計、Learning to Learn 框架與 Perfect Pitch 等延伸學習專案。',
+			},
+		],
+		articles: [
+			{
+				title: 'Teaching Across Time Zones: Tips for Connecting Classrooms – Bonus Episode with OneSchool Global',
+				link: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
+				domain: 'classtechtips.com',
+				date: '2026-05-08',
+			},
+		],
+		domains: [
+			{ name: 'classtechtips.com' },
+		],
+	},
+	{
+		id: 'aiClassroom-3',
+		cluster_number: 3,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '工作方法',
+		editorial_lens: '班級治理',
+		title: '6 年研究揭示：從禁令到歸屬感的教學轉向',
+		short_summary: '2026-05-08 的《SEL Weekly Update》不是單篇觀察，而是每週 4 項 SEL 資源彙整：轉引《The Washington Post》的 6 年研究、指出禁止糖飲料可能失效的案例、納入教師關係系統性文獻，並補上 AJ Juliani 的 K-12 動機討論；又加上 2025-11-03 InnerDrive 對動機三要素（目的、勝任感、歸屬感）的提醒。\n這類內容把 SEL 從情緒活動邊邊料，拉回學校治理與教學設計：處理行為不只靠獎懲與禁令，而是以研究、工具、流程做驗證。當學校資源以「可執行清單」呈現時，可同時降低教師搜尋成本並提高班級管理的一致性，對高壓課務環境是可持續做法。\n對台灣高中教師可先做 4 週微實驗：第一週建立班級目標與規則，第二週改以替代行為規範取代全面禁用（如零食、手機），第三週用每節課發言、作業提交率、遲到違規次數追蹤，第四週以教師-學生雙向關係回饋修正制度。備考週前降低規範改動幅度，先做逐步導入，能避免學生抵抗與突發爭議。',
+		emoji: '🧠',
+		did_you_know: '文中最值得記住的一個細節是：面對行為問題時，全面禁止未必是解法。《SEL Weekly Update》指出「禁糖禁汽水」也可能反而刺激逆反，提醒教師要改走可替代策略。同時它把 6 年研究與關係研究接上動機三要素，意味情緒教育可直接落到教室管理流程。',
+		talking_points: [
+			'本次更新於 2026-05-08 發布，精簡整併 4 類 SEL 主題，方便教師一次抓到研究、文獻、方法與觀點。',
+			'《The Washington Post》在該文中提供 6 年研究脈絡，強化「幸福」與情緒議題在班級治理中的長期證據性。',
+			'文中提到《I’m a a pediatrician...》將「禁糖禁汽水」作為反例，提示全面禁止在學生行為管理可能引發逆反。',
+			'《Building Strong and Positive Teacher-Student Relationships...》被放入最佳資源類型，作為系統性文獻回顧＋策略指引，對教師關係建構可直接借鑑。',
+			'AJ Juliani 的 K-12 動機文章與 InnerDrive 的 2025-11-03 引言（目的、勝任感、歸屬感）形成同主題鏈，讓獎懲討論轉為需求導向設計。',
+			'建議以 4 週為一期進行教室微實作，每週固定檢核；用發言次數、作業提交率與違規次數三指標回推規範調整。',
+		],
+		quote: 'Motivation isn’t just about rewards or threats. It’s about purpose, competence and belonging.',
+		quote_attribution: 'InnerDrive，2025-11-03',
+		quote_source_url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
+		quote_source_domain: 'larryferlazzo.edublogs.org',
+		perspectives: [
+			{
+				text: '《The Washington Post》角度偏重研究結果與實務可逆性，主張對糖汽水等禁令要保留替代策略，否則可能增加衝突與對抗。',
+				sources: [
+					{
+						name: 'The Washington Post',
+						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
+					},
+				],
+			},
+			{
+				text: '《SEL Weekly Update》本身採編輯式整合，強調在教師端可快速找到可用資源，與學術篇幅較重的報導比較，形成「先行動後驗證」的工程化邏輯。',
+				sources: [
+					{
+						name: 'larryferlazzo.edublogs.org',
+						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
+					},
+				],
+			},
+			{
+				text: 'InnerDrive 的觀點則更偏心理動機理論，主軸是目的與歸屬感；此立場與制度化修法形成張力，也回應了為何 SEL 不能只設規範。',
+				sources: [
+					{
+						name: 'InnerDrive',
+						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2025-11-03',
+				date_iso: '2025-11-03',
+				content: 'InnerDrive 發文指出動機不只在獎懲，核心是目的、勝任感與歸屬感。',
+			},
+			{
+				date: '2026-05-08',
+				date_iso: '2026-05-08',
+				content: '《SEL Weekly Update》更新發布，彙整 SEL 資源與 K-12 動機、教師關係及行為管理相關內容。',
+			},
+		],
+		articles: [
+			{
+				title: 'SEL Weekly Update',
+				link: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
+				domain: 'larryferlazzo.edublogs.org',
+				date: '2026-05-08',
+			},
+		],
+		domains: [
+			{ name: 'larryferlazzo.edublogs.org' },
 		],
 	},
 ];
-
-const workMethodsStories: Story[] = [];
 
 const aiEduStories: Story[] = [
 	{
@@ -783,7 +785,7 @@ const aiEduStories: Story[] = [
 		cluster_number: 'gmail-notebooklm-教學',
 		unique_domains: 5,
 		number_of_titles: 5,
-		category: 'AI × 教育',
+		category: 'AI 教育趨勢',
 		title: '本週「NotebookLM 教學」焦點：先有治理後導入',
 		short_summary: '本週 NotebookLM 相關訊號其實分成三層：喬治亞理工學院於 2026-05-08 將 Gemini 與 NotebookLM 納入 OIT 管理的企業級服務，並規劃校級 AI 政策；KOC、SOGI 則報導 NotebookLM 功能整合進 Gemini、一般用戶可用；育才獨中工作坊則是教師把 TalkPal、NotebookLM、ClassPoint 串成課堂活動。\n\n比較有價值的不是「NotebookLM 又開放了」，而是三種導入層級的差異：機構端先處理帳號、合規、資料風險與授權名額；產品端降低一般教師接觸門檻；教室端則開始出現工具組合式試作。這些資料不能證明學習成效，但能看出 AI 工具進校園時，最先遇到的是治理與工作流設計。\n\n對台灣高中教師而言，比較務實的做法不是立刻全校導入，而是先用 2–4 週小試行：只放非敏感教材，讓 NotebookLM 做閱讀整理、提問清單或跨科備課輔助；學生端先採申請制或分組共用帳號，並記錄節省時間、來源查核、學生修正品質與個資風險。通過這一輪後，再決定是否擴到作業回饋或專題研究。',
 		emoji: '🧠',
@@ -894,7 +896,7 @@ const aiEduStories: Story[] = [
 		cluster_number: 6,
 		unique_domains: 1,
 		number_of_titles: 9,
-		category: 'AI × 教育',
+		category: 'AI 教育趨勢',
 		editorial_lens: '社群採用',
 		title: '教師社群熱點：AI 代理從功能試用走向工作流',
 		short_summary: '本週台灣與華語 AI/教育社群的高價值訊號，不是單點 Gemini、NotebookLM 或 Gem 功能，而是教師開始把 AI 串成代理化工作流：n8n、Claude Code skills、GAS + Gemini、NotebookLM 與 Google Workspace 被拿來處理表單回饋、資料整理、寄信與通知。這代表 AI 融入教育正從「會用工具」走向「設計可覆核、可交接的流程」。',
@@ -958,7 +960,162 @@ const aiEduStories: Story[] = [
 		domains: [
 			{ name: 'facebook.com' },
 		],
+	},	{
+		id: 'aiClassroom-1',
+		cluster_number: 1,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 教育趨勢',
+		editorial_lens: '校園治理',
+		title: '先控權限再試用：高中導入 Agentic AI 先行法',
+		short_summary: '本文以一篇先上手再修正的方式，解釋 agentic AI 在教育中的核心機制：教師給定目標並授權後，AI 可直接執行行動。原文舉出可行動項目含開啟程式、操控瀏覽器、撰寫程式、線上購物與連續動作序列，且非只輸出文字。若用「我想做網站」這類需求，agentic 流程可先規劃再執行，少掉人工轉接。這段敘事的重要性，在於它把生成式 AI 的「提示-輸出」模式推進到「提示-執行」模式。另一方面，文章指出 MS CoPilot 的 Agents 名稱與真正 agentic 能力未必一致，與 CustomGPT、Claude Projects、Gemini Gems 的界線仍在變化，對學校採購與治理會造成落差。對台灣高中教師啟示是：先從 1 件低風險任務做試點，例如每週公告整理、教材資源匯整。第 1 週可用同題目同時試跑 ChatGPT Codex、Claude Code、Claude CoWork，紀錄每次授權事件與結果，再逐步改為第 2 週的課務流程。實務上先鎖定「讀檔/存檔」兩類高風險權限白名單、保留人工覆核點，才能在效率與學生資料安全間取得平衡。',
+		emoji: '🤖',
+		did_you_know: '原文中關鍵差異不是「有沒有很厲害」，而是有沒有權限機制。作者直接點出 AI 會在需要操作時跳出授權提示，且「讀取檔案」可設總是允許，意味教師可在效率與風險之間建立細部控管，而不是一上線就全放權限。',
+		talking_points: [
+			'agentic AI 的定義是：在獲得人類需求與授權後自動執行，原文列出 5 種可觸發動作（開程式、導覽瀏覽器、建程式、線上購物、連續流程），比起單純文字生成更像可執行代理。',
+			'文章以「I want to build a website」做對照，示範 1 次需求可延伸為 1 條執行計畫與後續工具串接，減少人手完成最後整合的步驟。',
+			'作者先嘗試的核心組合為 3 個工具：ChatGPT Codex、Claude Code、Claude CoWork，並明確說明 Codex 是獨立桌面 app，而後兩者可在 Claude 桌面升級取得。',
+			'在權限節奏上，工具會在需要電腦操作時即時提示，『讀取檔案』可設定長期授權；建議教師以 1 次測試任務驗證此機制是否符合校務資安規定。',
+			'文章區隔 MS CoPilot 的 Agents 與真正 agentic，並與 CustomGPT、Claude Projects、Gemini Gems 對照；表示名稱不等於能力，採購前至少要比對 1) 是否可跨 app 行動 2) 權限提示流程。',
+			'文中提到 Einstein、Kerra 在高教場域的出現，顯示討論焦點已從工具新奇度轉向線上空間治理，教師導入前先做 2 張表：工具行動邊界表與授權例外表。',
+		],
+		quote: 'The user says “I want to build a website” and the agentic AI builds a plan, gathers tools, and builds it.',
+		quote_attribution: 'aiedusimplified.substack.com, 2026-05-08',
+		quote_source_url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
+		quote_source_domain: 'aiedusimplified.substack.com',
+		perspectives: [
+			{
+				text: '角度一：工具能力面向。原文不強調品牌神話，而用「是否能在授權後主動執行」作為判準，主張行為本體先於名詞定義，對校方採購有直接影響。',
+				sources: [
+					{
+						name: 'aiedusimplified.substack.com',
+						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
+					},
+				],
+			},
+			{
+				text: '角度二：治理面向。文章透過 Einstein、Kerra 在高教的案例揭示，agentic 推進時最大的張力不是會不會做，而是校園空間控管能否同步跟上，這是教育現場比功能更先行的門檻。',
+				sources: [
+					{
+						name: 'aiedusimplified.substack.com',
+						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
+					},
+				],
+			},
+			{
+				text: '角度三：實務可行性。作者提出「半成品先行」而非一次到位，對非程式背景教師更友善，意味高中可先做小規模 POC，再靠授權紀錄累積成校內規範。',
+				sources: [
+					{
+						name: 'aiedusimplified.substack.com',
+						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Exploring Agentic AI',
+				link: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
+				domain: 'aiedusimplified.substack.com',
+				date: '2026-05-08',
+			},
+		],
+		domains: [
+			{ name: 'aiedusimplified.substack.com' },
+		],
 	},
+	{
+		id: 'gmail-ai-融入教學-高中',
+		cluster_number: 'gmail-ai-融入教學-高中',
+		unique_domains: 3,
+		number_of_titles: 3,
+		category: 'AI 教育趨勢',
+		editorial_lens: '跨場域實作',
+		title: 'AI融入教學三種落地方式：高中教師可借鏡',
+		short_summary: '2026-05-02 與 2026-05-06 共 3 則快訊形成「AI 融入教學」叢集；原始 Google 快訊關鍵字含「高中」，但來源實際橫跨中學、小學與高教，分別來自文匯報、荷花、中央社。三個明確訊號是：元朗商會中學於 2024/25 學年推進 AI 資優跨域專題；大角嘴天主教小學把 AI 放入 VARK 四種學習類型教學流程；東華大學觀遊系將生成式AI導入「馬太鞍自由行」導覽教學。這些訊號共同揭示，AI 正在從概念演練走向可交付的課務流程。\n此趨勢意義在於，AI 不再只出現在資訊科技課，而是同時出現在語文、跨學科專題、導覽與社會情境學習；學校將 AI 定位為「學習路徑設計」與「自學回饋」的工具，而非單向輸出平台。這代表 AI 融入教學的核心不只是硬體導入，而是任務設計、評量機制與價值導向的再分配。目前可確認的主訊號是實作樣態，但仍缺少成本、人時、成效量化與規模化落地證據。\n對台灣高中教師的直接啟示是：不要把三個案例當成可原樣複製的高中方案，而是抽出可控規模的「AI 任務切片」。例如 1 次課堂做一個跨學科導覽腳本，配合學生學習類型分組，再用 AI 生成範例由學生批改修正。再建立每週追蹤表，紀錄 AI 回饋、學生修正與教學調整，避免變成只會貼上工具的作業。高二/高三可先對接歷史、地理、生活科技等科目，並鎖定 10-20 人試行；校內共備與行政支援到位後再擴至年級制，這比一次到位的全面上線更能降低失敗風險。',
+		emoji: '🤖',
+		did_you_know: '元朗商會中學的做法不只停留在展示類應用。其 2024/25 學年的虛擬秦朝兵馬俑專題，先用 AI 建模供資優學生驗證歷史細節；同校更在文物導覽加入混合實境與人臉識別，並結合「AI電話」讓學生與康熙、雍正、乾隆進行超時空語音對話。這類設計顯示，AI 融入不一定提升題庫分數，而是能把閱讀、探究、文化學習與服務學習串成可驗證成果。',
+		talking_points: [
+			'本叢集來自 3 則原始快訊（2026-05-02 兩則、2026-05-06 一則）；Google 快訊關鍵字含「高中」，但來源實際橫跨中學、小學與高教，去重後 3 個來源訊號，同質轉播 0。',
+			'元朗商會中學在 2024/25 學年以AI＋雲端做跨學科專題，學生以秦朝兵馬俑為題，用模型比對與場景展示方式完成深度學習。',
+			'同一校內案例補上「混合實境」與大型語言模型，透過人臉識別與 AI 推薦閱讀系統，將資優學生導向由工具使用轉為閱讀與研究路徑設計。',
+			'大角嘴天主教小學明確採用 VARK 四型（視覺、聽覺、閱讀寫作、動覺）作為分組與教學設計依據，並將 AI 介面放入寫作、音樂與圖書館檢索等日常流程。',
+			'該校的「六日制」每一循環安排 1 個下午多元智能活動、5 個下午 Fun 時段，校方指出可讓學生接觸活動類型由原本約 10 類擴展到 11-12 類。',
+			'大角嘴案例同時採用 AI 即時回饋與弱項題目補練，強調學生先自我檢核再由教師做二次追蹤，形成自學閉環。',
+			'東華大學觀遊系由徐暘展助理教授在「旅遊目的地經營管理」導入生成式AI語音導覽，代表生成式AI可直接嵌入高教場域的專業模擬與觀光學習任務。',
+		],
+		quote: '「AI不僅是技術工具，更可擔當『學習路徑設計師』」',
+		quote_attribution: '文匯報, 2026-05-06',
+		quote_source_url: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
+		quote_source_domain: 'wenweipo.com',
+		perspectives: [
+			{
+				text: '文匯報訊號聚焦中學資優教育制度化經驗，重點在「學中用、用中學」與社會責任導向，呈現的是學習方法論的重構；荷花則偏向基礎學校治理，強調日課配置、作息制度與學習差異化，兩者都談工具但切入問題完全不同。',
+				sources: [
+					{
+						name: '香港文匯網 - 文匯報',
+						url: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
+					},
+					{
+						name: '荷花',
+						url: 'https://www.eugenebaby.com/articleList/%E5%8D%87%E5%AD%B8%E6%95%99%E8%82%B2/%E5%A4%A7%E8%A7%92%E5%98%B4%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8-1',
+					},
+				],
+			},
+			{
+				text: '中央社訊號把AI放到高教導覽與旅遊經營管理課，顯示高教實務場景已能承接AI語音導覽、自由行任務與生成式內容製作，與K12的作業化教學形成「技能銜接」線。這裡的價值不在是否採用AI，而在如何把產出轉為可評量任務成果。',
+				sources: [
+					{
+						name: '中央社',
+						url: 'https://www.cna.com.tw/postwrite/chi/432240',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-02',
+				date_iso: '2026-05-02',
+				content: '大角嘴天主教小學揭露已將 AI 併入課程設計與 VARK 四型分群，並以 6 日循環制擴大多元智能活動與即時回饋機制。',
+			},
+			{
+				date: '2026-05-02',
+				date_iso: '2026-05-02',
+				content: '東華大學觀遊系導入生成式AI進行馬太鞍自由行語音導覽試教，作為「旅遊目的地經營管理」課程的一部分。',
+			},
+			{
+				date: '2026-05-06',
+				date_iso: '2026-05-06',
+				content: '元朗商會中學分享 2024/25 學年以 AI 深化資優教學與閱讀探索，並將 AI for Good 融入中學服務學習與價值教育課程。',
+			},
+		],
+		articles: [
+			{
+				title: '【數教新知】AI賦能資優教育充分發揮學生潛能- 香港文匯網 - 文匯報',
+				link: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
+				domain: 'wenweipo.com',
+				date: '2026-05-06',
+			},
+			{
+				title: '大角嘴天主教小學因材施教全人發展多元化學習模式結合AI輔助教學 - 荷花',
+				link: 'https://www.eugenebaby.com/articleList/%E5%8D%87%E5%AD%B8%E6%95%99%E8%82%B2/%E5%A4%A7%E8%A7%92%E5%98%B4%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8-1',
+				domain: 'eugenebaby.com',
+				date: '2026-05-02',
+			},
+			{
+				title: '東華大學觀遊系導入生成式AI走進馬太鞍學習自由行語音導覽 - 中央社',
+				link: 'https://www.cna.com.tw/postwrite/chi/432240',
+				domain: 'cna.com.tw',
+				date: '2026-05-02',
+			},
+		],
+		domains: [
+			{ name: 'wenweipo.com' },
+			{ name: 'eugenebaby.com' },
+			{ name: 'cna.com.tw' },
+		],
+	},
+
 ];
 
 const educationResearchStories: Story[] = [
@@ -1203,260 +1360,6 @@ const educationResearchStories: Story[] = [
 ];
 
 const aiClassroomStories: Story[] = [
-	{
-		id: 'aiClassroom-1',
-		cluster_number: 1,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: '先控權限再試用：高中導入 Agentic AI 先行法',
-		short_summary: '本文以一篇先上手再修正的方式，解釋 agentic AI 在教育中的核心機制：教師給定目標並授權後，AI 可直接執行行動。原文舉出可行動項目含開啟程式、操控瀏覽器、撰寫程式、線上購物與連續動作序列，且非只輸出文字。若用「我想做網站」這類需求，agentic 流程可先規劃再執行，少掉人工轉接。這段敘事的重要性，在於它把生成式 AI 的「提示-輸出」模式推進到「提示-執行」模式。另一方面，文章指出 MS CoPilot 的 Agents 名稱與真正 agentic 能力未必一致，與 CustomGPT、Claude Projects、Gemini Gems 的界線仍在變化，對學校採購與治理會造成落差。對台灣高中教師啟示是：先從 1 件低風險任務做試點，例如每週公告整理、教材資源匯整。第 1 週可用同題目同時試跑 ChatGPT Codex、Claude Code、Claude CoWork，紀錄每次授權事件與結果，再逐步改為第 2 週的課務流程。實務上先鎖定「讀檔/存檔」兩類高風險權限白名單、保留人工覆核點，才能在效率與學生資料安全間取得平衡。',
-		emoji: '🤖',
-		did_you_know: '原文中關鍵差異不是「有沒有很厲害」，而是有沒有權限機制。作者直接點出 AI 會在需要操作時跳出授權提示，且「讀取檔案」可設總是允許，意味教師可在效率與風險之間建立細部控管，而不是一上線就全放權限。',
-		talking_points: [
-			'agentic AI 的定義是：在獲得人類需求與授權後自動執行，原文列出 5 種可觸發動作（開程式、導覽瀏覽器、建程式、線上購物、連續流程），比起單純文字生成更像可執行代理。',
-			'文章以「I want to build a website」做對照，示範 1 次需求可延伸為 1 條執行計畫與後續工具串接，減少人手完成最後整合的步驟。',
-			'作者先嘗試的核心組合為 3 個工具：ChatGPT Codex、Claude Code、Claude CoWork，並明確說明 Codex 是獨立桌面 app，而後兩者可在 Claude 桌面升級取得。',
-			'在權限節奏上，工具會在需要電腦操作時即時提示，『讀取檔案』可設定長期授權；建議教師以 1 次測試任務驗證此機制是否符合校務資安規定。',
-			'文章區隔 MS CoPilot 的 Agents 與真正 agentic，並與 CustomGPT、Claude Projects、Gemini Gems 對照；表示名稱不等於能力，採購前至少要比對 1) 是否可跨 app 行動 2) 權限提示流程。',
-			'文中提到 Einstein、Kerra 在高教場域的出現，顯示討論焦點已從工具新奇度轉向線上空間治理，教師導入前先做 2 張表：工具行動邊界表與授權例外表。',
-		],
-		quote: 'The user says “I want to build a website” and the agentic AI builds a plan, gathers tools, and builds it.',
-		quote_attribution: 'aiedusimplified.substack.com, 2026-05-08',
-		quote_source_url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
-		quote_source_domain: 'aiedusimplified.substack.com',
-		perspectives: [
-			{
-				text: '角度一：工具能力面向。原文不強調品牌神話，而用「是否能在授權後主動執行」作為判準，主張行為本體先於名詞定義，對校方採購有直接影響。',
-				sources: [
-					{
-						name: 'aiedusimplified.substack.com',
-						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
-					},
-				],
-			},
-			{
-				text: '角度二：治理面向。文章透過 Einstein、Kerra 在高教的案例揭示，agentic 推進時最大的張力不是會不會做，而是校園空間控管能否同步跟上，這是教育現場比功能更先行的門檻。',
-				sources: [
-					{
-						name: 'aiedusimplified.substack.com',
-						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
-					},
-				],
-			},
-			{
-				text: '角度三：實務可行性。作者提出「半成品先行」而非一次到位，對非程式背景教師更友善，意味高中可先做小規模 POC，再靠授權紀錄累積成校內規範。',
-				sources: [
-					{
-						name: 'aiedusimplified.substack.com',
-						url: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Exploring Agentic AI',
-				link: 'https://aiedusimplified.substack.com/p/exploring-agentic-ai',
-				domain: 'aiedusimplified.substack.com',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'aiedusimplified.substack.com' },
-		],
-	},
-	{
-		id: 'aiClassroom-2',
-		cluster_number: 2,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: '時差合作課程設計：四步驟與真實任務接軌',
-		short_summary: 'ClassTechTips 於 2026-05-08 發表訪談，與 OneSchool Global 北美區教學與學習總監 Charlie Huynh 討論其「Learning to Learn」架構。文章指出，跨時區合作要先在基礎學段做合作、溝通、規劃、反思四項技能 scaffold，並以 Perfect Pitch Competition 等延伸學習串起學生作品與真實情境。\n\n這不是單向介紹國際合作，而是建構可複製的教學流程：學生在每個任務都有真實受眾（家庭、祖父母、畢業生與社區成員），並以 OneSchool Global 的規模證明其模式可運作——8,000 名學生、120 個校區、分布 20 國。對台灣而言，重點在於校方如何在維持一致性時保留在地彈性。\n\n對台灣高中教師可直接遷移：先用 1-2 週做「課前規劃—任務共作—回饋修正」流程，安排跨班合作任務時設定 45 分鐘教學微模組加 1 次 2 週線上共備，發表前保留 1 次同儕與家長回饋。實作時要調整課程時段與行政行政流程，避免把國際合作變成臨時加班，而是納入週次時程與成績觀測指標。',
-		emoji: '🌍',
-		did_you_know: '該文給出的關鍵數據是 OneSchool Global 的組織規模：8,000 名學生、120 所校區、分布 20 個國家。更有意思的是其強調的不是單一活動，而是用四技能 scaffold 加上 Perfect Pitch 這類實作專案，將學習承接成可量化、可外部展示的流程。',
-		talking_points: [
-			'核心做法明確鎖定四技能 scaffold：合作、溝通、規劃、反思，先在基礎學段建立學習責任。',
-			'文章明示 Perfect Pitch Competition 可作為延伸學習工具，讓學生作品放進跨校際實作情境。',
-			'OneSchool Global 的敘事數據為 8,000 名學生、120 校區、20 國，代表其教學框架可在大規模跨國網絡中維持一致。',
-			'受眾設計納入家庭、祖父母、校友、社區，將作品從交作業改為面向外部真實角色回饋。',
-			'內容把「learning to learn」寫成主體責任機制，重點在學生自己訂目標、執行與追蹤反思，而非只做課堂任務。',
-			'此模型的操作重點是把任務時間切成前置規劃、共作、回饋三段，對偏學測導向課表可做成固定例行，以降低跨時區協作摩擦。',
-		],
-		quote: 'Hands-on projects and tasks help students apply learning and retain it longer than traditional textbooks and worksheets.',
-		quote_attribution: 'ClassTechTips，2026-05-08',
-		quote_source_url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
-		quote_source_domain: 'classtechtips.com',
-		perspectives: [
-			{
-				text: '這篇專文偏向教師落地指南：用清楚可教、可複製的流程切割跨時區協作，重點放在第一線教學如何把抽象合作變成可複盤行為。',
-				sources: [
-					{
-						name: 'ClassTechTips',
-						url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
-					},
-				],
-			},
-			{
-				text: '另一種張力來自機構敘事的擴展邏輯：OneSchool Global 以 20 國規模做背書，展示的是一套可以同時兼顧品牌一致性與在地彈性的組織化教學模型，超越單一學校案例。',
-				sources: [
-					{
-						name: 'ClassTechTips（轉述 OneSchool Global）',
-						url: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: 'ClassTechTips 發佈專訪，聚焦 OneSchool Global 的跨時區合作課程設計、Learning to Learn 框架與 Perfect Pitch 等延伸學習專案。',
-			},
-		],
-		articles: [
-			{
-				title: 'Teaching Across Time Zones: Tips for Connecting Classrooms – Bonus Episode with OneSchool Global',
-				link: 'https://classtechtips.com/2026/05/08/tips-for-connecting-classrooms-bonus/',
-				domain: 'classtechtips.com',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'classtechtips.com' },
-		],
-	},
-	{
-		id: 'aiClassroom-3',
-		cluster_number: 3,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: '6 年研究揭示：從禁令到歸屬感的教學轉向',
-		short_summary: '2026-05-08 的《SEL Weekly Update》不是單篇觀察，而是每週 4 項 SEL 資源彙整：轉引《The Washington Post》的 6 年研究、指出禁止糖飲料可能失效的案例、納入教師關係系統性文獻，並補上 AJ Juliani 的 K-12 動機討論；又加上 2025-11-03 InnerDrive 對動機三要素（目的、勝任感、歸屬感）的提醒。\n這類內容把 SEL 從情緒活動邊邊料，拉回學校治理與教學設計：處理行為不只靠獎懲與禁令，而是以研究、工具、流程做驗證。當學校資源以「可執行清單」呈現時，可同時降低教師搜尋成本並提高班級管理的一致性，對高壓課務環境是可持續做法。\n對台灣高中教師可先做 4 週微實驗：第一週建立班級目標與規則，第二週改以替代行為規範取代全面禁用（如零食、手機），第三週用每節課發言、作業提交率、遲到違規次數追蹤，第四週以教師-學生雙向關係回饋修正制度。備考週前降低規範改動幅度，先做逐步導入，能避免學生抵抗與突發爭議。',
-		emoji: '🧠',
-		did_you_know: '文中最值得記住的一個細節是：面對行為問題時，全面禁止未必是解法。《SEL Weekly Update》指出「禁糖禁汽水」也可能反而刺激逆反，提醒教師要改走可替代策略。同時它把 6 年研究與關係研究接上動機三要素，意味情緒教育可直接落到教室管理流程。',
-		talking_points: [
-			'本次更新於 2026-05-08 發布，精簡整併 4 類 SEL 主題，方便教師一次抓到研究、文獻、方法與觀點。',
-			'《The Washington Post》在該文中提供 6 年研究脈絡，強化「幸福」與情緒議題在班級治理中的長期證據性。',
-			'文中提到《I’m a a pediatrician...》將「禁糖禁汽水」作為反例，提示全面禁止在學生行為管理可能引發逆反。',
-			'《Building Strong and Positive Teacher-Student Relationships...》被放入最佳資源類型，作為系統性文獻回顧＋策略指引，對教師關係建構可直接借鑑。',
-			'AJ Juliani 的 K-12 動機文章與 InnerDrive 的 2025-11-03 引言（目的、勝任感、歸屬感）形成同主題鏈，讓獎懲討論轉為需求導向設計。',
-			'建議以 4 週為一期進行教室微實作，每週固定檢核；用發言次數、作業提交率與違規次數三指標回推規範調整。',
-		],
-		quote: 'Motivation isn’t just about rewards or threats. It’s about purpose, competence and belonging.',
-		quote_attribution: 'InnerDrive，2025-11-03',
-		quote_source_url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
-		quote_source_domain: 'larryferlazzo.edublogs.org',
-		perspectives: [
-			{
-				text: '《The Washington Post》角度偏重研究結果與實務可逆性，主張對糖汽水等禁令要保留替代策略，否則可能增加衝突與對抗。',
-				sources: [
-					{
-						name: 'The Washington Post',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
-					},
-				],
-			},
-			{
-				text: '《SEL Weekly Update》本身採編輯式整合，強調在教師端可快速找到可用資源，與學術篇幅較重的報導比較，形成「先行動後驗證」的工程化邏輯。',
-				sources: [
-					{
-						name: 'larryferlazzo.edublogs.org',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
-					},
-				],
-			},
-			{
-				text: 'InnerDrive 的觀點則更偏心理動機理論，主軸是目的與歸屬感；此立場與制度化修法形成張力，也回應了為何 SEL 不能只設規範。',
-				sources: [
-					{
-						name: 'InnerDrive',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2025-11-03',
-				date_iso: '2025-11-03',
-				content: 'InnerDrive 發文指出動機不只在獎懲，核心是目的、勝任感與歸屬感。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '《SEL Weekly Update》更新發布，彙整 SEL 資源與 K-12 動機、教師關係及行為管理相關內容。',
-			},
-		],
-		articles: [
-			{
-				title: 'SEL Weekly Update',
-				link: 'https://larryferlazzo.edublogs.org/2026/05/08/sel-weekly-update-293/',
-				domain: 'larryferlazzo.edublogs.org',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'larryferlazzo.edublogs.org' },
-		],
-	},
-	{
-		id: 'aiClassroom-4',
-		cluster_number: 4,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		title: '英語版不佳後，TED-Ed 推出《亨利塔》西語版',
-		short_summary: '2026-05-08 一篇英語教學博客提到，TED-Ed 先前的《Henrietta Lacks》英文影片被作者評為“pretty bad”，同主題後續補上西班牙語版本，作者因繁忙僅做初步觀察，表示「希望會比較好」。這則訊號同時保留了一個關鍵線索：平台仍在同題材做版本迭代，而非一次交付。\n\n這件事的重要性在於，學習內容的品質判斷已從「單一次上傳」變成「版本持續修正」，而多語版本本身可改善可及性但未必保證正確性。教師若直接採用，可能把平台的修補過程當成權威背書，卻沒核對版本差異與學術敘事是否一致。\n\n對台灣高中教師而言，這篇訊號可直接轉成教學流程：先以英文版本做主軸，接著對照西語版本進行 1 對 1 的術語與事實核對，再用 1 份中文對照表整理差異，建議每節 45 分鐘內完成；若班上缺英西語能力，先以中文字幕或中文摘要銜接。課堂中要明確標示此素材為「待二次驗證版本」，把「可能較好」和「已驗證」分開，避免把未確認版本直接寫入正式筆記與作業題幹。',
-		emoji: '🎬',
-		did_you_know: '該篇完整片段透露 TED-Ed 是在英文版被質疑後，才補上西班牙語版本，卻仍以作者自述的「may or may not be better」為主軸，而非公開對照報告。這代表即使是大平台內容，也可能只提供「版本更新訊息」而非修正清單，實務上更像是可及性嘗試，而非完整學術品質背書。',
-		talking_points: [
-			'時間點明確在 2026-05-08：TED-Ed 在同一主題《Henrietta Lacks》推出西班牙語版本，訊號數量僅 1，仍顯示題材可持續更新。',
-			'來源文直接指出早期英文版是“pretty bad”，機構版本若無校驗機制，教師不得不當場判斷是否適合課堂。',
-			'作者表述“life’s been hectic…haven’t gotten a chance to look carefully”，表示採用前至少要再多一次 1 次教師審視流程。',
-			'實作上可用 1 套流程：英文版影片 + 西班牙語版本 + 中文重點對照表，逐段比對術語與敘事，不可只評價語音品質。',
-			'建議 45 分鐘課前活動：15 分鐘播放摘要段落、20 分鐘學生列出差異、10 分鐘修正與共識彙整，便於在生物/生命倫理單元導入。',
-			'建立 1 張追蹤表（欄位：發布日期、語言版本、教師驗證日、偏差備註）可避免跨班重複使用未驗證素材。',
-			'若班級有雙語學伴，可用 1 份工具清單（如影片字幕匯出＋共編文件）做比較，讓學生參與「版本稽核」而非只聽答案。',
-		],
-		quote: 'Awhile back TED-Ed published a pretty bad video about Henrietta Lacks, and I hope this Spanish-language version their created is a lot better.',
-		quote_attribution: 'larryferlazzo.edublogs.org, 2026-05-08',
-		quote_source_url: 'https://larryferlazzo.edublogs.org/2026/05/08/ted-ed-has-published-this-spanish-language-video-about-henrietta-lacks-which-may-or-may-not-be-better-than-their-terrible-english-version/',
-		quote_source_domain: 'larryferlazzo.edublogs.org',
-		perspectives: [
-			{
-				text: '網誌作者立場偏向第一線教師觀察，先給予情緒化品質判斷而非正式評鑑，重點放在是否更能在教學脈絡中運作。它的價值是快速回報，但可信度需再透過課程情境驗證。',
-				sources: [
-					{
-						name: 'larryferlazzo.edublogs.org',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/08/ted-ed-has-published-this-spanish-language-video-about-henrietta-lacks-which-may-or-may-not-be-better-than-their-terrible-english-version/',
-					},
-				],
-			},
-			{
-				text: 'TED-Ed 的機構行動是推新語言版本，反映平台可及性政策，但未提供逐段差異對照，形成「版本有更替、品質未透明」的張力；教育者需把平台更新視為待驗證素材。',
-				sources: [
-					{
-						name: 'TED-Ed（來源訊號）',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/08/ted-ed-has-published-this-spanish-language-video-about-henrietta-lacks-which-may-or-may-not-be-better-than-their-terrible-english-version/',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'TED-Ed Has Published This Spanish-Language Video About Henrietta Lacks, Which May Or May Not Be Better Than Their Terrible English Version',
-				link: 'https://larryferlazzo.edublogs.org/2026/05/08/ted-ed-has-published-this-spanish-language-video-about-henrietta-lacks-which-may-or-may-not-be-better-than-their-terrible-english-version/',
-				domain: 'larryferlazzo.edublogs.org',
-				date: '2026-05-08',
-			},
-		],
-		domains: [
-			{ name: 'larryferlazzo.edublogs.org' },
-		],
-	},
 ];
 
 const twEduStories: Story[] = [
@@ -1465,7 +1368,7 @@ const twEduStories: Story[] = [
 		cluster_number: 'gmail-教育部-ai-數位學習',
 		unique_domains: 18,
 		number_of_titles: 24,
-		category: '教育政策',
+		category: '教育政策與治理',
 		title: '本週「教育部AI數位學習」焦點：平權試辦與AI Di+雙軌推動',
 		short_summary: '快訊去重後為17則（原始24則，含1則同質轉載），主訊號是教育部兩條施政主軸：『館館有AI』在2026年第4季先於3間國立圖書館試辦，民眾持借書證可免費使用ChatGPT、Claude、Gemini；『AI Di+』則由大學支援中小學場域，導入AI學伴與線上工具，補上學習落差。為什麼重要：政策重心已從單機硬體補助轉向可近性與教師落地，並同步出現47所國立大學延展、16所大學×185校合作、教師認證與AI人才方案，顯示是制度型導入而非單一新聞稿。缺口在於：目前未見完整預算金額、到位進度、跨地區使用量與校務成效指標。\n\n對台灣高中教師的啟示是可以先做局部可控試點：建立班級AI學伴制度，先用每週固定時段做閱讀摘要、提問清單、寫作修訂等任務，依「每人每日4小時、單次2小時」管理邏輯設限，降低資源浪費。再接上雲端平台記錄提問與回饋品質，逐步加入隱私/版權提醒與評核流程。教師不是等所有政策上線才行動，而是先在現有班級流程中測試可複製的教學節奏，建立證據再擴大。',
 		emoji: '🤖',
@@ -1672,101 +1575,11 @@ const twEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'gmail-ai-融入教學-高中',
-		cluster_number: 'gmail-ai-融入教學-高中',
-		unique_domains: 3,
-		number_of_titles: 3,
-		category: '教育政策',
-		title: 'AI融入教學三種落地方式：高中教師可借鏡',
-		short_summary: '2026-05-02 與 2026-05-06 共 3 則快訊形成「AI 融入教學」叢集；原始 Google 快訊關鍵字含「高中」，但來源實際橫跨中學、小學與高教，分別來自文匯報、荷花、中央社。三個明確訊號是：元朗商會中學於 2024/25 學年推進 AI 資優跨域專題；大角嘴天主教小學把 AI 放入 VARK 四種學習類型教學流程；東華大學觀遊系將生成式AI導入「馬太鞍自由行」導覽教學。這些訊號共同揭示，AI 正在從概念演練走向可交付的課務流程。\n此趨勢意義在於，AI 不再只出現在資訊科技課，而是同時出現在語文、跨學科專題、導覽與社會情境學習；學校將 AI 定位為「學習路徑設計」與「自學回饋」的工具，而非單向輸出平台。這代表 AI 融入教學的核心不只是硬體導入，而是任務設計、評量機制與價值導向的再分配。目前可確認的主訊號是實作樣態，但仍缺少成本、人時、成效量化與規模化落地證據。\n對台灣高中教師的直接啟示是：不要把三個案例當成可原樣複製的高中方案，而是抽出可控規模的「AI 任務切片」。例如 1 次課堂做一個跨學科導覽腳本，配合學生學習類型分組，再用 AI 生成範例由學生批改修正。再建立每週追蹤表，紀錄 AI 回饋、學生修正與教學調整，避免變成只會貼上工具的作業。高二/高三可先對接歷史、地理、生活科技等科目，並鎖定 10-20 人試行；校內共備與行政支援到位後再擴至年級制，這比一次到位的全面上線更能降低失敗風險。',
-		emoji: '🤖',
-		did_you_know: '元朗商會中學的做法不只停留在展示類應用。其 2024/25 學年的虛擬秦朝兵馬俑專題，先用 AI 建模供資優學生驗證歷史細節；同校更在文物導覽加入混合實境與人臉識別，並結合「AI電話」讓學生與康熙、雍正、乾隆進行超時空語音對話。這類設計顯示，AI 融入不一定提升題庫分數，而是能把閱讀、探究、文化學習與服務學習串成可驗證成果。',
-		talking_points: [
-			'本叢集來自 3 則原始快訊（2026-05-02 兩則、2026-05-06 一則）；Google 快訊關鍵字含「高中」，但來源實際橫跨中學、小學與高教，去重後 3 個來源訊號，同質轉播 0。',
-			'元朗商會中學在 2024/25 學年以AI＋雲端做跨學科專題，學生以秦朝兵馬俑為題，用模型比對與場景展示方式完成深度學習。',
-			'同一校內案例補上「混合實境」與大型語言模型，透過人臉識別與 AI 推薦閱讀系統，將資優學生導向由工具使用轉為閱讀與研究路徑設計。',
-			'大角嘴天主教小學明確採用 VARK 四型（視覺、聽覺、閱讀寫作、動覺）作為分組與教學設計依據，並將 AI 介面放入寫作、音樂與圖書館檢索等日常流程。',
-			'該校的「六日制」每一循環安排 1 個下午多元智能活動、5 個下午 Fun 時段，校方指出可讓學生接觸活動類型由原本約 10 類擴展到 11-12 類。',
-			'大角嘴案例同時採用 AI 即時回饋與弱項題目補練，強調學生先自我檢核再由教師做二次追蹤，形成自學閉環。',
-			'東華大學觀遊系由徐暘展助理教授在「旅遊目的地經營管理」導入生成式AI語音導覽，代表生成式AI可直接嵌入高教場域的專業模擬與觀光學習任務。',
-		],
-		quote: '「AI不僅是技術工具，更可擔當『學習路徑設計師』」',
-		quote_attribution: '文匯報, 2026-05-06',
-		quote_source_url: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
-		quote_source_domain: 'wenweipo.com',
-		perspectives: [
-			{
-				text: '文匯報訊號聚焦中學資優教育制度化經驗，重點在「學中用、用中學」與社會責任導向，呈現的是學習方法論的重構；荷花則偏向基礎學校治理，強調日課配置、作息制度與學習差異化，兩者都談工具但切入問題完全不同。',
-				sources: [
-					{
-						name: '香港文匯網 - 文匯報',
-						url: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
-					},
-					{
-						name: '荷花',
-						url: 'https://www.eugenebaby.com/articleList/%E5%8D%87%E5%AD%B8%E6%95%99%E8%82%B2/%E5%A4%A7%E8%A7%92%E5%98%B4%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8-1',
-					},
-				],
-			},
-			{
-				text: '中央社訊號把AI放到高教導覽與旅遊經營管理課，顯示高教實務場景已能承接AI語音導覽、自由行任務與生成式內容製作，與K12的作業化教學形成「技能銜接」線。這裡的價值不在是否採用AI，而在如何把產出轉為可評量任務成果。',
-				sources: [
-					{
-						name: '中央社',
-						url: 'https://www.cna.com.tw/postwrite/chi/432240',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-02',
-				date_iso: '2026-05-02',
-				content: '大角嘴天主教小學揭露已將 AI 併入課程設計與 VARK 四型分群，並以 6 日循環制擴大多元智能活動與即時回饋機制。',
-			},
-			{
-				date: '2026-05-02',
-				date_iso: '2026-05-02',
-				content: '東華大學觀遊系導入生成式AI進行馬太鞍自由行語音導覽試教，作為「旅遊目的地經營管理」課程的一部分。',
-			},
-			{
-				date: '2026-05-06',
-				date_iso: '2026-05-06',
-				content: '元朗商會中學分享 2024/25 學年以 AI 深化資優教學與閱讀探索，並將 AI for Good 融入中學服務學習與價值教育課程。',
-			},
-		],
-		articles: [
-			{
-				title: '【數教新知】AI賦能資優教育充分發揮學生潛能- 香港文匯網 - 文匯報',
-				link: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
-				domain: 'wenweipo.com',
-				date: '2026-05-06',
-			},
-			{
-				title: '大角嘴天主教小學因材施教全人發展多元化學習模式結合AI輔助教學 - 荷花',
-				link: 'https://www.eugenebaby.com/articleList/%E5%8D%87%E5%AD%B8%E6%95%99%E8%82%B2/%E5%A4%A7%E8%A7%92%E5%98%B4%E5%A4%A9%E4%B8%BB%E6%95%99%E5%B0%8F%E5%AD%B8-1',
-				domain: 'eugenebaby.com',
-				date: '2026-05-02',
-			},
-			{
-				title: '東華大學觀遊系導入生成式AI走進馬太鞍學習自由行語音導覽 - 中央社',
-				link: 'https://www.cna.com.tw/postwrite/chi/432240',
-				domain: 'cna.com.tw',
-				date: '2026-05-02',
-			},
-		],
-		domains: [
-			{ name: 'wenweipo.com' },
-			{ name: 'eugenebaby.com' },
-			{ name: 'cna.com.tw' },
-		],
-	},
-	{
 		id: 'taiwanEduPolicy-2',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
-		category: '教育政策',
+		category: '教育政策與治理',
 		title: '週更快問：K-12資安事故與學校調查',
 		short_summary: 'K12DIVE 於 2026-05-08 發布《Test yourself on the past week’s K-12 news》快問快答，將近一週 K-12 新聞濃縮為 5 題。它同時涵蓋「教育科技公司資安事故」與「美國司法部對學校的新調查」，並鼓勵讀者於社群以 #K12DivePopQuiz 回報得分。這種題目型回顧不是單篇報導，而是把一週多源資訊壓成可驗證的學習清單。\n\n這組訊息的意義在於：K-12 現象不再只是教學內容本身，而是跨越資安治理與法規責任。教育科技供應商一旦發生事件，校園可能承擔連帶影響；而 DOJ 的追蹤意味著學校面對的不只是內控，而是外部監管標準與問責條件。這對教育現場是明確警訊：資安風險管理與法規風險管理已是同一張清單中的兩項項目。\n\n對台灣高中教師而言，可直接借鏡為「每週 5 題」風險盤點：一是每週固定 1 次 15 分鐘做課務會議，抽 1 項資安事件與 1 項法規訊息；二是每月第一週由班導師確認常用學習平台版本更新與權限變更；三是把異常通報流程寫成 1~2 張表單，課內教師可在 24 小時內回報。若本校同時面臨資安事件與行政查核壓力，至少要先完成 1 份資料外流防護與存取權限名單，否則問題會由「教學工具問題」轉為「校務治理責任」的第二次傷害。',
 		emoji: '🛡️',
