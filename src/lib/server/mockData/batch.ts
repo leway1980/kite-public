@@ -7,8 +7,8 @@
  */
 
 export const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000005';
-export const MOCK_BATCH_CREATED_AT = '2026-05-13T02:08:36.000Z';
-export const MOCK_BATCH_DATE_SLUG = '2026-05-11.1';
+export const MOCK_BATCH_CREATED_AT = '2026-05-13T03:13:09.000Z';
+export const MOCK_BATCH_DATE_SLUG = '2026-05-13.1';
 // Unix timestamp (seconds) for the stories' timestamp field
 export const MOCK_BATCH_TIMESTAMP = Math.floor(
 	new Date(MOCK_BATCH_CREATED_AT).getTime() / 1000,
