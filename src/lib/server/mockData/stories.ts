@@ -986,25 +986,25 @@ const aiClassroomStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 教學實戰',
-		editorial_lens: '工作方法',
-		title: '高教可借鏡：GenAI 與 OER 的教材更新路徑',
-		short_summary: '2026-05-12，AI Educ Simplified 轉載並導讀刊於 EDUCAUSE Review 的《Expanding OER with GenAI》。文章主張以 Adopt、Adapt、Build 框架協助教師逐步使用生成式 AI 建置開放式教材，並指出作者與 OER 的討論歷程已累積約 15 年，顯示這波整合不是短期熱潮，而是高教教材從高成本封閉資源，轉為可共享、可再設計的長期轉型，對課程設計與學生教材可得性具有關鍵意義。',
+		editorial_lens: '教材共備',
+		title: '用 AI 把教材改成可共享版本',
+		short_summary: '這篇在講教師如何用生成式 AI 更新教材：先找可免費使用的開放教材，再依自己的課程改寫，最後補上例子、活動與評量。它的價值不在炫技，而是降低學生買教材的負擔，也降低教師從零做教材的時間成本。對中學教師來說，啟發是把 AI 當成教材整理與改寫助手，但授權、查證與課程目標仍要由老師把關。',
 		emoji: '📘',
-		did_you_know: '原文提到 OER 在實務上可降低學生因教材費造成的落差，並讓學生更有彈性取用課程內容，讓 AI 導入的目標不只效率，還是縮小資源不平等。',
+		did_you_know: '開放教材（OER）指可免費使用、改作或再分享的教材。原文重點不是追新工具，而是讓教材成本、取得門檻與更新速度一起改善。',
 		talking_points: [
-			'發布脈絡：2026-05-12 這篇文章轉載自 aiedusimplified，並回應 EDUCAUSE Review 同期發文，凸顯高教端已正式把 GenAI＋OER 當作教材改革議題。',
-			'教學框架：核心方法明確寫為 Adopt、Adapt、Build，建議教師先採用既有教材，再改編，最後重建，讓導入生成式 AI 具體且可重複執行。',
-			'長期驗證：文中提及與 OER 的討論逾 15 年，表示高教社群對 Open Educational Resources 的推進早有基礎，本次是自然延展而非突發潮流。',
-			'跨校實證：文中稱 2024 年曾在 UMass Lowell、Framingham State、Northern Essex Community College 接連推動 AI/OER 講座與工作坊，顯示此議題已被多校同步測試。',
-			'採用原則：作者強調 OER 對降低教材成本、改善學生接觸彈性的重要性，提醒教師在設計 GenAI 流程時先以可及性與公平性為評估優先序。',
+			'主要做法：教師先使用既有開放教材，再用生成式 AI 協助改寫語氣、補充例子、設計活動，最後整理成適合自己班級的版本。',
+			'真正價值：學生少花教材費，教師也不用每次從零開始做講義；教材能被持續修訂、共享，讓備課成果留下來。',
+			'教師角色：AI 可以幫忙整理與改寫，但不能替老師決定課程目標、內容正確性、授權範圍與學生是否真的看得懂。',
+			'可借鏡處：中學教師可從小單元開始，先把一份公開資料改成課堂閱讀、討論題或練習題，再逐步累積成自己的教材庫。',
+			'注意界線：開放教材不等於隨便複製；使用前仍要確認授權、來源可靠性與是否符合本地課綱。',
 		],
-		quote: 'Expanding OER with GenAI in EDUCAUSE Review dropped this week and we’re excited to share it with the world!',
-		quote_attribution: 'AI Educ Simplified，2026-05-12',
-		quote_source_url: 'https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with',
-		quote_source_domain: 'aiedusimplified.substack.com',
+		quote: null,
+		quote_attribution: null,
+		quote_source_url: null,
+		quote_source_domain: null,
 		perspectives: [
 			{
-				text: '實務角度把重心放在流程設計，認為可先用 Adopt、Adapt、Build 進行教材「小步快跑」驗證，不急著一次性改造整門課程。',
+				text: '實務角度把重心放在小步試作：先挑一小段公開教材，改成自己班上的閱讀、活動或練習，確認有用後再擴大，不急著一次改造整門課。',
 				sources: [
 					{
 						name: 'AI Educ Simplified',
@@ -1013,7 +1013,7 @@ const aiClassroomStories: Story[] = [
 				],
 			},
 			{
-				text: '策略角度則將焦點放在治理與倫理，將 AI 融入 OER 不只談技術可行，而要檢視授權、法律及可持續共編機制是否同步跟上。',
+				text: '治理角度提醒，AI 與開放教材要同步檢查授權、內容正確性、修訂責任與長期維護，不能只看生成速度。',
 				sources: [
 					{
 						name: 'EDUCAUSE Review',
@@ -1024,7 +1024,7 @@ const aiClassroomStories: Story[] = [
 		],
 		articles: [
 			{
-				title: 'New Publicaton: Expanding OER with GenAI',
+				title: '用生成式 AI 擴充開放教材',
 				link: 'https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with',
 				domain: 'aiedusimplified.substack.com',
 				date: '2026-05-12',
@@ -1825,104 +1825,6 @@ const twEduStories: Story[] = [
 			{ name: 'n.yam.com' },
 			{ name: 'cna.com.tw' },
 			{ name: 'wenweipo.com' },
-		],
-	},
-	{
-		id: 'taiwanEduPolicy-4',
-		cluster_number: 4,
-		unique_domains: 3,
-		number_of_titles: 3,
-		category: '教育政策與治理',
-		editorial_lens: '治理授權',
-		title: '跨學段校園治理：聯邦授權與經費壓力',
-		short_summary: '5/11 到 5/12 美國校園題材連續爆發。聯邦法官認定川普政府 2025 年政策變動未改寫 ICE 在學校地面的執法權限，學校安全程序仍需依聯邦框架設計。同時高等教育端也出現財務壓力擴大：科羅拉多州立大學系統削減多所校舍預算，哥倫比亞大學則遭穆迪展望轉為 negative，K-12 亦有 38% 教育科技主管憂心經費下修衝擊 1:1，顯示政策權責與資源持續性正在同步重塑校務決策。',
-		emoji: '⚖️',
-		did_you_know: 'CoSN 調查顯示，38% 的 K-12 教育科技領導人預期預算縮減會直接衝擊 1:1 設備專案，對已大量推行「每人一機」的學區是明確的更新與維運風險。',
-		talking_points: [
-			'權限定調：法官認定川普政府 2025 年 ICE 政策變動未改寫學校地面執法授權，學校安全程序仍需以聯邦框架為上。',
-			'高教壓力：科羅拉多州立大學系統在 Fort Collins 與 Pueblo 兩校刪減數百萬美元級預算，顯示州方補助停滯下的營運緊縮。',
-			'信號轉弱：穆迪將哥倫比亞大學展望調降為 negative，將聯邦壓力與國際生招生不確定列入主要風險。',
-			'科技與經費：雖多數學區已推行 1:1，38% 專責仍預料經費下修會衝擊採購、維修與更新節奏。',
-			'資源調整：部分高教單位因乾旱壓力升級用水管理與灌溉機制，顯示資源治理同時影響營運與教學支持。',
-		],
-		quote: 'The Trump administration\'s 2025 policy change didn\'t alter the agency\'s authority to pursue such actions.',
-		quote_attribution: 'K-12 Dive, 2026-05-11',
-		quote_source_url: 'https://www.k12dive.com/news/judge-denies-pause-on-ice-enforcement-on-school-grounds/819907/',
-		quote_source_domain: 'k12dive.com',
-		perspectives: [
-			{
-				text: '高等教育報導把焦點放在財務結構風險，州補助停滯、信評調降與設施節流合在一起，讓「能不能持續經營」成為治理主軸而非單純教學議題。',
-				sources: [
-					{
-						name: 'Higher Ed Dive',
-						url: 'https://link.highereddive.com/view/69f985b55f3be2f7a30c0c61r6ndz.1fao/cf288894',
-					},
-				],
-			},
-			{
-				text: 'K-12 端則先解決法定權責邊界：法院判決使學區在校園安全與移民執法接觸上需先確定程序合規，同時再向經費現況檢視 1:1 與資源配置。',
-				sources: [
-					{
-						name: 'K-12 Dive',
-						url: 'https://www.k12dive.com/news/judge-denies-pause-on-ice-enforcement-on-school-grounds/819907/',
-					},
-				],
-			},
-			{
-				text: '兩類來源共同指向同一趨勢：不同學段不再能各自獨立，聯邦授權決定底線，經費能力決定可行上限，校園治理正在被權力與資源同步重寫。',
-				sources: [
-					{
-						name: 'K-12 Dive',
-						url: 'https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57',
-					},
-					{
-						name: 'K-12 Dive',
-						url: 'https://www.k12dive.com/news/judge-denies-pause-on-ice-enforcement-on-school-grounds/819907/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: '聯邦法官裁定不停止 ICE 在學校地面的執法，維持其權限框架，影響學區安全與法遵流程。',
-			},
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: '高等教育消息指出科羅拉多州立大學系統進行預算刪減，並提及穆迪將哥倫比亞大學展望下調為 negative。',
-			},
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'K-12 政策與科技報導整理出 CoSN 調查結果：38% 教育科技主管預估預算縮減將影響 1:1 計畫。',
-			},
-		],
-		articles: [
-			{
-				title: 'Colorado State hit with layoffs | Moody’s lowers Columbia’s outlook',
-				link: 'https://link.highereddive.com/view/69f985b55f3be2f7a30c0c61r6ndz.1fao/cf288894',
-				domain: 'link.highereddive.com',
-				date: '2026-05-12',
-			},
-			{
-				title: 'Judge won’t pause ICE policy | The state of 1:1 device programs',
-				link: 'https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57',
-				domain: 'link.k12dive.com',
-				date: '2026-05-12',
-			},
-			{
-				title: 'Judge denies pause on ICE enforcement on school grounds',
-				link: 'https://www.k12dive.com/news/judge-denies-pause-on-ice-enforcement-on-school-grounds/819907/',
-				domain: 'k12dive.com',
-				date: '2026-05-11',
-			},
-		],
-		domains: [
-			{ name: 'link.highereddive.com' },
-			{ name: 'link.k12dive.com' },
-			{ name: 'k12dive.com' },
 		],
 	},
 	{
