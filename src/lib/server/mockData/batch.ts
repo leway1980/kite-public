@@ -38,7 +38,7 @@ export function buildBatchMeta(): MockBatchMeta {
 		language: 'zh-Hant',
 		totalCategories: 6,
 		totalClusters: 29,
-		totalArticles: 245,
+		totalArticles: 246,
 		totalReadCount: 0,
 	};
 }
