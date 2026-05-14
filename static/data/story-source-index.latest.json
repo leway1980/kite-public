@@ -1,0 +1,1306 @@
+{
+  "schema": "ai-edu-weekly.story-source-index.v1",
+  "description": "Cross-repo lookup index for public AI 教育週報 stories. Search by story title, story_id, category, domain, or source title.",
+  "generated_at": "2026-05-14T15:24:38.418Z",
+  "batch": {
+    "id": "b1a7e2c0-0000-4000-8000-000000000005",
+    "createdAt": "2026-05-14T12:55:00.000Z",
+    "dateSlug": "2026-05-14.1",
+    "totalCategories": 6,
+    "totalClusters": 29,
+    "totalArticles": 249
+  },
+  "lookup_keywords": [
+    "story-source-index",
+    "source index",
+    "sources",
+    "citations",
+    "evidence",
+    "來源",
+    "引用",
+    "出處",
+    "原文",
+    "報導來源"
+  ],
+  "source_roles": {
+    "article": "原始聚類文章來源",
+    "perspective": "觀點段落引用來源",
+    "quote": "引述來源"
+  },
+  "stories": [
+    {
+      "story_id": "aiNews-1",
+      "title": "Codex 讓財務月報從人工拼接轉成可複查初稿",
+      "category_uuid": "c0000001-0000-4000-8000-000000000001",
+      "category_id": "ai-news",
+      "category_name": "AI 動態",
+      "editorial_lens": "代理應用",
+      "cluster_number": 1,
+      "source_count": 1,
+      "search_terms": [
+        "aiNews-1",
+        "Codex 讓財務月報從人工拼接轉成可複查初稿",
+        "ai-news",
+        "AI 動態",
+        "代理應用",
+        "openai.com",
+        "How finance teams use Codex"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "How finance teams use Codex",
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiNews-2",
+      "title": "NVIDIA 用 Codex 重塑研發與研究流程",
+      "category_uuid": "c0000001-0000-4000-8000-000000000001",
+      "category_id": "ai-news",
+      "category_name": "AI 動態",
+      "editorial_lens": "代理應用、工作方法",
+      "cluster_number": 2,
+      "source_count": 1,
+      "search_terms": [
+        "aiNews-2",
+        "NVIDIA 用 Codex 重塑研發與研究流程",
+        "ai-news",
+        "AI 動態",
+        "代理應用、工作方法",
+        "openai.com",
+        "How NVIDIA engineers and researchers build with Codex"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "How NVIDIA engineers and researchers build with Codex",
+          "url": "https://openai.com/index/nvidia",
+          "domain": "openai.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiNews-3",
+      "title": "Parameter Golf 打開 AI 研究新流程",
+      "category_uuid": "c0000001-0000-4000-8000-000000000001",
+      "category_id": "ai-news",
+      "category_name": "AI 動態",
+      "editorial_lens": "代理應用",
+      "cluster_number": 3,
+      "source_count": 1,
+      "search_terms": [
+        "aiNews-3",
+        "Parameter Golf 打開 AI 研究新流程",
+        "ai-news",
+        "AI 動態",
+        "代理應用",
+        "openai.com",
+        "What Parameter Golf taught us about AI-assisted research"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "What Parameter Golf taught us about AI-assisted research",
+          "url": "https://openai.com/index/what-parameter-golf-taught-us",
+          "domain": "openai.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiNews-4",
+      "title": "AutoScout24 以 AI 代理提效 10 倍",
+      "category_uuid": "c0000001-0000-4000-8000-000000000001",
+      "category_id": "ai-news",
+      "category_name": "AI 動態",
+      "editorial_lens": "代理應用",
+      "cluster_number": 4,
+      "source_count": 1,
+      "search_terms": [
+        "aiNews-4",
+        "AutoScout24 以 AI 代理提效 10 倍",
+        "ai-news",
+        "AI 動態",
+        "代理應用",
+        "openai.com",
+        "AutoScout24 scales engineering with AI-powered workflows"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "AutoScout24 scales engineering with AI-powered workflows",
+          "url": "https://openai.com/index/autoscout24",
+          "domain": "openai.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiNews-5",
+      "title": "ChatGPT Q1 普及擴張：主力外延到更多年齡與國家",
+      "category_uuid": "c0000001-0000-4000-8000-000000000001",
+      "category_id": "ai-news",
+      "category_name": "AI 動態",
+      "editorial_lens": "新工作模式",
+      "cluster_number": 5,
+      "source_count": 1,
+      "search_terms": [
+        "aiNews-5",
+        "ChatGPT Q1 普及擴張：主力外延到更多年齡與國家",
+        "ai-news",
+        "AI 動態",
+        "新工作模式",
+        "openai.com",
+        "How ChatGPT adoption broadened in early 2026"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "How ChatGPT adoption broadened in early 2026",
+          "url": "https://openai.com/signals/research/2026q1-update",
+          "domain": "openai.com",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "story_id": "aiApplications-1",
+      "title": "AI 代理本地預測式記憶崛起",
+      "category_uuid": "c0000005-0000-4000-8000-000000000005",
+      "category_id": "ai-applications",
+      "category_name": "AI 熱門應用",
+      "editorial_lens": "代理應用",
+      "cluster_number": 1,
+      "source_count": 2,
+      "search_terms": [
+        "aiApplications-1",
+        "AI 代理本地預測式記憶崛起",
+        "ai-applications",
+        "AI 熱門應用",
+        "代理應用",
+        "github.com",
+        "producthunt.com",
+        "Show HN: YantrikDB – persistent memory for AI agents",
+        "Khaos Brain"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Show HN: YantrikDB – persistent memory for AI agents",
+          "url": "https://github.com/yantrikos/yantrikdb",
+          "domain": "github.com",
+          "date": "2026-05-12"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Khaos Brain",
+          "url": "https://www.producthunt.com/products/khaos-brain",
+          "domain": "producthunt.com",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "story_id": "aiApplications-2",
+      "title": "MiniCPM-V 4.6 讓視覺 AI 跑進手機",
+      "category_uuid": "c0000005-0000-4000-8000-000000000005",
+      "category_id": "ai-applications",
+      "category_name": "AI 熱門應用",
+      "editorial_lens": "新工作模式",
+      "cluster_number": 2,
+      "source_count": 1,
+      "search_terms": [
+        "aiApplications-2",
+        "MiniCPM-V 4.6 讓視覺 AI 跑進手機",
+        "ai-applications",
+        "AI 熱門應用",
+        "新工作模式",
+        "producthunt.com",
+        "MiniCPM-V 4.6"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "MiniCPM-V 4.6",
+          "url": "https://www.producthunt.com/products/minicpm-4-0",
+          "domain": "producthunt.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiApplications-3",
+      "title": "用 AI 保留原聲的寫作流程：Bouquin & Ink",
+      "category_uuid": "c0000005-0000-4000-8000-000000000005",
+      "category_id": "ai-applications",
+      "category_name": "AI 熱門應用",
+      "editorial_lens": "新工作模式",
+      "cluster_number": 3,
+      "source_count": 1,
+      "search_terms": [
+        "aiApplications-3",
+        "用 AI 保留原聲的寫作流程：Bouquin & Ink",
+        "ai-applications",
+        "AI 熱門應用",
+        "新工作模式",
+        "producthunt.com",
+        "Bouquin & Ink"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Bouquin & Ink",
+          "url": "https://www.producthunt.com/products/bouquin-ink",
+          "domain": "producthunt.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiApplications-4",
+      "title": "Whisper Island 1.2.0 單窗多專案",
+      "category_uuid": "c0000005-0000-4000-8000-000000000005",
+      "category_id": "ai-applications",
+      "category_name": "AI 熱門應用",
+      "editorial_lens": "新工作模式",
+      "cluster_number": 4,
+      "source_count": 1,
+      "search_terms": [
+        "aiApplications-4",
+        "Whisper Island 1.2.0 單窗多專案",
+        "ai-applications",
+        "AI 熱門應用",
+        "新工作模式",
+        "producthunt.com",
+        "Whisper Island by Coddo"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Whisper Island by Coddo",
+          "url": "https://www.producthunt.com/products/coddo",
+          "domain": "producthunt.com",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "story_id": "aiApplications-5",
+      "title": "knooth：Mac 錄影剪輯一體化升級",
+      "category_uuid": "c0000005-0000-4000-8000-000000000005",
+      "category_id": "ai-applications",
+      "category_name": "AI 熱門應用",
+      "editorial_lens": "工作方法",
+      "cluster_number": 5,
+      "source_count": 1,
+      "search_terms": [
+        "aiApplications-5",
+        "knooth：Mac 錄影剪輯一體化升級",
+        "ai-applications",
+        "AI 熱門應用",
+        "工作方法",
+        "producthunt.com",
+        "knooth"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "knooth",
+          "url": "https://www.producthunt.com/products/knooth",
+          "domain": "producthunt.com",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "story_id": "aiEducation-gmail-notebooklm-教學",
+      "title": "本週「NotebookLM 教學」焦點：校園與職訓同步擴散",
+      "category_uuid": "c0000002-0000-4000-8000-000000000002",
+      "category_id": "ai-education",
+      "category_name": "AI 教育趨勢",
+      "editorial_lens": "平台導入",
+      "cluster_number": "gmail-notebooklm-教學",
+      "source_count": 4,
+      "search_terms": [
+        "aiEducation-gmail-notebooklm-教學",
+        "本週「NotebookLM 教學」焦點：校園與職訓同步擴散",
+        "ai-education",
+        "AI 教育趨勢",
+        "平台導入",
+        "fc.bnext.com.tw",
+        "sunmedia.tw",
+        "n.yam.com",
+        "sogi.com.tw",
+        "Google 數位人才探索計畫正式開跑！Gemini、NotebookLM、GA4 免費學，完課可領官方證書",
+        "喬治亞理工學院啟用Gemini、NotebookLM 加速教學研究AI整合 - 蕃新聞",
+        "NotebookLM整合進Gemini！筆記本功能全面開放用戶免費使用 - SOGI手機王",
+        "喬治亞理工學院資訊科技辦公室（2026-05-08）"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Google 數位人才探索計畫正式開跑！Gemini、NotebookLM、GA4 免費學，完課可領官方證書",
+          "url": "https://fc.bnext.com.tw/articles/view/4603",
+          "domain": "fc.bnext.com.tw",
+          "date": "2026-05-11"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "喬治亞理工學院啟用Gemini、NotebookLM 加速教學研究AI整合 - 蕃新聞",
+          "url": "https://n.yam.com/Article/20260507742636",
+          "domain": "n.yam.com",
+          "date": "2026-05-08"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "NotebookLM整合進Gemini！筆記本功能全面開放用戶免費使用 - SOGI手機王",
+          "url": "https://www.sogi.com.tw/articles/gemini/6268707",
+          "domain": "sogi.com.tw",
+          "date": "2026-05-06"
+        },
+        {
+          "roles": [
+            "quote"
+          ],
+          "title": "喬治亞理工學院資訊科技辦公室（2026-05-08）",
+          "url": "https://sunmedia.tw/news/technology/1778110348-%E5%96%AC%E6%B2%BA%E4%BA%9E%E7%90%86%E5%B7%A5%E5%AD%B8%E9%99%A2%E5%95%9F%E7%94%A8%20Gemini%E3%80%81NotebookLM%E3%80%80%E5%8A%A0%E9%80%9F%E6%95%99%E5%AD%B8%E7%A0%94%E7%A9%B6AI%E6%95%B4%E5%90%88",
+          "domain": "sunmedia.tw",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "story_id": "aiEducation-15",
+      "title": "跨學段啟示：高教不能再把AI當成作弊工具",
+      "category_uuid": "c0000002-0000-4000-8000-000000000002",
+      "category_id": "ai-education",
+      "category_name": "AI 教育趨勢",
+      "editorial_lens": "新觀念,組織運作",
+      "cluster_number": 15,
+      "source_count": 2,
+      "search_terms": [
+        "aiEducation-15",
+        "跨學段啟示：高教不能再把AI當成作弊工具",
+        "ai-education",
+        "AI 教育趨勢",
+        "新觀念,組織運作",
+        "substack.com",
+        "stefanbauschard.substack.com",
+        "May 11 Podcast: Tim Mousel, Lone Star College"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "May 11 Podcast: Tim Mousel, Lone Star College",
+          "url": "https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdGVmYW5iYXVzY2hhcmQuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj04OGpqcm4mbmV4dD1odHRwcyUzQSUyRiUyRnN0ZWZhbmJhdXNjaGFyZC5zdWJzdGFjay5jb20lMkZwJTJGbWF5LTExLXBvZGNhc3QtdGltLW1vdXNlbC1sb25lLXN0YXIiLCJwIjoxOTcyMzcxODIsInMiOjE2NzM3MjgsImYiOnRydWUsInUiOjQ5ODA3ODQxOSwiaWF0IjoxNzc4NTIwMjUxLCJleHAiOjIwOTQwOTYyNTEsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.PxVUWq4CE9mRPjY9Spir38mG9wZly3K0xgIJNgMzMk0?",
+          "domain": "substack.com",
+          "date": "2026-05-11"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "May 11 Podcast: Tim Mousel, Lone Star College",
+          "url": "https://stefanbauschard.substack.com/p/may-11-podcast-tim-mousel-lone-star",
+          "domain": "stefanbauschard.substack.com",
+          "date": "2026-05-11"
+        }
+      ]
+    },
+    {
+      "story_id": "aiEducation-17",
+      "title": "跨學段預算與政策卡位：AI教學也先看資源",
+      "category_uuid": "c0000002-0000-4000-8000-000000000002",
+      "category_id": "ai-education",
+      "category_name": "AI 教育趨勢",
+      "editorial_lens": "治理授權",
+      "cluster_number": 17,
+      "source_count": 2,
+      "search_terms": [
+        "aiEducation-17",
+        "跨學段預算與政策卡位：AI教學也先看資源",
+        "ai-education",
+        "AI 教育趨勢",
+        "治理授權",
+        "highereddive.com",
+        "k12dive.com",
+        "Colorado State hit with layoffs | Moody’s lowers Columbia’s outlook",
+        "Judge won’t pause ICE policy | The state of 1:1 device programs"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Colorado State hit with layoffs | Moody’s lowers Columbia’s outlook",
+          "url": "https://link.highereddive.com/view/69f985b55f3be2f7a30c0c61r6ndz.1fao/cf288894",
+          "domain": "highereddive.com",
+          "date": "2026-05-12"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Judge won’t pause ICE policy | The state of 1:1 device programs",
+          "url": "https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57",
+          "domain": "k12dive.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiEducation-1",
+      "title": "MIT 推出 Universal AI：全民都能上手的 AI 路徑",
+      "category_uuid": "c0000002-0000-4000-8000-000000000002",
+      "category_id": "ai-education",
+      "category_name": "AI 教育趨勢",
+      "editorial_lens": "平台導入",
+      "cluster_number": 1,
+      "source_count": 1,
+      "search_terms": [
+        "aiEducation-1",
+        "MIT 推出 Universal AI：全民都能上手的 AI 路徑",
+        "ai-education",
+        "AI 教育趨勢",
+        "平台導入",
+        "news.mit.edu",
+        "Universal AI is “a pathway to AI fluency that’s accessible and approachable to anyone, anywhere”"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Universal AI is “a pathway to AI fluency that’s accessible and approachable to anyone, anywhere”",
+          "url": "https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512",
+          "domain": "news.mit.edu",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiEducation-2",
+      "title": "高教CTO警訊：AI落地下人才與資安壓力同步上升",
+      "category_uuid": "c0000002-0000-4000-8000-000000000002",
+      "category_id": "ai-education",
+      "category_name": "AI 教育趨勢",
+      "editorial_lens": "資安信任、組織運作",
+      "cluster_number": 2,
+      "source_count": 1,
+      "search_terms": [
+        "aiEducation-2",
+        "高教CTO警訊：AI落地下人才與資安壓力同步上升",
+        "ai-education",
+        "AI 教育趨勢",
+        "資安信任、組織運作",
+        "insidehighered.com",
+        "Inside Higher Ed, 2026-05-12"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "quote"
+          ],
+          "title": "Inside Higher Ed, 2026-05-12",
+          "url": "https://www.insidehighered.com/news/quick-takes/2026/05/12/survey-ctos-cybersecurity-ai-the-lms-and-more",
+          "domain": "insidehighered.com",
+          "date": ""
+        }
+      ]
+    },
+    {
+      "story_id": "aiClassroom-1",
+      "title": "用 AI 把教材改成可共享版本",
+      "category_uuid": "c0000004-0000-4000-8000-000000000004",
+      "category_id": "ai-classroom",
+      "category_name": "AI 教學實戰",
+      "editorial_lens": "教材共備",
+      "cluster_number": 1,
+      "source_count": 1,
+      "search_terms": [
+        "aiClassroom-1",
+        "用 AI 把教材改成可共享版本",
+        "ai-classroom",
+        "AI 教學實戰",
+        "教材共備",
+        "aiedusimplified.substack.com",
+        "用生成式 AI 擴充開放教材"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "用生成式 AI 擴充開放教材",
+          "url": "https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with",
+          "domain": "aiedusimplified.substack.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiClassroom-2",
+      "title": "暑假第一天可複製的 AI 教室活動清單",
+      "category_uuid": "c0000004-0000-4000-8000-000000000004",
+      "category_id": "ai-classroom",
+      "category_name": "AI 教學實戰",
+      "editorial_lens": "教學流程",
+      "cluster_number": 2,
+      "source_count": 1,
+      "search_terms": [
+        "aiClassroom-2",
+        "暑假第一天可複製的 AI 教室活動清單",
+        "ai-classroom",
+        "AI 教學實戰",
+        "教學流程",
+        "classtechtips.com",
+        "9 EdTech Activities to Celebrate the First Day of Summer – Easy EdTech Podcast 370"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "9 EdTech Activities to Celebrate the First Day of Summer – Easy EdTech Podcast 370",
+          "url": "https://classtechtips.com/2026/05/12/first-day-of-summer-activities-for-classroom-370/",
+          "domain": "classtechtips.com",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiClassroom-3",
+      "title": "每週免費教學 AI 工具盤點",
+      "category_uuid": "c0000004-0000-4000-8000-000000000004",
+      "category_id": "ai-classroom",
+      "category_name": "AI 教學實戰",
+      "editorial_lens": "工作方法",
+      "cluster_number": 3,
+      "source_count": 1,
+      "search_terms": [
+        "aiClassroom-3",
+        "每週免費教學 AI 工具盤點",
+        "ai-classroom",
+        "AI 教學實戰",
+        "工作方法",
+        "larryferlazzo.edublogs.org",
+        "This Week’s Free & Useful Artificial Intelligence Tools For The Classroom"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "This Week’s Free & Useful Artificial Intelligence Tools For The Classroom",
+          "url": "https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/",
+          "domain": "larryferlazzo.edublogs.org",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "story_id": "aiClassroom-4",
+      "title": "跨學段可借鏡：AI 時代歸納式寫作流程",
+      "category_uuid": "c0000004-0000-4000-8000-000000000004",
+      "category_id": "ai-classroom",
+      "category_name": "AI 教學實戰",
+      "editorial_lens": "教學流程",
+      "cluster_number": 4,
+      "source_count": 1,
+      "search_terms": [
+        "aiClassroom-4",
+        "跨學段可借鏡：AI 時代歸納式寫作流程",
+        "ai-classroom",
+        "AI 教學實戰",
+        "教學流程",
+        "larryferlazzo.edublogs.org",
+        "Inductive Teaching Has Always Been An Effective Strategy, Perhaps Even More So In The AI Era"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Inductive Teaching Has Always Been An Effective Strategy, Perhaps Even More So In The AI Era",
+          "url": "https://larryferlazzo.edublogs.org/2026/05/10/inductive-teaching-has-always-been-an-effective-strategy-perhaps-even-more-so-in-the-ai-era/",
+          "domain": "larryferlazzo.edublogs.org",
+          "date": "2026-05-10"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-1",
+      "title": "智利建校補齊：代間學歷與就業同步上升",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "研究證據",
+      "cluster_number": 1,
+      "source_count": 1,
+      "search_terms": [
+        "educationResearch-1",
+        "智利建校補齊：代間學歷與就業同步上升",
+        "education-research",
+        "教育研究",
+        "研究證據",
+        "nber.org",
+        "Building Opportunity: The Intergenerational Effects of Chilean School Construction"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Building Opportunity: The Intergenerational Effects of Chilean School Construction",
+          "url": "https://www.nber.org/papers/w35042#fromrss",
+          "domain": "nber.org",
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-2",
+      "title": "大學女性權威導師對學生性別觀的長期影響",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "研究證據",
+      "cluster_number": 2,
+      "source_count": 1,
+      "search_terms": [
+        "educationResearch-2",
+        "大學女性權威導師對學生性別觀的長期影響",
+        "education-research",
+        "教育研究",
+        "研究證據",
+        "nber.org",
+        "Authority Figures and the Polarization of Gender Norms"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Authority Figures and the Polarization of Gender Norms",
+          "url": "https://www.nber.org/papers/w35174#fromrss",
+          "domain": "nber.org",
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-3",
+      "title": "四年制大學女性化推升非大學男性婚姻壓力",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "研究證據",
+      "cluster_number": 3,
+      "source_count": 1,
+      "search_terms": [
+        "educationResearch-3",
+        "四年制大學女性化推升非大學男性婚姻壓力",
+        "education-research",
+        "教育研究",
+        "研究證據",
+        "nber.org",
+        "Bachelors Without Bachelor's: Gender Gaps in Education and Declining Marriage Rates"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Bachelors Without Bachelor's: Gender Gaps in Education and Declining Marriage Rates",
+          "url": "https://www.nber.org/papers/w35179#fromrss",
+          "domain": "nber.org",
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-4",
+      "title": "美國學校禁機政策：青年心理效應仍未明朗",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "研究證據",
+      "cluster_number": 4,
+      "source_count": 1,
+      "search_terms": [
+        "educationResearch-4",
+        "美國學校禁機政策：青年心理效應仍未明朗",
+        "education-research",
+        "教育研究",
+        "研究證據",
+        "nber.org",
+        "Youth Mental Health and School Smartphone Bans: Early Evidence"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Youth Mental Health and School Smartphone Bans: Early Evidence",
+          "url": "https://www.nber.org/papers/w35181#fromrss",
+          "domain": "nber.org",
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-5",
+      "title": "未錨定成績制會扭曲大學能力比較",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "研究證據",
+      "cluster_number": 5,
+      "source_count": 1,
+      "search_terms": [
+        "educationResearch-5",
+        "未錨定成績制會扭曲大學能力比較",
+        "education-research",
+        "教育研究",
+        "研究證據",
+        "nber.org",
+        "What Does A Grade Mean? Informativeness and Strategic Manipulation of Grading Systems"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "What Does A Grade Mean? Informativeness and Strategic Manipulation of Grading Systems",
+          "url": "https://www.nber.org/papers/w35183#fromrss",
+          "domain": "nber.org",
+          "date": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-6",
+      "title": "SEL 怎麼做：先教一個可練習的互動技能",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "SEL 研究筆記",
+      "cluster_number": 6,
+      "source_count": 3,
+      "search_terms": [
+        "educationResearch-6",
+        "SEL 怎麼做：先教一個可練習的互動技能",
+        "education-research",
+        "教育研究",
+        "SEL 研究筆記",
+        "journals.sagepub.com",
+        "ojp.gov",
+        "Social and Emotional Learning Programs and Students’ Prosocial Behavior: A Meta-Analysis",
+        "Disentangling the Effects of Social and Emotional Learning Programs on Student Academic Achievement Across Grades 1–12",
+        "The Impact of Enhancing Students’ Social and Emotional Learning: A Meta-Analysis of School-Based Universal Interventions"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Social and Emotional Learning Programs and Students’ Prosocial Behavior: A Meta-Analysis",
+          "url": "https://journals.sagepub.com/doi/10.3102/00346543261438462",
+          "domain": "journals.sagepub.com",
+          "date": "2026-04-29"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "Disentangling the Effects of Social and Emotional Learning Programs on Student Academic Achievement Across Grades 1–12",
+          "url": "https://journals.sagepub.com/doi/abs/10.3102/00346543251367769",
+          "domain": "journals.sagepub.com",
+          "date": "2025-10-08"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "The Impact of Enhancing Students’ Social and Emotional Learning: A Meta-Analysis of School-Based Universal Interventions",
+          "url": "https://www.ojp.gov/library/publications/impact-enhancing-students-social-and-emotional-learning-meta-analysis-school",
+          "domain": "ojp.gov",
+          "date": "2011-01-01"
+        }
+      ]
+    },
+    {
+      "story_id": "educationResearch-7",
+      "title": "自然探究怎麼做：把四個能力分開教",
+      "category_uuid": "c0000006-0000-4000-8000-000000000006",
+      "category_id": "education-research",
+      "category_name": "教育研究",
+      "editorial_lens": "自然探究研究筆記",
+      "cluster_number": 7,
+      "source_count": 6,
+      "search_terms": [
+        "educationResearch-7",
+        "自然探究怎麼做：把四個能力分開教",
+        "education-research",
+        "教育研究",
+        "自然探究研究筆記",
+        "journals.sagepub.com",
+        "nationalacademies.org",
+        "cmu.edu",
+        "umich.edu",
+        "Experimental and Quasi-Experimental Studies of Inquiry-Based Science Teaching",
+        "Meta-Analysis of Inquiry-Based Learning: Effects of Guidance",
+        "Is Inquiry Science Instruction Effective for English Language Learners?",
+        "A Framework for K-12 Science Education: Scientific and Engineering Practices",
+        "All Other Things Being Equal: Acquisition and Transfer of the Control of Variables Strategy",
+        "Inquiry and Scientific Explanations: Helping Students Use Evidence and Reasoning"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "Experimental and Quasi-Experimental Studies of Inquiry-Based Science Teaching",
+          "url": "https://journals.sagepub.com/doi/abs/10.3102/0034654312457206",
+          "domain": "journals.sagepub.com",
+          "date": "2012-09-01"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "Meta-Analysis of Inquiry-Based Learning: Effects of Guidance",
+          "url": "https://journals.sagepub.com/doi/abs/10.3102/0034654315627366",
+          "domain": "journals.sagepub.com",
+          "date": "2016-07-10"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "Is Inquiry Science Instruction Effective for English Language Learners?",
+          "url": "https://journals.sagepub.com/doi/10.1177/2332858418767402",
+          "domain": "journals.sagepub.com",
+          "date": "2018-04-26"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "A Framework for K-12 Science Education: Scientific and Engineering Practices",
+          "url": "https://www.nationalacademies.org/read/13165/chapter/7",
+          "domain": "nationalacademies.org",
+          "date": "2012-07-19"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "All Other Things Being Equal: Acquisition and Transfer of the Control of Variables Strategy",
+          "url": "https://www.cmu.edu/dietrich/psychology/pdf/klahr/PDFs/chen-klahr.pdf",
+          "domain": "cmu.edu",
+          "date": "1999-09-01"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Inquiry and Scientific Explanations: Helping Students Use Evidence and Reasoning",
+          "url": "https://public.websites.umich.edu/~krajcik/McNeill%26Krajcik_mon.pdf",
+          "domain": "umich.edu",
+          "date": "2006-01-01"
+        }
+      ]
+    },
+    {
+      "story_id": "taiwanEduPolicy-gmail-教育部-ai-數位學習",
+      "title": "本週『教育部 AI 數位學習』焦點：政策到校的多點擴展",
+      "category_uuid": "c0000003-0000-4000-8000-000000000003",
+      "category_id": "taiwan-edu-policy",
+      "category_name": "教育政策與治理",
+      "editorial_lens": "教學流程、治理授權",
+      "cluster_number": "gmail-教育部-ai-數位學習",
+      "source_count": 16,
+      "search_terms": [
+        "taiwanEduPolicy-gmail-教育部-ai-數位學習",
+        "本週『教育部 AI 數位學習』焦點：政策到校的多點擴展",
+        "taiwan-edu-policy",
+        "教育政策與治理",
+        "教學流程、治理授權",
+        "tngs.tn.edu.tw",
+        "news.ltn.com.tw",
+        "scooptw.com",
+        "penghu.gov.tw",
+        "tcpttw.com",
+        "cna.com.tw",
+        "tw.news.yahoo.com",
+        "tw.stock.yahoo.com",
+        "more-news.tw",
+        "udn.com",
+        "edu.tw",
+        "gvm.com.tw",
+        "technews.tw",
+        "msn.com",
+        "money.udn.com",
+        "n.yam.com",
+        "tcnews.com.tw",
+        "教育部115-116年教師適性教學輔助平臺生成式AI學伴研究基地學校徵件須知",
+        "AI古人聊天室、重點整理英語文法台南安定國中數位學習跨校交流",
+        "韓國科學教育大學聯手勞動部推24門全民AI免費線上課",
+        "最新消息-澎湖縣政府教育處",
+        "不只學AI，更學怎麼學！影響力教育基金會攜手高中導入「AI × 學習力」",
+        "盛源PERSONA以AI互動科技走進慈文國小嘉年華展現智慧顯示與數位藝術教育新體驗",
+        "南韓擴建69處AI數位學習中心推動全民AI生活圈",
+        "AI時代不迷航新北「學涯領航員」夏令營開跑從興趣出發找到方向",
+        "公私協力打造偏鄉師資培育新典範推動AI及教學實作導向創新師培模式",
+        "教育部「館館有AI」：拿借書證ChatGPT、Gemini免費用！資格與啟動時間？",
+        "若環境影響有限，政府教育補助政策應如何轉型？",
+        "教育部推AI Di+實驗方案AI學伴助培育自主學習力",
+        "守護個資教育部啟動教育機構個資行政檢查",
+        "南台灣AI生態鏈成形！數位經濟國際攜手產學資本打造「營收導向AI新時代」",
+        "AI進入教室！教育部推AI學伴16所大學攜手185校實驗教學"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "教育部115-116年教師適性教學輔助平臺生成式AI學伴研究基地學校徵件須知",
+          "url": "https://www.tngs.tn.edu.tw/2026/05/12/%E6%95%99%E8%82%B2%E9%83%A8115-116%E5%B9%B4%E6%95%99%E5%B8%AB%E9%81%A9%E6%80%A7%E6%95%99%E5%AD%B8%E8%BC%94%E5%8A%A9%E5%B9%B3%E8%87%BA%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%AD%B8%E4%BC%B4%E7%A0%94%E7%A9%B6/",
+          "domain": "tngs.tn.edu.tw",
+          "date": "2026-05-12"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "AI古人聊天室、重點整理英語文法台南安定國中數位學習跨校交流",
+          "url": "https://news.ltn.com.tw/news/life/breakingnews/5433075",
+          "domain": "news.ltn.com.tw",
+          "date": "2026-05-12"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "韓國科學教育大學聯手勞動部推24門全民AI免費線上課",
+          "url": "https://www.scooptw.com/marketersgo/473402/%E9%9F%93%E5%9C%8B%E7%A7%91%E5%AD%B8%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8%E8%81%AF%E6%89%8B%E5%8B%9E%E5%8B%95%E9%83%A8-%E6%8E%A824%E9%96%80%E5%85%A8%E6%B0%91ai%E5%85%8D%E8%B2%BB%E7%B7%9A%E4%B8%8A/",
+          "domain": "scooptw.com",
+          "date": "2026-05-12"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "最新消息-澎湖縣政府教育處",
+          "url": "https://www.penghu.gov.tw/edu/home.jsp?id=93&act=view&dataserno=202605110005",
+          "domain": "penghu.gov.tw",
+          "date": "2026-05-11"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "不只學AI，更學怎麼學！影響力教育基金會攜手高中導入「AI × 學習力」",
+          "url": "https://www.tcpttw.com/other/other_life/2026/05/11/272234/",
+          "domain": "tcpttw.com",
+          "date": "2026-05-11"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "盛源PERSONA以AI互動科技走進慈文國小嘉年華展現智慧顯示與數位藝術教育新體驗",
+          "url": "https://www.cna.com.tw/business/chinese/433072",
+          "domain": "cna.com.tw",
+          "date": "2026-05-11"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "不只學AI，更學怎麼學！影響力教育基金會攜手高中導入「AI × 學習力」",
+          "url": "https://tw.news.yahoo.com/%E4%B8%8D%E5%8F%AA%E5%AD%B8ai-%E6%9B%B4%E5%AD%B8%E6%80%8E%E9%BA%BC%E5%AD%B8-%E5%BD%B1%E9%9F%BF%E5%8A%9B%E6%95%99%E8%82%B2%E5%9F%BA%E9%87%91%E6%9C%83%E6%94%9C%E6%89%8B%E9%AB%98%E4%B8%AD%E5%B0%8E%E5%85%A5-ai-%E5%AD%B8%E7%BF%92%E5%8A%9B-084920178.html",
+          "domain": "tw.news.yahoo.com",
+          "date": "2026-05-10"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "南韓擴建69處AI數位學習中心推動全民AI生活圈",
+          "url": "https://more-news.tw/611008/",
+          "domain": "more-news.tw",
+          "date": "2026-05-10"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "AI時代不迷航新北「學涯領航員」夏令營開跑從興趣出發找到方向",
+          "url": "https://udn.com/news/story/6885/9493278",
+          "domain": "udn.com",
+          "date": "2026-05-10"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "公私協力打造偏鄉師資培育新典範推動AI及教學實作導向創新師培模式",
+          "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=73A09C2753775ABF",
+          "domain": "edu.tw",
+          "date": "2026-05-08"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "教育部「館館有AI」：拿借書證ChatGPT、Gemini免費用！資格與啟動時間？",
+          "url": "https://www.gvm.com.tw/article/129951",
+          "domain": "gvm.com.tw",
+          "date": "2026-05-08"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "若環境影響有限，政府教育補助政策應如何轉型？",
+          "url": "https://technews.tw/ai-agent/dna-decide-the-social-status/7458/",
+          "domain": "technews.tw",
+          "date": "2026-05-08"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "教育部推AI Di+實驗方案AI學伴助培育自主學習力",
+          "url": "https://www.msn.com/zh-tw/news/living/%E6%95%99%E8%82%B2%E9%83%A8%E6%8E%A8ai-di-%E5%AF%A6%E9%A9%97%E6%96%B9%E6%A1%88-ai%E5%AD%B8%E4%BC%B4%E5%8A%A9%E5%9F%B9%E8%82%B2%E8%87%AA%E4%B8%BB%E5%AD%B8%E7%BF%92%E5%8A%9B/ar-AA22kKPM",
+          "domain": "msn.com",
+          "date": "2026-05-07"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "守護個資教育部啟動教育機構個資行政檢查",
+          "url": "https://money.udn.com/money/story/5612/9485601?from=udnamp-referralnews_ch1001artbottom",
+          "domain": "money.udn.com",
+          "date": "2026-05-07"
+        },
+        {
+          "roles": [
+            "article"
+          ],
+          "title": "南台灣AI生態鏈成形！數位經濟國際攜手產學資本打造「營收導向AI新時代」",
+          "url": "https://n.yam.com/Article/20260506443324",
+          "domain": "n.yam.com",
+          "date": "2026-05-07"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "AI進入教室！教育部推AI學伴16所大學攜手185校實驗教學",
+          "url": "https://www.tcnews.com.tw/education/item/29292.html",
+          "domain": "tcnews.com.tw",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "story_id": "taiwanEduPolicy-gmail-ai-融入教學-高中",
+      "title": "本週「AI 融入教學 高中」焦點：跨段校務與治理爭點",
+      "category_uuid": "c0000003-0000-4000-8000-000000000003",
+      "category_id": "taiwan-edu-policy",
+      "category_name": "教育政策與治理",
+      "editorial_lens": "治理授權",
+      "cluster_number": "gmail-ai-融入教學-高中",
+      "source_count": 3,
+      "search_terms": [
+        "taiwanEduPolicy-gmail-ai-融入教學-高中",
+        "本週「AI 融入教學 高中」焦點：跨段校務與治理爭點",
+        "taiwan-edu-policy",
+        "教育政策與治理",
+        "治理授權",
+        "n.yam.com",
+        "cna.com.tw",
+        "wenweipo.com",
+        "新北STEAM教案與作品徵選揭曉獲獎作品展現AI跨域學習成果",
+        "臺灣教育社會學論壇於南大登場多國學者共探數位時代教育新議題",
+        "【數教新知】AI賦能資優教育充分發揮學生潛能- 香港文匯網 - 文匯報"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "新北STEAM教案與作品徵選揭曉獲獎作品展現AI跨域學習成果",
+          "url": "https://n.yam.com/Article/20260508818614",
+          "domain": "n.yam.com",
+          "date": "2026-05-09"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "臺灣教育社會學論壇於南大登場多國學者共探數位時代教育新議題",
+          "url": "https://www.cna.com.tw/postwrite/chi/433004",
+          "domain": "cna.com.tw",
+          "date": "2026-05-09"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "【數教新知】AI賦能資優教育充分發揮學生潛能- 香港文匯網 - 文匯報",
+          "url": "https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html",
+          "domain": "wenweipo.com",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "story_id": "taiwanEduPolicy-7",
+      "title": "跨學段警訊：平台資安與高教裁員",
+      "category_uuid": "c0000003-0000-4000-8000-000000000003",
+      "category_id": "taiwan-edu-policy",
+      "category_name": "教育政策與治理",
+      "editorial_lens": "資安信任",
+      "cluster_number": 7,
+      "source_count": 2,
+      "search_terms": [
+        "taiwanEduPolicy-7",
+        "跨學段警訊：平台資安與高教裁員",
+        "taiwan-edu-policy",
+        "教育政策與治理",
+        "資安信任",
+        "k12dive.com",
+        "highereddive.com",
+        "Weekender: Instructure confirms cybersecurity incident",
+        "Weekender: Kent State University to lay off up to 45 staffers"
+      ],
+      "sources": [
+        {
+          "roles": [
+            "article",
+            "perspective"
+          ],
+          "title": "Weekender: Instructure confirms cybersecurity incident",
+          "url": "https://link.k12dive.com/click/45635002.46058/aHR0cDovL3d3dy5rMTJkaXZlLmNvbS9zaWdudXAv/69f985b55f3be2f7a30c0c61B0e4e198e",
+          "domain": "k12dive.com",
+          "date": "2026-05-09"
+        },
+        {
+          "roles": [
+            "article",
+            "perspective",
+            "quote"
+          ],
+          "title": "Weekender: Kent State University to lay off up to 45 staffers",
+          "url": "https://link.highereddive.com/click/45635003.68810/aHR0cDovL3d3dy5oaWdoZXJlZGRpdmUuY29tL3NpZ251cC8/69f985b55f3be2f7a30c0c61B0d58b2b4",
+          "domain": "highereddive.com",
+          "date": "2026-05-09"
+        }
+      ]
+    }
+  ]
+}
