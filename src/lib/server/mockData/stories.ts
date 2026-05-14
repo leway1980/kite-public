@@ -1516,6 +1516,133 @@ const educationResearchStories: Story[] = [
 			{ name: 'nber.org' },
 		],
 	},
+	{
+		id: 'educationResearch-6',
+		cluster_number: 6,
+		unique_domains: 1,
+		number_of_titles: 2,
+		category: '教育研究',
+		editorial_lens: 'SEL 研究回顧',
+		title: 'SEL 的價值：讓學生更會相處，也更能學習',
+		short_summary: '兩篇《Review of Educational Research》回顧把社會情緒學習（SEL）放回學校日常來看：它不是額外的情緒口號，而是透過班級互動、關係技能、情緒調節與合作行為，讓學生更能參與學習。2026 年的 meta-analysis 統整 66 項研究、157 個效果量、52,914 名 K-12 學生，發現 SEL 與較高的親社會行為有關；另一篇針對學業成就的回顧則納入 40 項研究、33,737 名學生，顯示 SEL 對測驗、成績、讀寫與數學都有小幅但穩定的正向效果。對台灣教師來說，重點不是多塞一門課，而是把尊重、合作、求助、情緒命名與修復關係做成班級常規。',
+		emoji: '🤝',
+		did_you_know: 'SEL 指社會情緒學習，常被誤解成「談感受」。這組研究更接近班級經營與學習條件：學生能合作、幫助、傾聽與修復衝突，課堂才比較有機會進入真正的學習。',
+		talking_points: [
+			'證據類型：兩篇都是研究回顧或 meta-analysis；一篇聚焦親社會行為，納入 66 項研究與 52,914 名學生；一篇聚焦學業成就，納入 40 項研究與 33,737 名學生。',
+			'核心發現：親社會行為研究的整體效果約 Hedges g = .24；學業成就研究的整體效果約 g = .101。前者是關係與行為層面的改善，後者是學業層面的較小但可觀察改善。',
+			'可用解讀：SEL 對教師的價值不在把課堂變成心理諮商，而是降低衝突、增加合作與互助，讓學生更能待在學習任務裡。',
+			'教學轉譯：可從固定的班級語言開始，例如求助句型、同儕回饋句、衝突修復流程、分組合作角色，而不是只辦一次性講座。',
+			'不要誤讀：研究效果有異質性，不代表任何 SEL 活動都有效；實施品質、學段、文化脈絡、測量方式與教師是否真的嵌入日常互動都會影響結果。',
+		],
+		quote: null,
+		quote_attribution: null,
+		quote_source_url: null,
+		quote_source_domain: null,
+		perspectives: [
+			{
+				text: '從班級經營看，SEL 可被理解為「讓學習關係可運作」的基礎建設。若學生不會合作、衝突後無法修復、被點名就防衛，學科任務很容易被人際摩擦吃掉。',
+				sources: [
+					{
+						name: 'Review of Educational Research',
+						url: 'https://journals.sagepub.com/doi/10.3102/00346543261438462',
+					},
+				],
+			},
+			{
+				text: '從研究方法看，SEL 的平均效果不是魔法數字。對台灣現場更有用的是追問：哪一種班級常規、哪一種教師回饋、哪一種學生互動，被穩定做出來。',
+				sources: [
+					{
+						name: 'Review of Educational Research',
+						url: 'https://journals.sagepub.com/doi/abs/10.3102/00346543251367769',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Social and Emotional Learning Programs and Students’ Prosocial Behavior: A Meta-Analysis',
+				link: 'https://journals.sagepub.com/doi/10.3102/00346543261438462',
+				domain: 'journals.sagepub.com',
+				date: '2026-04-29',
+			},
+			{
+				title: 'Disentangling the Effects of Social and Emotional Learning Programs on Student Academic Achievement Across Grades 1–12',
+				link: 'https://journals.sagepub.com/doi/abs/10.3102/00346543251367769',
+				domain: 'journals.sagepub.com',
+				date: '2025-10-08',
+			},
+		],
+		domains: [
+			{ name: 'journals.sagepub.com' },
+		],
+	},
+	{
+		id: 'educationResearch-7',
+		cluster_number: 7,
+		unique_domains: 1,
+		number_of_titles: 3,
+		category: '教育研究',
+		editorial_lens: '自然探究',
+		title: '自然探究有效的關鍵：不是放手，而是有鷹架',
+		short_summary: '自然科學探究不是把學生丟去做活動就好。三篇 AERA/SAGE 研究回顧共同指向同一件事：探究式學習有效時，通常有明確問題、證據蒐集、解釋建構、同儕討論與教師引導。2012 年《Review of Educational Research》統整 37 項實驗與準實驗研究，平均效果量約 .50，且教師主導或引導的探究比完全學生主導更穩。2016 年另一篇 meta-analysis 納入 72 項研究，顯示引導能提升學習活動、任務成功與學習結果。對台灣 108 課綱自然科學「探究與實作」來說，這提醒我們：真正的探究不是少教，而是把問題、變因、證據與論證流程教清楚。',
+		emoji: '🔬',
+		did_you_know: '研究裡的探究式學習不等於自由探索。比較穩定的做法通常是「有方向的探究」：學生動手、討論與推論，但教師要設計問題、材料限制、資料表格、回饋與收斂。',
+		talking_points: [
+			'證據類型：這則整合三篇研究回顧，包括 37 項探究式科學教學實驗/準實驗、72 項探究式學習研究，以及一篇針對英語學習者的科學探究 meta-analysis。',
+			'核心發現：2012 年回顧的整體平均效果量約 .50，且教師引導條件比學生完全主導條件約高 .40；2016 年回顧顯示引導對學習活動、成功表現與學習結果都有正向效果。',
+			'對自然科教師的意思：探究課不只是讓學生做實驗，而是讓學生用證據回答問題，並能說明變因、資料、推論與限制。',
+			'對弱勢或語言負荷高的學生：AERA Open 的回顧顯示，英語學習者接受探究式科學教學比直接教學有較佳科學成就，但仍需要語言與概念鷹架。',
+			'可試做一步：同一個實驗活動先補三張表：我想回答的問題、我控制與改變的變因、我的證據支持哪個解釋。這比單純「完成實驗單」更接近探究。',
+			'不要誤讀：這些研究多來自國際與英語情境，且年代橫跨較久；不能直接說「探究一定比講述好」，比較準確的說法是「有鷹架的探究通常比無結構活動更可靠」。',
+		],
+		quote: null,
+		quote_attribution: null,
+		quote_source_url: null,
+		quote_source_domain: null,
+		perspectives: [
+			{
+				text: '課綱語言常說探究與實作，但研究提醒要把「探究」拆成可教的細節：提問、變因控制、證據判讀、解釋修正與溝通論證。',
+				sources: [
+					{
+						name: 'Review of Educational Research',
+						url: 'https://journals.sagepub.com/doi/abs/10.3102/0034654312457206',
+					},
+				],
+			},
+			{
+				text: '對班級差異大的現場，鷹架尤其重要。探究若只靠學生自發摸索，常會放大既有差距；有引導的探究才比較可能讓更多學生進入科學推理。',
+				sources: [
+					{
+						name: 'AERA Open',
+						url: 'https://journals.sagepub.com/doi/10.1177/2332858418767402',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Experimental and Quasi-Experimental Studies of Inquiry-Based Science Teaching',
+				link: 'https://journals.sagepub.com/doi/abs/10.3102/0034654312457206',
+				domain: 'journals.sagepub.com',
+				date: '2012-09-01',
+			},
+			{
+				title: 'Meta-Analysis of Inquiry-Based Learning: Effects of Guidance',
+				link: 'https://journals.sagepub.com/doi/abs/10.3102/0034654315627366',
+				domain: 'journals.sagepub.com',
+				date: '2016-07-10',
+			},
+			{
+				title: 'Is Inquiry Science Instruction Effective for English Language Learners?',
+				link: 'https://journals.sagepub.com/doi/10.1177/2332858418767402',
+				domain: 'journals.sagepub.com',
+				date: '2018-04-26',
+			},
+		],
+		domains: [
+			{ name: 'journals.sagepub.com' },
+		],
+	},
 ];
 
 const twEduStories: Story[] = [

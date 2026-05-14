@@ -56,7 +56,7 @@ export const MOCK_CATEGORIES: MockCategory[] = [
 		uuid: 'c0000006-0000-4000-8000-000000000006',
 		categoryId: 'education-research',
 		categoryName: '教育研究',
-		clusterCount: 5,
+		clusterCount: 7,
 		readCount: 0,
 	},
 	{
