@@ -43,7 +43,7 @@ const displayPoints = $derived.by(() => {
 
 <section class="mt-6">
   <h3 class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
-    {localizeOr(storyLocalizer, "section.highlights", "亮點")}
+    {localizeOr(storyLocalizer, "section.highlights", "重點整理")}
   </h3>
   <ol class="border-t border-dashed border-gray-300 dark:border-gray-600" role="list" aria-label="Key highlights">
     {#each displayPoints as point, index}
