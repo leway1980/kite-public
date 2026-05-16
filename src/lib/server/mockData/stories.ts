@@ -8,77 +8,75 @@ const AI_APPLICATIONS_UUID = 'c0000005-0000-4000-8000-000000000005';
 const EDU_RESEARCH_UUID = 'c0000006-0000-4000-8000-000000000006';
 const WORK_METHODS_UUID = 'c0000007-0000-4000-8000-000000000007';
 
-// ─── Stories synthesized 2026-05-13 by pipeline (auto-generated) ───
+// ─── Stories synthesized 2026-05-16 by pipeline (auto-generated) ───
 
 const aiNewsStories: Story[] = [
 	{
 		id: 'aiNews-1',
 		cluster_number: 1,
-		unique_domains: 1,
-		number_of_titles: 1,
+		unique_domains: 2,
+		number_of_titles: 2,
 		category: 'AI 動態',
-		editorial_lens: '代理應用',
-		title: 'Codex 讓財務月報從人工拼接轉成可複查初稿',
-		short_summary: 'OpenAI 於 2026-05-12 發布《How finance teams use Codex》，將財務關帳流程設計為可代理化的上下文流程。文章指出，團隊可用關帳活頁簿、預測更新、儀表板與 owner notes 直接生成含 variance、風險與 CFO 問題的月報初稿。重點在於把大量手動彙整與排版時間移走，讓人力回到資料判讀、公式檢核與決策準備，改變財務報表的作業節奏。',
-		emoji: '📊',
-		did_you_know: 'OpenAI 提供可複用 prompt，並建議接上 Google Drive、SharePoint、Box、Spreadsheets、Presentations、Documents、Slack、Teams、Gmail、Outlook Email 等外掛，將既有工具鏈納入同一個生成流程。',
+		editorial_lens: '資安信任',
+		title: 'Meta 將兒少帳號保護前置到預設設定',
+		short_summary: 'Meta 5 月 15 日宣布，Instagram 青少年帳號以預設適齡保護為核心，並規劃與 Facebook、Messenger、Threads 同步啟用。18 歲以下帳號預設採最嚴格模式，家長可再加開「限制內容」，並搭配超過 60 分鐘提醒與晚間 22 點到 07 點靜音。未來數月該功能也將延伸到台灣 Facebook，並由衛福部、數位發展部、NCC、iWIN 合作宣導，顯示兒少監護從臨時稽核轉向平台預設權限設計，降低家庭端的手動監護成本。',
+		emoji: '🛡️',
+		did_you_know: 'Meta 指出 18 歲以下帳號會預設最嚴格，並僅開放適齡 13 歲以上內容；若家長再啟用「限制內容」，可再加一道內容篩選，屬於以系統規則取代家長逐則查核的做法。',
 		talking_points: [
-			'自動敘事：OpenAI 指出以關帳活頁簿、儀表板與預測更新為 context，可直接輸出 CFO-review 的月報初稿，縮短人工整編時間。',
-			'關鍵欄位：案例要求同時列出 variance、較預測差異、風險與 CFO 準備問題，並要求數字可追溯到來源，提升報告可稽核性。',
-			'流程分流：以 April Close Workbook、March MBR Deck 等具名檔名建立提示詞，並可指定 4/22–4/30 的 close 時間窗，加速版本化更新。',
-			'治理檢核：在模型可靠性章節，作者主張先檢查公式、結構、hardcodes、連結與來源，最後輸出嚴重度排序的 QA memo。',
-			'工具落地：建議跨 Google Drive、SharePoint、Box 等存儲到 Slack、Teams、Gmail、Outlook 的外掛流程，方便財務把生成、審核、發送串成一線。',
+			'預設保護先行：18 歲以下用戶在 Meta 旗下帳號一律先套上最嚴格設定，將安全機制前置到登入流程。',
+			'家長可加碼控管：Instagram 新增「限制內容」作為進階開關，未來數月同步擴及台灣 Facebook，保護條件更完整。',
+			'時間管理也入場：超過 60 分鐘即提醒，晚間 22 點到 07 點進入睡眠模式，直接用時間規則減少夜間干擾。',
+			'跨部會推廣：活動邀請衛生福利部、數位發展部、NCC、iWIN、台灣展翅協會，共同做家長認知與工具導向。',
+			'禁令警戒邏輯：Meta 認為若只靠全面禁令，青少年可能轉向小型平台，監管與安全機制可能反而更薄弱。',
 		],
-		quote: 'Use it to spend less time assembling the first pass and more time shaping the story, checking the numbers, and preparing for the decisions ahead.',
-		quote_attribution: 'OpenAI, 2026-05-12',
-		quote_source_url: 'https://openai.com/academy/how-finance-teams-use-codex',
-		quote_source_domain: 'openai.com',
+		quote: '凡是 18 歲以下用戶，在 Meta 旗下平台的帳號設定會預設為最嚴格，提升家長的安心感與安全感，減少家長需直接干預的負擔。',
+		quote_attribution: 'Meta 亞太區產品公共政策總經理，2026-05-15',
+		quote_source_url: 'https://www.inside.com.tw/article/41306-meta-tightens-browsing-restrictions-for-instagram-teen-accounts-as-facebook-follows-suit',
+		quote_source_domain: 'inside.com.tw',
 		perspectives: [
 			{
-				text: '角度一：平台端主張在不新增大量工程成本下，先用既有財務文件建立代理工作流，直接解決月報首稿製作耗時與格式斷層。',
+				text: 'INSIDE 的報導將焦點放在控制權移轉：從「家長手動守護」改成「平台預設與可選強化」，顯示平台正在把兒少治理抽象為可重複的產品設計流程。',
 				sources: [
 					{
-						name: 'OpenAI',
-						url: 'https://openai.com/academy/how-finance-teams-use-codex',
+						name: 'INSIDE',
+						url: 'https://www.inside.com.tw/article/41306-meta-tightens-browsing-restrictions-for-instagram-teen-accounts-as-facebook-follows-suit',
 					},
 				],
 			},
 			{
-				text: '角度二：同時保留監控責任，文章要求明確註明缺口與假設，透過 QA memo 讓高風險報表仍由財務人員回看，強調「自動化不等於放權」。',
+				text: 'Technews 將延伸到台灣 Facebook 的時間點拉出來，顯示議題已不只是 IG 單平台更新，而是跨服務域的時程化佈署，對家庭監護可預期性更高。',
 				sources: [
 					{
-						name: 'OpenAI',
-						url: 'https://openai.com/academy/how-finance-teams-use-codex',
-					},
-				],
-			},
-			{
-				text: '角度三：對非科技背景部門而言，範例重點在流程工程，而非模型研發，顯示未來辦公場景可先用 prompt + 外掛打底，逐步擴展到更高風險決策。',
-				sources: [
-					{
-						name: 'OpenAI',
-						url: 'https://openai.com/academy/how-finance-teams-use-codex',
+						name: 'TechNews',
+						url: 'https://technews.tw/2026/05/15/ig-implements-stricter-browsing-restrictions-teen-accounts-extending-facebook-taiwan/',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'OpenAI 發表《How finance teams use Codex》，提出以上下文驅動方式，將財務關帳、報告與模型檢核導入代理式流程。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'Meta 在台舉辦「適齡保護．安心探索：共同守護青少年網路安全」活動，宣布青少年帳號預設安全機制，並同步說明未來數月將把「限制內容」與相關功能延伸到台灣 Facebook。',
 			},
 		],
 		articles: [
 			{
-				title: 'How finance teams use Codex',
-				link: 'https://openai.com/academy/how-finance-teams-use-codex',
-				domain: 'openai.com',
-				date: '2026-05-12',
+				title: 'Meta 強化 IG 青少年帳號瀏覽限制，臉書同步跟上',
+				link: 'https://www.inside.com.tw/article/41306-meta-tightens-browsing-restrictions-for-instagram-teen-accounts-as-facebook-follows-suit',
+				domain: 'inside.com.tw',
+				date: '2026-05-15',
+			},
+			{
+				title: 'IG 青少年帳號祭更嚴格瀏覽限制，台灣擴及 Facebook',
+				link: 'https://technews.tw/2026/05/15/ig-implements-stricter-browsing-restrictions-teen-accounts-extending-facebook-taiwan/',
+				domain: 'technews.tw',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
-			{ name: 'openai.com' },
+			{ name: 'inside.com.tw' },
+			{ name: 'technews.tw' },
 		],
 	},
 	{
@@ -87,55 +85,64 @@ const aiNewsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 動態',
-		editorial_lens: '代理應用、工作方法',
-		title: 'NVIDIA 用 Codex 重塑研發與研究流程',
-		short_summary: 'OpenAI 報導稱，NVIDIA 已有約 4 萬名工程師與研究人員在生產環境使用搭載 GPT-5.5 的 Codex，並將其作為複雜工程與研究工作預設工具。該架構可讓研究從題目發想、腳本撰寫到遠端實驗執行一條龍處理，實驗速度可達原本約十倍，關鍵意義在於把先前大量手動串接與反覆修正的工作，改為可持續追踪的代理化流程。',
-		emoji: '🚀',
-		did_you_know: '在隱私限制較嚴格的情境下，NVIDIA 團隊利用 Codex desktop 與電腦互動能力，在幾小時內建置並測試一套類似 Riverside 的播客錄製應用，原本可能需數週採購與整合。',
+		editorial_lens: '代理應用',
+		title: 'OpenAI 開放 ChatGPT 個人財務預覽功能',
+		short_summary: 'OpenAI 於 2026-05-15 在美國先對 ChatGPT Pro 用戶開放新版個人財務預覽，支援網頁與 iOS 串接帳務。用戶可透過 Plaid 連上 12,000 家以上金融機構，並新增目標與生活脈絡形成「財務記憶」，讓對話可直接對應支出、訂閱、到期付款與資產表現。若後續擴大到 Plus，個人理財將從多工具手動整併，轉為情境化、可持續的 AI 輔助工作流程。關鍵在於把資料匯集與追蹤成本壓低，但仍保留專業判斷邊界。',
+		emoji: '💳',
+		did_you_know: '原文指出每月逾 2 億名使用者會在 ChatGPT 詢問預算或投資問題；本次預覽把這類需求直接延伸到可連接金融帳務的情境化流程，先在高價值群體中試行。',
 		talking_points: [
-			'十倍提速：OpenAI 指出，NVIDIA 使用 Codex 後，端到端機器學習實驗流程的速度可提升約 10 倍，原因是模型可長時間維持上下文並主動調用工具。',
-			'四萬規模採用：報導提到約 40,000 名 NVIDIA 成員可使用 Codex，顯示這是跨團隊的生產力基礎設施，而非單點試驗。',
-			'MVP 進化上線：NVIDIA 團隊透過 Codex 將內部平台從 MVP 拉到 production，補齊可擴充性與穩定性等原本上線門檻。',
-			'跨場景共用：工程與研究團隊都以 Codex 協作，從論文相關資料挖掘、實驗腳本撰寫到執行驗證，都可在同一代理框架內銜接。',
-			'短時間交付：在保密受限環境中，團隊仍能用 Codex 在短時間完成錄影與錄音應用建置與測試，展現代理化流程對組織時程的壓縮力。',
+			'先行試行機制：OpenAI 先僅對美國 Pro 用戶開放金融整合，並在實際使用後再擴充到 Plus，表示高風險場景先做小規模驗證。',
+			'金融連接規模：本次支援超過 12,000 家金融機構，並透過 Plaid 提供帳務同步，預期可一次整併卡片、投資、貸款與付款資料。',
+			'情境化記憶功能：使用者可輸入「買車存款」等目標，系統將上下文保存於 Financial memories，後續詢問能直接沿用先前脈絡。',
+			'儀表板化操作：連結完成後可集中查看資產表現、支出、訂閱、即將到期款項，將原本散在多來源的核對過程壓成單一對話工作台。',
+			'人工授權前提：雖引入上下文代理能力，官方仍明示非專業理財建議取代品，負債與重大投資仍需人為最終確認。',
 		],
-		quote: 'Codex 在執行實驗上有 10 倍的速度提升，因為它能處理完整的端對端機器學習研究流程。',
-		quote_attribution: 'OpenAI 2026-05-12',
-		quote_source_url: 'https://openai.com/index/nvidia',
+		quote: 'We’re starting with a preview to a smaller group so we can learn from real-world use, improve the experience, and expand thoughtfully.',
+		quote_attribution: 'OpenAI, 2026-05-15',
+		quote_source_url: 'https://openai.com/index/personal-finance-chatgpt',
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: '從營運觀點看，重點不在模型本身，而在組織把 Codex 當作預設作業代理，讓複雜工程任務從「大量手工接手」變成可控流程，直接改寫人力配置。',
+				text: '產品面呈現「先試行、再擴張」而非全面上線，對金融與個資敏感工具而言更像風險可控的資安治理策略：先以高價值群體建立行為模型與回饋。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/index/nvidia',
+						url: 'https://openai.com/index/personal-finance-chatgpt',
 					},
 				],
 			},
 			{
-				text: '從研究觀點看，GPT-5.5 的角色是延長研究者注意力與實驗連續性，能追蹤證據鏈並補齊步驟，意味研究迴圈變成「人機共作」而非單純機器輔助寫程式。',
+				text: '此功能的實際改變是流程化：從過去手動整理帳務轉為 AI 協作代理，使用者可把目標、情境和帳務綁在同一對話，顯著提高持續理財監控效率。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/index/nvidia',
+						url: 'https://openai.com/index/personal-finance-chatgpt',
+					},
+				],
+			},
+			{
+				text: 'OpenAI 強調非替代專業建議，突顯模型能力與人類責任的分工新版本：AI 負責整理與建議，關鍵決策仍維持人類最終授權，降低自動化誤判成本。',
+				sources: [
+					{
+						name: 'OpenAI',
+						url: 'https://openai.com/index/personal-finance-chatgpt',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'OpenAI 發布 NVIDIA 以 GPT-5.5 驅動的 Codex 應用案例，強調其在工程與研究流程中的十倍實驗提速成效。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'OpenAI 於美國推出 ChatGPT 個人財務預覽版，先對 Pro 用戶開放，整合 12,000+ 金融機構並支援 web/iOS 操作。',
 			},
 		],
 		articles: [
 			{
-				title: 'How NVIDIA engineers and researchers build with Codex',
-				link: 'https://openai.com/index/nvidia',
+				title: 'A new personal finance experience in ChatGPT',
+				link: 'https://openai.com/index/personal-finance-chatgpt',
 				domain: 'openai.com',
-				date: '2026-05-12',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
@@ -149,54 +156,63 @@ const aiNewsStories: Story[] = [
 		number_of_titles: 1,
 		category: 'AI 動態',
 		editorial_lens: '代理應用',
-		title: 'Parameter Golf 打開 AI 研究新流程',
-		short_summary: 'OpenAI 在《Parameter Golf》回顧中指出，這場以 FineWeb 留一測試為標準、並限定 16MB artifact 與 8×H100、10 分鐘訓練的競賽，八週內吸引超過 1,000 位參與者、2,000 多件提交。文章顯示 AI coding agents 降低了實驗成本、擴大參與率，也改變了研究節奏；同時主辦方同步加強提交重現與歸因審核。其意義不在單一模型突破，而在於將「代理輔助＋標準化流程」變成可擴張的研究生產模式。',
-		emoji: '🤖',
-		did_you_know: 'OpenAI 在 record-track 上逐筆重現提交，確認當下是否為破紀錄；同時把非記錄軌也保留下來作為大量創意輸入，顯示競賽價值不只等同榜首名單。',
+		title: 'GPT-5.5 讓 Databricks 文件代理更穩定',
+		short_summary: 'OpenAI 公佈 Databricks 已將 GPT-5.5 上線到企業代理工作流。Databricks 用其 OfficeQA Pro 進行驗證，測試場景含掃描 PDF、legacy 舊檔與長文件，這類情境一旦欄位解析失準就會在後續步驟放大風險。GPT-5.5 成為首個在 OfficeQA Pro 破 50% 準確率的模型，且較 GPT-5.4 錯誤率下降 46%，讓企業可把原本高度依賴人工修正的文件流程，轉為較可控的代理化流程。',
+		emoji: '🧭',
+		did_you_know: 'Databricks 在 OfficeQA Pro 測到 GPT-5.5 首次突破 50% 準確率，且比 GPT-5.4 降低 46% 錯誤，改善的重點集中在掃描與舊式文件的解析品質。',
 		talking_points: [
-			'參與規模：八週內湧入超過 1,000 名參與者與 2,000 多件提交，顯示 16MB 限制並未壓垮創意，反而讓更多研究者能參與。',
-			'資源邊界：每件作品需符合 16MB artifact、8×H100 與 10 分鐘訓練上限，迫使參賽者更重視可驗證且成本可控的實驗設計。',
-			'代理加速：OpenAI 指出 AI coding agents 降低實驗成本與門檻，讓提交節奏由少量人力手動試錯，轉為高頻率迭代。',
-			'技術焦點：亮點作品集中在優化器調校、量化、低秩技巧與測試策略，九件代表作顯示非全新架構也能靠方法組合拿到關鍵增益。',
-			'治理壓力：主辦方需重複驗證 record-track 成果並處理歸因、規則邊界問題，代表代理時代的研究治理負荷也同步上升。',
+			'準確率門檻：Databricks 公開的 OfficeQA Pro 成績中，GPT-5.5 成為首個破過 50% 準確率的版本，顯示企業級代理任務可再往高難度自動化推進。',
+			'錯誤率斬減：與 GPT-5.4 比較，GPT-5.5 在同一基準下錯誤下降 46%，等於原本在文件流程裡要補救的失誤更少。',
+			'先修文件痛點：OfficeQA Pro 包含掃描 PDF、legacy 檔與長文脈案例，代表 GPT-5.5 先從最容易失敗的資料格式做起，降低後段任務連鎖風險。',
+			'串接方式升級：模型透過 AI Unity Gateway 佈署，供 AgentBricks 與 Agent Supervisor API 使用，讓解析、檢索、執行可在同一代理鏈條裡協同。',
+			'節點效率提升：Databricks 指出過去 GPT-5.4 常出現無謂搜尋繞路，5.5 在檢索與多步驟完成率改善後，代理行為更集中於必要步驟。',
 		],
-		quote: 'Agents helped lower the cost of experimentation, made it easier for more people to participate, and changed the pace of the competition.',
-		quote_attribution: 'OpenAI, 2026-05-12',
-		quote_source_url: 'https://openai.com/index/what-parameter-golf-taught-us',
+		quote: 'Compared to earlier models, GPT-5.5 was more reliable at retrieving relevant context and completing complex workflows without additional supervision.',
+		quote_attribution: 'Databricks 發言人，2026-05-15',
+		quote_source_url: 'https://openai.com/index/databricks',
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: 'OpenAI 明確將競賽當作研究方法驗證：在公開 baseline、資料與評測腳本下，重點不是個別大神的玄學技巧，而是誰能在嚴格限制中建立可複現流程。',
+				text: 'Databricks 的主軸是可維運性：企業文件代理只要一個欄位解析失誤就會累積影響，GPT-5.5 的穩定性提升可直接減少這種連鎖代價。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/index/what-parameter-golf-taught-us',
+						url: 'https://openai.com/index/databricks',
 					},
 				],
 			},
 			{
-				text: '另一種視角是治理端張力：AI 代理讓投入速度大幅提高，但同時提高了提交歸因與規則邊界檢核難度，代表未來研究自動化必須同步設計可稽核機制。',
+				text: 'OpenAI 的訊號偏向平台化：透過 AI Unity Gateway 對接 AgentBricks 與 Supervisor API，模型能力不只成為單一 API 呼叫，而是可被嵌入組織工作流。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/index/what-parameter-golf-taught-us',
+						url: 'https://openai.com/index/databricks',
+					},
+				],
+			},
+			{
+				text: '對企業採行者來說，重點已不是『改一個模型』而是『怎麼設流程』；即便效能升級 46%，仍需維持人機覆核與權限治理避免代理越界。',
+				sources: [
+					{
+						name: 'Databricks',
+						url: 'https://openai.com/index/databricks',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'OpenAI 公開 Parameter Golf 成果與觀察，整理八週競賽、兩大規模指標與重點提交案例。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'OpenAI 公告 Databricks 將 GPT-5.5 推向企業代理工作流，並以 OfficeQA Pro 展示解析、檢索與多步驟執行能力。',
 			},
 		],
 		articles: [
 			{
-				title: 'What Parameter Golf taught us about AI-assisted research',
-				link: 'https://openai.com/index/what-parameter-golf-taught-us',
+				title: 'Databricks brings GPT-5.5 to enterprise agent workflows',
+				link: 'https://openai.com/index/databricks',
 				domain: 'openai.com',
-				date: '2026-05-12',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
@@ -210,54 +226,54 @@ const aiNewsStories: Story[] = [
 		number_of_titles: 1,
 		category: 'AI 動態',
 		editorial_lens: '代理應用',
-		title: 'AutoScout24 以 AI 代理提效 10 倍',
-		short_summary: 'OpenAI 公開 AutoScout24 的導入案例。這家跨歐洲與加拿大的二手車平台在約 2,000 名員工中先推行 ChatGPT 讓全體能用，再讓 1,000 名 builder 深入導入 Codex。導入後開發週期由數週縮短到數天，提升約 10 倍，並透過 AI Champions 的跨部門回饋機制，把 AI 能力變成可維持的工作流程，顯示企業可把代理工具從單點試玩轉為組織級交付模式。',
-		emoji: '🚀',
-		did_you_know: '案例中指出，AutoScout24 不只開啟對話式 AI，而是同步讓 1,000 名建置人員使用 Codex；開發流程上則明確納入 PR 自動審閱、技術文件與事故後分析，藉由 AI 代理處理重複工序。',
+		title: 'Sea 以 Codex 改寫研發流程',
+		short_summary: 'Sea 在 2026/5/14 的訪談中表示，工程組織已全面導入 Codex，週活躍率達 87%，顯示 AI 已從輔助工具轉為日常工作流程的一環。Sea 指出，關鍵不在輸入速度，而是讓 AI 幫助理解龐大微服務與舊系統脈絡，縮短跨服務判讀時間，並將工程師的認知資源拉回架構設計與產品決策。對高碎片化的亞太市場，這代表研發交付與維運韌性可更快回應市場變動。',
+		emoji: '🤖',
+		did_you_know: 'Sea 內部調查顯示，凡是給 Codex 打 4～5 分的開發者中，有 73% 願意推薦給同事。Sea 也將用法重心從純補全，轉到需求推理、跨服務脈絡理解與 CI/CD 併行作業，表示 AI 價值正從「輸入效率」轉向「流程決策」。',
 		talking_points: [
-			'雙軌導入：先行把 ChatGPT 先開給 2,000 名員工做全員 AI 基礎能力，再鎖定 1,000 名 builder 深度串接 Codex，分層推進速度與品質。',
-			'時間躍升：文章量化結果顯示，開發週期由「數週」縮短為「數天」，約 10 倍效率成效，可直接轉化為版本交付節奏。',
-			'選型準則：Codex 經過三個月跨團隊試點，驗證主軸是可用性、流程相容性與生產力、程式品質指標，而非只看一次性示範。',
-			'治理設計：建立 AI Champions 網絡，讓中央決策與各隊經驗形成回饋回路，降低工具落地時的認知落差與流程斷層。',
-			'實務場景：PR 自動 review、規模化重構、技術文件撰寫、事故後分析都被放進日常流程，將高頻人工任務外包給代理降低維運負擔。',
+			'導入規模：Sea 顯示 Codex 已推進到整個工程組織，週活躍率到 87%，代表不是小規模試點，而是進入持續運作的日常流程。',
+			'認知瓶頸：Sea 認為大型微服務中的主要阻塞不是打字，而是追踪依賴與理解歷史邏輯，Codex 透過情境語意協助補齊上下文。',
+			'角色轉移：受訪者指出，工程師使用 Codex 的改變在於「想得更好」，將更多心力從基礎編修轉向架構設計與產品創新。',
+			'採用信號：在給 Codex 4～5 分的開發者裡，73% 願意向同事推薦，顯示組織內部有可持續的同儕擴散動能。',
+			'流程代理化：Sea 透露 AI 已逐步進入 CI/CD 環節，參與需求推理、提案測試導向實作與回報，接近可追溯的半自動化工程鏈條。',
 		],
-		quote: 'AI is changing how we build, but more importantly, it’s changing what we can deliver to our users and dealer partners.',
-		quote_attribution: 'OpenAI，2026-05-12',
-		quote_source_url: 'https://openai.com/index/autoscout24',
+		quote: 'The most profound shift is realizing our developers are using Codex to \'think better\', not just type faster.',
+		quote_attribution: 'OpenAI, 2026-05-14',
+		quote_source_url: 'https://openai.com/index/sea-david-chen',
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: 'OpenAI 的敘事主軸偏向方法可複製性，透過 2,000 員工與 1,000 builder 的規模對照，主張代理工具可成為企業交付效率標準化手段。',
+				text: 'OpenAI 的敘事將 Codex 放在流程方法學上，重點是把認知延展變成可重複執行的代理化作業，而不只是把寫程式當成輸入加速的競賽。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/index/autoscout24',
+						url: 'https://openai.com/index/sea-david-chen',
 					},
 				],
 			},
 			{
-				text: 'AutoScout24 案例隱含更務實的一面：單點效能不夠，真正關鍵是 AI Champions 與跨部門回饋路徑，否則同一工具在團隊間仍可能只是零散實驗。',
+				text: 'Sea CPO 的觀點偏組織治理：若 AI 不能縮短跨服務脈絡理解時間，工程複雜度仍高；能否穩定成為知識引擎，直接影響亞太高碎片市場的交付速度與一致性。',
 				sources: [
 					{
-						name: 'AutoScout24 Group',
-						url: 'https://openai.com/index/autoscout24',
+						name: 'Sea（透過 OpenAI 專訪）',
+						url: 'https://openai.com/index/sea-david-chen',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'OpenAI 公開 AutoScout24 的 AI 導入案例，對外宣布以 ChatGPT 與 Codex 進行 2,000 人規模賦能與 10 倍開發加速。',
+				date: '2026-05-14',
+				date_iso: '2026-05-14',
+				content: 'OpenAI 發布 Sea 訪談，Sea 對外闡明已在工程組織部署 Codex 並列出 87% 週活躍與代理化流程導入重點。',
 			},
 		],
 		articles: [
 			{
-				title: 'AutoScout24 scales engineering with AI-powered workflows',
-				link: 'https://openai.com/index/autoscout24',
+				title: 'Sea\'s View on the Future of the Future of the Agentic Software Development with Codex',
+				link: 'https://openai.com/index/sea-david-chen',
 				domain: 'openai.com',
-				date: '2026-05-12',
+				date: '2026-05-14',
 			},
 		],
 		domains: [
@@ -271,55 +287,54 @@ const aiNewsStories: Story[] = [
 		number_of_titles: 1,
 		category: 'AI 動態',
 		editorial_lens: '新工作模式',
-		title: 'ChatGPT Q1 普及擴張：主力外延到更多年齡與國家',
-		short_summary: 'OpenAI 顯示，2026 年第一季 ChatGPT 在消費者方案（Free、Go、Plus、Pro）訊息量持續上升，使用者群已從單一族群擴大。可推斷女性代稱用戶已佔過半，35 歲以上訊息占比也明顯增加；同時中美洲、亞太與非洲等市場在使用排名上升最快。除工作與非工作需求比例仍維持平衡外，工作端也從單純文字影像創作，轉向更專門的紀錄與檢索任務，代表 AI 正從早期工具走向可持續併入日常流程的生產力基礎。',
-		emoji: '📈',
-		did_you_know: 'OpenAI 指出，工作用途雖仍以文字與視覺素材製作為主，但健康文件整理、資訊搜尋等任務增速更快，顯示 AI 已進入可反覆執行的事務化流程；而這份數據並不含 Codex、企業版與教育版，因此職場與教學場域的總使用量仍有被低估空間。',
+		title: 'Codex 手機化預覽上線：遠端協作隨身接力',
+		short_summary: 'OpenAI 宣佈將程式代理 Codex 以預覽版加入 ChatGPT 行動 App，使用者可在手機連到筆電、Mac mini 或遠端環境，隨時查看執行緒、測試結果與程式差異，並回覆問題、核准指令。這把原本必須回到電腦前才可接手的長任務改為跨裝置接力，對長時段自動化工作影響在於節奏從「一次下令」轉向「持續可裁決」，可降低任務中斷與返工成本。',
+		emoji: '📱',
+		did_you_know: 'OpenAI 提到 Codex 每週使用者已超過 400 萬人，並在手機端同步 screenshots、terminal output、diff 與 test results；同時以 secure relay 將受信任機器連上多設備而不把檔案與憑證直接外曝。',
 		talking_points: [
-			'成長擴張：OpenAI 追蹤到 2026Q1 ChatGPT 訊息量持續上升，且不只侷限在既有核心用戶。',
-			'女性使用者回補：可推斷性別中，女性名稱使用者在本季已達半數以上，表示性別結構更平衡。',
-			'高齡用戶抬頭：35 歲以上用戶訊息占比在 Q1 上升，說明非年輕族群也正在形成穩定使用習慣。',
-			'新地區躍升：在訊息與人口排名追蹤中，拉丁美洲及非洲的成長速度名列前段。',
-			'任務重心轉變：工作用途逐步從文字影像製作轉向健康文件、資訊檢索等更專業、可重複的任務。',
-			'統計範圍提醒：研究僅含 ChatGPT 消費者方案訊息，故排除 Codex 與企業、教育產品，可能低估職場與校園實際規模。',
+			'隨身接棒：Codex 在手機載入遠端環境的 live state，工程師在通勤時仍能追蹤 thread、plugins 與 project context，不必完全回到電腦。',
+			'快速裁決：當代理回報需要判斷時，使用者可即時回覆、改方向或核准，將長任務的等待斷點縮到最少。',
+			'跨裝置範圍：支援連線到 laptop、Mac mini 與 managed remote environment，降低單一工作站宕機或不可用對任務進度的影響。',
+			'安全邊界保留：文章指出檔案、憑證與本機設定留在原機器，手機端主要接收更新，並透過 relay 保持會話同步。',
+			'工作模式轉折：從每次都要手動收尾改成即時監控，這個設計讓代理工具更像「持續陪跑者」，而不只是一個一次性自動化腳本。',
 		],
-		quote: 'Overall, 2026Q1 data suggests ChatGPT is becoming a more mainstream tool: used by a broader mix of people, in more countries, and for increasingly recurring tasks.',
-		quote_attribution: 'OpenAI Signals，2026-05-11',
-		quote_source_url: 'https://openai.com/signals/research/2026q1-update',
+		quote: 'With Codex in your pocket, now you can start investigating a bug while waiting for your coffee.',
+		quote_attribution: 'OpenAI, 2026-05-14',
+		quote_source_url: 'https://openai.com/index/work-with-codex-from-anywhere',
 		quote_source_domain: 'openai.com',
 		perspectives: [
 			{
-				text: '官方視角將 Q1 視為普及化轉折，重點在族群與國家外延；然而排除企業與教育版使其更偏向「個人端採用指標」，不宜直接外推成組織端主力指標。',
+				text: '產品訊號上，OpenAI 將 Codex 定義為可隨時接力的工作夥伴，從「下任務」轉向「隨時督導」，讓代理化流程更貼近軟體開發日常。',
 				sources: [
 					{
-						name: 'OpenAI Signals',
-						url: 'https://openai.com/signals/research/2026q1-update',
+						name: 'OpenAI',
+						url: 'https://openai.com/index/work-with-codex-from-anywhere',
 					},
 				],
 			},
 			{
-				text: '另一角度是任務品質變化：當文本影像比重下降、專門任務上升，代表 AI 的新可能在於可承接流程化事務，從一次性問答走向可標準化輸出，對產線接軌更有用。',
+				text: '治理訊號上，採用 secure relay 將設備連上而不暴露本機，是對資安與可控授權的平衡：流程更即時，但權限主權仍留在原始運作環境。',
 				sources: [
 					{
 						name: 'OpenAI',
-						url: 'https://openai.com/signals/research/2026q1-update',
+						url: 'https://openai.com/index/work-with-codex-from-anywhere',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: 'OpenAI 發布 2026Q1 ChatGPT 采用率更新報告，揭露使用者族群與任務面向出現擴張與轉移。',
+				date: '2026-05-14',
+				date_iso: '2026-05-14',
+				content: 'OpenAI 發佈「Work with Codex from anywhere」，將 Codex 以預覽模式整合進 ChatGPT 行動 App，主打多設備即時監控與核准流程。',
 			},
 		],
 		articles: [
 			{
-				title: 'How ChatGPT adoption broadened in early 2026',
-				link: 'https://openai.com/signals/research/2026q1-update',
+				title: 'Work with Codex from anywhere',
+				link: 'https://openai.com/index/work-with-codex-from-anywhere',
 				domain: 'openai.com',
-				date: '2026-05-11',
+				date: '2026-05-14',
 			},
 		],
 		domains: [
@@ -332,185 +347,58 @@ const aiApplicationsStories: Story[] = [
 	{
 		id: 'aiApplications-1',
 		cluster_number: 1,
-		unique_domains: 2,
-		number_of_titles: 2,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: 'AI 熱門應用',
 		editorial_lens: '代理應用',
-		title: 'AI 代理本地預測式記憶崛起',
-		short_summary: '5 月 11 日到 12 日，兩則來自 Product Hunt 與 GitHub 的訊號顯示，AI 代理記憶正在從「先存再檢索」走向可持續維護的本地預測式結構。GitHub 的 YantrikDB 提供單檔嵌入式資料庫，主打可離線、可推理與衝突偵測；Product Hunt 的 Khaos Brain 則以 Git 版控卡片與 Sleep/Dream/Architect 維護流程，讓任務經驗與偏好可回溯。對教育與行政工作而言，這代表代理人記憶正在轉變為可治理、可稽核的作業資產，而非黑箱式外掛。',
-		emoji: '🧠',
-		did_you_know: 'YantrikDB 的說明將傳統做法斷句為「Store everything → Embed → Retrieve top-k → Inject into context」，並指出在 500 筆與 5,000 筆資料時，傳統 context window 容量會失效而失去效率。',
+		title: 'Claude Code 驅動的開源 IT 平台',
+		short_summary: 'OpenIT 於 2026-05-15 在 Product Hunt 上線，定位自己是「OpenSource alternative to ServiceNow」，並稱是以 Claude Code 為作業系統的 IT 平台，主打可依工作情境自我調整。雖然目前僅能看到產品頁文字與 44 位追蹤者資訊，未列明導入價格、效能和治理規格，但其核心在於以 LLM 代理重構流程控制邏輯，對 IT 運維、客服與行政單位是可借鏡的轉型線索：開源方案可在同樣需求下改採可掌控、可客製的作業路徑。',
+		emoji: '🤖',
+		did_you_know: 'Product Hunt 顯示 OpenIT 目前只有 44 位追蹤者，仍屬早期曝光期；但在首頁已直接用「OpenSource alternative to ServiceNow」與「runs on ClaudeCode」兩個核心定位標示其主張。',
 		talking_points: [
-			'上手門檻：YantrikDB 僅需 pip install 即可接到 MCP，並能直接呼叫 record/recall 起步，不需要先裝一堆前置模型。',
-			'內建效能：預設嵌入器使用 potion-base-2M，約 7MB；升級時可改用 8M/32M，或改接自備 sentence-transformers。',
-			'規模壓力：文中指出 500 筆記憶已超過 32K context，5,000 筆更難塞入 200K，並提出查詢保持約 70 tokens 的目標。',
-			'架構取向：YantrikDB 採 embedded、single-file 設計，無需獨立 server 程序，偏向 local-first 的離線與同步需求。',
-			'治理流程：Khaos Brain 將任務經驗與偏好轉為可視化、可版控卡片，透過 Sleep/Dream/Architect 保持記憶可讀、可維護。',
+			'上線訊號：Product Hunt 在 2026-05-15 標示 OpenIT 為「Launching today」，表示該工具目前屬公開曝光初期，但已進入可被持續追蹤的發布節奏。',
+			'替代方向：頁面直接寫「OpenSource alternative to ServiceNow」，突顯其目標不是新增小工具，而是挑戰既有 ITSM 的封閉套件模式。',
+			'核心技術：文案稱產品「runs on ClaudeCode」，代表流程設計可搭配 LLM 代理能力執行，延伸自動化邏輯不再侷限於傳統規則。',
+			'自我建構：品牌句「building itself around you as you work」暗示系統會隨使用者行為更新流程，是重視工作情境配適而非單點導入。',
+			'成熟度線索：目前可查到的僅有 44 followers，顯示社群關注在累積，但缺少正式案例與績效數字，驗證彈性仍是後續關鍵。',
 		],
-		quote: 'Current AI memory is: Store everything → Embed → Retrieve top-k → Inject into context → Hope it helps. That\'s not memory.',
-		quote_attribution: 'GitHub, 2026-05-12',
-		quote_source_url: 'https://github.com/yantrikos/yantrikdb',
-		quote_source_domain: 'github.com',
+		quote: 'The very first software that uses Claude Code as its operating system, building itself around you as you work, and reinventing how IT runs.',
+		quote_attribution: 'Product Hunt，2026-05-15',
+		quote_source_url: 'https://www.producthunt.com/products/openit',
+		quote_source_domain: 'producthunt.com',
 		perspectives: [
 			{
-				text: 'GitHub 立足工具層面，把記憶視為可執行的本地基礎建設；單檔與離線、可追溯的設計，強調的是工程端可控性與資料主權。',
+				text: '產品敘事強調為 ServiceNow 提供開源替代，對中小團隊有吸引力；其價值在於打開「可自建流程」想像，能讓沒有大型 IT 部門的單位先行試做基礎自動化。',
 				sources: [
 					{
-						name: 'GitHub',
-						url: 'https://github.com/yantrikos/yantrikdb',
+						name: 'Product Hunt',
+						url: 'https://www.producthunt.com/products/openit',
 					},
 				],
 			},
 			{
-				text: 'Product Hunt 的敘事則偏向作業流程管理，將代理人記憶包裝成卡片化工作記錄，重點在可視化與維運節奏，而非僅提升查詢速度。',
+				text: '同一訊息也顯示缺口：尚未提供治理、資安與維運成本資料。對企業實務而言，工具敘事再新，若無合規與導入邏輯，採用決策仍須等待更多證據。',
 				sources: [
 					{
 						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/khaos-brain',
+						url: 'https://www.producthunt.com/products/openit',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: 'Product Hunt 以「Khaos Brain」上線介紹，主打本地預測式 AI 代理記憶，並提出 Sleep/Dream/Architect 的維護流程。',
-			},
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'GitHub 在 Show HN 發布 YantrikDB，聲稱以單檔本地資料庫與 recall/relate/think 流程，解決傳統 context window 的擴充瓶頸。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'OpenIT 在 Product Hunt 刊登並標註為 Launching today，並以 Claude Code 為作業系統定位。',
 			},
 		],
 		articles: [
 			{
-				title: 'Show HN: YantrikDB – persistent memory for AI agents',
-				link: 'https://github.com/yantrikos/yantrikdb',
-				domain: 'github.com',
-				date: '2026-05-12',
-			},
-			{
-				title: 'Khaos Brain',
-				link: 'https://www.producthunt.com/products/khaos-brain',
+				title: 'OpenIT',
+				link: 'https://www.producthunt.com/products/openit',
 				domain: 'producthunt.com',
-				date: '2026-05-11',
-			},
-		],
-		domains: [
-			{ name: 'github.com' },
-			{ name: 'producthunt.com' },
-		],
-	},
-	{
-		id: 'aiApplications-2',
-		cluster_number: 2,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 熱門應用',
-		editorial_lens: '新工作模式',
-		title: 'MiniCPM-V 4.6 讓視覺 AI 跑進手機',
-		short_summary: 'MiniCPM-V 4.6 是 MiniCPM 系列 1.3B 開源視覺語言模型，主打可在手機與消費級硬體進行影像、影片理解。產品提到混合 4x/16x 視覺 token 壓縮、BitCPM 量化版本，並同時支援 iOS、Android、HarmonyOS 及 vLLM、SGLang、llama.cpp、Ollama。這意味原本依賴高階雲端資源的視覺 AI 流程，可轉成邊緣端可持續運作。',
-		emoji: '📱',
-		did_you_know: '原文指出 MiniCPM-V 4.6 是該系列目前最小版本，且以 1.3B 規模搭配 4x/16x 視覺 token 壓縮，目標是降低高解析影像與影片輸入對硬體的負擔。',
-		talking_points: [
-			'小模型即主軸：MiniCPM-V 4.6 只有 1.3B 參數，定位手機與一般硬體可跑的視覺任務。',
-			'壓縮降低成本：混合 4x/16x 視覺 token 壓縮直接對應影像、影片高解析輸入的算力需求下降。',
-			'跨裝置示範：iOS、Android、HarmonyOS 都有 demo，讓測試與導入流程可同步推進。',
-			'整合多框架：支援 vLLM、SGLang、llama.cpp、Ollama，可接到既有推理服務與作業流程。',
-			'開源可再造：Apache-2.0 權重與 BitCPM 量化版本並存，降低私有化部署與二次開發門檻。',
-		],
-		quote: 'MiniCPM-V 4.6 is an open MLLM for image and video understanding on phones and consumer hardware.',
-		quote_attribution: 'Product Hunt, 2026-05-12',
-		quote_source_url: 'https://www.producthunt.com/products/minicpm-4-0',
-		quote_source_domain: 'producthunt.com',
-		perspectives: [
-			{
-				text: '產品文本強調模型可在手機與消費級硬體跑，核心訊息是降低邊緣端門檻，讓資源有限的組織也能導入影像 AI。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/minicpm-4-0',
-					},
-				],
-			},
-			{
-				text: '討論與規格討論點放在記憶體與部署細節上，顯示實務價值不只模型能力，而是長期維運成本與可整合性是否成立。',
-				sources: [
-					{
-						name: 'Product Hunt Discussion',
-						url: 'https://www.producthunt.com/products/minicpm-4-0',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'Product Hunt 發布 MiniCPM-V 4.6 產品介紹，聚焦 1.3B 行動端視覺語言模型與跨框架、跨平台導入特性。',
-			},
-		],
-		articles: [
-			{
-				title: 'MiniCPM-V 4.6',
-				link: 'https://www.producthunt.com/products/minicpm-4-0',
-				domain: 'producthunt.com',
-				date: '2026-05-12',
-			},
-		],
-		domains: [
-			{ name: 'producthunt.com' },
-		],
-	},
-	{
-		id: 'aiApplications-3',
-		cluster_number: 3,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 熱門應用',
-		editorial_lens: '新工作模式',
-		title: '用 AI 保留原聲的寫作流程：Bouquin & Ink',
-		short_summary: 'Product Hunt 顯示 Bouquin & Ink 已於 2026-05-12 上線，主打「Write in your own voice with a muse to inspire you」。產品頁面提出聲音保留、寫作連續性追蹤、沉浸式主題、聲紋驗證 provenance 等能力，主張維持作者原有文風，同時降低重複修辭與人工校稿負擔。雖目前僅有 32 位追蹤者，但對需要大量文字輸出的內容生產與知識工作者來說，關鍵是流程是否能把版本維護與風格一致化交給可重複運作的 AI 助理。',
-		emoji: '🖊️',
-		did_you_know: '產品頁同時列出聲音保存（voice preservation）、連續性追蹤（continuity tracking）與聲紋驗證 provenance；若在教育內容編修中導入，這組合可把「逐段修文」轉成可追溯、可版本回溯的文字製作流程。',
-		talking_points: [
-			'發布時點：頁面標示 Launching today，對應 2026-05-12 的上線訊息，屬近期 AI 寫作工具的新增案例。',
-			'核心承諾：副標「Write in your own voice with a muse to inspire you」將工具定位為保留作者個人文風的靈感協作，而非完全代筆。',
-			'流程可視化：continuity tracking 功能說明工具會協助追蹤寫作進度與版本脈絡，降低長文中段落偏題與重複修訂成本。',
-			'品質稽核：加入 voice verification provenance，屬於輸出可信度機制，能支援文本版本的來源與一致性檢核。',
-			'早期信號：目前僅記錄 32 followers，代表工具尚在起步期，接下來是否擴散取決於實際協作成效與口碑驗證。',
-		],
-		quote: 'Write in your own voice with a muse to inspire you',
-		quote_attribution: 'Product Hunt, 2026-05-12',
-		quote_source_url: 'https://www.producthunt.com/products/bouquin-ink',
-		quote_source_domain: 'producthunt.com',
-		perspectives: [
-			{
-				text: '從創作效率角度，這個案例顯示 AI 不只在創意輸出，還可承接版本追蹤與風格維持的體力活，對教師備課、研究筆記整理、學生作業回饋都可做流程移植。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/bouquin-ink',
-					},
-				],
-			},
-			{
-				text: '從內容治理角度，產品把聲音保留與 provenance 放在前端，代表工具市場正從「能否生成」轉向「生成結果是否可追溯、可驗證」，這是教育與知識生產場景先天需要面對的新治理項目。',
-				sources: [
-					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/bouquin-ink',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Bouquin & Ink',
-				link: 'https://www.producthunt.com/products/bouquin-ink',
-				domain: 'producthunt.com',
-				date: '2026-05-12',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
@@ -523,54 +411,55 @@ const aiApplicationsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 熱門應用',
-		editorial_lens: '新工作模式',
-		title: 'Whisper Island 1.2.0 單窗多專案',
-		short_summary: '2026-05-11，Product Hunt 揭示 Coddo 的 Whisper Island 進入 1.2.0，將多個專案集中在側欄並以一鍵切換取代頻繁開窗。產品把任務改為依狀態（待辦、進行中、檢閱）與對話線管理，並加入順序執行、任務佇列與看板柱狀圖。這表示 AI 工作流正往「單畫面即可追案、切換、重排與調整」的低程式碼模式收斂，對需要同時管理多人任務的團隊具示範價值。',
-		emoji: '🗂️',
-		did_you_know: '版本為 1.2.0，除了側欄多專案與任務重排，還加入了直接任務順序執行機制，避免同一分支同時跑兩個任務，並且側欄即時顯示任務佇列號碼。',
+		editorial_lens: '代理應用',
+		title: 'Kimi WebBridge：AI 代理接上即時網路',
+		short_summary: 'Product Hunt 討論頁在 2026-05-15 公開的 Kimi WebBridge 訊息，將其定位為連接 AI 代理與即時網頁的橋接機制。其訴求不只新增另一個工具，而是要讓模型回應可直接搭到最新外部資料來源，並以 Kimi Slides、Nano Banana Pro 試用訊息補強「可落地工作流」想像。對教育行政、研究與知識工作而言，這類設計可把原本人工逐站蒐整的流程改為可交付的代理任務鏈。',
+		emoji: '🌐',
+		did_you_know: '原文直接寫到 Nano Banana Pro 有 24 小時免費體驗，且宣告某段時間有 48 小時無上限使用，試點階段可低成本驗證功能是否符合團隊流程。',
 		talking_points: [
-			'單窗即切換：Whisper Island 將專案集中於側欄，1.2.0 強化為 one-click 切換，將多個專案管理從開新視窗回到同一工作畫面。',
-			'任務可讀性：待辦、進行中、檢閱三種狀態以 thread 呈列，搭配可拖曳排序，讓專案進度與優先順序一眼可見。',
-			'任務節奏控管：直接任務改為 sequential execution，新增規則是同一 branch 不可同時跑兩件事，降低代理流程衝突與回退成本。',
-			'效能可視化：1.2.0 新增 Kanban 柱狀圖與側欄佇列號碼，可直接量化每欄任務數，快速辨識阻塞點與等待瓶頸。',
+			'即時鏈接定位：Kimi WebBridge 被主打為讓 AI 代理可接上 live web，對跨平台資料整併是明確改造方向。',
+			'試用節點設計：訊息明示 24 小時免費與 48 小時無上限使用，供初期導入者快速驗證工作流成果。',
+			'輸出導向轉型：Kimi Slides 強調可編輯化投影片功能，顯示工具不只回覆文字，也在提供可分享成果。',
+			'宣傳語句特徵：文案含“It\'s editable Notebooklm Slides”式敘事，說明其在產出品質與操作門檻間試圖兼顧。',
+			'上線型態啟示：透過 Product Hunt Discussion 並非傳統新聞稿，社群回饋可直接作用於功能調整節奏。',
 		],
-		quote: 'Sequential execution for direct tasks (no more two tasks on the same branch)',
-		quote_attribution: 'Product Hunt, 2026-05-11',
-		quote_source_url: 'https://www.producthunt.com/products/coddo',
+		quote: 'Try it FREE (unlimited for next 24 hours)',
+		quote_attribution: 'Product Hunt, 2026-05-15',
+		quote_source_url: 'https://www.producthunt.com/products/kimi-ai-assistant',
 		quote_source_domain: 'producthunt.com',
 		perspectives: [
 			{
-				text: '產品管理觀點：這次更新更像在修訂工作方法，而非純加新功能。側欄整併與一鍵切換，降低視覺與行為層級的干擾，是提升「專案密集使用者」日常效率的核心。',
+				text: '產品方視角強調代理可及時抓取網路內容，將「資訊取得」與「任務輸出」前置打通，對中高頻查詢任務最有刺激。',
 				sources: [
 					{
 						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/coddo',
+						url: 'https://www.producthunt.com/products/kimi-ai-assistant',
 					},
 				],
 			},
 			{
-				text: '流程治理觀點：加入直接任務順序執行限制，代表對 AI 代理或自動化任務的安全性更重視。這類設計對教學助理、行政支援團隊也具啟發：先做可控的可追蹤流程，再追求高併行。',
+				text: '社群討論型發佈更重視使用者回饋與試用阻力，短期優惠與可用時窗凸顯擴散策略，導入者仍需自評隱私、治理與可控性。',
 				sources: [
 					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/coddo',
+						name: 'Product Hunt Discussion',
+						url: 'https://www.producthunt.com/products/kimi-ai-assistant',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: 'Whisper Island（Coddo）公布 1.2.0 更新，加入單視窗多專案、任務順序執行、看板任務量統計與側欄整合操作。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'Product Hunt 討論頁公開 Kimi WebBridge 相關訊息，並同步展示 Slides/ Nano Banana Pro 的試用條件與功能導向。',
 			},
 		],
 		articles: [
 			{
-				title: 'Whisper Island by Coddo',
-				link: 'https://www.producthunt.com/products/coddo',
+				title: 'Kimi WebBridge',
+				link: 'https://www.producthunt.com/products/kimi-ai-assistant',
 				domain: 'producthunt.com',
-				date: '2026-05-11',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
@@ -583,55 +472,64 @@ const aiApplicationsStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 熱門應用',
-		editorial_lens: '工作方法',
-		title: 'knooth：Mac 錄影剪輯一體化升級',
-		short_summary: 'Product Hunt 於 2026-05-11 上線 knooth，把 macOS 螢幕錄製與剪輯整合為一體，並加上 AI 字幕、游標自動縮放、冗詞移除、音訊清理。產品可同時擷取螢幕、攝影機、麥克風與 iPhone/iPad 畫面，並稱全程在 Mac 本機運作、不上傳雲端。對需要高頻產出教學或會議影音的人而言，重點是將手工拼接壓縮成可複製流程。',
-		emoji: '🎬',
-		did_you_know: 'knooth 的時間軸可放入影片、音訊、文字、圖片、形狀五種圖層，並結合動畫、轉場與 AI 清理工具，做到「一個介面先完成初剪」。',
+		editorial_lens: '新工作模式',
+		title: 'Nimbus：AI 代理式瀏覽器整合網頁任務',
+		short_summary: 'Product Hunt 在 2026-05-15 提到 Nimbus 是受 Claude Code 啟發的代理式瀏覽器，使用者用自然語言下達任務，代理可代替點擊、表單與多分頁操作，必要時再請示。它非擴充套件原生打造，支援 Claude、OpenAI、Gemini 等模型，首 500 名用戶永久免費。核心價值是把下載後再上傳、跨站切換等高重複機械流程，轉為可持續接力的代理任務。',
+		emoji: '🧭',
+		did_you_know: '作者明確點名「download in one tab，upload in another」最耗時，Nimbus 就以跨分頁任務代理解掉這段檔案來回流程，主軸是減少人工重複操作。',
 		talking_points: [
-			'在地隱私優先：knooth 宣告「Everything runs locally on your Mac」，且「No cloud uploads」，對敏感教學素材可維持校內資料主控。',
-			'跨來源同軌錄製：同時支援螢幕、攝影機、麥克風與 iPhone/iPad 畫面，能避免多軌素材反覆匯入造成的時間浪費。',
-			'AI 助力削工序：內建 AI 字幕、游標自動縮放、冗詞移除與音訊清理，將逐段修剪變成可批次套用的設定流程。',
-			'可複製的輸出節奏：產品頁列出快速匯出與動畫、轉場編排，對一週多支影片需求的團隊有明顯作業縮時效果。',
-			'早期訊號參考：Product Hunt 顯示 67 followers，屬可觀察的初期接受度，未來成長仍取決於穩定性與授權與匯出能力。',
+			'任務驅動流程：使用者只要用自然語言下指令，代理接手點擊、填表與頁面切換，將瀏覽器操作抽象成可自動化任務節點。',
+			'明確痛點對焦：原文把「下載一分頁後到另一分頁上傳」列為核心摩擦，凸顯這類行政與研究流程中的真實效率損耗。',
+			'模型不綁死：開發者明言屬 model agnostic，並支援 Claude、OpenAI、Gemini 及 OpenAI 相容模型，降低單一模型廠商風險。',
+			'上下文續航承諾：討論串回應稱中途中斷不會遺失脈絡，代表長時段多步驟任務有機會減少重啟成本。',
+			'低門檻試用：首 500 名用戶可永久免費，對小團隊或個人先做流程實驗的門檻下降，容易快速驗證代理式瀏覽價值。',
 		],
-		quote: 'Everything runs locally on your Mac. No cloud uploads.',
-		quote_attribution: 'Product Hunt，2026-05-11',
-		quote_source_url: 'https://www.producthunt.com/products/knooth',
+		quote: 'Built from the ground up, not an extension.',
+		quote_attribution: 'Product Hunt，2026-05-15',
+		quote_source_url: 'https://www.producthunt.com/products/nimbus-10',
 		quote_source_domain: 'producthunt.com',
 		perspectives: [
 			{
-				text: '產品敘事聚焦功能與隱私承諾，能快速看見產品方向，但目前未提供編輯耗時、系統資源占用與穩定性數據，採用時仍需自行驗證。',
+				text: '工具發想端把注意力放在工作流程，而非單一功能，這種「把瀏覽器當代理執行層」的設計，對跨站整理資料或行政文件流程最有啟發。',
 				sources: [
 					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/knooth',
+						name: 'Product Hunt 產品頁',
+						url: 'https://www.producthunt.com/products/nimbus-10',
 					},
 				],
 			},
 			{
-				text: '從教育實務看，價值不只在 AI 幫忙剪片，而是把錄影、整理、輸出都壓進單一流程，能降低新手教師或行政助理的工具門檻與轉檔成本。',
+				text: '社群觀點更聚焦風險：使用者關心中長任務是否仍保有完整上下文，開發者回應可持續追蹤任務，若持續成立才有實務採用信心。',
 				sources: [
 					{
-						name: 'Product Hunt',
-						url: 'https://www.producthunt.com/products/knooth',
+						name: 'Product Hunt 討論回應',
+						url: 'https://www.producthunt.com/products/nimbus-10',
+					},
+				],
+			},
+			{
+				text: '成本角度看，500 名免費名額形成明確試水溫機制；與傳統自建 Agent 不同，這種策略更偏向快速驗證可否整合到日常知識工作。',
+				sources: [
+					{
+						name: 'Product Hunt 產品頁',
+						url: 'https://www.producthunt.com/products/nimbus-10',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: 'knooth 在 Product Hunt 公告上線，定位為 macOS 螢幕錄影與 AI 編輯工具，主打本機運作與雲端零上傳。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'Product Hunt 上線 Nimbus 介紹：標榜受 Claude Code UX 啟發的 agentic browser，並宣告首 500 名用戶永久免費。',
 			},
 		],
 		articles: [
 			{
-				title: 'knooth',
-				link: 'https://www.producthunt.com/products/knooth',
+				title: 'Nimbus',
+				link: 'https://www.producthunt.com/products/nimbus-10',
 				domain: 'producthunt.com',
-				date: '2026-05-11',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
@@ -644,297 +542,58 @@ const workMethodsStories: Story[] = [];
 
 const aiEduStories: Story[] = [
 	{
-		id: 'aiEducation-gmail-notebooklm-教學',
-		cluster_number: 'gmail-notebooklm-教學',
-		unique_domains: 4,
-		number_of_titles: 4,
-		category: 'AI 教育趨勢',
-		editorial_lens: '平台導入',
-		title: '本週「NotebookLM 教學」焦點：校園與職訓同步擴散',
-		short_summary: '台灣 Google 在 2026/05/11 啟動「數位人才探索計畫」，AI 職場通識、數位行銷、Google Cloud 三學程都加入 Gemini 與 NotebookLM，完成 12～20 小時自學並通過直播測驗後才可領證。美國喬治亞理工於 5/8 宣布把兩款工具納入全校教職員服務，並同步規劃 AI 政策與安全審查。兩端都在擴展工具導入，但目前仍未揭露教師與學生實際成效、採用比例與預算規模。',
-		emoji: '🎓',
-		did_you_know: '喬治亞理工規定教職員以校方標準憑證使用 Gemini 與 NotebookLM；處理敏感研究資料者需先查「機構 AI 登記冊」，顯示授權、資料邊界是導入條件，而非無條件放開。',
-		talking_points: [
-			'職訓進度設計清楚：Google 計畫將報名、提交認證到領證切成 12/16/20 小時學習＋8/10～10/30 的時間節點，讓 AI 學習可被行事曆化推進。',
-			'職場場景也能上手工具：AI Boost Bites、Workspace with Gemini 與 Google Cloud 路徑，將 Gemini、NotebookLM 明確放進企劃、文件、資料整合與雲端技能流程。',
-			'校園導入重點是風險控管：喬治亞理工在宣布導入前即提到第三方安全、資料隱私與合規審查，且預告首份 AI 政策在近期上線。',
-			'授權對象分層明確：該校針對敏感研究資料人員要求先參照機構 AI 登記冊，其他教職與研究人員則以校方憑證管理，學生與臨時人員走有限名額申請。',
-			'產品訊號與治理訊號不同：SOGI 顯示 NotebookLM 與 Gemini 整合免費開放，屬工具可得性資訊；學校導入則補上規範、流程與責任邊界。',
-		],
-		quote: '所有人工智慧工具在獲得批准前，都需經過全面的審查程序。',
-		quote_attribution: '喬治亞理工學院資訊科技辦公室（2026-05-08）',
-		quote_source_url: 'https://sunmedia.tw/news/technology/1778110348-%E5%96%AC%E6%B2%BA%E4%BA%9E%E7%90%86%E5%B7%A5%E5%AD%B8%E9%99%A2%E5%95%9F%E7%94%A8%20Gemini%E3%80%81NotebookLM%E3%80%80%E5%8A%A0%E9%80%9F%E6%95%99%E5%AD%B8%E7%A0%94%E7%A9%B6AI%E6%95%B4%E5%90%88',
-		quote_source_domain: 'sunmedia.tw',
-		perspectives: [
-			{
-				text: '台灣端偏向以訓練與證照推動使用情境，目標是把 Gemini、NotebookLM 變成職能能力工具；其實際價值主要落在職場流程改造，尚未提供完整教學現場成效。',
-				sources: [
-					{
-						name: '數位時代',
-						url: 'https://fc.bnext.com.tw/articles/view/4603',
-					},
-				],
-			},
-			{
-				text: '喬治亞理工訊號則是先治理後擴張，先定義授權邊界與安全評估，再談可用範圍，反映學術機構的重點不是快速上架，而是先建立可負責的規則與流程。',
-				sources: [
-					{
-						name: '蕃新聞',
-						url: 'https://n.yam.com/Article/20260507742636',
-					},
-				],
-			},
-			{
-				text: '媒體轉載快速放大主軸，但除少數提及功能整合與免費開放外，沒有新增教學成效資料；對教育場景而言，仍需持續觀察制度落地與使用成果才能判斷是否形成長期趨勢。',
-				sources: [
-					{
-						name: 'SOGI手機王',
-						url: 'https://www.sogi.com.tw/articles/gemini/6268707',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-06',
-				date_iso: '2026-05-06',
-				content: 'SOGI 報導 NotebookLM 與 Gemini 整合，並強調筆記本功能免費開放，形成工具端訊號擴散。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '喬治亞理工宣布將 Gemini 與 NotebookLM 納入全校教職員服務，並同步規劃 AI 政策與安全審查流程。',
-			},
-			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: 'Google 台灣公布「數位人才探索計畫」三學程細節，明定自學時數、直播測驗與結業認證流程。',
-			},
-		],
-		articles: [
-			{
-				title: 'Google 數位人才探索計畫正式開跑！Gemini、NotebookLM、GA4 免費學，完課可領官方證書',
-				link: 'https://fc.bnext.com.tw/articles/view/4603',
-				domain: 'fc.bnext.com.tw',
-				date: '2026-05-11',
-			},
-			{
-				title: '喬治亞理工學院啟用Gemini、NotebookLM 加速教學研究AI整合 - 蕃新聞',
-				link: 'https://n.yam.com/Article/20260507742636',
-				domain: 'n.yam.com',
-				date: '2026-05-08',
-			},
-			{
-				title: 'NotebookLM整合進Gemini！筆記本功能全面開放用戶免費使用 - SOGI手機王',
-				link: 'https://www.sogi.com.tw/articles/gemini/6268707',
-				domain: 'sogi.com.tw',
-				date: '2026-05-06',
-			},
-		],
-		domains: [
-			{ name: 'fc.bnext.com.tw' },
-			{ name: 'sunmedia.tw' },
-			{ name: 'n.yam.com' },
-			{ name: 'sogi.com.tw' },
-		],
-	},
-	{
-		id: 'aiEducation-15',
-		cluster_number: 15,
-		unique_domains: 2,
-		number_of_titles: 2,
-		category: 'AI 教育趨勢',
-		editorial_lens: '新觀念,組織運作',
-		title: '跨學段啟示：高教不能再把AI當成作弊工具',
-		short_summary: '5 月 11 日的一則播客指出，高教仍常把 AI 當作作弊風險處理，卻忽略它已改變學生學習、工作與競爭規則。內容以 Lone Star College 約 90,000 名學生為背景，並提到其 AI 策略可服務 97,000 名學習者。若課程任務仍停留在可被外包的作業設計，學生難以建立判斷與創造力，且 K-12 到職場之間的 AI 素養銜接將出現斷裂。',
-		emoji: '🎙️',
-		did_you_know: '有受訪者從運動生理背景轉向 AI 推動者，並在高等教育場域主導可服務 97,000 名學生的策略部署，顯示 AI 能力建置未必受學系背景限制，關鍵在於制度設計。',
-		talking_points: [
-			'反作弊≠全面解方：高教若只談防舞弊規範，學生會傾向把 AI 當代做工具，而不是用來驗證觀點與推進解題。',
-			'九萬級校務壓力：Lone Star College 擁有約 90,000 學生，規模一大就要求跨課程一致規範，不能靠零散封禁補救。',
-			'九萬七千人案例：文中揭示 97,000 名學習者導入 AI 流程的經驗，說明管理可做規模化，但前提是任務設計與結果可追蹤。',
-			'AI 素養斷層：K-12 已開始接觸 AI，雇主也要求能力，但高教若不改變教學邏輯，將成為升學到職涯的斷點。',
-			'教師角色再定義：受訪者認為 AI 先暴露的是教學品質，而非先取代好老師；核心在於設計真實問題、核對資訊與判斷流程。',
-		],
-		quote: 'AI is not coming for education someday. It is already here, and the schools that keep pretending otherwise are not protecting students.',
-		quote_attribution: 'Substack，2026-05-11',
-		quote_source_url: 'https://stefanbauschard.substack.com/p/may-11-podcast-tim-mousel-lone-star',
-		quote_source_domain: 'stefanbauschard.substack.com',
-		perspectives: [
-			{
-				text: '治理視角主張先修補安全漏洞；轉錄內容則明確回到學術設計：課題、評量與任務若未轉型，AI 只會放大作答外包，難以建構學習能力。',
-				sources: [
-					{
-						name: 'Substack',
-						url: 'https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdGVmYW5iYXVzY2hhcmQuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj04OGpqcm4mbmV4dD1odHRwcyUzQSUyRiUyRnN0ZWZhbmJhdXNjaGFyZC5zdWJzdGFjay5jb20lMkZwJTJGbWF5LTExLXBvZGNhc3QtdGltLW1vdXNlbC1sb25lLXN0YXIiLCJwIjoxOTcyMzcxODIsInMiOjE2NzM3MjgsImYiOnRydWUsInUiOjQ5ODA3ODQxOSwiaWF0IjoxNzc4NTIwMjUxLCJleHAiOjIwOTQwOTYyNTEsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.PxVUWq4CE9mRPjY9Spir38mG9wZly3K0xgIJNgMzMk0?',
-					},
-				],
-			},
-			{
-				text: '從學段面向來看，內容同時提到 K-12 與雇主已在推高 AI 素養需求，對比高教反應較慢的現象，形成明確斷層訊號：高教若不及早對應，學生的在學到就業能力轉移會受阻。',
-				sources: [
-					{
-						name: 'Stefan Bauschard Substack',
-						url: 'https://stefanbauschard.substack.com/p/may-11-podcast-tim-mousel-lone-star',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: '以 Tim Mousel 對談為核心的 Podcast 指出高校需由防作弊框架轉向任務型教學與 AI 判斷力設計。',
-			},
-		],
-		articles: [
-			{
-				title: 'May 11 Podcast: Tim Mousel, Lone Star College',
-				link: 'https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdGVmYW5iYXVzY2hhcmQuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291cmNlPWVtYWlsJnV0bV9jYW1wYWlnbj1lbWFpbC1zdWJzY3JpYmUmcj04OGpqcm4mbmV4dD1odHRwcyUzQSUyRiUyRnN0ZWZhbmJhdXNjaGFyZC5zdWJzdGFjay5jb20lMkZwJTJGbWF5LTExLXBvZGNhc3QtdGltLW1vdXNlbC1sb25lLXN0YXIiLCJwIjoxOTcyMzcxODIsInMiOjE2NzM3MjgsImYiOnRydWUsInUiOjQ5ODA3ODQxOSwiaWF0IjoxNzc4NTIwMjUxLCJleHAiOjIwOTQwOTYyNTEsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.PxVUWq4CE9mRPjY9Spir38mG9wZly3K0xgIJNgMzMk0?',
-				domain: 'substack.com',
-				date: '2026-05-11',
-			},
-			{
-				title: 'May 11 Podcast: Tim Mousel, Lone Star College',
-				link: 'https://stefanbauschard.substack.com/p/may-11-podcast-tim-mousel-lone-star',
-				domain: 'stefanbauschard.substack.com',
-				date: '2026-05-11',
-			},
-		],
-		domains: [
-			{ name: 'substack.com' },
-			{ name: 'stefanbauschard.substack.com' },
-		],
-	},
-	{
-		id: 'aiEducation-17',
-		cluster_number: 17,
-		unique_domains: 2,
-		number_of_titles: 2,
-		category: 'AI 教育趨勢',
-		editorial_lens: '治理授權',
-		title: '跨學段預算與政策卡位：AI教學也先看資源',
-		short_summary: '美國教育場域在5月同時出現一致訊號：高教端Colorado State在州補助停滯下縮減兩校區預算，穆迪同步把哥倫比亞大學展望下修為負向；K-12端雖多數學區已全面推動1:1設備，仍面臨法規與經費壓力，且有38%教育科技主管預期預算縮水。資源與治理壓力正在同步抬高AI與數位方案的落地門檻，管理端已先做優先順序調整。',
-		emoji: '📉',
-		did_you_know: 'Higher Ed Dive指出科羅拉多州立大學在州預算凍結情境下，福特柯林斯與普韋布洛校區同時刪減數百萬美元，並同步升級水資源節流與灌溉系統。',
-		talking_points: [
-			'預算收縮先到位：科羅拉多州立大學為應對州方資源停滯，兩個校區同時縮編預算，顯示教育機構在缺口壓力下會先壓行政與配套開支。',
-			'評等訊號影響戰略：穆迪將哥倫比亞大學展望下修為負向，核心指標含聯邦政策壓力與國際生源不確定，將牽動長期AI、人力與研究投資預算。',
-			'設備普及不等於穩定：K-12調查顯示多數學區已導入1:1設備，但38%科技主管預估預算將縮減，導入節奏和維運能量都面臨回收風險。',
-			'治理先行壓倒功能：法官明言2025年ICE政策調整未改變執法權限，學校行政仍需先兼顧法規邊界，再決定AI與數位工具的推廣節奏。',
-			'跨階段共通訊號：高教在資金與風險管理重整，K-12在法規與預算壓力博弈，兩者都在要求「先有治理框架再談工具採購」。',
-		],
-		quote: 'Most districts now have 1:1 device programs.',
-		quote_attribution: 'K-12 Dive, 2026-05-12',
-		quote_source_url: 'https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57',
-		quote_source_domain: 'k12dive.com',
-		perspectives: [
-			{
-				text: 'Higher Ed Dive的觀點偏向財務結構與外部信評壓力：當州補助停滯與外部稽核加重，院校先做精簡與資本調整，AI相關建設被迫退回預算審視。',
-				sources: [
-					{
-						name: 'Higher Ed Dive',
-						url: 'https://link.highereddive.com/view/69f985b55f3be2f7a30c0c61r6ndz.1fao/cf288894',
-					},
-				],
-			},
-			{
-				text: 'K-12 Dive則將焦點放在制度落地面：硬體覆蓋率看似成熟，但設備是否持續運轉，取決於法規穩定度與年度資源；在不確定氛圍下，AI與數位專案更易被放在後排。',
-				sources: [
-					{
-						name: 'K-12 Dive',
-						url: 'https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Colorado State hit with layoffs | Moody’s lowers Columbia’s outlook',
-				link: 'https://link.highereddive.com/view/69f985b55f3be2f7a30c0c61r6ndz.1fao/cf288894',
-				domain: 'highereddive.com',
-				date: '2026-05-12',
-			},
-			{
-				title: 'Judge won’t pause ICE policy | The state of 1:1 device programs',
-				link: 'https://link.k12dive.com/view/69f985b55f3be2f7a30c0c61r6ne0.wl7/23f4de57',
-				domain: 'k12dive.com',
-				date: '2026-05-12',
-			},
-		],
-		domains: [
-			{ name: 'highereddive.com' },
-			{ name: 'k12dive.com' },
-		],
-	},
-	{
 		id: 'aiEducation-1',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 教育趨勢',
-		editorial_lens: '平台導入',
-		title: 'MIT 推出 Universal AI：全民都能上手的 AI 路徑',
-		short_summary: 'MIT Open Learning 於 2026-05-12 公布 Universal AI 線上自學方案，以五門核心課銜接產業應用模組，並將第一門《程式與機器學習基礎》免費開放。MIT 指出美國超過五成成年人已使用生成式 AI、每日工作情境使用率 12%，且組織 AI 整合率上升至 88%，顯示 AI 素養已從加分項變成全民職涯與組織運作的基本能力。這次推出強調讓非技術者也能接續學習，對縮小 AI 能力落差具參考價值。',
-		emoji: '🧠',
-		did_you_know: 'MIT 先公布 5 門核心課，再配套 6 門產業課，包含醫療、創業、永續能源等主題；同時保留對全球學習者免費進場的第一課，作為降低入門門檻的起點。',
+		editorial_lens: '治理授權',
+		title: '六國跨學段AI政策實務：12個月導入路線',
+		short_summary: 'Google 在 2026 年於巴西、印度、馬來西亞、墨西哥、西班牙與瑞典舉辦「AI Policy & Guidance Labs」，邀集基礎、國中及高等教育政策與校務領導人參與。會議不是只談概念，而是協助各方把願景轉成可執行方案，產出正式 Position Statements 與 12 個月導入藍圖，並把政策重點設計為平台中立，讓教師在校內仍保有 AI 使用主導權，降低工具更換與責任歸屬爭議。',
+		emoji: '🧭',
+		did_you_know: '六場政策工作坊同時涵蓋基礎、國中與高等教育視角，成果先以 Position Statements 並搭配 12 個月行動藍圖發布，且強調不綁定單一生成式 AI 平台，可供不同制度直接改寫。',
 		talking_points: [
-			'基礎到應用鏈：課程以五門核心課為主軸，從程式、機器學習、LLM 到決策與倫理，由理論延伸到可上手的產業案例。',
-			'首門免費起點：第一門《Fundamentals of Programming and Machine Learning》免費開放，降低成人再學習的學費與入門阻力。',
-			'產業模組化：現有 6 門產業課包含醫療、永續、創業、交通等，學員可依工作場域挑選高關聯模組。',
-			'非技術優先設計：專案強調面向非技術人群，配合 AI 個人化輔助調整學習節奏，降低對背景門檻的依賴。',
-			'需求證據明確：文章引用美國逾 50% 成人已用生成式 AI、12% 每日於工作使用，與 88% 組織整合率，說明推出時機與市場壓力都很明確。',
+			'跨國設計樣版：六國工作坊將政策專家與學校領導人放在同桌討論，讓規範建立不只是口號，而是可落地的行政與教學決策節點，便於學校後續直接對接。',
+			'12 個月導入路線：每場會議要求輸出可追蹤的年度執行路線，並搭配 Position Statements，目標是把討論轉成明確責任、時程與交付成果。',
+			'術語橋接機制：文件指出技術術語與教學語言的落差是核心阻力，跨部門共用語彙後，IT、行政與第一線教師可在同一框架討論策略。',
+			'平台中立設計：規劃強調不綁定單一產品，由外部專家參與制度化設計，使政策能被不同地區與既有資訊架構重用，降低轉換成本。',
+			'教師主導權收斂：敘事核心是教師不是「監看員」，而是決定 AI 何時可用、何時不該用的主導者，確保 AI 被當作教學伴侶而非替代判斷。',
+			'社群實務補位：Google 並同步推動跨教師社群（例如 Google Educator Group／Faculty Groups），提供全球同儕案例，解決各地在政策落地時缺乏可借鏡範本的問題。',
 		],
-		quote: 'Artificial intelligence is not just for computer scientists anymore; it’s going to permeate every aspect of our lives and influence every business.',
-		quote_attribution: 'MIT News, 2026-05-12',
-		quote_source_url: 'https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512',
-		quote_source_domain: 'news.mit.edu',
+		quote: 'One of the most significant hurdles in policy is the gap between technical terminology and pedagogical practice.',
+		quote_attribution: 'Google Blog, 2026-05-15',
+		quote_source_url: 'https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/',
+		quote_source_domain: 'blog.google',
 		perspectives: [
 			{
-				text: 'MIT 官方訊息把重點放在「全民可及」與非技術族群，與常見新工具上線報導不同，核心訴求是培養普適的 AI 思維基礎，對台灣政策端的在職再訓練有參考性。',
+				text: '治理與制度視角：文稿將重點放在跨部門共識建構與共同語彙，顯示在教育 AI 佈局中，建立流程與角色邊界先於工具推廣，這有助政府與學校管理端降低政策落差。',
 				sources: [
 					{
-						name: 'MIT News',
-						url: 'https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512',
+						name: 'Google Blog',
+						url: 'https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/',
 					},
 				],
 			},
 			{
-				text: 'MIT Open Learning 的說法更偏教學設計，將五門核心課與 6 門產業課並列，強調可解釋性與倫理與決策能力，顯示其不是只做工具導入，而是嘗試建立跨域的能力架構。',
+				text: '教學主權視角：同一來源又突顯教師決策中心地位，主張教師需判斷 AI 的使用時機與禁用情境，但文章未提供量化成效指標，成效驗證仍仰賴各校自行補強。',
 				sources: [
 					{
-						name: 'MIT Open Learning',
-						url: 'https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512',
+						name: 'Google Blog',
+						url: 'https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/',
 					},
 				],
-			},
-			{
-				text: '免費第一課搭配進階付費模組的做法，透露出「先降低進場門檻、再以模組化進階」的商業與教學策略，台灣機構可作為未來線上課程授權與導流的試行模型。',
-				sources: [
-					{
-						name: 'MIT Open Learning',
-						url: 'https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'MIT Open Learning 發表 Universal AI 計畫，公布五門核心課與 6 門產業課，並將第一門課開放免費。',
 			},
 		],
 		articles: [
 			{
-				title: 'Universal AI is “a pathway to AI fluency that’s accessible and approachable to anyone, anywhere”',
-				link: 'https://news.mit.edu/2026/universal-ai-pathway-to-ai-fluency-accessible-to-anyone-0512',
-				domain: 'news.mit.edu',
-				date: '2026-05-12',
+				title: 'From policy to practice: supporting the future of AI in education',
+				link: 'https://blog.google/products-and-platforms/products/education/ai-policy-guidance-labs/',
+				domain: 'blog.google',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
-			{ name: 'news.mit.edu' },
+			{ name: 'blog.google' },
 		],
 	},
 	{
@@ -943,38 +602,268 @@ const aiEduStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 教育趨勢',
-		editorial_lens: '資安信任、組織運作',
-		title: '高教CTO警訊：AI落地下人才與資安壓力同步上升',
-		short_summary: '美國高等教育機構在 Inside Higher Ed 與 Hanover Research 的《2026 校園 CTO 調查》中顯示，近五成受訪 CTO 指出在缺乏新增資源下，科技變化速度已難以維持；且幾乎所有機構預期未來兩年 IT 成本仍會上升。調查再把 2030 年主要風險鎖定為 IT 人才招募與留任不足（62%）、資安威脅（59%）與成本失控（56%）。在此脈絡下，AI 與 LMS 的導入不只是教學升級，而是牽動全校治理與預算可持續性的關鍵壓力。',
-		emoji: '🛡️',
-		did_you_know: '部分院校已開始實驗替代既有 LMS 的方案，且調查由 T-Mobile for Education、Jenzabar、Modo 贊助。報導同時安排 6 月 10 日（美東下午 2 點）線上免費研討，供業界針對調查結果交叉辯論。',
+		editorial_lens: '政策治理',
+		title: '普林斯頓改榮譽制度：7月起考場全監考',
+		short_summary: '2026 年 5 月，普林斯頓大學教授會通過決議，將全校實體課堂考試改為由授課人員監考，取代 133 年沿用的學生互監榮譽制度，並規劃 2026 年 7 月 1 日生效。校方與學生都認為生成式 AI 讓隱性作弊更難被察覺，報告同儕也可能引發排擠風險，顯示美國名校正在把以誠信倫理為核心的制度，轉向更可追溯的監督治理流程。',
+		emoji: '⚖️',
+		did_you_know: '普林斯頓的作法不是取消榮譽制，而是新增一條「授課人員現場見證與紀錄」的流程，疑似違規仍交由榮譽委員會由既有聽證與申訴機制處理，監考與既有程序並行。',
 		talking_points: [
-			'資源缺口先行：調查中近五成（49%）CTO 說未增資源即難承受科技轉型速度，代表 AI、資安、平台更新先受預算與人力限制。',
-			'兩年費用壓力：幾乎所有受訪機構都預估未來兩年 IT 成本上升，將直接影響 AI 導入速度與防護機制投資時程。',
-			'風險結構明確：2030 年最怕的是 IT 人才招募與留任不足（62%）、資安威脅（59%）及成本不斷上升（56%），顯示治理風險高於技術失靈本身。',
-			'AI價值與疑慮並行：機構同時看重 AI 應用，卻指出價值、學術誠信與資安仍需並行驗證，不是「先上線再談風險」。',
-			'平台轉向初現：有學校正在測試 LMS 替代方案，透露基礎建設可能進入重整期，將影響教材、教務與學習歷程資料的資料治理架構。',
+			'制度轉折：歷經 133 年、以學生自我監督與通報為核心的榮譽規範，改為課堂考試由授課人員在場監考，規模與作法同步擴大。',
+			'AI壓力：文中指出 AI 被視為隱性作弊的轉捩點，學生與校方都認為同儕難以單靠目視辨識 AI 輔助作答。',
+			'推動動能：消息稱學生主導要求此變革，學生會調查顯示多數人傾向或持中立態度，顯示校務決策不只來自行政端。',
+			'作法設計：新規定規範監考人員「作為見證者」與紀錄人員，明確不直接干預考試進行，但可將可疑情況舉報給榮譽委員會。',
+			'跨校脈絡：文章提到 2023 年斯坦福試行局部監考、2014 年 Middlebury 個別系先導，形成由分散先行走向全校制度化的軌跡。',
+			'時間節奏：該政策於 2026-05-15 通過，計畫於 2026-07-01 上路，與開學前兩個月的課務整備期相呼應。',
 		],
-		quote: 'Nearly half of surveyed CTOs (49 percent) indicate that the current pace of technology-driven change is unsustainable without new resources.',
-		quote_attribution: 'Inside Higher Ed, 2026-05-12',
-		quote_source_url: 'https://www.insidehighered.com/news/quick-takes/2026/05/12/survey-ctos-cybersecurity-ai-the-lms-and-more',
+		quote: 'AI was the breaking point—where everyone thought that this introduced stealth cheating that was harder to detect without in-person supervision.',
+		quote_attribution: 'Inside Higher Ed, 2026-05-15',
+		quote_source_url: 'https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code',
 		quote_source_domain: 'insidehighered.com',
-		perspectives: [],
+		perspectives: [
+			{
+				text: '從治理面看，這是一則從道德自治向可執行程序轉移的案例：校方保留榮譽委員會權責，但前段加入人力監考來降低制度落差與證據不足。',
+				sources: [
+					{
+						name: 'Inside Higher Ed',
+						url: 'https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code',
+					},
+				],
+			},
+			{
+				text: '從學生觀點看，監考不只是防作弊工具，也被描述為修補同儕通報機制的社會成本，特別是避免因舉報而引發羞辱、排擠或網路人身攻擊的顧慮。',
+				sources: [
+					{
+						name: 'Inside Higher Ed',
+						url: 'https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code',
+					},
+				],
+			},
+			{
+				text: '與其他名校相比，普林斯頓在時序上是「學生端先拉起改革」且採取全校導入；斯坦福則是先以部分試點切入，學界可觀察不同治理節奏對校園文化的影響。',
+				sources: [
+					{
+						name: 'Inside Higher Ed',
+						url: 'https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code',
+					},
+				],
+			},
+		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'Inside Higher Ed 發布 2026 校園 CTO 調查，聚焦 AI、資安、LMS 與預算趨勢。',
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: '普林斯頓大學教授會通過修訂榮譽制度，決定實體考試全面導入監考。',
 			},
 			{
-				date: '2026-06-10',
-				date_iso: '2026-06-10',
-				content: '在美東 2 點舉行免費網路研討會，由 Inside Higher Ed 召開，討論調查結果與學校科技治理責任。',
+				date: '2026-07-01',
+				date_iso: '2026-07-01',
+				content: '新監考規定正式生效，課堂內考試由授課人員負責見證與紀錄。',
 			},
 		],
-		articles: [],
+		articles: [
+			{
+				title: 'Princeton Introduces Proctoring, Changing Century-Old Honor Code',
+				link: 'https://www.insidehighered.com/news/faculty/learning-assessment/2026/05/15/princeton-introduces-proctoring-changing-honor-code',
+				domain: 'insidehighered.com',
+				date: '2026-05-15',
+			},
+		],
 		domains: [
 			{ name: 'insidehighered.com' },
+		],
+	},
+	{
+		id: 'aiEducation-3',
+		cluster_number: 3,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 教育趨勢',
+		editorial_lens: '研究證據',
+		title: 'AI 對齊放大性別、族群與身障求職偏差',
+		short_summary: '這篇 2026 年 5 月發表於 arXiv 的工作論文，以量化對應式測試法，在 27 種語言模型與 177 個職位條件中比對履歷，檢驗種族、性別與身心障礙資訊對招募結果的影響。研究指出，模型並未天然縮小偏見，反而在對齊後放大差異，女性與黑人候選人出現更高的加權優勢，身障候選人不利比例同步上升，等值約 6 至 12 個月學歷與經驗權重差距，意味 AI 招募模型的公平治理會影響實務上候選人的進入機會。',
+		emoji: '⚖️',
+		did_you_know: '模型對齊(Post-training alignment)後，女性與黑人候選人的加分可放大到約 3 倍以上，而身障候選人的不利效果上升 171%，代表差距在決策階段會被實質擴大。注意：本研究為量化對照研究，不宜直接推論因果。',
+		talking_points: [
+			'證據類型：研究為量化對應式研究，直接以 27 個語言模型與 177 個職位做對照測試，觀察同條件履歷中人口特徵變化對招募排序的影響。',
+			'數據佐證：公開摘要未揭露原始樣本數、追蹤期間與信賴區間；但有量化數據顯示女性與黑人優勢放大為 325% 與 330%，身障候選人不利放大 171%。',
+			'偏差來源：摘要明確指出後訓練對齊是主因，該機制高於僅比較預訓練模型時的差距，代表微調流程本身可能重寫公平性邊界。',
+			'學力效果轉換：結果將偏差換算為 6 個月到 1 年學歷/經歷加權差，數值不只統計現象，而是足以改變初篩機會的可操作影響。',
+			'對教育場域啟示：若學校或企業用 AI 做第一關履歷篩選，模型對齊過程需納入偏差壓力測試，否則弱勢群體可能在入口處被系統性放大排除。',
+			'研究侷限：摘要未提供國家與資料集來源細節，難以直接推估台灣市場條件，需再以本地資料做再現驗證。',
+		],
+		quote: 'Post-training alignment is the primary driver: relative to matched pre-trained models, alignment amplifies advantages for female and Black candidates by 325% and 330%, and disadvantages for disabled candidates by 171%.',
+		quote_attribution: 'arXiv，2026-05-02',
+		quote_source_url: 'https://arxiv.org/abs/2605.13866',
+		quote_source_domain: 'arxiv.org',
+		perspectives: [
+			{
+				text: '這篇研究把重點放在模型工程流程：偏差不只是「資料裡有偏見」的延伸，而是對齊步驟本身可放大特定群體優勢與劣勢。對教育與人資 AI 導入端，代表治理第一道不是只看準確率，而是稽核 alignment 參數與目標函式。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.13866',
+					},
+				],
+			},
+			{
+				text: '延伸研究缺口：摘要只揭露核心效應與模型規模，但未提供樣本量、國家與語境；若想轉化為台灣教育或在地企業政策參考，仍需對照文獻與本地資料，確認效應方向是否穩定。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.13866',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-02',
+				date_iso: '2026-05-02',
+				content: 'arXiv 顯示研究投稿日期為 2 May 2026，題為 AI alignment 與 hiring discrimination 的跨模型實驗。',
+			},
+			{
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: '本研究摘要納入本次聚類資訊作為新聞源，集中呈現 race、gender、disability 在對齊模型招募決策中的放大效應。',
+			},
+		],
+		articles: [
+			{
+				title: 'AI Alignment Amplifies the Role of Race, Gender, and Disability in Hiring Decisions',
+				link: 'https://arxiv.org/abs/2605.13866',
+				domain: 'arxiv.org',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'arxiv.org' },
+		],
+	},
+	{
+		id: 'aiEducation-4',
+		cluster_number: 4,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 教育趨勢',
+		editorial_lens: '研究證據',
+		title: '教師多智能體教學流程有三條設計路徑',
+		short_summary: '本篇學術研究以 2026-05-15 在 arXiv 公布的論文為核心，分析61位教師在多智能體教學工作流設計中的行為紀錄，透過叢集分析與馬可夫模型萃取三類教師型態。研究再以15件教學作品與12位教師訪談補強，指出AI-TPACK 的落地並非只靠工具知識，而是系統思維、教學信念與自我效能交互作用，對教師能否持續設計可行的AI流程影響較大。',
+		emoji: '🤖',
+		did_you_know: '研究摘要可直接對照三類行為模式：系統化優化者、創作者與被動觀察者，且其學習/設計差異出現在行為軌跡上而非僅工具使用。注意：本研究為觀察性混合方法工作論文，不宜直接推論因果。',
+		talking_points: [
+			'證據類型：本研究以行為日誌資料為主體，搭配61位教師樣本的叢集與Markov轉移分析，再用15件成果作品與12位訪談做三角驗證，屬觀察性混合方法。',
+			'數據佐證：公開摘要揭露樣本為61位教師行為紀錄、15件作品、12位訪談；但未揭露追蹤期間、效果量或信賴區間，主要是類型差異描述。',
+			'三類原型：識別出Systematic Optimizers（系統化優化者）、Prolific Creators（高產能創作者）與Passive Observers（被動觀察者），分別對應複雜架構反覆修正、快速原型實作與低介入觀察策略。',
+			'AI-TPACK機制：研究指出整合結果不只是知識項目累積，而是系統思維、教學信念與自我效能三者共同驅動，對教師採用AI流程的成敗具解釋力。',
+			'設計差異：三型教師在多智能體流程中展現不同節奏與風險承擔，支持情境化支援比一套統一模板更能落地，尤其對跨學段教師培訓更具參考價值。',
+		],
+		quote: 'These findings call for differentiated scaffolding responsive to teachers cognitive-behavioral diversity.',
+		quote_attribution: 'arXiv, 2026-05-13',
+		quote_source_url: 'https://arxiv.org/abs/2605.13906',
+		quote_source_domain: 'arxiv.org',
+		perspectives: [
+			{
+				text: '觀點上看，本研究將教師AI採用還原為設計行為譜系，對教學流程研究有啟發，但摘要未提供學生成效資料，無法直接評估哪一類型對學習結果最佳。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.13906',
+					},
+				],
+			},
+			{
+				text: '延伸研究缺口：多為行為分類與認知機制探討，對教育現場最關鍵的政策層面（如工具授權、資安與流程治理）未展開，後續研究需補上跨校與跨制度比較。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.13906',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-13',
+				date_iso: '2026-05-13',
+				content: '論文在 arXiv 平台紀錄提交日，摘要同步揭露以教師行為日誌做多智能體設計流程叢集與Markov分析。',
+			},
+		],
+		articles: [
+			{
+				title: 'Modeling AI-TPACK in Practice: Insights from Teachers\' Multi-Agent Workflow Design',
+				link: 'https://arxiv.org/abs/2605.13906',
+				domain: 'arxiv.org',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'arxiv.org' },
+		],
+	},
+	{
+		id: 'aiEducation-5',
+		cluster_number: 5,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: 'AI 教育趨勢',
+		editorial_lens: '研究證據',
+		title: '五天AI Agent工作坊讓93名前高中生CT躍升',
+		short_summary: '這篇混合方法研究追蹤93位前高中生，在5天AI agent創作工作坊（使用無程式平台CocoFlow）中，以前後測、行為紀錄與訪談交叉驗證計算思維成長。摘要顯示抽象思維與演算法思維皆有明顯進步，效應值約0.71與0.70；層級迴歸指出反覆測試投入度能預測自我效能提升（β=0.20，p=0.05），且中等起點學生反而進步最大，形成「最佳發展區」現象（eta squared=0.55），支持課程需分層支撐。研究未揭露場域國家資訊。',
+		emoji: '🧠',
+		did_you_know: '公開摘要可直接確認兩項效應值：抽象思維d=0.71、演算法思維d=0.70，並有迭代測試參與度與自我效能之beta=0.20、p=0.05關係。注意：本研究為混合方法研究，不宜直接推論因果。',
+		talking_points: [
+			'證據類型：混合方法研究，設計包含前後測、行為紀錄與訪談，樣本為93名前高中生，實驗流程為5天AI agent創作工作坊。',
+			'數據佐證：公開摘要揭示抽象思維d=0.71、演算法思維d=0.70；階層迴歸顯示迭代測試參與度對自我效能提升有beta=0.20（p=0.05）。',
+			'研究發現：中等起點學生的進步幅度最大，研究將其描述為最佳發展區，eta squared=0.55，顯示學習成效不隨初始高低線性增加。',
+			'行為機制：學習者以CocoFlow為主要工具完成AI agent設計，系統化紀錄學習行為軌跡，可用來判斷過度工程化與任務拆解困難的具體點。',
+			'延展訊號：高起點學生常出現過度工程化、低起點學生易卡在任務拆解，中段學生較能靈活修正，提示教學要以分層腳手架替代一刀切。',
+		],
+		quote: 'Results revealed significant improvements in abstract thinking (effect size d = 0.71) and algorithmic thinking (effect size d = 0.70).',
+		quote_attribution: 'arXiv, 2026-05-15',
+		quote_source_url: 'https://arxiv.org/abs/2605.14330',
+		quote_source_domain: 'arxiv.org',
+		perspectives: [
+			{
+				text: '這份研究的關鍵訊號是「中等起點才最有效率」而非弱勢優先或精熟優先，對教師進行分層支援與任務難度調節有直接啟示。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.14330',
+					},
+				],
+			},
+			{
+				text: '研究缺少國別、對照組與更長追蹤週期，對政策層面的可推廣性仍是延伸研究缺口；現階段只能當作場域設計與教材流程的參考線索。',
+				sources: [
+					{
+						name: 'arXiv',
+						url: 'https://arxiv.org/abs/2605.14330',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-14',
+				date_iso: '2026-05-14',
+				content: '論文於 arXiv 顯示提交時間，正式列出研究方法、樣本與初步成果指標。',
+			},
+			{
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: '系統化更新來源為 2605.14330 版本，將該研究納入 AI 教育聚類素材。',
+			},
+		],
+		articles: [
+			{
+				title: 'Computational Thinking Development in AI Agent Creation: A Mixed-Methods Study',
+				link: 'https://arxiv.org/abs/2605.14330',
+				domain: 'arxiv.org',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'arxiv.org' },
 		],
 	},
 ];
@@ -986,244 +875,68 @@ const aiClassroomStories: Story[] = [
 		unique_domains: 1,
 		number_of_titles: 1,
 		category: 'AI 教學實戰',
-		editorial_lens: '教材共備',
-		title: '用 AI 把教材改成可共享版本',
-		short_summary: '這篇在講教師如何用生成式 AI 更新教材：先找可免費使用的開放教材，再依自己的課程改寫，最後補上例子、活動與評量。它的價值不在炫技，而是降低學生買教材的負擔，也降低教師從零做教材的時間成本。對中學教師來說，啟發是把 AI 當成教材整理與改寫助手，但授權、查證與課程目標仍要由老師把關。',
-		emoji: '📘',
-		did_you_know: '開放教材（OER）指可免費使用、改作或再分享的教材。原文重點不是追新工具，而是讓教材成本、取得門檻與更新速度一起改善。',
+		editorial_lens: '工作方法',
+		title: '跨學段可抄：4 招讓教師 AI Chatbot 回覆更準',
+		short_summary: '在 2026 年 5 月 13 日，ClassTechTips 發表《4 AI Chatbot Tips for Teachers to Go Beyond the Basics》，主張教師在使用 ChatGPT、Gemini、Copilot 時不只靠一次提問，而是先給足背景並搭配連續追問。文章以角色設定、內容背景、格式需求為核心，目的是把模型輸出從「還可以」拉近到可直接採用的教學素材。對需要高頻備課的教師而言，重點不在換工具，而在提示詞設計與對話節奏的工作流程。​',
+		emoji: '🤖',
+		did_you_know: '文中舉例「增加情境背景後再反覆追問」，可讓輸出從草稿階段進到「80～90%」可用區間，明顯降低教師在同一題目上重複微調的次數與耗時。',
 		talking_points: [
-			'主要做法：教師先使用既有開放教材，再用生成式 AI 協助改寫語氣、補充例子、設計活動，最後整理成適合自己班級的版本。',
-			'真正價值：學生少花教材費，教師也不用每次從零開始做講義；教材能被持續修訂、共享，讓備課成果留下來。',
-			'教師角色：AI 可以幫忙整理與改寫，但不能替老師決定課程目標、內容正確性、授權範圍與學生是否真的看得懂。',
-			'可借鏡處：中學教師可從小單元開始，先把一份公開資料改成課堂閱讀、討論題或練習題，再逐步累積成自己的教材庫。',
-			'注意界線：開放教材不等於隨便複製；使用前仍要確認授權、來源可靠性與是否符合本地課綱。',
+			'先交代情境資訊：提示詞先寫明年級、學生需求與目標能力，能讓回應更貼近課堂情境，減少事後修訂的回合數。',
+			'把 Chatbot 當協作夥伴：作者建議改為與 ChatGPT、Gemini、Copilot 進行多輪對話，而不是一次問到底，逐段調整到可用才停止。',
+			'角色提示可控難度：例如要求「三年級閱讀專家」或指定特定學段，會改變問題詞彙與難度設計，老師可複製同一套方式套到不同班級。',
+			'固定輸出規格：在 prompt 加上清單、作業單或題型格式，能直接拿來接續課程文件與課前流程，降低整併時間。',
+			'重複熱點與新作法：核心是「上下文 + 追問」；新出現做法是把 prompt 當工作流，每輪補條件再修稿，快速建立可試作版本。',
 		],
-		quote: null,
-		quote_attribution: null,
-		quote_source_url: null,
-		quote_source_domain: null,
-		perspectives: [
-			{
-				text: '實務角度把重心放在小步試作：先挑一小段公開教材，改成自己班上的閱讀、活動或練習，確認有用後再擴大，不急著一次改造整門課。',
-				sources: [
-					{
-						name: 'AI Educ Simplified',
-						url: 'https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with',
-					},
-				],
-			},
-			{
-				text: '治理角度提醒，AI 與開放教材要同步檢查授權、內容正確性、修訂責任與長期維護，不能只看生成速度。',
-				sources: [
-					{
-						name: 'EDUCAUSE Review',
-						url: 'https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: '用生成式 AI 擴充開放教材',
-				link: 'https://aiedusimplified.substack.com/p/new-publicaton-expanding-oer-with',
-				domain: 'aiedusimplified.substack.com',
-				date: '2026-05-12',
-			},
-		],
-		domains: [
-			{ name: 'aiedusimplified.substack.com' },
-		],
-	},
-	{
-		id: 'aiClassroom-2',
-		cluster_number: 2,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		editorial_lens: '教學流程',
-		title: '暑假第一天可複製的 AI 教室活動清單',
-		short_summary: '2026 年 5 月 12 日，Easy EdTech Podcast 的第 370 期整理出 9 項暑假第一天教室活動，提供可直接帶入備課的節目素材，內容結合音樂、故事敘事、AI 圖像生成與虛擬旅遊。節目強調先用低門檻工具啟動學生參與，再用目標設定與反思活動收斂成果，讓暑前接軌課程更快上手。對教師而言，這組做法的價值在於降低臨近開學準備負擔，並提供跨學段可改寫的活動骨架。',
-		emoji: '🧑‍🏫',
-		did_you_know: '第 370 期明確放出 9 項暑假第一天活動，除了 AI 圖像與虛擬旅遊，還搭配 Mentimeter、Padlet、Canva、Adobe Firefly 等工具，並提供可直接引用的課前腳本。',
-		talking_points: [
-			'開場熱身：節目建議在暑假第一天用音樂與故事引導開場，這一流程可快速提氣氛，先聚焦參與而非直接進入複雜講授。',
-			'可複製工具鏈：提到 Mentimeter、Padlet、Canva、Adobe Firefly、Google Arts & Culture 等 5 類工具，教師可先從 1~2 個工具建立最小可行流程。',
-			'AI 生成作法：AI 圖像與簡報設計被放入同一活動中，能讓學生在 45 分鐘內完成題材建置、上傳與分享。',
-			'虛擬與目標：有 1 組「虛擬旅遊」加「暑期目標設定」組合，時間軸為探索→立目標→回顧，適合接續升級為學期導入。',
-			'商業訊號辨識：內文含 QRG、書籍與平台導流，教師可視為補充資源，不宜直接當作課程成效證據，需先過濾再採用。',
-		],
-		quote: 'Use music, storytelling, and AI tools to bring summer themes into your lessons.',
-		quote_attribution: 'Easy EdTech, 2026-05-12',
-		quote_source_url: 'https://classtechtips.com/2026/05/12/first-day-of-summer-activities-for-classroom-370/',
+		quote: 'Instead of using a chatbot like a search engine, you treat it like a collaborative partner.',
+		quote_attribution: 'ClassTechTips, 2026-05-13',
+		quote_source_url: 'https://classtechtips.com/2026/05/13/ai-chatbot-tips-for-teachers/',
 		quote_source_domain: 'classtechtips.com',
 		perspectives: [
 			{
-				text: '從教學實作觀點看，這一則資訊偏重可行模板而非理論研究，價值在於降低備課摩擦，讓教師在開學前短時間內就能組成一套活動流程。',
+				text: '文章重點放在教學實作流程：教師只要掌握提示詞節奏，就能把生成式輸出轉成可複用素材。對常態化備課而言，這是立即可行的效率補丁。',
 				sources: [
 					{
-						name: 'Easy EdTech',
-						url: 'https://classtechtips.com/2026/05/12/first-day-of-summer-activities-for-classroom-370/',
+						name: 'ClassTechTips',
+						url: 'https://classtechtips.com/2026/05/13/ai-chatbot-tips-for-teachers/',
 					},
 				],
 			},
 			{
-				text: '從治理與採購觀點看，節目同時包含資源導流與贊助提示，雖提供工具方向，但教師若直接照搬可能把教學判斷淪為產品路徑，需以學習目標為唯一篩選條件。',
+				text: '內容強調操作方法而非風險治理，對高需求課堂有幫助，但在作業批改、學生資料使用與著作權責任上仍有補強空間，須補教師人工審核。',
 				sources: [
 					{
-						name: 'Easy EdTech',
-						url: 'https://classtechtips.com/2026/05/12/first-day-of-summer-activities-for-classroom-370/',
+						name: 'ClassTechTips',
+						url: 'https://classtechtips.com/2026/05/13/ai-chatbot-tips-for-teachers/',
+					},
+				],
+			},
+			{
+				text: '文內示範從十年級到三年級的場景，但不僅對高中，核心在「角色、情境、格式」三欄位設計，顯示可跨學段建立共通模板再做微調。',
+				sources: [
+					{
+						name: 'ClassTechTips',
+						url: 'https://classtechtips.com/2026/05/13/ai-chatbot-tips-for-teachers/',
 					},
 				],
 			},
 		],
 		timeline: [
 			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: 'Easy EdTech 發布 Podcast 第 370 期，公布 9 項暑假第一天可用的教室活動與工具組合。',
+				date: '2026-05-13',
+				date_iso: '2026-05-13',
+				content: 'ClassTechTips 發布《4 AI Chatbot Tips for Teachers to Go Beyond the Basics》，提出以角色、背景與多輪追問提升教師使用 AI Chatbot 的實務方法。',
 			},
 		],
 		articles: [
 			{
-				title: '9 EdTech Activities to Celebrate the First Day of Summer – Easy EdTech Podcast 370',
-				link: 'https://classtechtips.com/2026/05/12/first-day-of-summer-activities-for-classroom-370/',
+				title: '4 AI Chatbot Tips for Teachers to Go Beyond the Basics',
+				link: 'https://classtechtips.com/2026/05/13/ai-chatbot-tips-for-teachers/',
 				domain: 'classtechtips.com',
-				date: '2026-05-12',
+				date: '2026-05-13',
 			},
 		],
 		domains: [
 			{ name: 'classtechtips.com' },
-		],
-	},
-	{
-		id: 'aiClassroom-3',
-		cluster_number: 3,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		editorial_lens: '工作方法',
-		title: '每週免費教學 AI 工具盤點',
-		short_summary: '2026-05-12，作者宣布改為每週發布，整理可免費直接拿來在教室使用的 AI 工具，並同步收錄 Story Terra、Flint、Brisk、ESL 個人化教學等案例。文章未只談新功能，也納入學生 AI 使用指引與 AI 防抄襲作業建議。對教師而言，價值在於同時給出工具可得性、應用方向與課堂治理的參考框架，縮短從「看到新工具」到「能在課堂落地」的落差。',
-		emoji: '🧭',
-		did_you_know: '文中將 Story Terra 當作可用示例，表示它可在 AI 地球儀上標示超過 100,000 本書的發生地，讓教材可直接切入地理與文學情境。',
-		talking_points: [
-			'每週更新：從 5/12 起改為固定每週專欄，目標是只推可免費、可直接在課堂採用的 AI 工具與流程。',
-			'地圖應用：Story Terra 可展示 100,000 多本書籍的故事地點，給閱讀或跨學科課程提供地理脈絡化素材。',
-			'教師定位：文章引用〈Why Using AI Is Fine for Teachers but Not for Students〉的觀點，清楚把教師助教與學生自主學習界線分開。',
-			'行政效率：Brisk 被列為處理教學重活工具，對大量備課、行政任務有立即可借鏡的流程端節省意義。',
-			'治理並行：除推薦工具外，也同步提供 Flint 及 AI-resistant assignment 方向，提示導入時要同步設計任務與誠信規範。',
-		],
-		quote: 'AI should be your assistant. You shouldn’t be AI’s assistant.',
-		quote_attribution: 'Edublogs, 2026-05-12',
-		quote_source_url: 'https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/',
-		quote_source_domain: 'larryferlazzo.edublogs.org',
-		perspectives: [
-			{
-				text: 'Edutopia 式資源偏向教學效率，強調 AI 幫教師做繁重工；該文將這條路徑放在前段，回應一線教師先找得懂好用工具的需求。',
-				sources: [
-					{
-						name: 'Edutopia（原文轉述）',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/',
-					},
-				],
-			},
-			{
-				text: 'ELT Cafe 類建議偏向語文課程個人化設計，與文中重複出現的教師流程優化訊息形成互補：不是只要工具，而是工具對應特定教學任務。',
-				sources: [
-					{
-						name: 'ELT Cafe（原文轉述）',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/',
-					},
-				],
-			},
-			{
-				text: 'Wired 的 Alpha School 案例偏市場與信任議題，與文章最後加入作業倫理、學生規範形成對照：市場熱點可借鏡，但仍需回到學校教學治理。',
-				sources: [
-					{
-						name: 'Wired（原文轉述）',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: '發文宣告每週固定更新免費教室 AI 工具專欄，並整合 Story Terra、Flint、Brisk 等可參考案例。',
-			},
-		],
-		articles: [
-			{
-				title: 'This Week’s Free & Useful Artificial Intelligence Tools For The Classroom',
-				link: 'https://larryferlazzo.edublogs.org/2026/05/12/this-weeks-free-useful-artificial-intelligence-tools-for-the-classroom-151/',
-				domain: 'larryferlazzo.edublogs.org',
-				date: '2026-05-12',
-			},
-		],
-		domains: [
-			{ name: 'larryferlazzo.edublogs.org' },
-		],
-	},
-	{
-		id: 'aiClassroom-4',
-		cluster_number: 4,
-		unique_domains: 1,
-		number_of_titles: 1,
-		category: 'AI 教學實戰',
-		editorial_lens: '教學流程',
-		title: '跨學段可借鏡：AI 時代歸納式寫作流程',
-		short_summary: '這篇 2026 年 5 月 10 日發佈的教師觀察文章整理出一位學生的研究寫作實務：先建立總體論點、再以主題分類段落，再針對每個主題蒐集素材並用顏色標記第一手證據，最後才補寫主題句。作者將此歸納式流程放入 AI 時代「AI-resistant assignments」清單，重點在於讓寫作結構由研究與修正過程逐步生成，避免只靠一開始的固定大綱，對教師調整作業設計更有參考價值。',
-		emoji: '✍️',
-		did_you_know: '受訪學生會先決定論文方向再分段研究，並以主題分區、色碼證據與邊欄分析筆記並行，研究過程中可反覆回看證據來源，最後再補主題句。',
-		talking_points: [
-			'先定總論點後分段：受訪者先建立整體論證方向，再依段落主題做分類，讓文章架構在研究補充後自然浮現。',
-			'證據色碼與邊欄筆記：學生會將 primary source 逐一色碼化，並在邊欄保留「為何取用」的分析註記，為後續檢核提供追蹤依據。',
-			'主題句後補：流程最後才寫 topic sentences，寫作順序被作者形容為「極端反覆」，說明結構不是先寫定、而是由證據驅動。',
-			'可直接試作的作業流程：在研究型任務中，教師可先要求學生列出總論點與段落分類，再用蒐證筆記逐步補齊，較符合 AI 時代可檢視的作業要求。',
-			'納入 AI 抗性策略：該方法被放進「AI-resistant assignments」名單，核心是讓學生提交可追溯的思考路徑，而非只測試工具使用對錯。',
-		],
-		quote: 'It\'s extremely iterative.',
-		quote_attribution: 'Edublogs, 2026-05-10',
-		quote_source_url: 'https://larryferlazzo.edublogs.org/2026/05/10/inductive-teaching-has-always-been-an-effective-strategy-perhaps-even-more-so-in-the-ai-era/',
-		quote_source_domain: 'larryferlazzo.edublogs.org',
-		perspectives: [
-			{
-				text: '觀察來自作者與學生實作的流程，挑戰傳統「先出大綱」的慣例，改成以研究發展結構；這對擅長套模板授課的課堂設計是明顯的轉向。',
-				sources: [
-					{
-						name: 'Edublogs',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/10/inductive-teaching-has-always-been-an-effective-strategy-perhaps-even-more-so-in-the-ai-era/',
-					},
-				],
-			},
-			{
-				text: '與單純提醒「勿用 AI」的作法不同，本文主張把作業焦點放在證據與流程追溯；在 AI 教育趨勢裡，這是「工具使用」與「寫作能力」判準取捨的另一側。',
-				sources: [
-					{
-						name: 'Edublogs',
-						url: 'https://larryferlazzo.edublogs.org/2026/05/10/inductive-teaching-has-always-been-an-effective-strategy-perhaps-even-more-so-in-the-ai-era/',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-10',
-				date_iso: '2026-05-10',
-				content: '文章發表並整理學生訪談，提出從總論點到主題分類、逐步研究、再補題句的歸納式寫作流程。',
-			},
-		],
-		articles: [
-			{
-				title: 'Inductive Teaching Has Always Been An Effective Strategy, Perhaps Even More So In The AI Era',
-				link: 'https://larryferlazzo.edublogs.org/2026/05/10/inductive-teaching-has-always-been-an-effective-strategy-perhaps-even-more-so-in-the-ai-era/',
-				domain: 'larryferlazzo.edublogs.org',
-				date: '2026-05-10',
-			},
-		],
-		domains: [
-			{ name: 'larryferlazzo.edublogs.org' },
 		],
 	},
 ];
@@ -1236,25 +949,24 @@ const educationResearchStories: Story[] = [
 		number_of_titles: 1,
 		category: '教育研究',
 		editorial_lens: '研究證據',
-		title: '智利建校補齊：代間學歷與就業同步上升',
-		short_summary: '研究以1965～1966年智利在供給受限社區大規模新增並完備小學教室為準自然實驗，採準實驗設計，結合大量人口普查資料追蹤長期結果。結果顯示，童年曾受這波建校與配師政策影響者，成年後學歷與勞動市場表現皆提高，女性的歷史學歷落差明顯縮小；更重要的是，女性受惠者所生子女有較高機率準時升學且完成更多學歷。研究顯示基礎建設投入可能同時形成當代與跨代人力資本效益。',
+		title: '智利建校衝擊顯示女性世代學習可逆轉',
+		short_summary: '在智利1965至1966年間，政府在供給不足社區大量新建並配齡編制國小課室。NBER 的這份工作論文採準實驗設計，利用有無新建課室形成比較，並連結大型普查資料追到成年結果。研究指出受惠者在學歷與勞動市場表現較佳，女性學歷落差明顯縮小，且女性的受惠對下一代子女的按時升學與完成學校年限也產生正向外溢，但摘要未揭露完整樣本數與各項效果指標，需依據原文再行驗證。',
 		emoji: '🏫',
-		did_you_know: '摘要指出，女性受惠者的子女在升學時序與完成程度上有明顯正向差異，且研究稱公共資金邊際價值為13，含成人直接效果與跨代外溢效應。注意：本研究為準實驗研究，不宜直接推論因果。',
+		did_you_know: '研究指出，智利1965–1966年在供給不足社區新增「數千」間國小教室後，追蹤結果顯示成人與其子女都出現較佳的學習進程與完成年限，女性效益尤為明顯。注意：本研究為工作論文，研究設計不宜直接推論因果。',
 		talking_points: [
-			'證據類型：本文為 NBER 工作論文，使用準實驗（quasi-experimental）設計，結合大量人口普查資料，比對建校暴露與未暴露群體的成年結果。',
-			'數據佐證：摘要未揭露完整樣本數、追蹤期間的精準效果量與信賴區間；目前可確認資訊為 1965–1966 年建校政策與「公共資金邊際價值 13」等核心結果。',
-			'時間介面：政策在 1965–1966 年於供給不足社區同步推行，具可識別起訖時點，研究可藉此建立受影響與非受影響人群的長期差異比較。',
-			'性別外溢：研究發現女性受惠後，不僅自身學歷改善，且其子女的升學時序與學歷完成也同步提昇，女性學歷落差明顯收斂。',
-			'政策意涵：若以「建校供給衝擊」理解教育投入，本研究提示教育支出可帶來跨世代回報，但在缺乏完整數據揭露下，實務決策仍需搭配補強證據。',
-			'研究侷限：研究未補齊樣本規模與誤差估計，且僅來自單一國家歷史情境，不能直接視為所有地區都可複製的一刀切政策論證。',
+			'證據類型：研究採自然實驗語境下的準實驗設計，以1965–1966智利建校政策作為外生衝擊，對照受惠與未受惠社區。',
+			'數據佐證：摘要僅揭露「數千」間教室投入、跨世代追蹤設計與方向性結果，未揭露樣本數、追蹤樣本規模、效果量與信賴區間。',
+			'關鍵機制：結論傾向於把基礎建設可及性轉為學習機會，先改善就學條件，進而牽動成人女性學歷與其子女的持續進修。',
+			'老師下一步可以怎麼做：先盤點班級與里別的通學時間、教室密度、師資缺口，設定前測數據後再追蹤出席率、留級率、畢業年齡。',
+			'課堂管理可借鏡：將基礎設施與學習品質連動，每季以「可及性改善前後」對照，記錄學生產出（作業完成率、考核通過率）與教師回饋。',
 		],
 		quote: 'The marginal value of public funds is 13, including direct effects on adults and intergenerational spillovers.',
-		quote_attribution: 'NBER, 2026-05-13',
+		quote_attribution: 'NBER, 2026-05-16',
 		quote_source_url: 'https://www.nber.org/papers/w35042#fromrss',
 		quote_source_domain: 'nber.org',
 		perspectives: [
 			{
-				text: '一個可讀取的重點是，研究將建校供應擴張視為可量測政策工具，將關注點從短期入學率轉到成年與下一代軌跡，對傳統只看年度考核的政策評估是補強。',
+				text: '研究重點在於基礎設施投資與長期機會，提醒政策成效不只看短期升學率，而是看成人與子女的跨代結果；這提供校務決策較完整的成效窗口。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1263,7 +975,7 @@ const educationResearchStories: Story[] = [
 				],
 			},
 			{
-				text: '延伸研究缺口在於結果仍缺少可驗證的效應精準度（樣本數、區間估計未揭露）。單篇研究已顯示方向性，未來仍需更多國家、不同學制與不同世代設定來檢驗外部效度。',
+				text: '延伸研究缺口：該結果來自單一國家單一時段，未能直接控制台灣偏鄉交通、社區經濟與教師留任差異，外推前須先做本地對照試算。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1276,17 +988,17 @@ const educationResearchStories: Story[] = [
 			{
 				date: '1965-01-01',
 				date_iso: '1965-01-01',
-				content: '智利在供給不足社區推動新建大量小學教室並補齊師資配置，擴張基礎建設供給。',
+				content: '智利開始在供給不足社區大規模新建並編制教師的國小教室',
 			},
 			{
 				date: '1966-12-31',
 				date_iso: '1966-12-31',
-				content: '該補齊與配備政策持續到1966年，形成可清楚界定的暴露窗口，供研究進行準實驗比較。',
+				content: '該階段建校衝擊持續進行，形成可供後續長期追蹤的政策檢驗條件',
 			},
 			{
-				date: '2026-05-13',
-				date_iso: '2026-05-13',
-				content: 'NBER 發布工作論文 W35042，回顧該政策對成年與跨代結果的長期影響。',
+				date: '2026-05-16',
+				date_iso: '2026-05-16',
+				content: 'NBER 公佈工作論文 Working Paper 35042，提出跨世代溢出與性別差距縮小結果',
 			},
 		],
 		articles: [
@@ -1294,7 +1006,7 @@ const educationResearchStories: Story[] = [
 				title: 'Building Opportunity: The Intergenerational Effects of Chilean School Construction',
 				link: 'https://www.nber.org/papers/w35042#fromrss',
 				domain: 'nber.org',
-				date: '2026-05-13',
+				date: '2026-05-16',
 			},
 		],
 		domains: [
@@ -1308,25 +1020,24 @@ const educationResearchStories: Story[] = [
 		number_of_titles: 1,
 		category: '教育研究',
 		editorial_lens: '研究證據',
-		title: '大學女性權威導師對學生性別觀的長期影響',
-		short_summary: '這份 NBER 工作論文以中東某所精英大學第一學年學生為樣本，利用新生被隨機分派到導師的安排作為準實驗設計，並結合學校行政資料與長達24年的校友問卷追蹤，研究高階權威角色對性別規範的長期作用。主要發現是：女性受試者若被分派女性導師，政治與職場平等態度更偏向開放；男性則出現更保守傾向；在宗教背景學生與男生居多的STEM領域更為明顯。研究指出，並非單純接觸成功女性同儕，而是來自具權威、貢獻高的女性導師，且研究摘要未公開樣本數與效果量。',
+		title: '大學權威角色分化學生性別觀',
+		short_summary: '這篇 NBER 工作論文以中東一所精英大學新生為樣本，利用第一學期學生隨機分派導師的研究設計，並以校友問卷追蹤長達 24 年的態度變化。結果顯示，分派到女性導師的女性學生較傾向政治與工作上持平權觀，但男性學生則較保守；效應在宗教背景學生與男性主導 STEM 情境更明顯。對台灣教師與校務來說，研究提示「權威配置」會改變班級性別規範，可作制度設計參考，但因單校條件限制，需在地驗證後再外推。',
 		emoji: '⚖️',
-		did_you_know: '摘要指出，受試者接受女性權威導師後，女性更可能選修性別主題課程或偏好女性授課者，顯示態度變化可能透過課程與師資選擇被延續。注意：本研究為工作論文，不宜直接推論因果。',
+		did_you_know: '研究指出，女性導師影響不只在想法上，更可能牽動後續行為選擇；女性被分派女性導師的學生更常往女性教師或性別題材課程靠攏。注意：本研究為工作論文，不宜直接推論因果。',
 		talking_points: [
-			'證據類型：研究採用第一學年導師隨機分派，搭配行政紀錄與24年追蹤校友問卷，屬準實驗長期設計。',
-			'數據佐證：公開摘要未揭露樣本數、效果量與信賴區間；可確認追蹤期為24年，以及性別態度有可觀察方向差異。',
-			'主要結果：女性受試者若分派到女性導師，政治與職場平等觀更高；男性受試者則較保守，反映權威身分改變兩性反應方向。',
-			'效應條件：宗教背景學生與男生比例較高的 STEM 科系裡，女性導師對性別規範的影響更明顯。',
-			'機制線索：研究認為影響非來自一般接觸成功女性同儕，而是來自高階、高價值加值的女性權威，同時伴隨女性學生課程/師資偏好調整。',
-			'進一步含義：作者提出「進步悖論」：女性權威增加能擴大女性機會，但亦可能在男性中引發更強保守回應。',
+			'證據類型：NBER 工作論文，核心是新生第一學期隨機分派導師的自然實驗，再配合校友長期問卷，屬高於一般橫斷面報告的因果線索型證據。',
+			'數據佐證：研究追蹤到 24 年後仍可觀察到性別態度差異，但摘要未揭露各組樣本數、效果量與信賴區間，無法直接量化影響幅度。',
+			'老師下一步可做：優先檢視班級或導師制度中的權威佈局，建立穩定且可見的女性領導角色（課程帶領、評量建議、輔導流程），讓學生在日常互動中持續看到非傳統性別角色。',
+			'老師下一步可做：每一週安排一題「誰適合領導/分工」討論任務，讓學生用具體事件回應，教師再用回饋句指出其中的性別假設，幫助其分辨性別化決策。',
+			'老師下一步可做：實施前測與後測兩次，觀察學生對女性權威、職涯與分工語句的改變，搭配小組合作紀錄與匿名回饋單，持續修正教室規則與討論分工。',
 		],
-		quote: 'More broadly, our findings reveal a progress paradox whereby gains in female representation in elite authority expand opportunities for women while intensifying backlash among men, thereby deepening gender polarization.',
-		quote_attribution: 'NBER Working Paper 35174, 2026-05-13',
+		quote: 'A simple framework combining belief updating and identity-based status threat helps explain these patterns of female empowerment and male backlash.',
+		quote_attribution: 'NBER, 2026-05-16',
 		quote_source_url: 'https://www.nber.org/papers/w35174#fromrss',
 		quote_source_domain: 'nber.org',
 		perspectives: [
 			{
-				text: '延伸研究缺口：目前樣本來自單一精英大學，結果有利於檢驗機制，但未能直接推廣到非精英高教體系或其他國家。',
+				text: '研究將差異歸因於權威角色本身，而非單純看到成功女性就能改變態度。對校方可借鏡的是長期制度設計，不是短暫活動宣傳。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1335,13 +1046,20 @@ const educationResearchStories: Story[] = [
 				],
 			},
 			{
-				text: '張力在於政策含義：研究揭示女性權威可形成正向激勵，但同時又加劇男性保守化，代表同一制度調整可能同時產生授權與反撥。',
+				text: '延伸研究缺口仍在：單一中東精英校無法對應台灣不同學段與文化情境，且未公開效果量。外推前需有跨校與不同年齡層的對照研究，否則外部效度不穩。',
 				sources: [
 					{
 						name: 'NBER',
 						url: 'https://www.nber.org/papers/w35174#fromrss',
 					},
 				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-16',
+				date_iso: '2026-05-16',
+				content: 'NBER 工作論文發表，使用第一學期導師隨機分派為識別方法，並追蹤校友長程性別態度變化。',
 			},
 		],
 		articles: [
@@ -1349,7 +1067,7 @@ const educationResearchStories: Story[] = [
 				title: 'Authority Figures and the Polarization of Gender Norms',
 				link: 'https://www.nber.org/papers/w35174#fromrss',
 				domain: 'nber.org',
-				date: '2026-05-13',
+				date: '2026-05-16',
 			},
 		],
 		domains: [
@@ -1363,24 +1081,24 @@ const educationResearchStories: Story[] = [
 		number_of_titles: 1,
 		category: '教育研究',
 		editorial_lens: '研究證據',
-		title: '四年制大學女性化推升非大學男性婚姻壓力',
-		short_summary: '這份 2026 年刊於 NBER 的工作論文，以美國為研究場域，比對半個世紀四年制大學入學結構與婚姻結果，採用跨世代與跨地區的觀察性設計。研究指出，四年制大學由男性占多數轉為女性為主後，學歷較高女性婚姻率未明顯下降，反而轉向與高收入非大學男性配偶。此同時搭配非大學男性整體經濟地位下滑，導致未取得大學學位女性在婚配上受限。摘要未揭露樣本數、追蹤期間與精準模型。',
-		emoji: '📉',
-		did_you_know: '研究估計，未婚且未與大學女性配偶、同時具備「高於全國收入中位數」條件的非大學男性比例已經下降超過 50%，使非大學女性可婚配的穩定男性更少。注意：本研究為觀察性工作論文，不宜直接推論因果。',
+		title: '美國五十年高教與婚育機會變化',
+		short_summary: '這篇NBER 2026工作論文用美國五十年教育、婚姻與就業資料做跨世代、跨地區觀察分析，摘要未揭露完整樣本數。結果顯示大學男性比例下降後，女生婚姻率不降，反向配偶到高收入非學位男性；同時「高於全國薪資中位且未與大學女生結婚」的非學位男性供給降幅超過50%，使非學位女性的穩定婚育選擇空間大幅縮小。',
+		emoji: '📊',
+		did_you_know: '研究指出高於全國薪資中位且未與大學女生結婚的非學位男性，對非學位女性可選穩定伴侶的比例已下降超過五成。注意：本研究為觀察性工作論文，不宜直接推論因果。',
 		talking_points: [
-			'證據類型：採觀察性研究，使用美國跨世代與跨地區教育、婚姻資料做關聯估計，未執行 RCT 或隨機干預設計。',
-			'數據佐證：摘要明列美國四十年來大學生源性別轉換，以及「非大學高收入且未婚對象不含大學女性」比例下降超過 50%，但未公開樣本數與效果量。',
-			'婚姻市場張力：當大學男性供給變少時，學歷女性婚姻率仍可維持，主要因其轉向與高收入非大學男性形成婚配。',
-			'結構性衝擊：論文主張非大學男性經濟地位同步走弱，放大了非大學女性婚姻選擇受限，這是婚姻率差距的關鍵傳導鏈。',
-			'地區比較發現：非大學男性失業與入獄率較低的地區，教育差距在婚姻結果上的落差較小，地方經濟條件具明顯調節效果。',
+			'證據類型：NBER工作論文，使用美國觀察性資料，採跨世代與跨地區比較，核心在高教學歷、婚姻率與男性經濟結果的對應關係。',
+			'數據佐證：摘要明確指出該供給比例對非學位女性下降超過50%，且大學女生婚姻率沒有同步下滑；但完整樣本數與模型估計未在公開摘要揭露。',
+			'教學提醒：高中社會課可用本研究做資料閱讀入門，先定義變項（學歷、收入、婚姻狀態、失業率）再討論該研究的推論邊界。',
+			'教學流程：老師可要求學生做「假設—資料—解讀」三步：繪製三個世代與三個地區趨勢圖，提出可驗證命題，並明確標記哪裡是關聯、哪裡未必是因果。',
+			'成效觀測：學生提交一頁簡報需包含可追蹤指標（失業率、收入中位、非學位男性比例、未婚率）與限制條件，教師以回饋語提醒「你的主張是否能被其他地區資料反證」。',
 		],
-		quote: 'As college men have become increasingly scarce, college women have maintained stable marriage rates by marrying high-earning non-college men.',
-		quote_attribution: 'NBER, 2026-05-13',
+		quote: 'The share of non-college men who earn above the national median and are not married to college women has fallen by more than 50%.',
+		quote_attribution: 'NBER, 2026-05-16',
 		quote_source_url: 'https://www.nber.org/papers/w35179#fromrss',
 		quote_source_domain: 'nber.org',
 		perspectives: [
 			{
-				text: '延伸結構解釋：研究將差距歸因於大學男性供需失衡與非大學男性經濟衰退重疊，但未同時納入家庭價值觀轉變，仍有政策與社會規範層面的解釋空間。',
+				text: '研究把婚姻差距歸因於教育供給與男性經濟條件變動，提供的是機制線索而非單一政策處方，對教學上可作為結構性差異討論素材。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1389,20 +1107,13 @@ const educationResearchStories: Story[] = [
 				],
 			},
 			{
-				text: '研究缺口：只有美國情境的工作論文，無法直接對台灣或其他地區推論；若要比較，需加上本地長期追蹤資料及婚姻行為對照文獻。',
+				text: '同時也可視為研究缺口：結果需與台灣、跨社會制度資料對照，才能判斷是否存在同型變化；否則不宜將美國觀察結果直接轉為本地政策結論。',
 				sources: [
 					{
 						name: 'NBER',
 						url: 'https://www.nber.org/papers/w35179#fromrss',
 					},
 				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-13',
-				date_iso: '2026-05-13',
-				content: 'NBER 發布《Bachelors Without Bachelor\'s: Gender Gaps in Education and Declining Marriage Rates》工作論文。',
 			},
 		],
 		articles: [
@@ -1410,7 +1121,7 @@ const educationResearchStories: Story[] = [
 				title: 'Bachelors Without Bachelor\'s: Gender Gaps in Education and Declining Marriage Rates',
 				link: 'https://www.nber.org/papers/w35179#fromrss',
 				domain: 'nber.org',
-				date: '2026-05-13',
+				date: '2026-05-16',
 			},
 		],
 		domains: [
@@ -1424,24 +1135,24 @@ const educationResearchStories: Story[] = [
 		number_of_titles: 1,
 		category: '教育研究',
 		editorial_lens: '研究證據',
-		title: '美國學校禁機政策：青年心理效應仍未明朗',
-		short_summary: '本研究是NBER 2026年工作論文，首次以美國資料檢驗學校禁用智慧型手機是否改善青少年心理健康。研究採用2016至2024年NSCH問卷資料，搭配合成差異中的差異(Synthetic DID)模型，追蹤1州有兩個禁令後觀測期、2州有一個禁令後觀測期的樣本。公開摘要未揭露精確樣本數與效果量，結果僅顯示並未看到螢幕時間下降或心理福祉明顯提升，結論仍屬早期、較保守的政策線索。',
-		emoji: '📱',
-		did_you_know: '該研究在公開摘要中只提到以NSCH 2016–2024資料、少數州別的政策變動進行估計，尚無法直接判定禁機必然改善心理健康；注意：本研究為準實驗觀察研究，不宜直接推論因果。',
+		title: '美國校園禁機未見明顯心理效益',
+		short_summary: '這篇 NBER 工作論文首次以美國 2016-2024 年《全國兒童健康調查》(NSCH)資料，透過合成差異中的差異（Synthetic DID）模型，估計校園智慧型手機禁令是否改善青少年心理健康與螢幕使用。結果顯示目前可用資料僅有1州兩段、2州一段的政策後觀察，且摘要未揭露完整樣本與效果量；在這樣的初步階段，並未觀察到螢幕時間明顯下降或心理福祉顯著提升。對台灣學校而言，這提醒禁機應以對照設計和連續追蹤代替一刀切的政策推論。',
+		emoji: '📉',
+		did_you_know: '摘要指出目前資料僅含1州兩段、2州一段的禁機後追蹤，且未公開完整樣本與統計效果量；注意：本研究為觀察性工作論文，不宜直接推論因果。',
 		talking_points: [
-			'證據類型：使用合成差異中的差異模型，結合美國NSCH(2016–2024)問卷資料，屬準實驗量化研究框架，目標是追蹤政策衝擊。',
-			'數據佐證：公開摘要未揭露樣本數與效果量；可確認觀測期為2016至2024，且僅1州有兩段後禁令觀測、2州有一段。',
-			'核心結果：早期估計未發現「禁機」帶來螢幕時間明顯下降，心理福祉也未呈現穩定正向改善。',
-			'研究解讀：作者將結果稱為初步證據，表示目前資料不足以支持「禁機必然有效」的政策宣稱。',
-			'外推限制：樣本州別與觀測窗口有限，尚未能排除州際政策實施差異、同時代外部事件等因素。',
+			'證據類型：採用觀察型工作論文設計，核心為合成差異中的差異（Synthetic DID）準實驗模型，用多期比較估計政策效應。',
+			'數據佐證：研究資料為 NSCH 2016-2024 青少年樣本，當前僅有 1 州兩段、2 州一段禁機後追蹤；公開摘要未揭露樣本數與效果量、信賴區間。',
+			'研究訊號：結果是「未見螢幕時間明顯下降、心理健康未顯著改善」的早期估計，屬目前可得的先行證據而非穩定結論。',
+			'老師下一步：先試作單校流程，明訂上課手機用途、下課回收節奏與替代活動，避免只靠口號管理學生行為。',
+			'老師下一步：同步記錄作業完成率、專注行為、學生情緒自評三項指標，8 週後與上學期同時段比對，才判斷是否調整禁機規則。',
 		],
 		quote: 'Overall, these early results provide no clear evidence that the school ban policy reduced screentime or improved psychological wellbeing.',
-		quote_attribution: 'NBER, 2026-05-13',
+		quote_attribution: 'National Bureau of Economic Research (NBER), 2026-05-16',
 		quote_source_url: 'https://www.nber.org/papers/w35181#fromrss',
 		quote_source_domain: 'nber.org',
 		perspectives: [
 			{
-				text: '研究以因果識別取向進行，但因觀測州別與暴露時段有限，仍偏向早期探索結果，對全美政策成效外推仍不足。',
+				text: '研究目前是早期警訊而非定論：政策後資料州數與觀察期較少，難以說明跨校、跨學段的一致成效，台灣可先做校際對照再決定是否全面推行。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1450,13 +1161,30 @@ const educationResearchStories: Story[] = [
 				],
 			},
 			{
-				text: '可延伸研究缺口是缺少學段、州別與執行型態分層，至少目前看不出禁機本身就是「唯一」或「主要」改善心理健康的證據。',
+				text: '延伸研究缺口在於政策可行條件差異：同樣禁機規範在不同學校因家長溝通、替代課堂設計、輔導資源而有不同結果，短期單一期資料不足以判斷規範是否為主要因子。',
 				sources: [
 					{
 						name: 'NBER',
 						url: 'https://www.nber.org/papers/w35181#fromrss',
 					},
 				],
+			},
+		],
+		timeline: [
+			{
+				date: '2016-01-01',
+				date_iso: '2016-01-01',
+				content: '研究所用全國兒童健康調查（NSCH）資料的起始年度，建立禁機前後比較基礎。',
+			},
+			{
+				date: '2024-12-31',
+				date_iso: '2024-12-31',
+				content: '研究資料追到 2024 年，形成 2016-2024 的跨年度觀測窗口。',
+			},
+			{
+				date: '2026-05-16',
+				date_iso: '2026-05-16',
+				content: 'NBER 公布工作論文摘要，指出目前屬早期結果，未見禁機政策帶來明確改善。',
 			},
 		],
 		articles: [
@@ -1464,7 +1192,7 @@ const educationResearchStories: Story[] = [
 				title: 'Youth Mental Health and School Smartphone Bans: Early Evidence',
 				link: 'https://www.nber.org/papers/w35181#fromrss',
 				domain: 'nber.org',
-				date: '2026-05-13',
+				date: '2026-05-16',
 			},
 		],
 		domains: [
@@ -1478,24 +1206,33 @@ const educationResearchStories: Story[] = [
 		number_of_titles: 1,
 		category: '教育研究',
 		editorial_lens: '研究證據',
-		title: '未錨定成績制會扭曲大學能力比較',
-		short_summary: 'NBER 2026 年工作論文指出，大學原始成績常混入課程難度與授課標準，直接比較學生時可能扭曲排名。研究以理論推導與固定效果模型為主，結合完整成績單與跨課修課重疊估計可比訊號，稱為 eigengrades。結果顯示在加性框架下，row-mean、affinity-spectral、graph-Laplacian 三種方法可收斂到同一調整結果；未設外部錨定時，字母等第無法純粹分離課程難度與標準。作者同時指出，精確校正難度可降低學生為衝高成績而改修易課的誘因。',
-		emoji: '🎓',
-		did_you_know: '研究將可比性定義為「將課程條件剝離後的學生訊號」，不是單科成績直接排序；注意：本研究為工作論文，不宜直接推論因果。',
+		title: '成績比較易失真：先採 eigengrades 修正',
+		short_summary: '一篇題為《What Does A Grade Mean?》的NBER工作論文，以固定效果與譜分解方法推導可校準的「eigengrades」機制，檢視原始成績是否能跨課比較。摘要指出成績其實混入學生表現與課程條件；論文未揭露樣本國家、樣本數、追蹤期間與效果量，因此目前屬制度設計與可識別條件的理論研究。對台灣高教而言，先對課程難度與評分基準做校準，才能讓歷程資料在獎懲、晉級與進修決策上更有比較意義。',
+		emoji: '📊',
+		did_you_know: '原始分數未扣除課程條件與門檻差異時，跨課比較可能把課程難度誤判為學生能力；該摘要未公布樣本數與效果量等量化指標。注意：本研究為工作論文，不宜直接推論因果。',
 		talking_points: [
-			'證據類型：研究為 NBER 工作論文，採理論模型與固定效果識別法，未描述 RCT、實驗或問卷，主要提供方法論可重複性檢驗。',
-			'數據佐證：摘要提到以完整成績單與跨課重疊進行估計，但公開摘要未揭露樣本數、追蹤期間或效果量，無法補算信賴區間。',
-			'方法結論：在 scalar additive 基礎下，row-mean、affinity-spectral、graph-Laplacian 三種算法皆可導出相同 eigengrades，對應固定效果調整表示。',
-			'制度風險：若成績制度未錨定，共通字母等第會混進課程難度與評分標準，單看 GPA 對學生能力跨課比較易失真。',
-			'治理含意：作者推論，精確難度校正可移除選更容易課以抬高中位數的明顯誘因，但仍可能保有其他策略操作與治理邊際。',
+			'證據類型：採固定效果加上譜分解的理論模型，提出 eigengrades 作為課程調整分報告，不是RCT、問卷或實驗性干預研究，而是制度可識別性推導。',
+			'數據佐證：公開摘要僅敘述機制與方法，未揭露樣本數、追蹤期間、效果量或信賴區間，無法直接據以做效應大小估算。',
+			'錯誤比較機制：當課程效應足以反轉能力排序切點時，僅看單科 letter grade 會誤判，學生能力、課程難度與評分門檻被混成一個訊號。',
+			'老師可做：在課前先公告評分規準與作答強度，建立共同參考標準後再回饋，讓學生理解「高分」不是同質比較，降低只挑易課的策略選修。',
+			'校務可做：每學期並列原始分與課程校準分數，搭配課程重修率、選課分布與補修申請監測是否出現「避難課」集中現象，並據此調整輔導與評量監督。',
 		],
-		quote: 'Exact difficulty adjustment removes the direct report-mediated incentive to choose easier courses and eliminates a competitive enrollment channel behind grade inflation, while leaving other strategic and governance margins intact.',
-		quote_attribution: 'NBER, 2026-05-13',
+		quote: 'A raw grade mixes student performance with course-specific conditions, so grade-only comparisons fail whenever course effects are large enough to reverse ability rankings at grade cutoffs.',
+		quote_attribution: 'NBER, 2026-05-16',
 		quote_source_url: 'https://www.nber.org/papers/w35183#fromrss',
 		quote_source_domain: 'nber.org',
 		perspectives: [
 			{
-				text: '本研究目前提供的是方法架構與識別條件，未交付跨校實證或時序政策實驗；延伸研究缺口在於要以真實學生資料驗證 eigengrades 對入學、錄取與獎學金決策的效果。',
+				text: '制度視角認為，這不是要否定成績，而是提醒學校先建立跨課比較基準。若未校準課程條件，排名與政策訊號都可能偏離實際學習軌跡。',
+				sources: [
+					{
+						name: 'NBER',
+						url: 'https://www.nber.org/papers/w35183#fromrss',
+					},
+				],
+			},
+			{
+				text: '教學與監督視角則可把此模型視為預警機制：學生選課若因易拿分而集中，未必代表動機提升，而可能是比較機制失真；研究尚待在校際資料上驗證。',
 				sources: [
 					{
 						name: 'NBER',
@@ -1504,564 +1241,322 @@ const educationResearchStories: Story[] = [
 				],
 			},
 		],
+		timeline: [
+			{
+				date: '2026-05-16',
+				date_iso: '2026-05-16',
+				content: 'NBER 公開《What Does A Grade Mean?》工作論文，提出 eigengrades 與課程條件校正觀點。',
+			},
+		],
 		articles: [
 			{
 				title: 'What Does A Grade Mean? Informativeness and Strategic Manipulation of Grading Systems',
 				link: 'https://www.nber.org/papers/w35183#fromrss',
 				domain: 'nber.org',
-				date: '2026-05-13',
+				date: '2026-05-16',
 			},
 		],
 		domains: [
 			{ name: 'nber.org' },
 		],
 	},
-	{
-		id: 'educationResearch-6',
-		cluster_number: 6,
-		unique_domains: 2,
-		number_of_titles: 3,
-		category: '教育研究',
-		editorial_lens: 'SEL 研究筆記',
-		title: 'SEL 怎麼做：先教一個可練習的互動技能',
-		short_summary: '這組研究應該讀成實作提醒：不要把 SEL 寫成「品格、情緒、關係」的大口號，而是一次教一個可觀察、可練習、可回饋的互動技能。2026 年《Review of Educational Research》統整 66 項研究、52,914 名 K-12 學生，發現 SEL 對親社會行為有小到中等的穩定效果；2025 年另一篇回顧納入 40 項研究、33,737 名學生，顯示學業成就也有小幅提升。較早的大型 meta-analysis 則指出，成效較穩的 SEL 通常符合 SAFE 原則：有順序、要練習、聚焦少數技能、明確教出來。換成課堂語言，就是先挑求助、同儕回饋、衝突修復或分組角色其中一項，做成短流程反覆練。',
-		emoji: '🤝',
-		did_you_know: '可先試一個 10 分鐘例行：老師示範一句話、學生兩人練一次、回到學科任務用一次、最後記錄今天哪個互動變順。這比上一堂抽象 SEL 課更接近研究支持的「明確練習」。',
-		talking_points: [
-			'跨研究結論：66 項研究看親社會行為、40 項研究看學業成就、213 項校本研究看實施條件；共同訊號是互動行為較容易改善，學業效果較小。',
-			'數字怎麼讀：Hedges g 是把不同研究換成同一把尺；g=.24 約等於平均學生從第 50 百分位移到第 59，g=.101 約到第 54，不是提升 24% 或 10%。',
-			'關鍵影響因子：成效較穩的 SEL 通常符合 SAFE 原則，也就是有順序、要練習、聚焦少數技能、把技能明確教出來。',
-			'實施細項：每週挑一項微技能，先示範好壞例子，再讓學生練求助句型、同儕回饋或衝突修復，最後放回原本學科任務使用。',
-			'成效觀察：不要只問學生喜不喜歡 SEL；看求助是否說得出卡點、回饋是否可修改、衝突後是否能回到合作，才是課堂可見的改變。',
-		],
-		quote: null,
-		quote_attribution: null,
-		quote_source_url: null,
-		quote_source_domain: null,
-		perspectives: [
-			{
-				text: '從班級經營看，SEL 可被理解為「讓學習關係可運作」的微技能訓練。若學生不會求助、回饋、修復衝突，學科任務很容易被人際摩擦吃掉。',
-				sources: [
-					{
-						name: 'Review of Educational Research',
-						url: 'https://journals.sagepub.com/doi/10.3102/00346543261438462',
-					},
-				],
-			},
-			{
-				text: '從實施角度看，這批文獻支持先做小而明確的例行流程：示範、練習、回饋、再回到學科任務。它不支持把 SEL 當成偶發講座或行政宣導。',
-				sources: [
-					{
-						name: 'Child Development',
-						url: 'https://www.ojp.gov/library/publications/impact-enhancing-students-social-and-emotional-learning-meta-analysis-school',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Social and Emotional Learning Programs and Students’ Prosocial Behavior: A Meta-Analysis',
-				link: 'https://journals.sagepub.com/doi/10.3102/00346543261438462',
-				domain: 'journals.sagepub.com',
-				date: '2026-04-29',
-			},
-			{
-				title: 'Disentangling the Effects of Social and Emotional Learning Programs on Student Academic Achievement Across Grades 1–12',
-				link: 'https://journals.sagepub.com/doi/abs/10.3102/00346543251367769',
-				domain: 'journals.sagepub.com',
-				date: '2025-10-08',
-			},
-			{
-				title: 'The Impact of Enhancing Students’ Social and Emotional Learning: A Meta-Analysis of School-Based Universal Interventions',
-				link: 'https://www.ojp.gov/library/publications/impact-enhancing-students-social-and-emotional-learning-meta-analysis-school',
-				domain: 'ojp.gov',
-				date: '2011-01-01',
-			},
-		],
-		domains: [
-			{ name: 'journals.sagepub.com' },
-			{ name: 'ojp.gov' },
-		],
-	},
-	{
-		id: 'educationResearch-7',
-		cluster_number: 7,
-		unique_domains: 4,
-		number_of_titles: 6,
-		category: '教育研究',
-		editorial_lens: '自然探究研究筆記',
-		title: '自然探究怎麼做：把四個能力分開教',
-		short_summary: '自然科學探究要避免變成「活動很多、思考很少」。研究與科學教育框架都指向同一件事：探究有效時，教師不是少教，而是把一個大任務拆成問題、變因、證據、論證四個可練習能力。2012 年《Review of Educational Research》統整 37 項實驗與準實驗研究，平均效果量約 .50，且教師主導或引導的探究比完全學生主導更穩；2016 年另一篇 meta-analysis 納入 72 項研究，也顯示引導能提升學習活動、任務成功與學習結果。延伸到 108 課綱自然科學「探究與實作」，比較可行的做法是每次只抓一個細項練到清楚，而不是每次都要求學生交一份完整探究報告。',
-		emoji: '🔬',
-		did_you_know: '一份完整探究報告對很多學生太大。可以先拆成四張小卡：問題卡、變因卡、證據卡、論證卡。每張卡只檢查一個能力，學生才知道自己到底哪一步不清楚。',
-		talking_points: [
-			'跨研究結論：37 項科學探究實驗/準實驗與 72 項探究式學習研究都指向同一件事：探究有效時，通常不是少教，而是引導更清楚。',
-			'數字怎麼讀：效果量 .50 約是半個標準差，可粗略想成平均學生從第 50 百分位移到第 69；不是成績加 50 分，也不是每班都會同幅度進步。',
-			'關鍵影響因子：教師引導比學生完全主導約高 .40，重點在鷹架品質，例如問題能不能測、變因是否公平、證據是否能支持主張。',
-			'實施細項：不要一次要求完整報告；先用問題卡、變因卡、證據卡、論證卡分開練，每張卡只檢查一個能力，學生才知道哪一步需要修正。',
-			'成效觀察：評量不要只看報告漂不漂亮；看問題是否可測量、變因是否公平、證據是否具體、CER 推理是否把資料連到科學概念。',
-			'不要誤讀：研究支持的是有鷹架的探究，不是把學生丟進活動裡自由摸索；語言負荷高的學生還需要句型、詞彙、圖表與討論規則。',
-		],
-		quote: null,
-		quote_attribution: null,
-		quote_source_url: null,
-		quote_source_domain: null,
-		perspectives: [
-			{
-				text: '課綱語言常說探究與實作，但研究提醒要把「探究」拆成可教的細節：提問、變因控制、證據判讀、解釋修正與溝通論證。',
-				sources: [
-					{
-						name: 'National Academies',
-						url: 'https://www.nationalacademies.org/read/13165/chapter/7',
-					},
-				],
-			},
-			{
-				text: '控制變因需要明確教。學生若同時改兩個條件，就算得到結果，也不能知道是哪個條件造成差異；這是許多探究課最常被跳過的推理環節。',
-				sources: [
-					{
-						name: 'Child Development',
-						url: 'https://www.cmu.edu/dietrich/psychology/pdf/klahr/PDFs/chen-klahr.pdf',
-					},
-				],
-			},
-			{
-				text: 'CER 不是作文格式，而是科學解釋的鷹架。教師要示範好證據與壞證據的差別，並要求學生寫出「這個資料為什麼能支持我的主張」。',
-				sources: [
-					{
-						name: 'McNeill & Krajcik',
-						url: 'https://public.websites.umich.edu/~krajcik/McNeill%26Krajcik_mon.pdf',
-					},
-				],
-			},
-		],
-		articles: [
-			{
-				title: 'Experimental and Quasi-Experimental Studies of Inquiry-Based Science Teaching',
-				link: 'https://journals.sagepub.com/doi/abs/10.3102/0034654312457206',
-				domain: 'journals.sagepub.com',
-				date: '2012-09-01',
-			},
-			{
-				title: 'Meta-Analysis of Inquiry-Based Learning: Effects of Guidance',
-				link: 'https://journals.sagepub.com/doi/abs/10.3102/0034654315627366',
-				domain: 'journals.sagepub.com',
-				date: '2016-07-10',
-			},
-			{
-				title: 'Is Inquiry Science Instruction Effective for English Language Learners?',
-				link: 'https://journals.sagepub.com/doi/10.1177/2332858418767402',
-				domain: 'journals.sagepub.com',
-				date: '2018-04-26',
-			},
-			{
-				title: 'A Framework for K-12 Science Education: Scientific and Engineering Practices',
-				link: 'https://www.nationalacademies.org/read/13165/chapter/7',
-				domain: 'nationalacademies.org',
-				date: '2012-07-19',
-			},
-			{
-				title: 'All Other Things Being Equal: Acquisition and Transfer of the Control of Variables Strategy',
-				link: 'https://www.cmu.edu/dietrich/psychology/pdf/klahr/PDFs/chen-klahr.pdf',
-				domain: 'cmu.edu',
-				date: '1999-09-01',
-			},
-			{
-				title: 'Inquiry and Scientific Explanations: Helping Students Use Evidence and Reasoning',
-				link: 'https://public.websites.umich.edu/~krajcik/McNeill%26Krajcik_mon.pdf',
-				domain: 'umich.edu',
-				date: '2006-01-01',
-			},
-		],
-		domains: [
-			{ name: 'journals.sagepub.com' },
-			{ name: 'nationalacademies.org' },
-			{ name: 'cmu.edu' },
-			{ name: 'umich.edu' },
-		],
-	},
 ];
 
 const twEduStories: Story[] = [
 	{
-		id: 'taiwanEduPolicy-gmail-教育部-ai-數位學習',
-		cluster_number: 'gmail-教育部-ai-數位學習',
-		unique_domains: 17,
-		number_of_titles: 24,
+		id: 'taiwanEduPolicy-1',
+		cluster_number: 1,
+		unique_domains: 1,
+		number_of_titles: 1,
 		category: '教育政策與治理',
-		editorial_lens: '教學流程、治理授權',
-		title: '本週『教育部 AI 數位學習』焦點：政策到校的多點擴展',
-		short_summary: '「AI Di+實驗方案」延展成為教育部最新主軸：16所大學與185校展開國中小AI學伴合作，並結合偏鄉師資培育與《館館有AI》資源平權試辦。台南跨校交流與澎湖教務徵稿顯示地方端已有實作端訊號，但目前仍缺少各案預算金額、時程達標與成效指標的公開驗證。',
-		emoji: '🤖',
-		did_you_know: '台南安定國中跨校交流有4位教師入班示範、26位嘉義數位團教師到場觀摩，並使用AI古人聊天室與Padlet進行文本與文法分組學習。',
+		editorial_lens: '研究證據',
+		title: '高風險測驗縮減後，美國學業仍自2013起下滑',
+		short_summary: '對台灣教師與學校管理者來說，關鍵在於別只看疫情前後短期波動就下結論，制度與評量訊號改變才是長期治理風險所在。哈佛與史丹佛研究指出，美國學區成績下降其實是2013年起的趨勢，與高風險測驗問責鬆綁及社群媒體普及同步；疫情後貧困區的回升主要來自聯邦補助，若無補助，2022水準難以突破。',
+		emoji: '📉',
+		did_you_know: '報告來源是哈佛大學教育政策研究中心與史丹佛大學 Educational Opportunity Project。研究估計，後疫情高貧困地區的成績改善，大幅受聯邦COVID援助影響，並未完全顯示教學品質本身已恢復。',
 		talking_points: [
-			'試點外延：AI Di+由16所大學聯手185校推進國中小實驗，重點放在數位教學工具與AI學伴陪伴，顯示政策先做規模化部署。',
-			'師資轉譯：教育部與國立台北教育大學簽署MOU，主張公私協力與實作導向，將偏鄉師資培育納入AI教學改革主軸。',
-			'現場證據：台南安定國中跨校交流共4位授課教師、26位觀摩教師，並在課堂中實測AI古人聊天室與Padlet，較明確反映一線做法。',
-			'資源平權：教育部《館館有AI》規畫2026年第四季於3間圖書館試辦，民眾持借書證可免費使用ChatGPT、Gemini，落點指向服務入口。',
-			'地方擴散：澎湖教育處公告徵稿列出「AI開放教育學習環境」與AI數位課程教學設計，代表政策開始進入地方行政題目清單。',
-			'報導節奏：台北報導與影響力案例除政策訊號外，亦出現學藝展、學涯營等跨場域試作，反映AI導入正在由單一方案轉為多域實驗。',
+			'下滑起點：研究認為學區成績衰退在COVID後才暴露，但其實自2013年已開始，疫情更像放大既有下滑訊號。',
+			'補助效應：成效研究估計，高貧困地區後疫情的進步多歸功於聯邦補助，若移除資金支援，平均成績多半難超過2022基準。',
+			'問責轉向：NCLB時代將全美推行高風險測驗責任制，2012–2013年各州大量進入豁免序列，壓力訊號出現明顯降溫。',
+			'群組落差：高收入與低收入地區後疫情回升較快，但中等收入地區改善最少，反映補救策略不能只看整體平均，需看分位分布。',
+			'因果限制：同時在有與無NCLB豁免州皆見到類似下滑，報告因此不主張將衰退直接歸因於測驗問責退潮，而是視為多因素交互結果。',
 		],
-		quote: '用AI和古人聊天很有趣，可以自己思考問題，也可以和同學一起討論。',
-		quote_attribution: '自由時報電子報, 2026-05-11',
-		quote_source_url: 'https://news.ltn.com.tw/news/life/breakingnews/5433075',
-		quote_source_domain: 'news.ltn.com.tw',
+		quote: 'The drop in academic achievement experienced by districts in wake of COVID-19 was part of a decline that began in 2013.',
+		quote_attribution: 'K12 Dive, 2026-05-15',
+		quote_source_url: 'https://www.k12dive.com/news/achievement-dip-coincided-with-high-stakes-testing-breakdown-study-finds/820426/',
+		quote_source_domain: 'k12dive.com',
 		perspectives: [
 			{
-				text: '官方訊號偏重制度與資源編排，媒體在一線學校、圖書館與跨校交流看到的是課室操作、工具使用與教學回饋，兩者差別是「規劃與落地」並行但未同步公開同一套成果指標。',
+				text: '研究端觀點：學術成果需做長期縱向追蹤，2013年起的下滑不應被COVID期間短暫修復掩蓋。對台灣來說，這提醒評量結果要追跡跨年度趨勢，不只比較某次政策上線前後。',
 				sources: [
 					{
-						name: '教育部',
-						url: 'https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=73A09C2753775ABF',
-					},
-					{
-						name: '自由時報電子報',
-						url: 'https://news.ltn.com.tw/news/life/breakingnews/5433075',
+						name: 'K12 Dive',
+						url: 'https://www.k12dive.com/news/achievement-dip-coincided-with-high-stakes-testing-breakdown-study-finds/820426/',
 					},
 				],
 			},
 			{
-				text: '中心政策的「AI Di+」與「館館有AI」偏向資源配置，地方回饋則聚焦教師備課、觀課機制與具體工具（AI古人聊天室、Padlet），顯示執行端更關心能否日常化。',
+				text: '公平評量角度：文中轉述 FairTest 長期主張，高風險標準化考試壓縮課程與增加歧視風險。台灣可借鏡的問題是如何在保留可比資料的同時，避免只用單一測驗壓垮教學現場。',
 				sources: [
 					{
-						name: 'TCNEWS',
-						url: 'https://www.tcnews.com.tw/education/item/29292.html',
-					},
-					{
-						name: '台南市教育局/安定國中報導',
-						url: 'https://news.ltn.com.tw/news/life/breakingnews/5433075',
+						name: 'K12 Dive',
+						url: 'https://www.k12dive.com/news/achievement-dip-coincided-with-high-stakes-testing-breakdown-study-finds/820426/',
 					},
 				],
-			},
-			{
-				text: '部會與基金會合作的高職高中實作訊號（如學涯營、AI × 學習力）顯示政策不是只侷限於學術試點，也在職涯、活動與校務數位轉型中擴散，但仍缺少與中央方案的正式串接路徑描述。',
-				sources: [
-					{
-						name: 'TCPT',
-						url: 'https://www.tcpttw.com/other/other_life/2026/05/11/272234/',
-					},
-					{
-						name: '聯合新聞網',
-						url: 'https://udn.com/news/story/6885/9493278',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-06',
-				date_iso: '2026-05-06',
-				content: '教育部公布AI Di+實驗式合作，列出16所大學攜手185校推進國中小AI學伴教學。',
-			},
-			{
-				date: '2026-05-07',
-				date_iso: '2026-05-07',
-				content: '多家媒體重述AI Di+與AI學伴主軸，並將中央訊息轉向家長及學校可讀的新聞報導。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '教育部與國立臺北教育大學簽署MOU、推動偏鄉師資新模式；同時宣布《館館有AI》在3間圖書館試辦，提供ChatGPT與Gemini免費使用。',
-			},
-			{
-				date: '2026-05-10',
-				date_iso: '2026-05-10',
-				content: '地方與學校場域持續出現AI導入案例，包含新北市夏令營與國文、英語文法相關跨校教學實作。',
-			},
-			{
-				date: '2026-05-11',
-				date_iso: '2026-05-11',
-				content: '台南安定國中舉辦跨校數位學習交流，教師與觀摩人數、教學工具操作被明確記錄；澎湖教育處同步對外列出AI教案與課程設計徵稿主軸。',
-			},
-			{
-				date: '2026-05-12',
-				date_iso: '2026-05-12',
-				content: '台中教育學術平台與新聞再度刊載AI學伴研究基地徵件資訊，顯示政策補件與機制設計進一步落在申件與執行準備流程。',
 			},
 		],
 		articles: [
 			{
-				title: '教育部115-116年教師適性教學輔助平臺生成式AI學伴研究基地學校徵件須知',
-				link: 'https://www.tngs.tn.edu.tw/2026/05/12/%E6%95%99%E8%82%B2%E9%83%A8115-116%E5%B9%B4%E6%95%99%E5%B8%AB%E9%81%A9%E6%80%A7%E6%95%99%E5%AD%B8%E8%BC%94%E5%8A%A9%E5%B9%B3%E8%87%BA%E7%94%9F%E6%88%90%E5%BC%8Fai%E5%AD%B8%E4%BC%B4%E7%A0%94%E7%A9%B6/',
-				domain: 'tngs.tn.edu.tw',
-				date: '2026-05-12',
-			},
-			{
-				title: 'AI古人聊天室、重點整理英語文法台南安定國中數位學習跨校交流',
-				link: 'https://news.ltn.com.tw/news/life/breakingnews/5433075',
-				domain: 'news.ltn.com.tw',
-				date: '2026-05-12',
-			},
-			{
-				title: '韓國科學教育大學聯手勞動部推24門全民AI免費線上課',
-				link: 'https://www.scooptw.com/marketersgo/473402/%E9%9F%93%E5%9C%8B%E7%A7%91%E5%AD%B8%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8%E8%81%AF%E6%89%8B%E5%8B%9E%E5%8B%95%E9%83%A8-%E6%8E%A824%E9%96%80%E5%85%A8%E6%B0%91ai%E5%85%8D%E8%B2%BB%E7%B7%9A%E4%B8%8A/',
-				domain: 'scooptw.com',
-				date: '2026-05-12',
-			},
-			{
-				title: '最新消息-澎湖縣政府教育處',
-				link: 'https://www.penghu.gov.tw/edu/home.jsp?id=93&act=view&dataserno=202605110005',
-				domain: 'penghu.gov.tw',
-				date: '2026-05-11',
-			},
-			{
-				title: '不只學AI，更學怎麼學！影響力教育基金會攜手高中導入「AI × 學習力」',
-				link: 'https://www.tcpttw.com/other/other_life/2026/05/11/272234/',
-				domain: 'tcpttw.com',
-				date: '2026-05-11',
-			},
-			{
-				title: '盛源PERSONA以AI互動科技走進慈文國小嘉年華展現智慧顯示與數位藝術教育新體驗',
-				link: 'https://www.cna.com.tw/business/chinese/433072',
-				domain: 'cna.com.tw',
-				date: '2026-05-11',
-			},
-			{
-				title: '不只學AI，更學怎麼學！影響力教育基金會攜手高中導入「AI × 學習力」',
-				link: 'https://tw.news.yahoo.com/%E4%B8%8D%E5%8F%AA%E5%AD%B8ai-%E6%9B%B4%E5%AD%B8%E6%80%8E%E9%BA%BC%E5%AD%B8-%E5%BD%B1%E9%9F%BF%E5%8A%9B%E6%95%99%E8%82%B2%E5%9F%BA%E9%87%91%E6%9C%83%E6%94%9C%E6%89%8B%E9%AB%98%E4%B8%AD%E5%B0%8E%E5%85%A5-ai-%E5%AD%B8%E7%BF%92%E5%8A%9B-084920178.html',
-				domain: 'tw.news.yahoo.com',
-				date: '2026-05-10',
-			},
-			{
-				title: '南韓擴建69處AI數位學習中心推動全民AI生活圈',
-				link: 'https://more-news.tw/611008/',
-				domain: 'more-news.tw',
-				date: '2026-05-10',
-			},
-			{
-				title: 'AI時代不迷航新北「學涯領航員」夏令營開跑從興趣出發找到方向',
-				link: 'https://udn.com/news/story/6885/9493278',
-				domain: 'udn.com',
-				date: '2026-05-10',
-			},
-			{
-				title: '公私協力打造偏鄉師資培育新典範推動AI及教學實作導向創新師培模式',
-				link: 'https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=73A09C2753775ABF',
-				domain: 'edu.tw',
-				date: '2026-05-08',
-			},
-			{
-				title: '教育部「館館有AI」：拿借書證ChatGPT、Gemini免費用！資格與啟動時間？',
-				link: 'https://www.gvm.com.tw/article/129951',
-				domain: 'gvm.com.tw',
-				date: '2026-05-08',
-			},
-			{
-				title: '若環境影響有限，政府教育補助政策應如何轉型？',
-				link: 'https://technews.tw/ai-agent/dna-decide-the-social-status/7458/',
-				domain: 'technews.tw',
-				date: '2026-05-08',
-			},
-			{
-				title: '教育部推AI Di+實驗方案AI學伴助培育自主學習力',
-				link: 'https://www.msn.com/zh-tw/news/living/%E6%95%99%E8%82%B2%E9%83%A8%E6%8E%A8ai-di-%E5%AF%A6%E9%A9%97%E6%96%B9%E6%A1%88-ai%E5%AD%B8%E4%BC%B4%E5%8A%A9%E5%9F%B9%E8%82%B2%E8%87%AA%E4%B8%BB%E5%AD%B8%E7%BF%92%E5%8A%9B/ar-AA22kKPM',
-				domain: 'msn.com',
-				date: '2026-05-07',
-			},
-			{
-				title: '守護個資教育部啟動教育機構個資行政檢查',
-				link: 'https://money.udn.com/money/story/5612/9485601?from=udnamp-referralnews_ch1001artbottom',
-				domain: 'money.udn.com',
-				date: '2026-05-07',
-			},
-			{
-				title: '南台灣AI生態鏈成形！數位經濟國際攜手產學資本打造「營收導向AI新時代」',
-				link: 'https://n.yam.com/Article/20260506443324',
-				domain: 'n.yam.com',
-				date: '2026-05-07',
-			},
-			{
-				title: 'AI進入教室！教育部推AI學伴16所大學攜手185校實驗教學',
-				link: 'https://www.tcnews.com.tw/education/item/29292.html',
-				domain: 'tcnews.com.tw',
-				date: '2026-05-06',
-			},
-		],
-		domains: [
-			{ name: 'tngs.tn.edu.tw' },
-			{ name: 'news.ltn.com.tw' },
-			{ name: 'scooptw.com' },
-			{ name: 'penghu.gov.tw' },
-			{ name: 'tcpttw.com' },
-			{ name: 'cna.com.tw' },
-			{ name: 'tw.news.yahoo.com' },
-			{ name: 'tw.stock.yahoo.com' },
-			{ name: 'more-news.tw' },
-			{ name: 'udn.com' },
-			{ name: 'edu.tw' },
-			{ name: 'gvm.com.tw' },
-			{ name: 'technews.tw' },
-			{ name: 'msn.com' },
-			{ name: 'money.udn.com' },
-			{ name: 'n.yam.com' },
-			{ name: 'tcnews.com.tw' },
-		],
-	},
-	{
-		id: 'taiwanEduPolicy-gmail-ai-融入教學-高中',
-		cluster_number: 'gmail-ai-融入教學-高中',
-		unique_domains: 3,
-		number_of_titles: 3,
-		category: '教育政策與治理',
-		editorial_lens: '治理授權',
-		title: '本週「AI 融入教學 高中」焦點：跨段校務與治理爭點',
-		short_summary: '本次快訊聚合顯示，AI融入教學正出現「地方示範」與「學術治理」兩條訊號：新北市5月8日辦理114學年度STEAM頒獎，公布27組教案、30組作品與122位師生，顯示校務層級已開始落地整合；南大論壇5月8日至9日則把AI倫理、數位公平與治理放入主軸，討論其影響教育權益的制度層面。台灣側重可複製教學設計與研討交流，但仍缺少推廣預算、師資訓練強度與成效追蹤的明確數據。',
-		emoji: '🧠',
-		did_you_know: '新北市將本次STEAM頒獎的教案與作品同步公告到國民教育地方輔導團及STEAM大聯盟平台，讓其他學校可直接借鏡參考，並延伸跨校資源共享。',
-		talking_points: [
-			'落地示範：新北於5月8日在民安國小辦理114學年度STEAM頒獎，正式披露27組教案、30組學生作品與122位獲獎師生，顯示AI教學在校務中已有可量化成果。',
-			'課程工具化：新北聲稱完成112學年度全國首本可操作STEAM課例手冊，內容強調AI與美感設計、跨域整合，目標讓教師能直接改寫教案流程。',
-			'資源擴散：獲獎成果不只列入表揚名單，而是透過國民教育地方輔導團與STEAM大聯盟平台公開，提供其他校方可複製的具體參考。',
-			'治理辯論：南大論壇在5月8日至9日舉辦，聚焦生成式AI、數位不平等、教育公平與教師地位，顯示AI議題已進入教育治理與權利分配層次。',
-			'觀點差異：文匯網則強調AI賦能資優教育與學生潛能發展，但未搭配可驗證的台灣校務推廣規模或時程指標，形成政策期待與落地實務的訊號落差。',
-		],
-		quote: 'AI技術融入教育的倫理反思、數位不平等、教育治理是本次論壇關注的核心。',
-		quote_attribution: '南大教育學院, 2026-05-09',
-		quote_source_url: 'https://www.cna.com.tw/postwrite/chi/433004',
-		quote_source_domain: 'cna.com.tw',
-		perspectives: [
-			{
-				text: '新北訊號是行政端的實務推進：以比賽、平台與手冊建立教師可直接採用的路徑，優先聚焦可操作教材而非先定義新制規範。',
-				sources: [
-					{
-						name: 'n.yam.com',
-						url: 'https://n.yam.com/Article/20260508818614',
-					},
-				],
-			},
-			{
-				text: '南大訊號是治理層面：討論重點不在個別教案，而在AI落地後的公平、倫理與制度責任，試圖把高教與政策對話接回K-12影響。',
-				sources: [
-					{
-						name: '中華新聞',
-						url: 'https://www.cna.com.tw/postwrite/chi/433004',
-					},
-				],
-			},
-			{
-				text: '文匯網訊號偏向政策藍圖與人才導向，聚焦資優教育與社會需求回應，但尚未提供與台灣地方試辦同樣可追蹤的推動指標。',
-				sources: [
-					{
-						name: 'wenweipo.com',
-						url: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-06',
-				date_iso: '2026-05-06',
-				content: '文匯網報導AI賦能資優教育的做法，並提及結合初中服務學習與高中價值教育課程的設計方向。',
-			},
-			{
-				date: '2026-05-08',
-				date_iso: '2026-05-08',
-				content: '新北市於民安國小辦理114學年度STEAM教案與作品頒獎，列示27組教案、30組作品及122位師生參與。',
-			},
-			{
-				date: '2026-05-09',
-				date_iso: '2026-05-09',
-				content: '南大論壇續辦至5月9日，主軸為社會轉型下教育社會學，納入生成式AI、數位治理與教育公平討論。',
-			},
-		],
-		articles: [
-			{
-				title: '新北STEAM教案與作品徵選揭曉獲獎作品展現AI跨域學習成果',
-				link: 'https://n.yam.com/Article/20260508818614',
-				domain: 'n.yam.com',
-				date: '2026-05-09',
-			},
-			{
-				title: '臺灣教育社會學論壇於南大登場多國學者共探數位時代教育新議題',
-				link: 'https://www.cna.com.tw/postwrite/chi/433004',
-				domain: 'cna.com.tw',
-				date: '2026-05-09',
-			},
-			{
-				title: '【數教新知】AI賦能資優教育充分發揮學生潛能- 香港文匯網 - 文匯報',
-				link: 'https://www.wenweipo.com/a/202605/06/AP69fa4f02e4b0b49ad1b9aa84.html',
-				domain: 'wenweipo.com',
-				date: '2026-05-06',
-			},
-		],
-		domains: [
-			{ name: 'n.yam.com' },
-			{ name: 'cna.com.tw' },
-			{ name: 'wenweipo.com' },
-		],
-	},
-	{
-		id: 'taiwanEduPolicy-7',
-		cluster_number: 7,
-		unique_domains: 2,
-		number_of_titles: 2,
-		category: '教育政策與治理',
-		editorial_lens: '資安信任',
-		title: '跨學段警訊：平台資安與高教裁員',
-		short_summary: '2026/05/09，教育產業同步拋出兩則高風險訊號：K-12 平台 Instructure 已對外確認資安事件；而 Kent State University 也宣布擬裁撤最多 45 名員工。兩則消息都源自 Industry Dive 家族的 Weekender 摘要，顯示從 K-12 到高教都面臨「技術供應鏈」與「人事組織」的治理壓力。這意味著教育機構不只要有資安通報與回應流程，也要同步檢視人力編制韌性，否則在風險與缺工夾擊下，服務穩定性都會受衝擊。',
-		emoji: '⚠️',
-		did_you_know: '兩篇來源都標示 2026-05-09，皆為 Industry Dive 的 Weekender 週報；一篇指向 Instructure 資安事件，另一篇揭示 Kent State 擬裁至多 45 名員工，能直接比較同日不同學段的治理壓力。',
-		talking_points: [
-			'資安揭露：Instructure 在 2026/05/09 的標題中已確認發生資安事件，顯示平台運作風險在校務流程中可能直接中斷教學服務連續性。',
-			'裁員訊號：Kent State University 被報導「最多裁員 45 名」，這個上限數字代表高教院校在年度預算壓力下傾向快速壓縮人力成本。',
-			'雙面向衝擊：消息同時出現在 K-12 與高教兩個教育層級，從技術事故到行政裁員，皆指向組織治理能力不足或未跟上變局。',
-			'時間一致性：兩則都在同週 2026-05-09 發佈，適合作為風險週報交叉比對，判斷業界是否正在進入資安與人事同時緊縮的周期。',
-			'匿名整理可行：原訊息中未以作者姓名提供核心立場，保留職稱與媒體資訊即可重構事件脈絡，符合站內匿名出版原則。',
-		],
-		quote: 'Kent State University to lay off up to 45 staffers',
-		quote_attribution: 'Higher Ed Dive，2026-05-09',
-		quote_source_url: 'https://link.highereddive.com/click/45635003.68810/aHR0cDovL3d3dy5oaWdoZXJlZGRpdmUuY29tL3NpZ251cC8/69f985b55f3be2f7a30c0c61B0d58b2b4',
-		quote_source_domain: 'highereddive.com',
-		perspectives: [
-			{
-				text: 'K-12 Dive 的焦點落在教學平台端的資安事件確認，將風險定位為服務供應鏈與系統穩定問題，重心偏向「平台可信任度」。',
-				sources: [
-					{
-						name: 'K-12 Dive',
-						url: 'https://link.k12dive.com/click/45635002.46058/aHR0cDovL3d3dy5rMTJkaXZlLmNvbS9zaWdudXAv/69f985b55f3be2f7a30c0c61B0e4e198e',
-					},
-				],
-			},
-			{
-				text: 'Higher Ed Dive 則把高教機構裁員放在同一視角，透過「最多 45 名」這個明確數字凸顯組織重整與治理授權壓力，偏重行政決策層面的可持續性。',
-				sources: [
-					{
-						name: 'Higher Ed Dive',
-						url: 'https://link.highereddive.com/click/45635003.68810/aHR0cDovL3d3dy5oaWdoZXJlZGRpdmUuY29tL3NpZ251cC8/69f985b55f3be2f7a30c0c61B0d58b2b4',
-					},
-				],
-			},
-		],
-		timeline: [
-			{
-				date: '2026-05-09',
-				date_iso: '2026-05-09',
-				content: 'K-12 Dive 發布 Weekender 內容，標題顯示 Instructure 確認發生資安事件。',
-			},
-			{
-				date: '2026-05-09',
-				date_iso: '2026-05-09',
-				content: 'Higher Ed Dive 發布 Weekender 內容，指出 Kent State University 擬裁撤最多 45 名員工。',
-			},
-		],
-		articles: [
-			{
-				title: 'Weekender: Instructure confirms cybersecurity incident',
-				link: 'https://link.k12dive.com/click/45635002.46058/aHR0cDovL3d3dy5rMTJkaXZlLmNvbS9zaWdudXAv/69f985b55f3be2f7a30c0c61B0e4e198e',
+				title: 'Achievement dip coincided with high-stakes testing ‘breakdown,’ study finds',
+				link: 'https://www.k12dive.com/news/achievement-dip-coincided-with-high-stakes-testing-breakdown-study-finds/820426/',
 				domain: 'k12dive.com',
-				date: '2026-05-09',
-			},
-			{
-				title: 'Weekender: Kent State University to lay off up to 45 staffers',
-				link: 'https://link.highereddive.com/click/45635003.68810/aHR0cDovL3d3dy5oaWdoZXJlZGRpdmUuY29tL3NpZ251cC8/69f985b55f3be2f7a30c0c61B0d58b2b4',
-				domain: 'highereddive.com',
-				date: '2026-05-09',
+				date: '2026-05-15',
 			},
 		],
 		domains: [
 			{ name: 'k12dive.com' },
-			{ name: 'highereddive.com' },
+		],
+	},
+	{
+		id: 'taiwanEduPolicy-2',
+		cluster_number: 2,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '教育政策與治理',
+		editorial_lens: '治理授權',
+		title: '美國取消EEO報表，台灣校務需自建監測',
+		short_summary: '美國平權署（EEOC）在 2026-05-15 向白宮提案，提出撤銷 EEO-1 到 EEO-5 以及其他相關法規下雇主回報義務，其中 EEO-5 以前針對 100 人以上公立中小學系統每兩年回報員工族群與職務資料。對台灣教師與校務管理者而言，外部統計若減少，校內仍需保有自有人才與師生支援資料，才能持續做公平調度與風險治理。',
+		emoji: '⚖️',
+		did_you_know: 'EEO-5 為 Elementary-Secondary Staff Information Report，原本要求美國公立小學到高中系統中，達到 100 名以上員工門檻的學校每兩年提交族群、性別與職務分派資料。',
+		talking_points: [
+			'申報縮減：EEOC 提案主張撤掉 EEO-1 到 EEO-5 及 Title VII、ADA、GENA、孕婦公平法相關回報，直接縮小雇主與學區的人事揭露範圍。',
+			'門檻條件：EEO-5 原規定 100 人以上公立中小學系統，每兩年回報種族、性別與職務分派資料，曾是學校人事治理常見合規工作。',
+			'政治節點：提案 2026-05-15 送交白宮審閱，之後通常要列入《聯邦公報》草案並開放公眾意見，最終規則仍可能再調整。',
+			'台灣可借鏡：若外部比較資料收斂，學校不能只靠法規要求；應保留本地化教師結構與異常警示資料，避免公平治理缺口。',
+			'風險預警：EEOC 未及時回覆媒體詢問就刊登後，代表議題正值形成期，時程與內容仍可能變動，需避免把初稿視為最終結果。',
+		],
+		quote: 'The agency wants to get rid of EEO-1, EEO-2, EEO-3, EEO-4 and EEO-5 reporting requirements.',
+		quote_attribution: 'K12dive, 2026-05-15',
+		quote_source_url: 'https://www.k12dive.com/news/eeo-1-rescission-proposal-eeoc-2026/820420/',
+		quote_source_domain: 'k12dive.com',
+		perspectives: [
+			{
+				text: 'EEOC 在提案中聚焦降低行政負擔與報表重複，但撤除後外部可比資料會變少，對學校治理而言是「節流」與「監督能力」的權衡題。台灣若遇類似情境，需先補足內部資料盤點機制。',
+				sources: [
+					{
+						name: 'EEOC',
+						url: 'https://www.k12dive.com/news/eeo-1-rescission-proposal-eeoc-2026/820420/',
+					},
+				],
+			},
+			{
+				text: 'K12dive 的整理指出，此類政策與美國前述取消EEO-1薪資揭露的脈絡一致，帶出跨政權下治理資料可被視為可調整資源，提醒台灣讀者關注資料權限轉移帶來的權力變化。',
+				sources: [
+					{
+						name: 'K12dive',
+						url: 'https://www.k12dive.com/news/eeo-1-rescission-proposal-eeoc-2026/820420/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'EEOC 將撤除 EEO 系列報表及相關法律配套申報義務的提案送交白宮，後續進入聯邦公報草案與公眾意見流程。',
+			},
+		],
+		articles: [
+			{
+				title: 'EEOC moves to axe EEO-5 reporting',
+				link: 'https://www.k12dive.com/news/eeo-1-rescission-proposal-eeoc-2026/820420/',
+				domain: 'k12dive.com',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'k12dive.com' },
+		],
+	},
+	{
+		id: 'taiwanEduPolicy-3',
+		cluster_number: 3,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '教育政策與治理',
+		editorial_lens: '治理授權',
+		title: 'FAFSA提前完成率創新高，台灣可借鏡申辦前置',
+		short_summary: '美國2026屆高中畢業生在5月1日前的FAFSA（高等教育補助申請）完成率已到54.7%，比2025年6月27日版本高0.8個百分點，NCAN也稱全美各州皆優於去年，阿拉斯加、亞利桑那、佛羅里達、紐墨西哥至少提升20%。對台灣校方和老師而言，重點是流程治理：若能在學期初前置申請、把規定寫入校務流程，並在客服與資料核對端持續修正，學生與行政在截止日前的壓力將可明顯下降。',
+		emoji: '📈',
+		did_you_know: 'FAFSA執行長表示目前申請人滿意度已超過90%，客服平均等待不到1分鐘；但2024年曾有近四成電話未接，顯示服務治理的修補過程並非一蹴可幾。',
+		talking_points: [
+			'完成率逆轉：NCAN 於5月1日報告2026屆高中生FAFSA完成率為54.7%，比2025屆6/27紀錄高0.8個百分點。',
+			'縣市式（州級）共振：NCAN說明全美各州皆高於2025屆，阿拉斯加、亞利桑那、佛羅里達、紐墨西哥至少成長20%。',
+			'前置政策誘因：9月提早開放申請，搭配9州要求畢業生完成FAFSA的規範，成為本波提早累積的關鍵。',
+			'體驗修復量化：執行長稱目前申請者滿意度超過90%，客服等待時間可壓在1分鐘內，顯示流程重整帶來可驗證品質改善。',
+			'治理風險提醒：GAO曾批評教育部新表上線時未妥善監督供應商與溝通，未來制度化推行仍需同步設計稽核機制。',
+		],
+		quote: 'The head start on completions this spring represents a "remarkable, encouraging turnaround," NCAN said.',
+		quote_attribution: 'National College Attainment Network, 2026-05-15',
+		quote_source_url: 'https://www.k12dive.com/news/fafsa-completion-rate-for-class-of-2026-highest-on-record/820365/',
+		quote_source_domain: 'k12dive.com',
+		perspectives: [
+			{
+				text: 'NCAN的重點是治理修復可產生可量測成果，強調提早上線、流程簡化與州制度串聯，將結果定義為可擴散的行政管理模式。',
+				sources: [
+					{
+						name: 'National College Attainment Network',
+						url: 'https://www.k12dive.com/news/fafsa-completion-rate-for-class-of-2026-highest-on-record/820365/',
+					},
+				],
+			},
+			{
+				text: 'GAO角度較為警覺，補充提到2023—2024之際新表導入期曾有重大監管與溝通缺失，數據回升仍需以問責機制與供應商稽核繼續追蹤。',
+				sources: [
+					{
+						name: 'U.S. Government Accountability Office',
+						url: 'https://www.k12dive.com/news/fafsa-completion-rate-for-class-of-2026-highest-on-record/820365/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-01',
+				date_iso: '2026-05-01',
+				content: 'NCAN資料顯示，2026屆高中生FAFSA完成率已在5月1日前達到54.7%，形成高於歷年同期的先發優勢。',
+			},
+			{
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'K12DIVE轉述NCAN發表本次創高紀錄，並指出各州普遍超越2025屆、部分州成長達20%。',
+			},
+		],
+		articles: [
+			{
+				title: 'FAFSA completion rate for class of 2026 highest on record',
+				link: 'https://www.k12dive.com/news/fafsa-completion-rate-for-class-of-2026-highest-on-record/820365/',
+				domain: 'k12dive.com',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'k12dive.com' },
+		],
+	},
+	{
+		id: 'taiwanEduPolicy-4',
+		cluster_number: 4,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '教育政策與治理',
+		editorial_lens: '資安信任',
+		title: 'K-12 近週新聞測驗：經費與資安都要關注',
+		short_summary: '對台灣的學校管理者與校務長官而言，這則 K-12 教育快訊值得留意的是其訊號設計：文章以五題檢測方式，回顧近一週新聞，內容同時出現經費公告與 cyberattacks，代表行政治理不能只盯預算，也要即時追蹤資安事件。它提供的是「每週快速盤點」的切入框架，能提醒一線學校在台灣落地時，同步建立經費監看與風險警示的固定流程。',
+		emoji: '🔐',
+		did_you_know: '原文並非完整政策報導，而是每週快測文章；文中只有 5 題題目作為回顧主題，並邀請讀者上傳成績，用 #K12DivePopQuiz 作為追蹤標記。',
+		talking_points: [
+			'五題快測設計：此篇內容以 5 題題目壓縮周訊息，讓學校可把每週重點先做「是否看過」的快速盤點。',
+			'雙軸治理訊號：主題標記含 funding announcements 與 cyberattacks，顯示資源與資安已成為同等重要的學校治理觀測點。',
+			'可視為警訊清單：文章是週度回顧，不列政策全文，適合當作校長會議的第一層掃描，但不能替代正式法規與在地研議。',
+			'時間起跑點明確：文本日誌標示為 2026-05-15，台灣學校可參考此週期節奏，每週或每雙週做一次新聞風險回顧。',
+			'追蹤互動機制：文章用 #K12DivePopQuiz 促使讀者回報分數，顯示教育訊息已朝「可量化參與」轉型，便於衡量關注度。',
+		],
+		quote: 'From funding announcements to cyberattacks, what did you learn from our recent stories?',
+		quote_attribution: 'K12 Dive, 2026-05-15',
+		quote_source_url: 'https://www.k12dive.com/news/pop-quiz-test-k-12-news-may-15-2026/820298/',
+		quote_source_domain: 'k12dive.com',
+		perspectives: [
+			{
+				text: '第一種讀法把政策與事件當成測驗主題，重點在提升決策者的近期警覺度；對台灣來說可借鏡每週快速警訊彙整，但需再接上內部風險登錄機制，避免只靠閱讀印象。',
+				sources: [
+					{
+						name: 'K12 Dive',
+						url: 'https://www.k12dive.com/news/pop-quiz-test-k-12-news-may-15-2026/820298/',
+					},
+				],
+			},
+			{
+				text: '第二種讀法強調資安與經費並舉，將治理核心從「錢」拓展到「系統安全」；這對台灣學校值得參考，但缺少政策條文與單位尺度，仍要與 MOE 或地方教材與資訊安全指引做交叉對照。',
+				sources: [
+					{
+						name: 'K12 Dive',
+						url: 'https://www.k12dive.com/news/pop-quiz-test-k-12-news-may-15-2026/820298/',
+					},
+				],
+			},
+		],
+		timeline: [
+			{
+				date: '2026-05-15',
+				date_iso: '2026-05-15',
+				content: 'K12 Dive 發布「Pop Quiz」頁面，整理近週 K-12 新聞為五題互動測驗，並標示與資安、資助等主題相關訊號。',
+			},
+		],
+		articles: [
+			{
+				title: 'Test yourself on the past week’s K-12 news',
+				link: 'https://www.k12dive.com/news/pop-quiz-test-k-12-news-may-15-2026/820298/',
+				domain: 'k12dive.com',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'k12dive.com' },
+		],
+	},
+	{
+		id: 'taiwanEduPolicy-5',
+		cluster_number: 5,
+		unique_domains: 1,
+		number_of_titles: 1,
+		category: '教育政策與治理',
+		editorial_lens: '研究證據',
+		title: '最年輕世代畢業生入職意向轉向樂觀',
+		short_summary: '美國K12DIVE整理NSHSS調查指出，11,443位Gen Z學生中有94%對畢業後職涯有信心，79%規劃在畢業前或六個月內就業；84%也認為自己能在職場有所作為。台灣學校可由此理解，生涯輔導不該只盯升學率，還要同步追蹤學生就業準備、家庭參與與價值取向，避免最後才臨時補救。',
+		emoji: '🧑‍🎓',
+		did_you_know: 'NSHSS同時顯示84%受訪Gen Z相信自己能產生影響，且人權、醫療可近性與飢餓是其最在意議題之一；報導也提到部分學生會帶家長一同參與求職面談，顯示職涯啟動階段具家庭共識需求。',
+		talking_points: [
+			'信心基準：NSHSS抽樣11,443位Gen Z，94%表態對未來充滿不同程度信心，提供台灣可比對的基準值。',
+			'就業節奏：79%計畫在畢業前或畢業後6個月內就業，建議學校將職涯輔導與升學準備同步到同一時間軸。',
+			'價值取向：84%受訪者認為能改變世界，關注人權、醫療可近性與飢餓，顯示學生重視職涯中的公共價值匹配。',
+			'家庭連動：報導提到部分受訪者會讓父母陪同求職面談，行政端可考慮把家庭參與納入生涯轉銜機制。',
+			'資料解讀：文章提到2022年先前研究中超過半數Gen Z較焦慮，顯示同一世代心態可變動，需建立年度追蹤而非一次性結論。',
+		],
+		quote: '84% told the organization they believe they can make a difference.',
+		quote_attribution: 'K12DIVE，2026-05-15',
+		quote_source_url: 'https://www.k12dive.com/news/high-school-grad-jobs-outlook-2026-workforce-optimism/820282/',
+		quote_source_domain: 'k12dive.com',
+		perspectives: [
+			{
+				text: 'NSHSS與HR Dive的敘事重點在於Gen Z心態正在從焦慮回溫，政策意涵偏向「以職涯支持與實務體驗補齊信心」而非僅做警戒式勸導。',
+				sources: [
+					{
+						name: 'K12DIVE',
+						url: 'https://www.k12dive.com/news/high-school-grad-jobs-outlook-2026-workforce-optimism/820282/',
+					},
+				],
+			},
+			{
+				text: '文內的2022 LHH舊資料形成反差，提醒台灣可借鏡的不是單向樂觀，而是時間趨勢本身：同類群體的情緒與需求可在短期內反轉。',
+				sources: [
+					{
+						name: 'K12DIVE（引述LHH研究）',
+						url: 'https://www.k12dive.com/news/high-school-grad-jobs-outlook-2026-workforce-optimism/820282/',
+					},
+				],
+			},
+		],
+		articles: [
+			{
+				title: 'Heading into the workforce, the youngest Gen Zers seem cautiously optimistic',
+				link: 'https://www.k12dive.com/news/high-school-grad-jobs-outlook-2026-workforce-optimism/820282/',
+				domain: 'k12dive.com',
+				date: '2026-05-15',
+			},
+		],
+		domains: [
+			{ name: 'k12dive.com' },
 		],
 	},
 ];
