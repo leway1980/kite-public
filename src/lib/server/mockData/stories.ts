@@ -12,7 +12,7 @@ const WORK_METHODS_UUID = 'c0000007-0000-4000-8000-000000000007';
 
 const aiNewsStories: Story[] = [
 	{
-		id: 'aiNews-1',
+		id: '91990bef-28dc-57a5-961a-097ef1a7fe4a',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -76,7 +76,7 @@ const aiNewsStories: Story[] = [
 
 const aiApplicationsStories: Story[] = [
 	{
-		id: 'aiApplications-1',
+		id: 'c0031873-a6dc-5588-98f1-091984e5582d',
 		cluster_number: 1,
 		unique_domains: 3,
 		number_of_titles: 3,
@@ -170,7 +170,7 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiApplications-2',
+		id: 'dc61f48c-091e-57ee-ac62-f59c43c9eae3',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -232,7 +232,7 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiApplications-4',
+		id: 'a3dd7a5f-804f-5f05-b466-b1064d5f8528',
 		cluster_number: 4,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -286,7 +286,7 @@ const aiApplicationsStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiApplications-5',
+		id: 'c9e7ded6-fe98-535f-84b7-da9c2a752197',
 		cluster_number: 5,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -350,7 +350,7 @@ const aiApplicationsStories: Story[] = [
 
 const workMethodsStories: Story[] = [
 	{
-		id: 'workMethods-1',
+		id: 'fe444115-ccad-54fc-a4e6-c35ee23d1b6b',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -424,7 +424,7 @@ const workMethodsStories: Story[] = [
 
 const aiEduStories: Story[] = [
 	{
-		id: 'gmail-notebooklm-教學',
+		id: '5e4792cb-3545-5d78-9d4e-c89ae4d86682',
 		cluster_number: 'gmail-notebooklm-教學',
 		unique_domains: 3,
 		number_of_titles: 3,
@@ -513,7 +513,7 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-1',
+		id: '779f0cf7-af58-545d-8c9c-1818aef0ea4e',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -574,7 +574,7 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-2',
+		id: 'c900445e-7ba9-5884-a737-b3fce54cabcd',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -635,7 +635,7 @@ const aiEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiEducation-4',
+		id: '7f11774e-d863-5511-8a95-3a4ee0794342',
 		cluster_number: 4,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -692,7 +692,7 @@ const aiEduStories: Story[] = [
 
 const aiClassroomStories: Story[] = [
 	{
-		id: 'aiClassroom-1',
+		id: 'fc1b0353-aff2-5ec1-a20c-014d61d286af',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -768,7 +768,7 @@ const aiClassroomStories: Story[] = [
 		],
 	},
 	{
-		id: 'aiClassroom-2',
+		id: '4a5de606-b208-55cb-b8aa-491fd325efe0',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -841,7 +841,7 @@ const aiClassroomStories: Story[] = [
 
 const educationResearchStories: Story[] = [
 	{
-		id: 'educationResearch-1',
+		id: '0fd2e2f9-cf32-5e39-ba08-6e5cb8b8e552',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -896,7 +896,7 @@ const educationResearchStories: Story[] = [
 		],
 	},
 	{
-		id: 'educationResearch-2',
+		id: 'f26fd6b6-07c7-5e67-93e9-081ce1cc3a0d',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -951,7 +951,7 @@ const educationResearchStories: Story[] = [
 		],
 	},
 	{
-		id: 'educationResearch-3',
+		id: 'da0df2a1-165e-51c8-ab0e-3e77d0206ef4',
 		cluster_number: 3,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1005,7 +1005,7 @@ const educationResearchStories: Story[] = [
 		],
 	},
 	{
-		id: 'educationResearch-4',
+		id: 'ede203a5-ee31-5e18-9d31-9d74c0a65b39',
 		cluster_number: 4,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1067,7 +1067,7 @@ const educationResearchStories: Story[] = [
 		],
 	},
 	{
-		id: 'educationResearch-5',
+		id: '507a0df6-4cf1-5c2b-ac88-ea6403ff5a10',
 		cluster_number: 5,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1136,7 +1136,7 @@ const educationResearchStories: Story[] = [
 
 const twEduStories: Story[] = [
 	{
-		id: 'taiwanEduPolicy-gmail-教育部-ai-數位學習',
+		id: '1a9830e4-2139-59ad-bfd3-d5085dabb8b0',
 		cluster_number: 'gmail-教育部-ai-數位學習',
 		unique_domains: 5,
 		number_of_titles: 8,
@@ -1263,7 +1263,7 @@ const twEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'gmail-ai-融入教學-高中-1',
+		id: 'aaf9d5be-2ed7-5529-b561-d90ae656d2dd',
 		cluster_number: 'gmail-ai-融入教學-高中',
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1327,7 +1327,7 @@ const twEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'taiwanEduPolicy-1',
+		id: '232861c9-cde3-583f-90bd-1ee4291121ea',
 		cluster_number: 1,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1390,7 +1390,7 @@ const twEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'taiwanEduPolicy-2',
+		id: '7b7eb9dc-c63a-5cb3-bf18-8e624db85aa8',
 		cluster_number: 2,
 		unique_domains: 1,
 		number_of_titles: 1,
@@ -1470,7 +1470,7 @@ const twEduStories: Story[] = [
 		],
 	},
 	{
-		id: 'taiwanEduPolicy-3',
+		id: '1c0c0652-40c9-5d9c-a6de-59f44ca6fbcc',
 		cluster_number: 3,
 		unique_domains: 1,
 		number_of_titles: 1,
