@@ -7,8 +7,8 @@
  */
 
 export const MOCK_BATCH_ID = 'b1a7e2c0-0000-4000-8000-000000000005';
-export const MOCK_BATCH_CREATED_AT = '2026-05-30T01:11:16.000Z';
-export const MOCK_BATCH_DATE_SLUG = '2026-05-30.1';
+export const MOCK_BATCH_CREATED_AT = '2026-06-02T01:08:48.000Z';
+export const MOCK_BATCH_DATE_SLUG = '2026-06-02.1';
 // Unix timestamp (seconds) for the stories' timestamp field
 export const MOCK_BATCH_TIMESTAMP = Math.floor(
 	new Date(MOCK_BATCH_CREATED_AT).getTime() / 1000,
@@ -36,9 +36,9 @@ export function buildBatchMeta(): MockBatchMeta {
 		createdAt: MOCK_BATCH_CREATED_AT,
 		dateSlug: MOCK_BATCH_DATE_SLUG,
 		language: 'zh-Hant',
-		totalCategories: 7,
-		totalClusters: 32,
-		totalArticles: 240,
+		totalCategories: 6,
+		totalClusters: 23,
+		totalArticles: 153,
 		totalReadCount: 0,
 	};
 }
